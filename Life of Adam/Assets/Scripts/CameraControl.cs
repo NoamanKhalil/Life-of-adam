@@ -8,7 +8,7 @@ public class CameraControl : MonoBehaviour
 	Vector2 Smoothing;
 	public float Sensitivity = 2f;
 	public float Smoothness = 2f;
-
+    public GameObject pickupPoint;
 	GameObject Character;
 
 	// Use this for initialization
