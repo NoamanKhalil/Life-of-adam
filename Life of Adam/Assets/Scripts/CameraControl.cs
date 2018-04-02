@@ -11,8 +11,10 @@ public class CameraControl : MonoBehaviour
     public GameObject pickupPoint;
 	GameObject Character;
 
-	// Use this for initialization
-	void Start () 
+    public float maxClamp;
+    public float minClamp;
+    // Use this for initialization
+    void Start () 
 	{
 		Character = this.transform.parent.gameObject;
 	}
@@ -26,7 +28,7 @@ public class CameraControl : MonoBehaviour
 		Smoothing.x = Mathf.Lerp (Smoothing.x, nd.x, 1f / Smoothness);
 		Smoothing.y = Mathf.Lerp (Smoothing.y, nd.y, 1f / Smoothness);
 		MouseControl += Smoothing;
-		MouseControl.y = Mathf.Clamp (MouseControl.y, -20f, 60f);
+		MouseControl.y = Mathf.Clamp (MouseControl.y, minClamp, maxClamp);
 	//	MouseControl.x = Mathf.Clamp (MouseControl.y, -20f, 60f);
 
 		transform.localRotation = Quaternion.AngleAxis (-MouseControl.y, Vector3.right);
