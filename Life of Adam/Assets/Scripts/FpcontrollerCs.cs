@@ -8,8 +8,8 @@ public class FpcontrollerCs : MonoBehaviour
 	public float inputDelay;
 	public float rotationSpeed;
 	public float Xaxis, YAxis ;
-
-	public float straffeVel;
+    public float crouchVal;
+    public float straffeVel;
 	public float runVel = 36f;
 	public float jumpVel = 0.2f;
 
@@ -17,18 +17,21 @@ public class FpcontrollerCs : MonoBehaviour
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
 	private float walkVel = 8f;
+
 	Rigidbody rb;
 	float forwardInput, straffeInput;
-	private float tempStamina;
+	float tempStamina;
 	bool isPlaying;
 	bool canJump;
+    
+    bool canCrouch;
 
 	void Start()
 	{
 		rb = GetComponent<Rigidbody>();
 		forwardInput = straffeInput = 0;
 		isPlaying = false;
-
+        canCrouch = true;
 		forwardVel = walkVel;
 	}
 
@@ -43,9 +46,9 @@ public class FpcontrollerCs : MonoBehaviour
 		velocity = new Vector3(straffeInput, 0, forwardInput);
 		//velocity = transform.localToWorldMatrix * velocity ;
 		velocity = transform.TransformDirection(velocity);
-		velocity.y = rb.velocity.y; 
+		//velocity.y = rb.velocity.y; 
 
-	     rb.velocity =  velocity;
+	    rb.velocity =  velocity;
 
 
 		if (canJump & Input.GetKeyUp(KeyCode.Space))
@@ -53,6 +56,16 @@ public class FpcontrollerCs : MonoBehaviour
 			rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
 			canJump = false;
 		}
+        if (canCrouch&& Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            camera.transform.position = new Vector3 (camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
+            canCrouch = false;
+        }
+        else if (canCrouch == false && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
+            canCrouch = true;
+        }
 
 	}
 

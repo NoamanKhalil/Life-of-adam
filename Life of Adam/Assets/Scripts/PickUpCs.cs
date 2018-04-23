@@ -7,6 +7,7 @@ public class PickUpCs : MonoBehaviour
 {
     GameObject mainCam;
     Transform pickedObj;
+    bool isholding; 
 
 	// Use this for initialization
 	void Start ()
@@ -17,20 +18,24 @@ public class PickUpCs : MonoBehaviour
             pickedObj = mainCam.GetComponent<CameraControl>().pickupPoint.transform;
         }
 	}
-	
 
-    // works when hoevered over collider
-    void OnMouseDown()
+    void Update()
     {
-        GetComponent<Rigidbody>().useGravity = false;
-        this.transform.position = pickedObj.transform.position;
-        this.transform.parent = pickedObj;
-    }
+        if (Input.GetMouseButtonDown(0) && isholding == false)
+        {
+            GetComponent<Rigidbody>().useGravity = false;
+            this.transform.position = pickedObj.transform.position;
+            this.transform.parent = pickedObj;
+            isholding = true;
+        }
+        else if (Input.GetMouseButtonDown(1) && isholding == true)
+        {
+            this.transform.parent = null;
+            GetComponent<Rigidbody>().useGravity = true;
+            isholding = false;
+        }
 
-    void OnMouseUp()
-    {
-        this.transform.parent = null;
-        GetComponent<Rigidbody>().useGravity = true;
+        
     }
 
 
