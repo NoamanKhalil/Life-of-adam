@@ -9433,12 +9433,32 @@ Prefab:
     - target: {fileID: 114752456232917880, guid: 15940f393abdbee46a79a0e0266f2376,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114512921833390216, guid: 15940f393abdbee46a79a0e0266f2376,
         type: 2}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114752456232917880, guid: 15940f393abdbee46a79a0e0266f2376,
+        type: 2}
+      propertyPath: Xaxis
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114752456232917880, guid: 15940f393abdbee46a79a0e0266f2376,
+        type: 2}
+      propertyPath: YAxis
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114512921833390216, guid: 15940f393abdbee46a79a0e0266f2376,
+        type: 2}
+      propertyPath: maxClamp
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 114512921833390216, guid: 15940f393abdbee46a79a0e0266f2376,
+        type: 2}
+      propertyPath: minClamp
+      value: -80
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
