@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: ac62541caa209f040bc687e4e04d80e5
+timeCreated: 1524921957
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Home Planet BB
+  fontNames:
+  - Home Planet BB
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 31747562055cffe4a9b21a318ef6854a, type: 3}
+  - {fileID: 12800000, guid: 4306ca338e4405a49a7206d7811afe18, type: 3}
+  - {fileID: 12800000, guid: 8c8fa3aeac6853b49be8f987ae79d479, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
