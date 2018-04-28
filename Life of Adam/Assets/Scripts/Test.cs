@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 public class Test : MonoBehaviour
 {
+    public float sphereRadius;
+    public LayerMask layer;
     [SerializeField]
     private float Dist;
     [SerializeField]
@@ -24,16 +26,26 @@ public class Test : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        myDistText.text = thisName + " " + Vector3.Distance(this.transform.position, otherObj.transform.position) +"IsObjective complete :"+ objective;
-        if (Vector3.Distance(this.transform.position, otherObj.transform.position) < Dist) 
+        //myDistText.text = thisName + " " + Vector3.Distance(this.transform.position, otherObj.transform.position) +"IsObjective complete :"+ objective;
+        /*if (Vector3.Distance(this.transform.position, otherObj.transform.position) < Dist) 
         {
             objective = true;
         }
         else
         {
             objective = false;
+        }*/
+
+        // Play a noise if an object is within the sphere's radius.
+        if (Physics.CheckSphere(transform.position, sphereRadius,layer))
+        {
+            Debug.Log("Object in area");
         }
+    }
 
-
+    void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawSphere(transform.position, sphereRadius);
     }
 }
