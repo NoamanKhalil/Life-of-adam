@@ -16,6 +16,7 @@ public class CameraControl : MonoBehaviour
     public float minClamp;
 
     bool isholding;
+    bool canDrop;
     // Use this for initialization
     void Start () 
 	{
@@ -58,14 +59,17 @@ public class CameraControl : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
                     hit.collider.gameObject.transform.position = pickupPoint.transform.position;
                     hit.collider.gameObject.transform.parent = pickupPoint.transform;
+                    hit.collider.gameObject.GetComponent<Collider>().enabled = false;
                     isholding = true;
+                    canDrop = false; 
                     // show pick GUI
                 }
             }
            
         }
-        else if (Input.GetKeyDown(KeyCode.E) && isholding == true)
+        else if (Input.GetKeyDown(KeyCode.E) && isholding == true && canDrop == true)
         {
+            pickupPoint.GetComponentInChildren<Collider>().enabled = true;
             pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
             pickupPoint.transform.DetachChildren();
             
@@ -73,5 +77,9 @@ public class CameraControl : MonoBehaviour
             isholding = false;
         }
     }
+    public void setCanDrop (bool drop)
+    {
 
+        canDrop = drop;
+    }
 }

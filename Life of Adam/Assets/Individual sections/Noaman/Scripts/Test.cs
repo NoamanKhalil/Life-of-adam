@@ -16,6 +16,8 @@ public class Test : MonoBehaviour
     private string thisName;
     [SerializeField]
     private bool objective;
+    [SerializeField]
+    private GameObject player;
 
     // Use this for initialization
     void Start ()
@@ -26,26 +28,15 @@ public class Test : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        //myDistText.text = thisName + " " + Vector3.Distance(this.transform.position, otherObj.transform.position) +"IsObjective complete :"+ objective;
-        /*if (Vector3.Distance(this.transform.position, otherObj.transform.position) < Dist) 
+        if (Vector3.Distance(this.transform.position, player.transform.position) < Dist)
         {
-            objective = true;
-        }
-        else
-        {
-            objective = false;
-        }*/
-
-        // Play a noise if an object is within the sphere's radius.
-        if (Physics.CheckSphere(transform.position, sphereRadius,layer))
-        {
-            Debug.Log("Object in area");
+            player.GetComponentInChildren<CameraControl>().setCanDrop(true);
         }
     }
 
-    void OnDrawGizmos()
+    /*void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawSphere(transform.position, sphereRadius);
-    }
+    }*/
 }
