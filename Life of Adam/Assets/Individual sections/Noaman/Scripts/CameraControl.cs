@@ -8,6 +8,7 @@ public class CameraControl : MonoBehaviour
     public float Smoothness = 2f;
     public GameObject pickupPoint;
 
+    private GameObject pickedObj;
     Vector2 MouseControl;
 	Vector2 Smoothing;
 	GameObject Character;
@@ -57,6 +58,8 @@ public class CameraControl : MonoBehaviour
                 if ( hit.collider.gameObject.tag == "Pick")
                 {
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                    pickedObj = hit.collider.gameObject;
+                    //hit.collider.gameObject.GetComponent<Rigidbody>().constraints
                     hit.collider.gameObject.transform.position = pickupPoint.transform.position;
                     hit.collider.gameObject.transform.parent = pickupPoint.transform;
                     hit.collider.gameObject.GetComponent<Collider>().enabled = false;
@@ -72,9 +75,17 @@ public class CameraControl : MonoBehaviour
             pickupPoint.GetComponentInChildren<Collider>().enabled = true;
             pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
             pickupPoint.transform.DetachChildren();
+            pickedObj = null;
+
             
 
             isholding = false;
+        }
+
+
+        if (pickupPoint !=null)
+        {
+            pickedObj.transform.position = pickupPoint.transform.position;
         }
     }
     public void setCanDrop (bool drop)

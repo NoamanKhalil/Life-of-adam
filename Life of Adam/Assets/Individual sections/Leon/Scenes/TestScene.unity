@@ -4891,7 +4891,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIText: {fileID: 1445455976}
   player: {fileID: 1563248305}
-  Dist: 1
+  Dist: 3
 --- !u!54 &908358611
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6096,6 +6096,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1800418392}
+  - component: {fileID: 1800418393}
   m_Layer: 11
   m_Name: GameObject
   m_TagString: Untagged
@@ -6117,6 +6118,17 @@ Transform:
   m_Father: {fileID: 1563248311}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1800418393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1800418391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de0be51f4998f14d975f3852a05c717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1819979663
 GameObject:
   m_ObjectHideFlags: 0
@@ -6360,7 +6372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UIText: {fileID: 1445455976}
   player: {fileID: 1563248305}
-  Dist: 1
+  Dist: 3
 --- !u!54 &1981158792
 Rigidbody:
   m_ObjectHideFlags: 0
