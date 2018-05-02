@@ -75,6 +75,7 @@ public class CameraControl : MonoBehaviour
             pickupPoint.GetComponentInChildren<Collider>().enabled = true;
             pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
             pickupPoint.transform.DetachChildren();
+            pickedObj.SetActive(false);
             pickedObj = null;
 
             
@@ -83,7 +84,7 @@ public class CameraControl : MonoBehaviour
         }
 
 
-        if (pickupPoint !=null)
+        if (pickupPoint !=null&&isholding ==true)
         {
             pickedObj.transform.position = pickupPoint.transform.position;
         }
@@ -92,5 +93,11 @@ public class CameraControl : MonoBehaviour
     {
 
         canDrop = drop;
+    }
+    
+
+    public bool isholdingCheck ()
+    {
+        return isholding;
     }
 }

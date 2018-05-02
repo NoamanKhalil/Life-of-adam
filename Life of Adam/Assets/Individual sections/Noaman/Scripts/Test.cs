@@ -18,7 +18,6 @@ public class Test : MonoBehaviour
     private bool objective;
     [SerializeField]
     private GameObject player;
-
     // Use this for initialization
     void Start ()
     {
@@ -31,6 +30,7 @@ public class Test : MonoBehaviour
         if (Vector3.Distance(this.transform.position, player.transform.position) < Dist)
         {
             player.GetComponentInChildren<CameraControl>().setCanDrop(true);
+         
         }
     }
 
