@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class GameManagerCs : MonoBehaviour
 {
     public VideoPlayer videoPlayer;
-    public GameObject Buttons;
-    public float timer = 10.0f;
+    public GameObject buttons;
+    public float mainTimer;
+    public float goodTimer;
+    public float badTimer;
 
     bool SceneA;
     bool SceneB;
@@ -23,25 +25,35 @@ public class GameManagerCs : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        timer -= Time.deltaTime;
+        mainTimer -= Time.deltaTime;
         //Debug.Log(timer);
-        if (timer <=0 && !SceneA &&!SceneB )
+        if (mainTimer <=0 && !SceneA &&!SceneB )
         {
             videoPlayer.Pause();
-            Buttons.SetActive(true);
+            buttons.SetActive(true);
         }
 
-        if (SceneA&&timer<=0 )
+        if (SceneA)
         {
-            Debug.Log("Scene A loaded ");
-            SceneManager.LoadScene("SceneA");
-        }
-        if (SceneB && timer <= 0)
-        {
-            // put Game scene here
-            Debug.Log("Scene B loaded ");
-            SceneManager.LoadScene("TestScene");
+            goodTimer -= Time.deltaTime;
+            mainTimer = 10;
+            if (goodTimer <= 0)
+            {
 
+                Debug.Log("Scene A loaded ");
+                SceneManager.LoadScene("SceneA");
+            }
+        }
+        if (SceneB)
+        {
+            badTimer -= Time.deltaTime;
+            mainTimer = 10;
+            if (badTimer <= 0)
+            {
+                // put Game scene here
+                Debug.Log("Scene B loaded ");
+                SceneManager.LoadScene("TestScene");
+            }
         }
 
     }
@@ -49,16 +61,16 @@ public class GameManagerCs : MonoBehaviour
 
     public void SceneAActive()
     {
-        Buttons.SetActive(false);
+        buttons.SetActive(false);
         SceneA = true;
-        timer = 10.0f;
+        mainTimer = 10.0f;
         videoPlayer.Play();
     }
     public void SceneBActive()
     {
-        Buttons.SetActive(false);
+        buttons.SetActive(false);
         SceneB = true;
-        timer = 10.0f;
+        mainTimer = 10.0f;
         videoPlayer.Play();
     }
 }

@@ -35,6 +35,10 @@ public class Scene  : MonoBehaviour
         SceneManager.LoadScene("VideoScene");
     }
 
+    public void ToMainMenuScene()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void AboutPanel()
     {
         aboutPanel.gameObject.SetActive(true);
