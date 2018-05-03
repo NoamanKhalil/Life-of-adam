@@ -64,7 +64,8 @@ public class CameraControl : MonoBehaviour
                     hit.collider.gameObject.transform.parent = pickupPoint.transform;
                     hit.collider.gameObject.GetComponent<Collider>().enabled = false;
                     isholding = true;
-                    canDrop = false; 
+                    canDrop = false;
+                    hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None; 
                     // show pick GUI
                 }
             }
@@ -72,9 +73,11 @@ public class CameraControl : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.E) && isholding == true && canDrop == true)
         {
+            
             pickupPoint.GetComponentInChildren<Collider>().enabled = true;
             pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
             pickupPoint.transform.DetachChildren();
+            //pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
             pickedObj.SetActive(false);
             pickedObj = null;
 
