@@ -1,0 +1,1881 @@
+fileFormatVersion: 2
+guid: a69f4ddc61930f54583b6e4c51b5b387
+timeCreated: 1525366363
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Alarm003
+    100002: Alarm004
+    100004: Alarm006
+    100006: beaker type - wide bottom003
+    100008: beaker type - wide bottom004
+    100010: beaker type - wide bottom1
+    100012: beaker type - wide bottom2
+    100014: big open book on long table
+    100016: big open book paper on long table
+    100018: BlackBoard001
+    100020: BlackBoard002
+    100022: book cover of closed book on floor
+    100024: bottom book cover on closed book on long table
+    100026: bottom book in stack on long table
+    100028: 'bottom open book paper on floor '
+    100030: bottom open bottom book next to open book
+    100032: box
+    100034: box001
+    100036: box002
+    100038: Box012
+    100040: Box013
+    100042: Box014
+    100044: Box015
+    100046: Box016
+    100048: Box017
+    100050: Box018
+    100052: Box019
+    100054: Box155
+    100056: Box156
+    100058: Box157
+    100060: Box158
+    100062: Box159
+    100064: Box160
+    100066: Box161
+    100068: Box162
+    100070: Box163
+    100072: Box164
+    100074: Box165
+    100076: Box167
+    100078: Box168
+    100080: Box169
+    100082: Box170
+    100084: Box171
+    100086: Box233
+    100088: Box234
+    100090: Box235
+    100092: Box236
+    100094: Box237
+    100096: Box238
+    100098: Box239
+    100100: Box240
+    100102: Box241
+    100104: Box242
+    100106: Box243
+    100108: Box244
+    100110: Box245
+    100112: Box246
+    100114: Box247
+    100116: Box248
+    100118: Box249
+    100120: Box250
+    100122: Box251
+    100124: Box252
+    100126: Box253
+    100128: Box254
+    100130: Box255
+    100132: Box256
+    100134: Box257
+    100136: Box258
+    100138: Box259
+    100140: Box260
+    100142: Box261
+    100144: Box262
+    100146: Box263
+    100148: Box264
+    100150: Box265
+    100152: Box266
+    100154: Box267
+    100156: Box268
+    100158: Box269
+    100160: Box270
+    100162: Box271
+    100164: Box272
+    100166: Box273
+    100168: Box274
+    100170: Box275
+    100172: Box276
+    100174: Box277
+    100176: Box278
+    100178: Box279
+    100180: Box280
+    100182: Box281
+    100184: Box282
+    100186: Box283
+    100188: Box284
+    100190: Box285
+    100192: Box286
+    100194: Box287
+    100196: Box288
+    100198: Box289
+    100200: Box290
+    100202: Box291
+    100204: Box292
+    100206: Box293
+    100208: Box294
+    100210: Box295
+    100212: Box296
+    100214: Box297
+    100216: Box298
+    100218: Box299
+    100220: Box300
+    100222: Box301
+    100224: Box302
+    100226: Box303
+    100228: Box304
+    100230: Box305
+    100232: Box306
+    100234: Box307
+    100236: Box308
+    100238: Box309
+    100240: Box310
+    100242: Box311
+    100244: Box312
+    100246: Box313
+    100248: Box314
+    100250: Box315
+    100252: Box316
+    100254: Box317
+    100256: Box318
+    100258: Box319
+    100260: Box320
+    100262: Box321
+    100264: Box322
+    100266: Box323
+    100268: Box324
+    100270: Box325
+    100272: Box326
+    100274: Box327
+    100276: Box328
+    100278: Box329
+    100280: Box330
+    100282: Box331
+    100284: burette stand
+    100286: burette stand001
+    100288: Cabinet004
+    100290: Cabinet005
+    100292: Cabinet006
+    100294: Cabinet007
+    100296: Cabinet008
+    100298: ceiling
+    100300: ceiling lights
+    100302: chair
+    100304: chair cushion part
+    100306: chair handles
+    100308: chair seat
+    100310: chair wheels
+    100312: Chalk Holder003
+    100314: Chalk Holder004
+    100316: //RootNode
+    100318: closed book on floor
+    100320: Cylinder003
+    100322: Cylinder005
+    100324: Cylinder006
+    100326: Cylinder007
+    100328: Cylinder008
+    100330: Cylinder009
+    100332: Cylinder010
+    100334: Cylinder011
+    100336: Cylinder012
+    100338: Cylinder013
+    100340: Cylinder014
+    100342: Cylinder015
+    100344: Cylinder016
+    100346: Cylinder017
+    100348: Cylinder018
+    100350: Cylinder019
+    100352: Cylinder020
+    100354: Cylinder021
+    100356: Cylinder022
+    100358: Cylinder023
+    100360: Cylinder024
+    100362: Cylinder025
+    100364: Cylinder026
+    100366: Cylinder027
+    100368: Cylinder028
+    100370: Cylinder029
+    100372: door frame001
+    100374: door frame002
+    100376: door frame003
+    100378: door frame005
+    100380: door001
+    100382: door002
+    100384: door003
+    100386: door005
+    100388: Electrical Junction
+    100390: Electrical Junction001
+    100392: Electrical Line
+    100394: Electrical Line001
+    100396: fridge
+    100398: gas tank 2
+    100400: Group015
+    100402: Group016
+    100404: Group017
+    100406: Group018
+    100408: Group019
+    100410: Group020
+    100412: Group021
+    100414: Group022
+    100416: Group023
+    100418: Group024
+    100420: Group025
+    100422: Group026
+    100424: Group027
+    100426: Group028
+    100428: Group029
+    100430: Group030
+    100432: Group031
+    100434: Group032
+    100436: Group033
+    100438: Group034
+    100440: Group035
+    100442: Group036
+    100444: Group037
+    100446: Group038
+    100448: Group039
+    100450: Group040
+    100452: Group041
+    100454: Group042
+    100456: Group043
+    100458: Group044
+    100460: Group045
+    100462: Group046
+    100464: Group047
+    100466: Group048
+    100468: Group049
+    100470: Group050
+    100472: Group051
+    100474: Group052
+    100476: Group053
+    100478: Group054
+    100480: Group055
+    100482: Group056
+    100484: Group057
+    100486: Group058
+    100488: Group059
+    100490: Group060
+    100492: Group061
+    100494: Group062
+    100496: Group063
+    100498: Group064
+    100500: Group065
+    100502: Group066
+    100504: high table001
+    100506: Line013
+    100508: Line014
+    100510: Line015
+    100512: Line016
+    100514: Line017
+    100516: Line018
+    100518: Line019
+    100520: Line020
+    100522: Line021
+    100524: Line022
+    100526: Line023
+    100528: Line024
+    100530: Line025
+    100532: Line026
+    100534: Line027
+    100536: Line028
+    100538: Line029
+    100540: Line030
+    100542: Line031
+    100544: Line032
+    100546: Line033
+    100548: Line034
+    100550: Line035
+    100552: Line036
+    100554: Line037
+    100556: Line038
+    100558: Line039
+    100560: Line040
+    100562: Line041
+    100564: Line042
+    100566: Line043
+    100568: Line044
+    100570: Line045
+    100572: Line046
+    100574: Line047
+    100576: Line048
+    100578: Line049
+    100580: Line050
+    100582: Line051
+    100584: Line052
+    100586: Line053
+    100588: Line054
+    100590: Line055
+    100592: Line056
+    100594: Line057
+    100596: Line058
+    100598: Line059
+    100600: Line060
+    100602: Line061
+    100604: Line062
+    100606: Line063
+    100608: Line064
+    100610: Line065
+    100612: Line066
+    100614: Line067
+    100616: Line068
+    100618: Line069
+    100620: Line070
+    100622: Line071
+    100624: Line072
+    100626: Line073
+    100628: Line074
+    100630: Line075
+    100632: Line076
+    100634: Line077
+    100636: Line078
+    100638: Line079
+    100640: Line080
+    100642: Line081
+    100644: Line082
+    100646: Line083
+    100648: Line084
+    100650: Line085
+    100652: Line086
+    100654: Line087
+    100656: Line088
+    100658: Line089
+    100660: Line090
+    100662: Line091
+    100664: Line092
+    100666: Line093
+    100668: Line094
+    100670: Line095
+    100672: Line096
+    100674: Line097
+    100676: Line098
+    100678: Line099
+    100680: Line100
+    100682: Line101
+    100684: Line102
+    100686: Line103
+    100688: Line104
+    100690: Line105
+    100692: Line106
+    100694: Line107
+    100696: Line108
+    100698: Line109
+    100700: Line110
+    100702: Line111
+    100704: Line112
+    100706: Line113
+    100708: Line114
+    100710: Line115
+    100712: Line116
+    100714: Line117
+    100716: Line118
+    100718: Line119
+    100720: Line120
+    100722: Line121
+    100724: Line122
+    100726: Line123
+    100728: Line124
+    100730: Line125
+    100732: Line126
+    100734: Line127
+    100736: Line128
+    100738: Line129
+    100740: Line130
+    100742: Line131
+    100744: Line132
+    100746: middle book coverin stack on long table
+    100748: middle book in stack on long table
+    100750: Noteboard003
+    100752: Noteboard004
+    100754: Noteboard2
+    100756: Object002
+    100758: Object003
+    100760: Object004
+    100762: open book paper under small table
+    100764: open book under small table
+    100766: Paper013
+    100768: Paper014
+    100770: Paper015
+    100772: Paper016
+    100774: Paper017
+    100776: Paper018
+    100778: Paper019
+    100780: Paper020
+    100782: Paper021
+    100784: Paper022
+    100786: Paper10
+    100788: Paper11
+    100790: Paper12
+    100792: Paper6
+    100794: Paper7
+    100796: Paper8
+    100798: Paper9
+    100800: Plane008
+    100802: Plane009
+    100804: Plane010
+    100806: Roof Lamp001
+    100808: Roof Lamp002
+    100810: Roof Lamp003
+    100812: Roof Lamp004
+    100814: Roof Lamp005
+    100816: Roof Lamp006
+    100818: small open book on long table
+    100820: small open book paper on long table
+    100822: standing shelves
+    100824: standing shelves001
+    100826: standing shelves002
+    100828: top book cover in stack on long table
+    100830: top book in stack on long table
+    100832: top open book on floor
+    100834: top open book paper on floor
+    400000: Alarm003
+    400002: Alarm004
+    400004: Alarm006
+    400006: beaker type - wide bottom003
+    400008: beaker type - wide bottom004
+    400010: beaker type - wide bottom1
+    400012: beaker type - wide bottom2
+    400014: big open book on long table
+    400016: big open book paper on long table
+    400018: BlackBoard001
+    400020: BlackBoard002
+    400022: book cover of closed book on floor
+    400024: bottom book cover on closed book on long table
+    400026: bottom book in stack on long table
+    400028: 'bottom open book paper on floor '
+    400030: bottom open bottom book next to open book
+    400032: box
+    400034: box001
+    400036: box002
+    400038: Box012
+    400040: Box013
+    400042: Box014
+    400044: Box015
+    400046: Box016
+    400048: Box017
+    400050: Box018
+    400052: Box019
+    400054: Box155
+    400056: Box156
+    400058: Box157
+    400060: Box158
+    400062: Box159
+    400064: Box160
+    400066: Box161
+    400068: Box162
+    400070: Box163
+    400072: Box164
+    400074: Box165
+    400076: Box167
+    400078: Box168
+    400080: Box169
+    400082: Box170
+    400084: Box171
+    400086: Box233
+    400088: Box234
+    400090: Box235
+    400092: Box236
+    400094: Box237
+    400096: Box238
+    400098: Box239
+    400100: Box240
+    400102: Box241
+    400104: Box242
+    400106: Box243
+    400108: Box244
+    400110: Box245
+    400112: Box246
+    400114: Box247
+    400116: Box248
+    400118: Box249
+    400120: Box250
+    400122: Box251
+    400124: Box252
+    400126: Box253
+    400128: Box254
+    400130: Box255
+    400132: Box256
+    400134: Box257
+    400136: Box258
+    400138: Box259
+    400140: Box260
+    400142: Box261
+    400144: Box262
+    400146: Box263
+    400148: Box264
+    400150: Box265
+    400152: Box266
+    400154: Box267
+    400156: Box268
+    400158: Box269
+    400160: Box270
+    400162: Box271
+    400164: Box272
+    400166: Box273
+    400168: Box274
+    400170: Box275
+    400172: Box276
+    400174: Box277
+    400176: Box278
+    400178: Box279
+    400180: Box280
+    400182: Box281
+    400184: Box282
+    400186: Box283
+    400188: Box284
+    400190: Box285
+    400192: Box286
+    400194: Box287
+    400196: Box288
+    400198: Box289
+    400200: Box290
+    400202: Box291
+    400204: Box292
+    400206: Box293
+    400208: Box294
+    400210: Box295
+    400212: Box296
+    400214: Box297
+    400216: Box298
+    400218: Box299
+    400220: Box300
+    400222: Box301
+    400224: Box302
+    400226: Box303
+    400228: Box304
+    400230: Box305
+    400232: Box306
+    400234: Box307
+    400236: Box308
+    400238: Box309
+    400240: Box310
+    400242: Box311
+    400244: Box312
+    400246: Box313
+    400248: Box314
+    400250: Box315
+    400252: Box316
+    400254: Box317
+    400256: Box318
+    400258: Box319
+    400260: Box320
+    400262: Box321
+    400264: Box322
+    400266: Box323
+    400268: Box324
+    400270: Box325
+    400272: Box326
+    400274: Box327
+    400276: Box328
+    400278: Box329
+    400280: Box330
+    400282: Box331
+    400284: burette stand
+    400286: burette stand001
+    400288: Cabinet004
+    400290: Cabinet005
+    400292: Cabinet006
+    400294: Cabinet007
+    400296: Cabinet008
+    400298: ceiling
+    400300: ceiling lights
+    400302: chair
+    400304: chair cushion part
+    400306: chair handles
+    400308: chair seat
+    400310: chair wheels
+    400312: Chalk Holder003
+    400314: Chalk Holder004
+    400316: //RootNode
+    400318: closed book on floor
+    400320: Cylinder003
+    400322: Cylinder005
+    400324: Cylinder006
+    400326: Cylinder007
+    400328: Cylinder008
+    400330: Cylinder009
+    400332: Cylinder010
+    400334: Cylinder011
+    400336: Cylinder012
+    400338: Cylinder013
+    400340: Cylinder014
+    400342: Cylinder015
+    400344: Cylinder016
+    400346: Cylinder017
+    400348: Cylinder018
+    400350: Cylinder019
+    400352: Cylinder020
+    400354: Cylinder021
+    400356: Cylinder022
+    400358: Cylinder023
+    400360: Cylinder024
+    400362: Cylinder025
+    400364: Cylinder026
+    400366: Cylinder027
+    400368: Cylinder028
+    400370: Cylinder029
+    400372: door frame001
+    400374: door frame002
+    400376: door frame003
+    400378: door frame005
+    400380: door001
+    400382: door002
+    400384: door003
+    400386: door005
+    400388: Electrical Junction
+    400390: Electrical Junction001
+    400392: Electrical Line
+    400394: Electrical Line001
+    400396: fridge
+    400398: gas tank 2
+    400400: Group015
+    400402: Group016
+    400404: Group017
+    400406: Group018
+    400408: Group019
+    400410: Group020
+    400412: Group021
+    400414: Group022
+    400416: Group023
+    400418: Group024
+    400420: Group025
+    400422: Group026
+    400424: Group027
+    400426: Group028
+    400428: Group029
+    400430: Group030
+    400432: Group031
+    400434: Group032
+    400436: Group033
+    400438: Group034
+    400440: Group035
+    400442: Group036
+    400444: Group037
+    400446: Group038
+    400448: Group039
+    400450: Group040
+    400452: Group041
+    400454: Group042
+    400456: Group043
+    400458: Group044
+    400460: Group045
+    400462: Group046
+    400464: Group047
+    400466: Group048
+    400468: Group049
+    400470: Group050
+    400472: Group051
+    400474: Group052
+    400476: Group053
+    400478: Group054
+    400480: Group055
+    400482: Group056
+    400484: Group057
+    400486: Group058
+    400488: Group059
+    400490: Group060
+    400492: Group061
+    400494: Group062
+    400496: Group063
+    400498: Group064
+    400500: Group065
+    400502: Group066
+    400504: high table001
+    400506: Line013
+    400508: Line014
+    400510: Line015
+    400512: Line016
+    400514: Line017
+    400516: Line018
+    400518: Line019
+    400520: Line020
+    400522: Line021
+    400524: Line022
+    400526: Line023
+    400528: Line024
+    400530: Line025
+    400532: Line026
+    400534: Line027
+    400536: Line028
+    400538: Line029
+    400540: Line030
+    400542: Line031
+    400544: Line032
+    400546: Line033
+    400548: Line034
+    400550: Line035
+    400552: Line036
+    400554: Line037
+    400556: Line038
+    400558: Line039
+    400560: Line040
+    400562: Line041
+    400564: Line042
+    400566: Line043
+    400568: Line044
+    400570: Line045
+    400572: Line046
+    400574: Line047
+    400576: Line048
+    400578: Line049
+    400580: Line050
+    400582: Line051
+    400584: Line052
+    400586: Line053
+    400588: Line054
+    400590: Line055
+    400592: Line056
+    400594: Line057
+    400596: Line058
+    400598: Line059
+    400600: Line060
+    400602: Line061
+    400604: Line062
+    400606: Line063
+    400608: Line064
+    400610: Line065
+    400612: Line066
+    400614: Line067
+    400616: Line068
+    400618: Line069
+    400620: Line070
+    400622: Line071
+    400624: Line072
+    400626: Line073
+    400628: Line074
+    400630: Line075
+    400632: Line076
+    400634: Line077
+    400636: Line078
+    400638: Line079
+    400640: Line080
+    400642: Line081
+    400644: Line082
+    400646: Line083
+    400648: Line084
+    400650: Line085
+    400652: Line086
+    400654: Line087
+    400656: Line088
+    400658: Line089
+    400660: Line090
+    400662: Line091
+    400664: Line092
+    400666: Line093
+    400668: Line094
+    400670: Line095
+    400672: Line096
+    400674: Line097
+    400676: Line098
+    400678: Line099
+    400680: Line100
+    400682: Line101
+    400684: Line102
+    400686: Line103
+    400688: Line104
+    400690: Line105
+    400692: Line106
+    400694: Line107
+    400696: Line108
+    400698: Line109
+    400700: Line110
+    400702: Line111
+    400704: Line112
+    400706: Line113
+    400708: Line114
+    400710: Line115
+    400712: Line116
+    400714: Line117
+    400716: Line118
+    400718: Line119
+    400720: Line120
+    400722: Line121
+    400724: Line122
+    400726: Line123
+    400728: Line124
+    400730: Line125
+    400732: Line126
+    400734: Line127
+    400736: Line128
+    400738: Line129
+    400740: Line130
+    400742: Line131
+    400744: Line132
+    400746: middle book coverin stack on long table
+    400748: middle book in stack on long table
+    400750: Noteboard003
+    400752: Noteboard004
+    400754: Noteboard2
+    400756: Object002
+    400758: Object003
+    400760: Object004
+    400762: open book paper under small table
+    400764: open book under small table
+    400766: Paper013
+    400768: Paper014
+    400770: Paper015
+    400772: Paper016
+    400774: Paper017
+    400776: Paper018
+    400778: Paper019
+    400780: Paper020
+    400782: Paper021
+    400784: Paper022
+    400786: Paper10
+    400788: Paper11
+    400790: Paper12
+    400792: Paper6
+    400794: Paper7
+    400796: Paper8
+    400798: Paper9
+    400800: Plane008
+    400802: Plane009
+    400804: Plane010
+    400806: Roof Lamp001
+    400808: Roof Lamp002
+    400810: Roof Lamp003
+    400812: Roof Lamp004
+    400814: Roof Lamp005
+    400816: Roof Lamp006
+    400818: small open book on long table
+    400820: small open book paper on long table
+    400822: standing shelves
+    400824: standing shelves001
+    400826: standing shelves002
+    400828: top book cover in stack on long table
+    400830: top book in stack on long table
+    400832: top open book on floor
+    400834: top open book paper on floor
+    2100000: 'Material #5'
+    2100002: 'Material #3'
+    2100004: 'Material #216'
+    2100006: No Name
+    2100008: 'Material #217'
+    2300000: Alarm003
+    2300002: Alarm004
+    2300004: Alarm006
+    2300006: beaker type - wide bottom003
+    2300008: beaker type - wide bottom004
+    2300010: beaker type - wide bottom1
+    2300012: beaker type - wide bottom2
+    2300014: big open book on long table
+    2300016: big open book paper on long table
+    2300018: BlackBoard001
+    2300020: BlackBoard002
+    2300022: book cover of closed book on floor
+    2300024: bottom book cover on closed book on long table
+    2300026: bottom book in stack on long table
+    2300028: 'bottom open book paper on floor '
+    2300030: bottom open bottom book next to open book
+    2300032: box
+    2300034: box001
+    2300036: box002
+    2300038: Box012
+    2300040: Box013
+    2300042: Box014
+    2300044: Box015
+    2300046: Box016
+    2300048: Box017
+    2300050: Box018
+    2300052: Box019
+    2300054: Box155
+    2300056: Box156
+    2300058: Box157
+    2300060: Box158
+    2300062: Box159
+    2300064: Box160
+    2300066: Box161
+    2300068: Box162
+    2300070: Box163
+    2300072: Box164
+    2300074: Box165
+    2300076: Box167
+    2300078: Box168
+    2300080: Box169
+    2300082: Box170
+    2300084: Box171
+    2300086: Box233
+    2300088: Box234
+    2300090: Box235
+    2300092: Box236
+    2300094: Box237
+    2300096: Box238
+    2300098: Box239
+    2300100: Box240
+    2300102: Box241
+    2300104: Box242
+    2300106: Box243
+    2300108: Box244
+    2300110: Box245
+    2300112: Box246
+    2300114: Box247
+    2300116: Box248
+    2300118: Box249
+    2300120: Box250
+    2300122: Box251
+    2300124: Box252
+    2300126: Box253
+    2300128: Box254
+    2300130: Box255
+    2300132: Box256
+    2300134: Box257
+    2300136: Box258
+    2300138: Box259
+    2300140: Box260
+    2300142: Box261
+    2300144: Box262
+    2300146: Box263
+    2300148: Box264
+    2300150: Box265
+    2300152: Box266
+    2300154: Box267
+    2300156: Box268
+    2300158: Box269
+    2300160: Box270
+    2300162: Box271
+    2300164: Box272
+    2300166: Box273
+    2300168: Box274
+    2300170: Box275
+    2300172: Box276
+    2300174: Box277
+    2300176: Box278
+    2300178: Box279
+    2300180: Box280
+    2300182: Box281
+    2300184: Box282
+    2300186: Box283
+    2300188: Box284
+    2300190: Box285
+    2300192: Box286
+    2300194: Box287
+    2300196: Box288
+    2300198: Box289
+    2300200: Box290
+    2300202: Box291
+    2300204: Box292
+    2300206: Box293
+    2300208: Box294
+    2300210: Box295
+    2300212: Box296
+    2300214: Box297
+    2300216: Box298
+    2300218: Box299
+    2300220: Box300
+    2300222: Box301
+    2300224: Box302
+    2300226: Box303
+    2300228: Box304
+    2300230: Box305
+    2300232: Box306
+    2300234: Box307
+    2300236: Box308
+    2300238: Box309
+    2300240: Box310
+    2300242: Box311
+    2300244: Box312
+    2300246: Box313
+    2300248: Box314
+    2300250: Box315
+    2300252: Box316
+    2300254: Box317
+    2300256: Box318
+    2300258: Box319
+    2300260: Box320
+    2300262: Box321
+    2300264: Box322
+    2300266: Box323
+    2300268: Box324
+    2300270: Box325
+    2300272: Box326
+    2300274: Box327
+    2300276: Box328
+    2300278: Box329
+    2300280: Box330
+    2300282: Box331
+    2300284: burette stand
+    2300286: burette stand001
+    2300288: Cabinet004
+    2300290: Cabinet005
+    2300292: Cabinet006
+    2300294: Cabinet007
+    2300296: Cabinet008
+    2300298: ceiling
+    2300300: ceiling lights
+    2300302: chair
+    2300304: chair cushion part
+    2300306: chair handles
+    2300308: chair seat
+    2300310: chair wheels
+    2300312: Chalk Holder003
+    2300314: Chalk Holder004
+    2300316: closed book on floor
+    2300318: Cylinder003
+    2300320: Cylinder005
+    2300322: Cylinder006
+    2300324: Cylinder007
+    2300326: Cylinder008
+    2300328: Cylinder009
+    2300330: Cylinder010
+    2300332: Cylinder011
+    2300334: Cylinder012
+    2300336: Cylinder013
+    2300338: Cylinder014
+    2300340: Cylinder015
+    2300342: Cylinder016
+    2300344: Cylinder017
+    2300346: Cylinder018
+    2300348: Cylinder019
+    2300350: Cylinder020
+    2300352: Cylinder021
+    2300354: Cylinder022
+    2300356: Cylinder023
+    2300358: Cylinder024
+    2300360: Cylinder025
+    2300362: Cylinder026
+    2300364: Cylinder027
+    2300366: Cylinder028
+    2300368: Cylinder029
+    2300370: door frame001
+    2300372: door frame002
+    2300374: door frame003
+    2300376: door frame005
+    2300378: door001
+    2300380: door002
+    2300382: door003
+    2300384: door005
+    2300386: Electrical Junction
+    2300388: Electrical Junction001
+    2300390: Electrical Line
+    2300392: Electrical Line001
+    2300394: fridge
+    2300396: gas tank 2
+    2300398: high table001
+    2300400: Line014
+    2300402: Line016
+    2300404: Line017
+    2300406: Line019
+    2300408: Line021
+    2300410: Line022
+    2300412: Line024
+    2300414: Line026
+    2300416: Line027
+    2300418: Line029
+    2300420: Line031
+    2300422: Line032
+    2300424: Line034
+    2300426: Line036
+    2300428: Line037
+    2300430: Line039
+    2300432: Line041
+    2300434: Line042
+    2300436: Line044
+    2300438: Line046
+    2300440: Line047
+    2300442: Line049
+    2300444: Line051
+    2300446: Line052
+    2300448: Line054
+    2300450: Line056
+    2300452: Line057
+    2300454: Line059
+    2300456: Line061
+    2300458: Line062
+    2300460: Line064
+    2300462: Line066
+    2300464: Line067
+    2300466: Line069
+    2300468: Line071
+    2300470: Line072
+    2300472: Line074
+    2300474: Line076
+    2300476: Line077
+    2300478: Line079
+    2300480: Line081
+    2300482: Line082
+    2300484: Line084
+    2300486: Line086
+    2300488: Line087
+    2300490: Line089
+    2300492: Line091
+    2300494: Line092
+    2300496: Line094
+    2300498: Line096
+    2300500: Line097
+    2300502: Line099
+    2300504: Line101
+    2300506: Line102
+    2300508: Line104
+    2300510: Line106
+    2300512: Line107
+    2300514: Line109
+    2300516: Line111
+    2300518: Line112
+    2300520: Line114
+    2300522: Line116
+    2300524: Line117
+    2300526: Line119
+    2300528: Line121
+    2300530: Line122
+    2300532: Line124
+    2300534: Line126
+    2300536: Line127
+    2300538: Line129
+    2300540: Line131
+    2300542: Line132
+    2300544: middle book coverin stack on long table
+    2300546: middle book in stack on long table
+    2300548: Noteboard003
+    2300550: Noteboard004
+    2300552: Noteboard2
+    2300554: Object002
+    2300556: Object003
+    2300558: Object004
+    2300560: open book paper under small table
+    2300562: open book under small table
+    2300564: Paper013
+    2300566: Paper014
+    2300568: Paper015
+    2300570: Paper016
+    2300572: Paper017
+    2300574: Paper018
+    2300576: Paper019
+    2300578: Paper020
+    2300580: Paper021
+    2300582: Paper022
+    2300584: Paper10
+    2300586: Paper11
+    2300588: Paper12
+    2300590: Paper6
+    2300592: Paper7
+    2300594: Paper8
+    2300596: Paper9
+    2300598: Plane008
+    2300600: Plane009
+    2300602: Plane010
+    2300604: Roof Lamp001
+    2300606: Roof Lamp002
+    2300608: Roof Lamp003
+    2300610: Roof Lamp004
+    2300612: Roof Lamp005
+    2300614: Roof Lamp006
+    2300616: small open book on long table
+    2300618: small open book paper on long table
+    2300620: standing shelves
+    2300622: standing shelves001
+    2300624: standing shelves002
+    2300626: top book cover in stack on long table
+    2300628: top book in stack on long table
+    2300630: top open book on floor
+    2300632: top open book paper on floor
+    3300000: Alarm003
+    3300002: Alarm004
+    3300004: Alarm006
+    3300006: beaker type - wide bottom003
+    3300008: beaker type - wide bottom004
+    3300010: beaker type - wide bottom1
+    3300012: beaker type - wide bottom2
+    3300014: big open book on long table
+    3300016: big open book paper on long table
+    3300018: BlackBoard001
+    3300020: BlackBoard002
+    3300022: book cover of closed book on floor
+    3300024: bottom book cover on closed book on long table
+    3300026: bottom book in stack on long table
+    3300028: 'bottom open book paper on floor '
+    3300030: bottom open bottom book next to open book
+    3300032: box
+    3300034: box001
+    3300036: box002
+    3300038: Box012
+    3300040: Box013
+    3300042: Box014
+    3300044: Box015
+    3300046: Box016
+    3300048: Box017
+    3300050: Box018
+    3300052: Box019
+    3300054: Box155
+    3300056: Box156
+    3300058: Box157
+    3300060: Box158
+    3300062: Box159
+    3300064: Box160
+    3300066: Box161
+    3300068: Box162
+    3300070: Box163
+    3300072: Box164
+    3300074: Box165
+    3300076: Box167
+    3300078: Box168
+    3300080: Box169
+    3300082: Box170
+    3300084: Box171
+    3300086: Box233
+    3300088: Box234
+    3300090: Box235
+    3300092: Box236
+    3300094: Box237
+    3300096: Box238
+    3300098: Box239
+    3300100: Box240
+    3300102: Box241
+    3300104: Box242
+    3300106: Box243
+    3300108: Box244
+    3300110: Box245
+    3300112: Box246
+    3300114: Box247
+    3300116: Box248
+    3300118: Box249
+    3300120: Box250
+    3300122: Box251
+    3300124: Box252
+    3300126: Box253
+    3300128: Box254
+    3300130: Box255
+    3300132: Box256
+    3300134: Box257
+    3300136: Box258
+    3300138: Box259
+    3300140: Box260
+    3300142: Box261
+    3300144: Box262
+    3300146: Box263
+    3300148: Box264
+    3300150: Box265
+    3300152: Box266
+    3300154: Box267
+    3300156: Box268
+    3300158: Box269
+    3300160: Box270
+    3300162: Box271
+    3300164: Box272
+    3300166: Box273
+    3300168: Box274
+    3300170: Box275
+    3300172: Box276
+    3300174: Box277
+    3300176: Box278
+    3300178: Box279
+    3300180: Box280
+    3300182: Box281
+    3300184: Box282
+    3300186: Box283
+    3300188: Box284
+    3300190: Box285
+    3300192: Box286
+    3300194: Box287
+    3300196: Box288
+    3300198: Box289
+    3300200: Box290
+    3300202: Box291
+    3300204: Box292
+    3300206: Box293
+    3300208: Box294
+    3300210: Box295
+    3300212: Box296
+    3300214: Box297
+    3300216: Box298
+    3300218: Box299
+    3300220: Box300
+    3300222: Box301
+    3300224: Box302
+    3300226: Box303
+    3300228: Box304
+    3300230: Box305
+    3300232: Box306
+    3300234: Box307
+    3300236: Box308
+    3300238: Box309
+    3300240: Box310
+    3300242: Box311
+    3300244: Box312
+    3300246: Box313
+    3300248: Box314
+    3300250: Box315
+    3300252: Box316
+    3300254: Box317
+    3300256: Box318
+    3300258: Box319
+    3300260: Box320
+    3300262: Box321
+    3300264: Box322
+    3300266: Box323
+    3300268: Box324
+    3300270: Box325
+    3300272: Box326
+    3300274: Box327
+    3300276: Box328
+    3300278: Box329
+    3300280: Box330
+    3300282: Box331
+    3300284: burette stand
+    3300286: burette stand001
+    3300288: Cabinet004
+    3300290: Cabinet005
+    3300292: Cabinet006
+    3300294: Cabinet007
+    3300296: Cabinet008
+    3300298: ceiling
+    3300300: ceiling lights
+    3300302: chair
+    3300304: chair cushion part
+    3300306: chair handles
+    3300308: chair seat
+    3300310: chair wheels
+    3300312: Chalk Holder003
+    3300314: Chalk Holder004
+    3300316: closed book on floor
+    3300318: Cylinder003
+    3300320: Cylinder005
+    3300322: Cylinder006
+    3300324: Cylinder007
+    3300326: Cylinder008
+    3300328: Cylinder009
+    3300330: Cylinder010
+    3300332: Cylinder011
+    3300334: Cylinder012
+    3300336: Cylinder013
+    3300338: Cylinder014
+    3300340: Cylinder015
+    3300342: Cylinder016
+    3300344: Cylinder017
+    3300346: Cylinder018
+    3300348: Cylinder019
+    3300350: Cylinder020
+    3300352: Cylinder021
+    3300354: Cylinder022
+    3300356: Cylinder023
+    3300358: Cylinder024
+    3300360: Cylinder025
+    3300362: Cylinder026
+    3300364: Cylinder027
+    3300366: Cylinder028
+    3300368: Cylinder029
+    3300370: door frame001
+    3300372: door frame002
+    3300374: door frame003
+    3300376: door frame005
+    3300378: door001
+    3300380: door002
+    3300382: door003
+    3300384: door005
+    3300386: Electrical Junction
+    3300388: Electrical Junction001
+    3300390: Electrical Line
+    3300392: Electrical Line001
+    3300394: fridge
+    3300396: gas tank 2
+    3300398: high table001
+    3300400: Line014
+    3300402: Line016
+    3300404: Line017
+    3300406: Line019
+    3300408: Line021
+    3300410: Line022
+    3300412: Line024
+    3300414: Line026
+    3300416: Line027
+    3300418: Line029
+    3300420: Line031
+    3300422: Line032
+    3300424: Line034
+    3300426: Line036
+    3300428: Line037
+    3300430: Line039
+    3300432: Line041
+    3300434: Line042
+    3300436: Line044
+    3300438: Line046
+    3300440: Line047
+    3300442: Line049
+    3300444: Line051
+    3300446: Line052
+    3300448: Line054
+    3300450: Line056
+    3300452: Line057
+    3300454: Line059
+    3300456: Line061
+    3300458: Line062
+    3300460: Line064
+    3300462: Line066
+    3300464: Line067
+    3300466: Line069
+    3300468: Line071
+    3300470: Line072
+    3300472: Line074
+    3300474: Line076
+    3300476: Line077
+    3300478: Line079
+    3300480: Line081
+    3300482: Line082
+    3300484: Line084
+    3300486: Line086
+    3300488: Line087
+    3300490: Line089
+    3300492: Line091
+    3300494: Line092
+    3300496: Line094
+    3300498: Line096
+    3300500: Line097
+    3300502: Line099
+    3300504: Line101
+    3300506: Line102
+    3300508: Line104
+    3300510: Line106
+    3300512: Line107
+    3300514: Line109
+    3300516: Line111
+    3300518: Line112
+    3300520: Line114
+    3300522: Line116
+    3300524: Line117
+    3300526: Line119
+    3300528: Line121
+    3300530: Line122
+    3300532: Line124
+    3300534: Line126
+    3300536: Line127
+    3300538: Line129
+    3300540: Line131
+    3300542: Line132
+    3300544: middle book coverin stack on long table
+    3300546: middle book in stack on long table
+    3300548: Noteboard003
+    3300550: Noteboard004
+    3300552: Noteboard2
+    3300554: Object002
+    3300556: Object003
+    3300558: Object004
+    3300560: open book paper under small table
+    3300562: open book under small table
+    3300564: Paper013
+    3300566: Paper014
+    3300568: Paper015
+    3300570: Paper016
+    3300572: Paper017
+    3300574: Paper018
+    3300576: Paper019
+    3300578: Paper020
+    3300580: Paper021
+    3300582: Paper022
+    3300584: Paper10
+    3300586: Paper11
+    3300588: Paper12
+    3300590: Paper6
+    3300592: Paper7
+    3300594: Paper8
+    3300596: Paper9
+    3300598: Plane008
+    3300600: Plane009
+    3300602: Plane010
+    3300604: Roof Lamp001
+    3300606: Roof Lamp002
+    3300608: Roof Lamp003
+    3300610: Roof Lamp004
+    3300612: Roof Lamp005
+    3300614: Roof Lamp006
+    3300616: small open book on long table
+    3300618: small open book paper on long table
+    3300620: standing shelves
+    3300622: standing shelves001
+    3300624: standing shelves002
+    3300626: top book cover in stack on long table
+    3300628: top book in stack on long table
+    3300630: top open book on floor
+    3300632: top open book paper on floor
+    4300000: Box155
+    4300002: Box156
+    4300004: Box157
+    4300006: Box158
+    4300008: Alarm006
+    4300010: Box160
+    4300012: Alarm004
+    4300014: Alarm003
+    4300016: Box163
+    4300018: Box164
+    4300020: Box165
+    4300022: Box167
+    4300024: Box168
+    4300026: Box169
+    4300028: Box170
+    4300030: Box171
+    4300032: box
+    4300034: gas tank 2
+    4300036: fridge
+    4300038: burette stand
+    4300040: beaker type - wide bottom1
+    4300042: beaker type - wide bottom2
+    4300044: standing shelves
+    4300046: open book paper under small table
+    4300048: open book under small table
+    4300050: closed book on floor
+    4300052: top open book on floor
+    4300054: bottom open bottom book next to open book
+    4300056: 'bottom open book paper on floor '
+    4300058: top open book paper on floor
+    4300060: book cover of closed book on floor
+    4300062: top book in stack on long table
+    4300064: middle book in stack on long table
+    4300066: bottom book cover on closed book on long table
+    4300068: middle book coverin stack on long table
+    4300070: top book cover in stack on long table
+    4300072: small open book paper on long table
+    4300074: small open book on long table
+    4300076: bottom book in stack on long table
+    4300078: Object002
+    4300080: big open book on long table
+    4300082: big open book paper on long table
+    4300084: Box013
+    4300086: Box014
+    4300088: Box016
+    4300090: Box017
+    4300092: Box018
+    4300094: Box019
+    4300096: Cylinder003
+    4300098: Electrical Line
+    4300100: Electrical Junction
+    4300102: BlackBoard001
+    4300104: Cabinet004
+    4300106: Chalk Holder003
+    4300108: Chalk Holder004
+    4300110: Roof Lamp001
+    4300112: Box233
+    4300114: Box234
+    4300116: Box235
+    4300118: Cylinder005
+    4300120: Line014
+    4300122: Line016
+    4300124: Line017
+    4300126: Box236
+    4300128: Box240
+    4300130: Box237
+    4300132: Box238
+    4300134: Box239
+    4300136: Cylinder006
+    4300138: Line019
+    4300140: Line021
+    4300142: Line022
+    4300144: Box244
+    4300146: Box241
+    4300148: Box242
+    4300150: Box243
+    4300152: Cylinder007
+    4300154: Line024
+    4300156: Line026
+    4300158: Line027
+    4300160: Box248
+    4300162: Box245
+    4300164: Box246
+    4300166: Box247
+    4300168: Cylinder008
+    4300170: Line029
+    4300172: Line031
+    4300174: Line032
+    4300176: Box252
+    4300178: Box249
+    4300180: Box250
+    4300182: Box251
+    4300184: Cylinder009
+    4300186: Line034
+    4300188: Line036
+    4300190: Line037
+    4300192: Box256
+    4300194: Box253
+    4300196: Box254
+    4300198: Box255
+    4300200: Cylinder010
+    4300202: Line039
+    4300204: Line041
+    4300206: Line042
+    4300208: Box260
+    4300210: Box257
+    4300212: Box258
+    4300214: Box259
+    4300216: Cylinder011
+    4300218: Line044
+    4300220: Line046
+    4300222: Line047
+    4300224: Box264
+    4300226: Box261
+    4300228: Box262
+    4300230: Box263
+    4300232: Cylinder012
+    4300234: Line049
+    4300236: Line051
+    4300238: Line052
+    4300240: Box268
+    4300242: Box265
+    4300244: Box266
+    4300246: Box267
+    4300248: Cylinder013
+    4300250: Line054
+    4300252: Line056
+    4300254: Line057
+    4300256: Box272
+    4300258: Box269
+    4300260: Box270
+    4300262: Box271
+    4300264: Cylinder014
+    4300266: Line059
+    4300268: Line061
+    4300270: Line062
+    4300272: Box276
+    4300274: Box273
+    4300276: Box274
+    4300278: Box275
+    4300280: Cylinder015
+    4300282: Line064
+    4300284: Line066
+    4300286: Line067
+    4300288: Box280
+    4300290: Box277
+    4300292: Box278
+    4300294: Box279
+    4300296: Cylinder016
+    4300298: Line069
+    4300300: Line071
+    4300302: Line072
+    4300304: Box284
+    4300306: Box281
+    4300308: Box282
+    4300310: Box283
+    4300312: Cylinder017
+    4300314: Line074
+    4300316: Line076
+    4300318: Line077
+    4300320: Box288
+    4300322: Box285
+    4300324: Box286
+    4300326: Box287
+    4300328: Cylinder018
+    4300330: Line079
+    4300332: Line081
+    4300334: Line082
+    4300336: Box292
+    4300338: Box289
+    4300340: Box290
+    4300342: Box291
+    4300344: Cylinder019
+    4300346: Line084
+    4300348: Line086
+    4300350: Line087
+    4300352: Box296
+    4300354: Box293
+    4300356: Box294
+    4300358: Box295
+    4300360: Cylinder020
+    4300362: Line089
+    4300364: Line091
+    4300366: Line092
+    4300368: Box300
+    4300370: Box297
+    4300372: Box298
+    4300374: Box299
+    4300376: Cylinder021
+    4300378: Line094
+    4300380: Line096
+    4300382: Line097
+    4300384: Box304
+    4300386: Box301
+    4300388: Box302
+    4300390: Box303
+    4300392: Cylinder022
+    4300394: Line099
+    4300396: Line101
+    4300398: Line102
+    4300400: Box308
+    4300402: Box305
+    4300404: Box306
+    4300406: Box307
+    4300408: Cylinder023
+    4300410: Line104
+    4300412: Line106
+    4300414: Line107
+    4300416: Box312
+    4300418: Box309
+    4300420: Box310
+    4300422: Box311
+    4300424: Cylinder024
+    4300426: Line109
+    4300428: Line111
+    4300430: Line112
+    4300432: Box316
+    4300434: Box313
+    4300436: Box314
+    4300438: Box315
+    4300440: Cylinder025
+    4300442: Line114
+    4300444: Line116
+    4300446: Line117
+    4300448: Box320
+    4300450: Box317
+    4300452: Box318
+    4300454: Box319
+    4300456: Cylinder026
+    4300458: Line119
+    4300460: Line121
+    4300462: Line122
+    4300464: Box324
+    4300466: Box321
+    4300468: Box322
+    4300470: Box323
+    4300472: Cylinder027
+    4300474: Line124
+    4300476: Line126
+    4300478: Line127
+    4300480: Box328
+    4300482: Box325
+    4300484: Box326
+    4300486: Box327
+    4300488: Cylinder028
+    4300490: Line129
+    4300492: Line131
+    4300494: Line132
+    4300496: Noteboard003
+    4300498: Paper015
+    4300500: Paper016
+    4300502: Paper017
+    4300504: Paper014
+    4300506: Paper013
+    4300508: BlackBoard002
+    4300510: chair seat
+    4300512: chair
+    4300514: chair wheels
+    4300516: chair handles
+    4300518: chair cushion part
+    4300520: Cabinet005
+    4300522: Object003
+    4300524: door frame001
+    4300526: door001
+    4300528: door frame002
+    4300530: door002
+    4300532: door frame003
+    4300534: door003
+    4300536: Noteboard004
+    4300538: Paper018
+    4300540: Paper019
+    4300542: Paper020
+    4300544: Paper021
+    4300546: Paper022
+    4300548: box001
+    4300550: Roof Lamp002
+    4300552: Roof Lamp003
+    4300554: Roof Lamp004
+    4300556: Roof Lamp005
+    4300558: Roof Lamp006
+    4300560: Box329
+    4300562: high table001
+    4300564: Electrical Junction001
+    4300566: Electrical Line001
+    4300568: Object004
+    4300570: beaker type - wide bottom003
+    4300572: beaker type - wide bottom004
+    4300574: box002
+    4300576: burette stand001
+    4300578: standing shelves001
+    4300580: standing shelves002
+    4300582: Cabinet006
+    4300584: Cabinet007
+    4300586: Cabinet008
+    4300588: Box330
+    4300590: Plane009
+    4300592: Box331
+    4300594: Plane010
+    4300596: Noteboard2
+    4300598: Paper10
+    4300600: Paper12
+    4300602: Paper11
+    4300604: Paper9
+    4300606: Paper8
+    4300608: Paper7
+    4300610: Paper6
+    4300612: Cylinder029
+    4300614: door005
+    4300616: door frame005
+    4300618: Plane008
+    4300620: Box015
+    4300622: Box012
+    4300624: ceiling lights
+    4300626: Box162
+    4300628: Box161
+    4300630: Box159
+    4300632: ceiling
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
