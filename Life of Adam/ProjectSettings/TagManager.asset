@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Pick
   - Axe
+  - object
   layers:
   - Default
   - TransparentFX

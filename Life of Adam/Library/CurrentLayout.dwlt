@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 129
+  controlID: 11
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     y: 0
     width: 1077
     height: 716
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 13}
@@ -397,9 +397,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e6290000
-    m_LastClickedID: 10726
-    m_ExpandedIDs: 9efbffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: d8c3ffffc6c4ffff7ac9ffff66cbffff7ee3ffffcce4ffff1ae7ffffbce9ffff9efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -418,7 +418,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - TestScene
+  - T Area
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -510,14 +510,14 @@ MonoBehaviour:
     height: 695
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2117.6749384691357
+  lastFramingTime: 629.9267322469136
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.4818974, y: 0.42858315, z: 1.3077326}
+    m_Target: {x: -8.051428, y: 1.0338173, z: -4.1723948}
     speed: 2
-    m_Value: {x: 7.4818974, y: 0.42858315, z: 1.3077326}
+    m_Value: {x: -8.051428, y: 1.0338173, z: -4.1723948}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -541,13 +541,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.24892351, y: 0.7138863, z: -0.30757454, w: 0.5777555}
+    m_Target: {x: 0.15369187, y: -0.39925554, z: 0.06808215, w: 0.9012983}
     speed: 2
-    m_Value: {x: 0.24892351, y: 0.7138863, z: -0.30757454, w: 0.5777555}
+    m_Value: {x: 0.15369189, y: -0.39925557, z: 0.068082154, w: 0.90129834}
   m_Size:
-    m_Target: 54.93376
+    m_Target: 24.660456
     speed: 2
-    m_Value: 54.93376
+    m_Value: 24.660456
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -598,19 +598,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Individual sections/Leon/Animation
+    - Assets/Individual sections/Leon/Scripts
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Individual sections/Leon/Animation
+  - Assets/Individual sections/Leon/Scripts
   m_LastFoldersGridSize: 56
   m_LastProjectPath: C:\Users\Leon_\Desktop\Final\Life-of-adam\Life of Adam
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 103}
-    m_SelectedIDs: 94270000
-    m_LastClickedID: 10132
-    m_ExpandedIDs: 000000008a27000098270000f0270000f6270000fc2700003628000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 111}
+    m_SelectedIDs: e4270000
+    m_LastClickedID: 10212
+    m_ExpandedIDs: 000000008a27000098270000f0270000f6270000fc270000362800003430000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
