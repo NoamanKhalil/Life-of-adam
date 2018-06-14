@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Scene  : MonoBehaviour
 {
+    
     // Use this for initialization
     bool mytimeScale = true;
     public GameObject aboutPanel;
