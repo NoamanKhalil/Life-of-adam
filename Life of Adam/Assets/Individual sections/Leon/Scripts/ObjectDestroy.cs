@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 public class ObjectDestroy : MonoBehaviour {
-
+    
     public AudioClip[] clips;
     public int i;
     // Use this for initialization
