@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Leon/Scenes/T Area.unity
+- path: Assets/Individual sections/Noaman/Scenes/DoorWay.unity
   isLoaded: 1
   isActive: 1
