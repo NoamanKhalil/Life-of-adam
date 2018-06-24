@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Individual sections/Noaman/Scenes/DoorWay.unity
-=======
 - path: Assets/Individual sections/Leon/Scenes/TestScene.unity
->>>>>>> a6aea49e4d6c4027fc1207f2e3797b77a1a50655
   isLoaded: 1
   isActive: 1
