@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Leon/Scenes/TestScene.unity
+- path: Assets/Individual sections/Leon/Scenes/SceneA.unity
   isLoaded: 1
   isActive: 1
