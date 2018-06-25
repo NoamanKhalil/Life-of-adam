@@ -162,7 +162,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4167205829874890, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.371
       objectReference: {fileID: 0}
     - target: {fileID: 4167205829874890, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
       propertyPath: m_LocalRotation.x
@@ -208,6 +208,18 @@ Prefab:
         type: 2}
       propertyPath: m_Size.z
       value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167205829874890, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5125729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167205829874890, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.5125729
+      objectReference: {fileID: 0}
+    - target: {fileID: 4167205829874890, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.5125729
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 15940f393abdbee46a79a0e0266f2376, type: 2}
@@ -334,7 +346,7 @@ Prefab:
     - target: {fileID: 2300598, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 0cfd7ee47f8dfe4409369a0d93f64ffa, type: 2}
+      objectReference: {fileID: 2100000, guid: 7643d71ee1a61ec44943d506e9933d28, type: 2}
     - target: {fileID: 2300618, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1571,6 +1583,22 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 0cfd7ee47f8dfe4409369a0d93f64ffa, type: 2}
+    - target: {fileID: 100278, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
+      propertyPath: m_Name
+      value: Ventilation Shaft
+      objectReference: {fileID: 0}
+    - target: {fileID: 400278, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.48767173
+      objectReference: {fileID: 0}
+    - target: {fileID: 400278, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.52016264
+      objectReference: {fileID: 0}
+    - target: {fileID: 400278, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.51223516
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a69f4ddc61930f54583b6e4c51b5b387, type: 3}
   m_IsPrefabParent: 0

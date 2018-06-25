@@ -109,7 +109,11 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 97
+=======
+  controlID: 41
+>>>>>>> origin/master
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +137,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 98
+=======
+  controlID: 42
+>>>>>>> origin/master
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +165,11 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 99
+=======
+  controlID: 43
+>>>>>>> origin/master
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -419,7 +431,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 24a5ffff2ea8ffff0caaffffc6b0ffff6eb2ffff62c3ffff34fbffff0000000062490000
+=======
+    m_ExpandedIDs: 1c89fcff524dfdff385afdffb2b0ffff96cffffff6dcffff38ebffff34fbffff0000000048490000fc4d00006a4e0000f44e0000c04f0000
+>>>>>>> origin/master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: Directional Light
@@ -438,7 +454,11 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
+<<<<<<< HEAD
   - VideoScene_Day3
+=======
+  - SceneA
+>>>>>>> origin/master
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -528,14 +548,24 @@ MonoBehaviour:
     height: 691
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
+<<<<<<< HEAD
   lastFramingTime: 3228.307329058647
+=======
+  lastFramingTime: 4129.045360664274
+>>>>>>> origin/master
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 915, y: 985, z: -10}
     speed: 2
     m_Value: {x: 915, y: 985, z: -10}
+=======
+    m_Target: {x: -19, y: -1.037, z: 0.6581}
+    speed: 2
+    m_Value: {x: -19, y: -1.037, z: 0.6581}
+>>>>>>> origin/master
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -563,13 +593,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.5006743, y: -0.008545807, z: 0.0049427324, w: -0.8655795}
+    m_Target: {x: 0.14314225, y: 0.84684896, z: -0.42581007, w: 0.28468037}
     speed: 2
-    m_Value: {x: -0.5006743, y: -0.008545807, z: 0.0049427324, w: -0.8655795}
+    m_Value: {x: 0.14314225, y: 0.84684896, z: -0.42581007, w: 0.28468037}
   m_Size:
+<<<<<<< HEAD
     m_Target: 22
     speed: 2
     m_Value: 22
+=======
+    m_Target: 12.837421
+    speed: 2
+    m_Value: 12.837421
+>>>>>>> origin/master
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -618,20 +654,35 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
+<<<<<<< HEAD
     - Assets/Individual sections/Leon/Videos
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
   - Assets/Individual sections/Leon/Videos
+=======
+    - Assets/Individual sections/Leon/Scenes
+  m_ViewMode: 1
+  m_StartGridSize: 56
+  m_LastFolders:
+  - Assets/Individual sections/Leon/Scenes
+>>>>>>> origin/master
   m_LastFoldersGridSize: 56
   m_LastProjectPath: /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 122.00043}
     m_SelectedIDs: fc300000
     m_LastClickedID: 12540
     m_ExpandedIDs: 000000000c3000005230000078330000f433000030340000923400000c3600005c3a0000ffffff7f
+=======
+    scrollPos: {x: 0, y: 95}
+    m_SelectedIDs: c4380000
+    m_LastClickedID: 14532
+    m_ExpandedIDs: 00000000742e0000ba2e0000e03100005c32000098320000fa32000074340000c438000000ca9a3bffffff7f
+>>>>>>> origin/master
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -767,7 +818,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 14998
+  m_LastSelectedObjectID: 17846
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
