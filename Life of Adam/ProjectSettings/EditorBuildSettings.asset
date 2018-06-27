@@ -17,3 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Individual sections/Leon/Scenes/VideoScene.unity
     guid: bff8d6e8e1697c54884a6554ac5ab516
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/T Area.unity
+    guid: 32a5f92e31bdbf04793e5db68fbecbf6
+  m_configObjects: {}

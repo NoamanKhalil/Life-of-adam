@@ -41,7 +41,8 @@ public class GameManagerCs : MonoBehaviour
             {
 
                 Debug.Log("Scene A loaded ");
-                SceneManager.LoadScene("SceneA");
+                //SceneManager.LoadScene("SceneA");
+				SceneManager.LoadScene("T Area");
             }
         }
         if (SceneB)
@@ -52,7 +53,8 @@ public class GameManagerCs : MonoBehaviour
             {
                 // put Game scene here
                 Debug.Log("Scene B loaded ");
-                SceneManager.LoadScene("TestScene");
+                //SceneManager.LoadScene("TestScene");
+				SceneManager.LoadScene("T Area");
             }
         }
 

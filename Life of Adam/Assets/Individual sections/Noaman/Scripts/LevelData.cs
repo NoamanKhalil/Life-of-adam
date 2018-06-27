@@ -28,6 +28,8 @@ public class LevelData : MonoBehaviour {
 	// good choice pass true bad false 
 	public void isDayOne(bool isTrue)
 	{
+
+		PlayerPrefs.SetString("Day", "One");
 		if (isTrue == true)
 		{
 			PlayerPrefs.SetString("One", "True");
@@ -39,7 +41,7 @@ public class LevelData : MonoBehaviour {
 	}
 	public void isDayTwo(bool isTrue)
 	{
-		
+		PlayerPrefs.SetString("Day", "Two");
 		if (isTrue == true)
 		{
 			PlayerPrefs.SetString("Two", "True");
@@ -51,6 +53,7 @@ public class LevelData : MonoBehaviour {
 	}
 	public void isDayThree(bool isTrue)
 	{
+		PlayerPrefs.SetString("Day", "Three");
 		
 		if (isTrue == true)
 		{
