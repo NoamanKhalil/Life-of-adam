@@ -5,8 +5,9 @@ using UnityEngine;
 
 public class PickUpCs : MonoBehaviour
 {
+
     GameObject mainCam;
-    Transform pickedObj;
+	Transform pickedObj;
     bool isholding;
     [SerializeField]
     private GameObject UIText;

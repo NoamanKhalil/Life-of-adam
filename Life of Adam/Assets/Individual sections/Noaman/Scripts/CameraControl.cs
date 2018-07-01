@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour 
 {
+
+	public GameObject redPlacePos;
+	public GameObject bluePlacePos;
+
     public float Sensitivity = 2f;
     public float Smoothness = 2f;
     public GameObject pickupPoint;
 
     private GameObject pickedObj;
+
+	[SerializeField]
+	private float Dist;
+
     Vector2 MouseControl;
 	Vector2 Smoothing;
 	GameObject Character;
@@ -18,11 +26,14 @@ public class CameraControl : MonoBehaviour
 
     bool isholding;
     bool canDrop;
+
+	private Day1_Manager_Bad day;
     // Use this for initialization
     void Start () 
 	{
 		Character = this.transform.parent.gameObject;
         isholding = false;
+		day = GameObject.Find("LevelManager").GetComponent<Day1_Manager_Bad>();
 	}
 	
 	// Update is called once per frame
@@ -55,7 +66,7 @@ public class CameraControl : MonoBehaviour
                 //Debug.DrawLine(ray.origin, hit.point, Color.yellow);
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) *10, Color.black);
                 Debug.Log("Did Hit");
-                if ( hit.collider.gameObject.tag == "Pick")
+                if ( hit.collider.gameObject.tag == "Red"||hit.collider.gameObject.tag == "Blue")
                 {
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
                     pickedObj = hit.collider.gameObject;
@@ -65,7 +76,7 @@ public class CameraControl : MonoBehaviour
                     hit.collider.gameObject.GetComponent<Collider>().enabled = false;
                     isholding = true;
                     canDrop = false;
-                    hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None; 
+                    hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                     // show pick GUI
                 }
             }
@@ -74,16 +85,36 @@ public class CameraControl : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.E) && isholding == true && canDrop == true)
         {
             
-            pickupPoint.GetComponentInChildren<Collider>().enabled = true;
-            pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
-            pickupPoint.transform.DetachChildren();
-            //pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            pickedObj.SetActive(false);
-            pickedObj = null;
+  
+			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
+			if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) < Dist && pickedObj.tag == "Blue")
+			{
+				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
+                pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+            	pickupPoint.transform.DetachChildren();
+            	//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+            	pickedObj.SetActive(false);
+           		pickedObj = null;
 
-            
+				bluePlacePos.GetComponent<Test>().setSlotActive();
+				isholding = false;
+				day.setBlueTrue();
+			}
+			if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) < Dist&& pickedObj.tag == "Red")
+			{
+				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
+                pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+            	pickupPoint.transform.DetachChildren();
+            	//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+				pickedObj.SetActive(false);
+				pickedObj = null;
+		        redPlacePos.GetComponent<Test>().setSlotActive();
+				isholding = false;
+				day.setRedTrue();
+			}
+	
 
-            isholding = false;
+            //isholding = false;
         }
 
 

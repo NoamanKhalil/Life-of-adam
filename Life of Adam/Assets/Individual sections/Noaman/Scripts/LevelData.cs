@@ -14,17 +14,6 @@ public class LevelData : MonoBehaviour {
     public bool isDayTwoBool;
     public bool isDayThreeBool;
 
-
-
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 	// good choice pass true bad false 
 	public void isDayOne(bool isTrue)
 	{

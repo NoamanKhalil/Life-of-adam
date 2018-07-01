@@ -110,3 +110,9 @@
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.Cecil.Mdb.dll
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.IvyParser.dll
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.IvyParser.dll.mdb
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.ProBuilder.AddOns.Editor.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/KdTreeLib.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/ProBuilderCore.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/ProBuilderMeshOps.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/pb_Stl.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Poly2Tri.dll

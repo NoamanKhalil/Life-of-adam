@@ -196,7 +196,7 @@ MonoBehaviour:
         m_MethodName: set_clip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 5bd40f460a1e6ec4c88c1fa2f8cfdbd5,
+          m_ObjectArgument: {fileID: 32900000, guid: 13322ced00096c34ca3eb1c0a3828aa2,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
@@ -214,6 +214,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1523942930}
+        m_MethodName: isDayTwo
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -402,7 +413,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oh... I dont know sir..
+  m_Text: place holder bad
 --- !u!222 &497475238
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -480,7 +491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The mitochondria is the power house of the cell.
+  m_Text: Place holder good
 --- !u!222 &641444205
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -517,7 +528,7 @@ VideoPlayer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941452521}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: b23ab95c238630e41aaa238ef68a4311, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 09e08cc6da295c44e9aae8b698f10150, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -530,14 +541,12 @@ VideoPlayer:
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 1
-  m_TargetAudioSources:
-  - {fileID: 941452524}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -1060,7 +1069,7 @@ MonoBehaviour:
         m_MethodName: set_clip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 32900000, guid: 09e9a02e84f8e2e48b0040b9c53017a7,
+          m_ObjectArgument: {fileID: 32900000, guid: bf9332f427bab45479d4110095575efa,
             type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
@@ -1071,6 +1080,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1523942929}
         m_MethodName: SceneBActive
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1523942930}
+        m_MethodName: isDayThree
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1128,6 +1148,7 @@ GameObject:
   - component: {fileID: 1523942926}
   - component: {fileID: 1523942925}
   - component: {fileID: 1523942929}
+  - component: {fileID: 1523942930}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1214,6 +1235,20 @@ MonoBehaviour:
   mainTimer: 13
   goodTimer: 4
   badTimer: 4
+--- !u!114 &1523942930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1523942924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c96b212566732784b93a3ccabcafc008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDayOneBool: 0
+  isDayTwoBool: 0
+  isDayThreeBool: 0
 --- !u!1 &1585527218
 GameObject:
   m_ObjectHideFlags: 0
