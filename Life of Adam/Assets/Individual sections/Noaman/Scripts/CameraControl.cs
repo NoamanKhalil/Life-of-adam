@@ -118,6 +118,18 @@ public class CameraControl : MonoBehaviour
         }
 
 
+		/*if (pickupPoint != null)
+		{
+			canDrop = true;
+			isholding = true;
+		}
+		else
+		{ 
+			canDrop = true;
+			isholding = true;
+		}*/
+
+
         if (pickupPoint !=null&&isholding ==true)
         {
             pickedObj.transform.position = pickupPoint.transform.position;

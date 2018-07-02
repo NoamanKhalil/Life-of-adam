@@ -42,10 +42,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 1039
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 51
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -206,10 +206,10 @@ MonoBehaviour:
     y: 0
     width: 1530
     height: 1039
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 52
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -230,10 +230,10 @@ MonoBehaviour:
     y: 0
     width: 1530
     height: 627
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 28
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,8 +287,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
-    m_ClassNames:
-    - scene
+    m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
@@ -297,20 +296,21 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders: []
+    m_Folders:
+    - Assets/Individual sections/Noaman/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Individual sections/Leon/Scenes
+  - Assets/Individual sections/Noaman/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 05ca9a3b
-    m_LastClickedID: 1000000005
-    m_ExpandedIDs: 000000001030000058300000023100008a3300000634000042340000a43400001e360000723a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 142}
+    m_SelectedIDs: 16350000
+    m_LastClickedID: 13590
+    m_ExpandedIDs: 000000008a300000f2300000e43100003c350000de350000203600009636000098380000283d000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000010300000583000008a3300000634000042340000a43400001e360000723a0000
+    m_ExpandedIDs: 000000008a300000f2300000e43100003c350000de350000203600009636000098380000283d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,23 +454,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1eb10000
-    m_LastClickedID: 45342
-    m_ExpandedIDs: f2c0f8ff6cd0f8ffccdef8ffcedef8ff4cf3f8ffe2fef8ff7011f9ffb21df9ff262bf9ffc82ef9ff1035f9ffba45f9ff3449f9ffc656f9ff189cf9fff0a5f9ff9ab3f9ff4eb5f9ffeeeff9ffb6fff9ff2020faff4625faffbe26faff427bfaffa23dfbffb0efffff34fbfffff4ffffff00000000523d0000063e0000d27200000c730000167300001a7300007a740000b4740000be740000b6770000ea780000f4780000bc870000c291000000aa000070ae00003cb10000
+    m_SelectedIDs: b2090000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 2cfbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Canvas (1)
-      m_OriginalName: Canvas (1)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 44656
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -543,11 +543,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.07844139, y: -0.48620173, z: 0.043876737, w: 0.86921304}
     speed: 2
-    m_Value: {x: 0.07844132, y: -0.48620132, z: 0.0438767, w: 0.8692123}
+    m_Value: {x: -0.07844139, y: 0.48620176, z: -0.043876737, w: -0.86921304}
   m_Size:
-    m_Target: 45.544662
+    m_Target: 11.3462515
     speed: 2
-    m_Value: 45.544662
+    m_Value: 11.3462515
   m_Ortho:
     m_Target: 0
     speed: 2
