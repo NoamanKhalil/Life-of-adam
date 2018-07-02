@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 100
+  controlID: 93
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 114
+  controlID: 94
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 115
+  controlID: 95
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -201,8 +201,8 @@ MonoBehaviour:
     y: 0
     width: 1188
     height: 712
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 14}
@@ -256,8 +256,8 @@ MonoBehaviour:
     y: 0
     width: 422
     height: 987
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 363f0000
     m_LastClickedID: 0
-    m_ExpandedIDs: 34fbffff00000000
+    m_ExpandedIDs: 8c85ffffa48effff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -438,7 +438,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - SceneA
+  - TestScene
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -11.852978, y: 4.2608986, z: -1.8557564}
+    m_Target: {x: 13.546242, y: 16.126637, z: -11.746865}
     speed: 2
-    m_Value: {x: -11.852978, y: 4.2608986, z: -1.8557564}
+    m_Value: {x: 13.546242, y: 16.126637, z: -11.746865}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -563,13 +563,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.3254637, y: 0.6287136, z: -0.32683468, w: 0.6260764}
+    m_Target: {x: 0.35598624, y: 0.44347563, z: -0.19772413, w: 0.79844123}
     speed: 2
-    m_Value: {x: 0.32546374, y: 0.62871367, z: -0.3268347, w: 0.62607646}
+    m_Value: {x: 0.35598624, y: 0.44347563, z: -0.19772413, w: 0.79844123}
   m_Size:
-    m_Target: 31.670877
+    m_Target: 39.467674
     speed: 2
-    m_Value: 31.670877
+    m_Value: 39.467674
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -618,20 +618,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Individual sections/Leon
+    - Assets/Individual sections/Leon/Scenes
   m_ViewMode: 1
   m_StartGridSize: 56
   m_LastFolders:
-  - Assets/Individual sections/Leon
+  - Assets/Individual sections/Leon/Scenes
   m_LastFoldersGridSize: 56
   m_LastProjectPath: D:\Unity Projects\Final\Life-of-adam\Life of Adam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: e2310000
-    m_LastClickedID: 12770
-    m_ExpandedIDs: 00000000742e0000bc2e0000e23100005e3200009a320000fc32000076340000c638000000ca9a3bffffff7f
+    m_SelectedIDs: f23e0000
+    m_LastClickedID: 16114
+    m_ExpandedIDs: 00000000be35000062360000da3800003639000066390000b0390000d23a0000f23e000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -659,7 +659,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 7a4b0000
     m_LastClickedID: 19322
-    m_ExpandedIDs: 00000000742e0000bc2e0000e23100005e3200009a320000fc32000076340000c6380000
+    m_ExpandedIDs: 00000000be35000062360000da3800003639000066390000b0390000d23a0000f23e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
