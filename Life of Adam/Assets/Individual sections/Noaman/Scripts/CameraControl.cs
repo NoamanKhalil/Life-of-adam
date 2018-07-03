@@ -54,6 +54,8 @@ public class CameraControl : MonoBehaviour
         //Character.transform.rotation = Quaternion.AngleAxis (MouseControl.x, Character.transform.up);
 
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
+
+		// when a object can be picked up 
         if (Input.GetKeyDown(KeyCode.E) && isholding == false)
         {
             RaycastHit hit;
@@ -82,35 +84,48 @@ public class CameraControl : MonoBehaviour
             }
            
         }
-        else if (Input.GetKeyDown(KeyCode.E) && isholding == true && canDrop == true)
+		// when a object can be dropped 
+        else if (Input.GetKeyDown(KeyCode.E) && isholding == true )
         {
-            
-  
-			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) < Dist && pickedObj.tag == "Blue")
-			{
-				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
-                pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
-            	pickupPoint.transform.DetachChildren();
-            	//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-            	pickedObj.SetActive(false);
-           		pickedObj = null;
 
-				bluePlacePos.GetComponent<Test>().setSlotActive();
-				isholding = false;
-				day.setBlueTrue();
-			}
-			if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) < Dist&& pickedObj.tag == "Red")
+			if (canDrop== true)
 			{
+				//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
+				if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) < Dist && pickedObj.tag == "Blue")
+				{
+					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
+					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+					pickupPoint.transform.DetachChildren();
+					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+					pickedObj.SetActive(false);
+					pickedObj = null;
+
+					bluePlacePos.GetComponent<Test>().setSlotActive();
+					isholding = false;
+					day.setBlueTrue();
+				}
+				else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) < Dist && pickedObj.tag == "Red")
+				{
+					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
+					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+					pickupPoint.transform.DetachChildren();
+					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+					pickedObj.SetActive(false);
+					pickedObj = null;
+					redPlacePos.GetComponent<Test>().setSlotActive();
+					isholding = false;
+					day.setRedTrue();
+				}
+			}
+			else if (pickedObj!=null)
+			{
+
+				Debug.Log("Object dropped");
 				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
-                pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
-            	pickupPoint.transform.DetachChildren();
-            	//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-				pickedObj.SetActive(false);
+				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+				pickupPoint.transform.DetachChildren();
 				pickedObj = null;
-		        redPlacePos.GetComponent<Test>().setSlotActive();
 				isholding = false;
-				day.setRedTrue();
 			}
 	
 
