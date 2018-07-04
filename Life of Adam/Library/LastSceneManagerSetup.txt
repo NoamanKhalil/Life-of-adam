@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Individual sections/Leon/Scenes/T Area.unity
-=======
-- path: Assets/Individual sections/Leon/Scenes/TestScene.unity
->>>>>>> origin/master
+- path: Assets/Individual sections/Leon/Scenes/Horror_Test_Scene.unity
   isLoaded: 1
   isActive: 1
