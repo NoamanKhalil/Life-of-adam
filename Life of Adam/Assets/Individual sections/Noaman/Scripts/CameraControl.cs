@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour 
 {
-
+	public FpcontrollerCs fp;
 	public GameObject redPlacePos;
 	public GameObject bluePlacePos;
 
@@ -28,6 +28,7 @@ public class CameraControl : MonoBehaviour
     bool canDrop;
 
 	private Day1_Manager_Bad day;
+
     // Use this for initialization
     void Start () 
 	{
@@ -79,6 +80,7 @@ public class CameraControl : MonoBehaviour
                     isholding = true;
                     canDrop = false;
                     hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+					fp.setSpeed(3.5f);
                     // show pick GUI
                 }
             }
@@ -93,6 +95,7 @@ public class CameraControl : MonoBehaviour
 				//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
 				if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) < Dist && pickedObj.tag == "Blue")
 				{
+					fp.setSpeed(8.0f);
 					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
 					pickupPoint.transform.DetachChildren();
@@ -106,6 +109,7 @@ public class CameraControl : MonoBehaviour
 				}
 				else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) < Dist && pickedObj.tag == "Red")
 				{
+					fp.setSpeed(8.0f);
 					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
 					pickupPoint.transform.DetachChildren();
@@ -119,7 +123,7 @@ public class CameraControl : MonoBehaviour
 			}
 			else if (pickedObj!=null)
 			{
-
+				fp.setSpeed(8.0f);
 				Debug.Log("Object dropped");
 				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
