@@ -36,8 +36,6 @@ public class CameraControl : MonoBehaviour
         isholding = false;
 		day = GameObject.Find("LevelManager").GetComponent<Day1_Manager_Bad>();
 	}
-	
-	// Update is called once per frame
 	void Update () 
 	{
 		Vector2 nd = new Vector2 (Input.GetAxisRaw ("Mouse X"), Input.GetAxisRaw ("Mouse Y"));
@@ -47,12 +45,9 @@ public class CameraControl : MonoBehaviour
 		Smoothing.y = Mathf.Lerp (Smoothing.y, nd.y, 1f / Smoothness);
 		MouseControl += Smoothing;
 		MouseControl.y = Mathf.Clamp (MouseControl.y, minClamp, maxClamp);
-	//	MouseControl.x = Mathf.Clamp (MouseControl.y, -20f, 60f);
 
 		transform.localRotation = Quaternion.AngleAxis (-MouseControl.y, Vector3.right);
-		//transform.rotation = Quaternion.AngleAxis (-MouseControl.y, Vector3.right);
 		Character.transform.localRotation = Quaternion.AngleAxis (MouseControl.x, Character.transform.up);
-        //Character.transform.rotation = Quaternion.AngleAxis (MouseControl.x, Character.transform.up);
 
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
@@ -60,13 +55,8 @@ public class CameraControl : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && isholding == false)
         {
             RaycastHit hit;
-           // Ray ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-            /*GetComponent<Rigidbody>().useGravity = false;
-            this.transform.position = pickedObj.transform.position;
-            this.transform.parent = pickedObj;*/
             if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
             {
-                //Debug.DrawLine(ray.origin, hit.point, Color.yellow);
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) *10, Color.black);
                 Debug.Log("Did Hit");
                 if ( hit.collider.gameObject.tag == "Red"||hit.collider.gameObject.tag == "Blue")
@@ -81,7 +71,6 @@ public class CameraControl : MonoBehaviour
                     canDrop = false;
                     hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 					fp.setSpeed(3.5f);
-                    // show pick GUI
                 }
             }
            
