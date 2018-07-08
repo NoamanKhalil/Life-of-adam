@@ -52,7 +52,7 @@ public class CameraControl : MonoBehaviour
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
 		// when a object can be picked up 
-        if (Input.GetKeyDown(KeyCode.E) && isholding == false)
+		if (Input.GetKeyDown(KeyCode.E) && isholding == false && fp != null)
         {
             RaycastHit hit;
             if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
@@ -76,7 +76,7 @@ public class CameraControl : MonoBehaviour
            
         }
 		// when a object can be dropped 
-        else if (Input.GetKeyDown(KeyCode.E) && isholding == true )
+		else if (Input.GetKeyDown(KeyCode.E) && isholding == true &&day!=null)
         {
 
 			if (canDrop== true)
