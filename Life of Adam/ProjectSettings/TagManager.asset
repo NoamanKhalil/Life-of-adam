@@ -9,6 +9,7 @@ TagManager:
   - object
   - Red
   - Blue
+  - Pull
   layers:
   - Default
   - TransparentFX

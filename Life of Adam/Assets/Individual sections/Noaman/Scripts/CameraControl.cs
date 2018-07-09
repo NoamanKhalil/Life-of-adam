@@ -28,6 +28,7 @@ public class CameraControl : MonoBehaviour
     bool canDrop;
 
 	private Day1_Manager_Bad day;
+	private Transform thingToPull;
 
     // Use this for initialization
     void Start () 
