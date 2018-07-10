@@ -116,3 +116,6 @@
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/ProBuilderMeshOps.dll
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/pb_Stl.dll
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Poly2Tri.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.ProGrids.Editor.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.ProGrids.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/MySteeringBehaviour.dll
