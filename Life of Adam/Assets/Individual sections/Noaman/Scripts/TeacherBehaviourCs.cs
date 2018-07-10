@@ -36,13 +36,15 @@ public class TeacherBehaviourCs : MonoBehaviour
 	void Update ()
     {
 
-		if (Vector3.Distance(this.transform.position, playerObj.transform.position) < minDist)
+		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
 		{
 			currentState= AiState.Chase;
+			Debug.Log("is chasing");
 		}
 		else
 		{
 			currentState = AiState.Patrol;
+			Debug.Log("is patroling");
 		}
 
 
