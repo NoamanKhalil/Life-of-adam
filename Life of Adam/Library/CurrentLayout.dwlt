@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 41
+  controlID: 128
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 55
+  controlID: 104
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 56
+  controlID: 105
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -308,9 +308,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: 4c3c0000
-    m_LastClickedID: 15436
-    m_ExpandedIDs: 00000000342f0000a02f00009a30000024340000c83400001035000088350000a83700004c3c000086440000a844000000ca9a3bffffff7f
+    m_SelectedIDs: 0a4c0000
+    m_LastClickedID: 19466
+    m_ExpandedIDs: 00000000f63e0000623f0000164000005e400000e243000084440000cc4400004445000068470000cc4b00000a4c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000342f0000a02f00009a30000024340000c83400001035000088350000a83700004c3c0000
+    m_ExpandedIDs: 00000000f63e0000623f0000164000005e400000e243000084440000cc4400004445000068470000cc4b00000a4c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,23 +454,23 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c099fdff
-    m_LastClickedID: -157248
-    m_ExpandedIDs: c099fdff109bfdffb69cfdff0c9efdff44a0fdffd8a3fdff2ea5fdfff4a7fdff68a9fdff94aafdff2eacfdffbabdfdfff8bffdff84d3fdff46d4ffff48d4ffff22fbffff00000000fc3e00009e420000
+    m_SelectedIDs: 92410000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 923effff0845ffff4c4cffffce50ffff6669fffff26affff9079ffff8495ffffd098ffffbe9fffff26a2ffff38b9ffff6cbafffff6bbffff4cbdffffd4cfffff5ad1ffff36d4ffffbcd5ffffe6d6ffff60d8ffff8ed9ffff76e6ffff06eaffffd4ebffff46faffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameObject
-      m_OriginalName: GameObject
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -11198
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -506,14 +506,14 @@ MonoBehaviour:
     height: 576
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1282.0111964621376
+  lastFramingTime: 107.46226206382154
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.468991, y: -8.442406, z: -0.9668361}
+    m_Target: {x: -7.000189, y: 7.6402283, z: -13.018629}
     speed: 2
-    m_Value: {x: -5.468991, y: -8.442406, z: -0.9668361}
+    m_Value: {x: -7.000189, y: 7.6402283, z: -13.018629}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -541,19 +541,19 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.69383866, y: 0.0023841483, z: -0.0022968822, w: 0.720123}
+    m_Target: {x: -0.5249086, y: -0.140561, z: 0.088381626, w: -0.8348068}
     speed: 2
-    m_Value: {x: 0.69383866, y: 0.0023841483, z: -0.0022968822, w: 0.720123}
+    m_Value: {x: -0.5249086, y: -0.140561, z: 0.088381626, w: -0.8348068}
   m_Size:
-    m_Target: 50.84671
+    m_Target: 15.783945
     speed: 2
-    m_Value: 50.84671
+    m_Value: 15.783945
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: -0.4229568, y: -0.019308401, z: 0.009014831, w: -0.9058993}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
