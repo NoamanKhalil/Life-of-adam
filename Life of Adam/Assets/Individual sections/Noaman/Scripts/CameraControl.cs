@@ -60,7 +60,7 @@ public class CameraControl : MonoBehaviour
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) *10, Color.black);
                 Debug.Log("Did Hit");
-                if ( hit.collider.gameObject.tag == "Red"||hit.collider.gameObject.tag == "Blue")
+                if ( hit.collider.gameObject.tag == "Red"||hit.collider.gameObject.tag == "Blue" )
                 {
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
                     pickedObj = hit.collider.gameObject;
@@ -72,6 +72,8 @@ public class CameraControl : MonoBehaviour
                     canDrop = false;
                     hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
 					fp.setSpeed(3.5f);
+
+					Debug.Log("Picked object");
                 }
             }
            
@@ -79,12 +81,10 @@ public class CameraControl : MonoBehaviour
 		// when a object can be dropped 
 		else if (Input.GetKeyDown(KeyCode.E) && isholding == true &&day!=null)
         {
-
-			if (canDrop== true)
-			{
 				//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-				if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) < Dist && pickedObj.tag == "Blue")
+			if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
 				{
+					Debug.Log("Is close to blue pos ");
 					fp.setSpeed(8.0f);
 					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
@@ -97,8 +97,10 @@ public class CameraControl : MonoBehaviour
 					isholding = false;
 					day.setBlueTrue();
 				}
-				else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) < Dist && pickedObj.tag == "Red")
+			    else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red"&& canDrop == true)
 				{
+
+					Debug.Log("Is close to red pos ");
 					fp.setSpeed(8.0f);
 					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
@@ -110,34 +112,21 @@ public class CameraControl : MonoBehaviour
 					isholding = false;
 					day.setRedTrue();
 				}
-			}
-			else if (pickedObj!=null)
-			{
-				fp.setSpeed(8.0f);
-				Debug.Log("Object dropped");
-				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
-				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
-				pickupPoint.transform.DetachChildren();
-				pickedObj = null;
-				isholding = false;
-			}
-	
+				else if (pickedObj!=null) 
+				{
+					//Debug.Log("Is dropping object ");
 
-            //isholding = false;
+					fp.setSpeed(8.0f);
+					Debug.Log("Object dropped");
+					pickupPoint.GetComponentInChildren<Collider>().enabled = true;
+					pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+					pickupPoint.transform.DetachChildren();
+					pickedObj = null;
+					isholding = false;
+				}
+
+
         }
-
-
-		/*if (pickupPoint != null)
-		{
-			canDrop = true;
-			isholding = true;
-		}
-		else
-		{ 
-			canDrop = true;
-			isholding = true;
-		}*/
-
 
         if (pickupPoint !=null&&isholding ==true)
         {
