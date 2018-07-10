@@ -2,18 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-enum State
+enum AiState
 {
-    Patrol =0 , Chase =1 
+    Idle =0 , Chase =1 ,Patrol=2
 };
 
+[RequireComponent(typeof(MySteeringBehaviour))]
 public class TeacherBehaviourCs : MonoBehaviour
 {
 
-    private State mystate;
+    public MySteeringBehaviour steer;
+
+    private AiState currentState;
     public Transform[] pathToFollow;
     public int posPoint;
     public float speed;
+	public GameObject playerObj;
+	public float Speed;
+	public float turnSpeed;
+	public int minDist;
+
+	void Awake()
+	{
+		 steer= this.gameObject.AddComponent<MySteeringBehaviour>();
+	}
     // Use this for initialization
     void Start ()
     {
@@ -23,9 +35,42 @@ public class TeacherBehaviourCs : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (posPoint < pathToFollow.Length)
+
+		if (Vector3.Distance(this.transform.position, playerObj.transform.position) < minDist)
+		{
+			currentState= AiState.Chase;
+		}
+		else
+		{
+			currentState = AiState.Patrol;
+		}
+
+
+		switch (currentState)
         {
-            transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime * speed);
+            
+            case AiState.Idle:
+				idle();
+                break;
+			case AiState.Chase:
+                // Seek();
+                steer.Seek(playerObj, turnSpeed, minDist, Speed);
+                break;
+			case AiState.Patrol:
+				//Flee();
+				patrol();
+                break;
+            
+        }
+
+    }
+
+
+	void patrol()
+	{
+		if (posPoint < pathToFollow.Length)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
         }
 
         if (transform.position == pathToFollow[posPoint].position)
@@ -37,5 +82,10 @@ public class TeacherBehaviourCs : MonoBehaviour
             }
             posPoint++;
         }
-    }
+	}
+
+	void idle()
+	{
+		Debug.Log("Is Idle");
+	}
 }

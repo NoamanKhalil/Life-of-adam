@@ -9,7 +9,11 @@ TagManager:
   - object
   - Red
   - Blue
+<<<<<<< HEAD
+  - Pull
+=======
   - audio
+>>>>>>> origin/master
   layers:
   - Default
   - TransparentFX
