@@ -9,6 +9,7 @@ TagManager:
   - object
   - Red
   - Blue
+  - audio
   layers:
   - Default
   - TransparentFX
