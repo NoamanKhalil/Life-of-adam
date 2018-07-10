@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Base path: /Applications/Unity/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: preprocess
@@ -180,6 +181,9 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+=======
+Base path: /Applications/Unity/Hub/Editor/2018.1.1f1/Unity.app/Contents
+>>>>>>> 2a6e20407959424730119ba6949fa98ffe6bc65a
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -196,3 +200,10 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+<<<<<<< HEAD
+=======
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+>>>>>>> 2a6e20407959424730119ba6949fa98ffe6bc65a
