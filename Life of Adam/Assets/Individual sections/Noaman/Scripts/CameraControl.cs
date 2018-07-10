@@ -133,6 +133,46 @@ public class CameraControl : MonoBehaviour
             pickedObj.transform.position = pickupPoint.transform.position;
         }
     }
+	void Push()
+	{
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+		if (Input.GetKeyDown(KeyCode.G) && thingToPull == null)
+		{
+			RaycastHit hit;
+			if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
+			{
+				Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
+				Debug.Log("Did Hit");
+				if (hit.collider.gameObject.tag == "Move")
+				{
+					thingToPull = hit.transform;
+				}
+			}
+		}
+
+		/*if(thingToPull!=null) 
+		{
+			   // line from crate to player
+			   Vector3 D = transform.position - thingToPull; 
+			   float dist = D.magnitude;
+			   Vector3 pullDir = D.normalized; // short blue arrow from crate to player
+			   if(dist>50) thingToPull=null; // lose tracking if too far
+			   else if(dist>3) { // don't pull if too close
+			     // this is the same math to apply fake gravity. 10 = normal gravity
+			     float pullF = 10;
+			   // for fun, pull a little bit more if further away:
+			// (so, random, optional junk):
+			float pullForDist = (dist - 3) / 2.0f;
+			     if(pullForDist>20) pullForDist=20;
+			     pullF += pullForDist;
+			     // Now apply to pull force, using standard meters/sec converted
+			     //    into meters/frame:
+			     thingToPull.rigidbody.velocity += pullDir*(pullF* Time.deltaTime);
+			   }
+		}*/
+	}
+
+
     public void setCanDrop (bool drop)
     {
 

@@ -12,12 +12,17 @@ public class FpcontrollerCs : MonoBehaviour
     public float straffeVel;
 	public float runVel = 36f;
 	public float jumpVel = 0.2f;
+	public float colliderSizeX, colliderSizeY, colliderSizeZ;
+	public float crouchSmooth;
 
 	private float forwardVel;
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
+	private Vector3 initialCrouch;
+	private Vector3 crouchVect;
 	[SerializeField]
 	private float walkVel = 8f;
+	private BoxCollider myCollider;
 
 	Rigidbody rb;
 	float forwardInput, straffeInput;
@@ -34,6 +39,9 @@ public class FpcontrollerCs : MonoBehaviour
 		isPlaying = false;
         canCrouch = true;
 		forwardVel = walkVel;
+		myCollider = GetComponent<BoxCollider>();
+		initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
+		crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y+crouchVal, camera.transform.position.z);
 	}
 
 	void Update()
@@ -57,18 +65,39 @@ public class FpcontrollerCs : MonoBehaviour
 			rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
 			canJump = false;
 		}
-        if (canCrouch&& Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            camera.transform.position = new Vector3 (camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-            canCrouch = false;
-        }
-        else if (canCrouch == false && Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
-            canCrouch = true;
-        }
+		Crouch();
 
 	}
+	void Pull()
+	{ 
+	
+	}
+
+
+	void Crouch()
+	{
+		if (canCrouch&& Input.GetKeyDown(KeyCode.LeftControl) )
+        {
+            Vector3 velocity = Vector3.zero;
+            Debug.Log("Left control hit going down");
+			//camera.transform.position =new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
+			camera.transform.position =Vector3.SmoothDamp (transform.position, initialCrouch,ref velocity, Time.deltaTime* crouchSmooth);
+			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY-1, colliderSizeZ);
+			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
+            canCrouch = false;
+        }
+		else if (canCrouch == false && Input.GetKeyDown(KeyCode.LeftControl))
+        {
+            Vector3 velocity = Vector3.zero;
+            Debug.Log("Left control hit going up");
+			//camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
+			camera.transform.position =Vector3.SmoothDamp (transform.position,crouchVect,ref velocity,Time.deltaTime* crouchSmooth);
+			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY+1, colliderSizeZ);
+			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
+            canCrouch = true;
+        }
+	}
+
 
 	public void setSpeed(float mySpeed)
 	{
