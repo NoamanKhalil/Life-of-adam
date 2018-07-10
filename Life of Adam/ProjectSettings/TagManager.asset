@@ -4,11 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Pick
-  - Axe
-  - object
-  - Red
   - Blue
+  - Red
+  - audio
   layers:
   - Default
   - TransparentFX
@@ -18,8 +16,8 @@ TagManager:
   - UI
   - 
   - 
-  - Object
-  - Global
+  - 
+  - 
   - 
   - 
   - 

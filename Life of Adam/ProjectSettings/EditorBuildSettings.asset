@@ -6,14 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Individual sections/Leon/Scenes/MainMenu.unity
-    guid: 2023306252c3a144880eb829da2c3b36
-  - enabled: 1
-    path: Assets/Individual sections/Leon/Scenes/TestScene.unity
+    path: Assets/Individual sections/Leon/Scenes/Horror_Test_Scene.unity
     guid: ceaa3b3f02f478c4ea20e56d66925c79
   - enabled: 1
-    path: Assets/Individual sections/Leon/Scenes/SceneA.unity
-    guid: c3e144f3d89c5b145a221eabfde64c77
+    path: Assets/Individual sections/Leon/Scenes/MainMenu.unity
+    guid: 2023306252c3a144880eb829da2c3b36
   - enabled: 1
     path: Assets/Individual sections/Leon/Scenes/VideoScene.unity
     guid: bff8d6e8e1697c54884a6554ac5ab516
@@ -21,6 +18,27 @@ EditorBuildSettings:
     path: Assets/Individual sections/Leon/Scenes/T Area.unity
     guid: 32a5f92e31bdbf04793e5db68fbecbf6
   - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/Day_1_Horror.unity
+    guid: c3e144f3d89c5b145a221eabfde64c77
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/Day_1_Happy.unity
+    guid: 281ee84333e944050b344b1ec4a73945
+  - enabled: 1
     path: Assets/Individual sections/Leon/Scenes/VideoScene_Day2.unity
     guid: f21db9b64f7af4074b4e1238e0e12460
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/Day_2_Horror.unity
+    guid: 5192f7f320e5940d896ccdc6ecb2d839
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/Day_2_Happy.unity
+    guid: c119faeef47af41daa80fa4edaf658b0
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/VideoScene_Day3.unity
+    guid: f591b343a4b894e3784a9f31ce79e8af
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/Day_3_Horror.unity
+    guid: b5aeeab5a3363445a8cc4de8c4a58b8e
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/Day_3_Happy.unity
+    guid: c23a0a220c6a14b08af7a194d421b1b9
   m_configObjects: {}
