@@ -20,7 +20,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 	public GameObject playerObj;
 	public float Speed;
 	public float turnSpeed;
-	public int minDist;
+	public float minDist;
 
 	void Awake()
 	{
@@ -90,4 +90,10 @@ public class TeacherBehaviourCs : MonoBehaviour
 	{
 		Debug.Log("Is Idle");
 	}
-}
+
+	void OnDrawGizmos()
+	{
+		// Draw a yellow sphere at the transform's position
+		Gizmos.color = Color.green;
+		Gizmos.DrawSphere(transform.position, minDist); }
+	}

@@ -39,6 +39,8 @@ public class CameraControl : MonoBehaviour
 	}
 	void Update () 
 	{
+		Push();
+
 		Vector2 nd = new Vector2 (Input.GetAxisRaw ("Mouse X"), Input.GetAxisRaw ("Mouse Y"));
 
 		nd =Vector2.Scale (nd, new Vector2 (Sensitivity * Smoothness, Sensitivity * Smoothness));
@@ -146,30 +148,45 @@ public class CameraControl : MonoBehaviour
 				if (hit.collider.gameObject.tag == "Move")
 				{
 					thingToPull = hit.transform;
+					Debug.Log("Started pushing ");
+
 				}
 			}
 		}
+		else if (Input.GetKeyDown(KeyCode.G) && thingToPull != null)
+		{
+			thingToPull = null; 
+			Debug.Log("stopped pushing ");
+				
+		}
 
-		/*if(thingToPull!=null) 
+		if(thingToPull!=null) 
 		{
 			   // line from crate to player
-			   Vector3 D = transform.position - thingToPull; 
+			   Vector3 D = transform.position - thingToPull.position; 
 			   float dist = D.magnitude;
-			   Vector3 pullDir = D.normalized; // short blue arrow from crate to player
-			   if(dist>50) thingToPull=null; // lose tracking if too far
-			   else if(dist>3) { // don't pull if too close
+               // short blue arrow from crate to player
+			   Vector3 pullDir = D.normalized; 
+				//lose tracking if too far
+			   if(dist>50) 
+				{
+				thingToPull=null; 
+				}
+			   else if(dist>3) 
+			   { // don't pull if too close
 			     // this is the same math to apply fake gravity. 10 = normal gravity
 			     float pullF = 10;
-			   // for fun, pull a little bit more if further away:
-			// (so, random, optional junk):
-			float pullForDist = (dist - 3) / 2.0f;
-			     if(pullForDist>20) pullForDist=20;
+			     // for fun, pull a little bit more if further away:
+				 // (so, random, optional junk):
+				 float pullForDist = (dist - 3) / 2.0f;
+			     if(pullForDist>20)
+					pullForDist=20;
 			     pullF += pullForDist;
 			     // Now apply to pull force, using standard meters/sec converted
 			     //    into meters/frame:
-			     thingToPull.rigidbody.velocity += pullDir*(pullF* Time.deltaTime);
+			     thingToPull.GetComponent<Rigidbody>().velocity += pullDir*(pullF* Time.deltaTime);
 			   }
-		}*/
+		}
 	}
 
 
