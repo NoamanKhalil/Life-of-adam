@@ -28,7 +28,7 @@ public class CameraControl : MonoBehaviour
     bool canDrop;
 
 	private Day1_Manager_Bad day;
-	private Transform thingToPull;
+	public Transform thingToPull;
 
     // Use this for initialization
     void Start () 
@@ -138,7 +138,7 @@ public class CameraControl : MonoBehaviour
 	void Push()
 	{
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
-		if (Input.GetKeyDown(KeyCode.G) && thingToPull == null)
+		if (Input.GetKeyDown(KeyCode.F) && thingToPull == null)
 		{
 			RaycastHit hit;
 			if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
@@ -153,7 +153,7 @@ public class CameraControl : MonoBehaviour
 				}
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.G) && thingToPull != null)
+		else if (Input.GetKeyDown(KeyCode.F) && thingToPull != null)
 		{
 			thingToPull = null; 
 			Debug.Log("stopped pushing ");
@@ -168,23 +168,25 @@ public class CameraControl : MonoBehaviour
                // short blue arrow from crate to player
 			   Vector3 pullDir = D.normalized; 
 				//lose tracking if too far
-			   if(dist>50) 
+			   if(dist>2) 
 				{
 				thingToPull=null; 
 				}
-			   else if(dist>3) 
-			   { // don't pull if too close
-			     // this is the same math to apply fake gravity. 10 = normal gravity
-			     float pullF = 10;
+			   // you have to be less than 1 m for the code to work
+			   else if(dist>1) 
+			   { 
+
+
+				float fakeGrav = 10.0f;
 			     // for fun, pull a little bit more if further away:
 				 // (so, random, optional junk):
 				 float pullForDist = (dist - 3) / 2.0f;
 			     if(pullForDist>20)
 					pullForDist=20;
-			     pullF += pullForDist;
+			     fakeGrav += pullForDist;
 			     // Now apply to pull force, using standard meters/sec converted
 			     //    into meters/frame:
-			     thingToPull.GetComponent<Rigidbody>().velocity += pullDir*(pullF* Time.deltaTime);
+			     thingToPull.GetComponent<Rigidbody>().velocity += pullDir*(fakeGrav* Time.deltaTime);
 			   }
 		}
 	}
