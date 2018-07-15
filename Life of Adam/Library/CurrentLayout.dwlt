@@ -45,7 +45,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 113
+  controlID: 39
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,8 +89,8 @@ MonoBehaviour:
     y: 0
     width: 389
     height: 712
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 114
+  controlID: 40
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 115
+  controlID: 41
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,20 +297,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Individual sections/Leon/GameObjects/Environments
+    - Assets/Individual sections/Leon/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Individual sections/Leon/GameObjects/Environments
+  - Assets/Individual sections/Leon/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity Projects\Final\Life-of-adam\Life of Adam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 115}
-    m_SelectedIDs: 705d0000
-    m_LastClickedID: 23920
-    m_ExpandedIDs: 00000000403900001c3a0000ee3a00003c3b0000f23d0000743e0000b03e0000be3e0000103f0000dc400000fe450000085d000000ca9a3bffffff7f
+    m_SelectedIDs: 4c400000
+    m_LastClickedID: 16460
+    m_ExpandedIDs: 000000003c2f0000a82f0000c630000020310000b034000058350000a2350000b03500001a3600009a3b000026410000aa4f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000403900001c3a0000ee3a0000f23d0000743e0000b03e0000be3e0000dc400000fe450000085d0000
+    m_ExpandedIDs: 000000003c2f0000a82f0000c630000020310000b034000058350000a2350000b03500001a3600009a3b000026410000aa4f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,28 +454,28 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b05ff0ff
-    m_LastClickedID: -1024080
-    m_ExpandedIDs: 7a76f0ffeaa2feffc8a4fefffca6fefffea6feff0ea7feff2ca7feff30a7feff328affff00000000
+    m_SelectedIDs: 3c320000
+    m_LastClickedID: 0
+    m_ExpandedIDs: 24d5ffff36d6ffff22fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Cube (20)
-      m_OriginalName: Cube (20)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -472378
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
-  - Day_1_Happy
+  - Day_1_Horror
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.75768566, y: 3.6562252, z: 6.2316723}
+    m_Target: {x: -17.869028, y: 0.35227132, z: -9.737846}
     speed: 2
-    m_Value: {x: 0.75768566, y: 3.6562252, z: 6.2316723}
+    m_Value: {x: -17.869028, y: 0.35227132, z: -9.737846}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -541,13 +541,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.35847354, y: -0.545468, z: 0.27735254, w: 0.70500845}
+    m_Target: {x: -0.20124345, y: -0.42785913, z: 0.098331116, w: -0.87565327}
     speed: 2
-    m_Value: {x: 0.35847357, y: -0.54546803, z: 0.27735257, w: 0.7050085}
+    m_Value: {x: -0.20124345, y: -0.42785913, z: 0.098331116, w: -0.87565327}
   m_Size:
-    m_Target: 35.56883
+    m_Target: 8.285835
     speed: 2
-    m_Value: 35.56883
+    m_Value: 8.285835
   m_Ortho:
     m_Target: 0
     speed: 2
