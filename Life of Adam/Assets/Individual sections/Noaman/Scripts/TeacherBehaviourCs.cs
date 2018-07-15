@@ -55,6 +55,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 		    Physics.Raycast(transform.position, leftD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore) ||
 		    Physics.Raycast(transform.position, rightD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore))
 		{
+			currentState= AiState.Chase;
 			//on hit chase player 
 		}
 
@@ -62,12 +63,12 @@ public class TeacherBehaviourCs : MonoBehaviour
 		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
 		{
 			currentState= AiState.Chase;
-			//Debug.Log("is chasing");
+			Debug.Log("is chasing");
 		}
 		else
 		{
 			currentState = AiState.Patrol;
-			//Debug.Log("is patroling");
+			Debug.Log("is patroling");
 		}
 
 
@@ -78,8 +79,8 @@ public class TeacherBehaviourCs : MonoBehaviour
 				idle();
                 break;
 			case AiState.Chase:
-                // Seek();
-                steer.Seek(playerObj, turnSpeed, minDist, Speed);
+				// Seek();
+				chase();
                 break;
 			case AiState.Patrol:
 				//Flee();
@@ -90,12 +91,19 @@ public class TeacherBehaviourCs : MonoBehaviour
 
     }
 
+	void chase()
+	{
+		transform.position = Vector3.MoveTowards(transform.position, playerObj.transform.position, Time.deltaTime* speed);
+		transform.LookAt(playerObj.transform.position);
+	}
+
 
 	void patrol()
 	{
 		if (posPoint < pathToFollow.Length)
         {
             transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
+			transform.LookAt(pathToFollow[posPoint].position);
         }
 
         if (transform.position == pathToFollow[posPoint].position)

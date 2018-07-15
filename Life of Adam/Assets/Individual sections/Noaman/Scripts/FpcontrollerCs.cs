@@ -32,6 +32,8 @@ public class FpcontrollerCs : MonoBehaviour
     
     bool canCrouch;
 
+   Vector3 coruchVelocity = Vector3.zero;
+
 	void Start()
 	{
 		rb = GetComponent<Rigidbody>();
@@ -40,8 +42,10 @@ public class FpcontrollerCs : MonoBehaviour
         canCrouch = true;
 		forwardVel = walkVel;
 		myCollider = GetComponent<BoxCollider>();
+		//initialCrouch = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y-crouchVal, camera.transform.localPosition.z);
+		//crouchVect = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y, camera.transform.localPosition.z);
 		initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-		crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y+crouchVal, camera.transform.position.z);
+        crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);
 	}
 
 	void Update()
@@ -78,24 +82,40 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		if (canCrouch&& Input.GetKeyDown(KeyCode.LeftControl) )
         {
-            Vector3 velocity = Vector3.zero;
+            //Vector3 velocity = Vector3.zero;
             Debug.Log("Left control hit going down");
 			//camera.transform.position =new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-			camera.transform.position =Vector3.SmoothDamp (transform.position, initialCrouch,ref velocity, Time.deltaTime* crouchSmooth);
+			//camera.transform.position =Vector3.SmoothDamp (transform.position, initialCrouch,ref coruchVelocity, crouchSmooth);
 			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY-1, colliderSizeZ);
 			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
             canCrouch = false;
         }
-		else if (canCrouch == false && Input.GetKeyDown(KeyCode.LeftControl))
+		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
         {
-            Vector3 velocity = Vector3.zero;
+            //Vector3 velocity = Vector3.zero;
             Debug.Log("Left control hit going up");
-			//camera.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
-			camera.transform.position =Vector3.SmoothDamp (transform.position,crouchVect,ref velocity,Time.deltaTime* crouchSmooth);
+			//.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
+			//camera.transform.position =Vector3.SmoothDamp (transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
 			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY+1, colliderSizeZ);
 			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
             canCrouch = true;
         }
+
+		if (canCrouch)
+		{
+			if (Vector3.Distance (camera.transform.position,crouchVect) > 0.1)
+			{ 
+				//camera.transform.position =Vector3.SmoothDamp (camera.transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
+			}
+
+		}
+		else 
+		{
+			if (Vector3.Distance(camera.transform.position, initialCrouch) > 0.1)
+			{
+				//.transform.position = Vector3.SmoothDamp(camera.transform.position, initialCrouch, ref coruchVelocity, crouchSmooth);
+			}
+		}
 	}
 
 
