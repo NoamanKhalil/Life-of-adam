@@ -232,7 +232,7 @@ Prefab:
     - target: {fileID: 114122618876267192, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}
       propertyPath: crouchVal
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114122618876267192, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}

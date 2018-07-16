@@ -42,10 +42,10 @@ public class FpcontrollerCs : MonoBehaviour
         canCrouch = true;
 		forwardVel = walkVel;
 		myCollider = GetComponent<BoxCollider>();
-		//initialCrouch = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y-crouchVal, camera.transform.localPosition.z);
-		//crouchVect = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y, camera.transform.localPosition.z);
-		initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-        crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);
+		initialCrouch = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y-crouchVal, camera.transform.localPosition.z);
+		crouchVect = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y, camera.transform.localPosition.z);
+		/*initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
+        crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);*/
 	}
 
 	void Update()
@@ -105,7 +105,11 @@ public class FpcontrollerCs : MonoBehaviour
 		{
 			if (Vector3.Distance (camera.transform.position,crouchVect) > 0.1)
 			{ 
-				//camera.transform.position =Vector3.SmoothDamp (camera.transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
+                Vector3 newPosition = camera.transform.localPosition;
+				//camera.transform.localPosition =Vector3.SmoothDamp (camera.transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
+				newPosition.y = Mathf.SmoothDamp(camera.transform.localPosition.z, crouchVect.y, ref coruchVelocity.y, crouchSmooth);
+				camera.transform.localPosition = newPosition;
+
 			}
 
 		}
@@ -113,7 +117,10 @@ public class FpcontrollerCs : MonoBehaviour
 		{
 			if (Vector3.Distance(camera.transform.position, initialCrouch) > 0.1)
 			{
+                Vector3 newPosition = camera.transform.localPosition;
 				//.transform.position = Vector3.SmoothDamp(camera.transform.position, initialCrouch, ref coruchVelocity, crouchSmooth);
+				newPosition.y = Mathf.SmoothDamp(camera.transform.localPosition.z, initialCrouch.y, ref coruchVelocity.y, crouchSmooth);
+				camera.transform.localPosition = newPosition;
 			}
 		}
 	}
