@@ -82,21 +82,27 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		if (canCrouch&& Input.GetKeyDown(KeyCode.LeftControl) )
         {
+			Vector3 colliderPos = myCollider.transform.position;
             //Vector3 velocity = Vector3.zero;
             Debug.Log("Left control hit going down");
 			//camera.transform.position =new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
 			//camera.transform.position =Vector3.SmoothDamp (transform.position, initialCrouch,ref coruchVelocity, crouchSmooth);
 			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY-1, colliderSizeZ);
+			colliderPos.y = colliderPos.y - 0.2f;
+			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
             canCrouch = false;
         }
 		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
         {
+            Vector3 colliderPos = myCollider.transform.position;
             //Vector3 velocity = Vector3.zero;
             Debug.Log("Left control hit going up");
 			//.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
 			//camera.transform.position =Vector3.SmoothDamp (transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
 			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY+1, colliderSizeZ);
+			colliderPos.y = colliderPos.y + 0.2f;
+			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
             canCrouch = true;
         }
