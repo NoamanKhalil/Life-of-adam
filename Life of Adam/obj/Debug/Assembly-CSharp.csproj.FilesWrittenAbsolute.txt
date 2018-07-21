@@ -119,3 +119,8 @@
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.ProGrids.Editor.dll
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/Unity.ProGrids.dll
 /Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/MySteeringBehaviour.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/NavMeshComponentsEditor.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/NavMeshComponentsEditor.pdb
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/NavMeshComponents.dll
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/NavMeshComponents.pdb
+/Users/noamankhalil/Desktop/Life-of-adam/Life of Adam/Temp/bin/Debug/ICSharpCode.NRefactory.dll

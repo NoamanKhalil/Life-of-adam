@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 enum AiState
 {
@@ -10,7 +11,7 @@ enum AiState
 [RequireComponent(typeof(MySteeringBehaviour))]
 public class TeacherBehaviourCs : MonoBehaviour
 {
-
+	public NavMeshAgent agent;
     public MySteeringBehaviour steer;
 	public LayerMask layer;
     private AiState currentState;
@@ -31,6 +32,7 @@ public class TeacherBehaviourCs : MonoBehaviour
     void Start ()
     {
         pathToFollow = GameObject.Find("wayPointParent").GetComponentsInChildren<Transform>();
+		 agent.autoBraking = false;
     }
 	
 	// Update is called once per frame
@@ -63,12 +65,12 @@ public class TeacherBehaviourCs : MonoBehaviour
 		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
 		{
 			currentState= AiState.Chase;
-			Debug.Log("is chasing");
+	//		Debug.Log("is chasing");
 		}
 		else
 		{
 			currentState = AiState.Patrol;
-			Debug.Log("is patroling");
+//			Debug.Log("is patroling");
 		}
 
 
@@ -93,8 +95,9 @@ public class TeacherBehaviourCs : MonoBehaviour
 
 	void chase()
 	{
-		transform.position = Vector3.MoveTowards(transform.position, playerObj.transform.position, Time.deltaTime* speed);
-		transform.LookAt(playerObj.transform.position);
+		//transform.position = Vector3.MoveTowards(transform.position, playerObj.transform.position, Time.deltaTime* speed);
+		agent.SetDestination(playerObj.transform.position);
+		//transform.LookAt(playerObj.transform.position);
 	}
 
 
@@ -102,11 +105,12 @@ public class TeacherBehaviourCs : MonoBehaviour
 	{
 		if (posPoint < pathToFollow.Length)
         {
-            transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
-			transform.LookAt(pathToFollow[posPoint].position);
+            //transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
+			agent.SetDestination(pathToFollow[posPoint].position);
+			//transform.LookAt(pathToFollow[posPoint].position);
         }
 
-        if (transform.position == pathToFollow[posPoint].position)
+		if (Vector3.Distance(transform.position, pathToFollow[posPoint].position) < 0.1f)
         {
             if (posPoint == pathToFollow.Length - 1)
             {

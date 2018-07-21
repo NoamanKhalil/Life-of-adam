@@ -26,7 +26,7 @@ public class FpcontrollerCs : MonoBehaviour
 
 	Rigidbody rb;
 	float forwardInput, straffeInput;
-	float tempStamina;
+	float stamina;
 	bool isPlaying;
 	bool canJump;
     
@@ -72,39 +72,48 @@ public class FpcontrollerCs : MonoBehaviour
 		Crouch();
 
 	}
-	void Pull()
-	{ 
-	
-	}
 
 
 	void Crouch()
 	{
 		if (canCrouch&& Input.GetKeyDown(KeyCode.LeftControl) )
         {
+			Vector3 colliderPos = myCollider.transform.position;
             //Vector3 velocity = Vector3.zero;
             Debug.Log("Left control hit going down");
 			//camera.transform.position =new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
 			//camera.transform.position =Vector3.SmoothDamp (transform.position, initialCrouch,ref coruchVelocity, crouchSmooth);
 			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY-1, colliderSizeZ);
+			colliderPos.y = colliderPos.y - 0.2f;
+			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
             canCrouch = false;
         }
 		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
         {
+            Vector3 colliderPos = myCollider.transform.position;
             //Vector3 velocity = Vector3.zero;
-            Debug.Log("Left control hit going up");
+            //Debug.Log("Left control hit going up");
 			//.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
 			//camera.transform.position =Vector3.SmoothDamp (transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
 			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY+1, colliderSizeZ);
+			colliderPos.y = colliderPos.y + 0.2f;
+			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
             canCrouch = true;
         }
 
+
+		//debug to find the sweet spot in the crouch 
+         //Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
+		//Debug.Log(Vector3.Distance(camera.transform.localPosition, initialCrouch));
+
+
 		if (canCrouch)
 		{
-			if (Vector3.Distance (camera.transform.position,crouchVect) > 0.1)
+			if (Vector3.Distance (camera.transform.localPosition,crouchVect) > 1)
 			{ 
+				//Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
                 Vector3 newPosition = camera.transform.localPosition;
 				//camera.transform.localPosition =Vector3.SmoothDamp (camera.transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
 				newPosition.y = Mathf.SmoothDamp(camera.transform.localPosition.z, crouchVect.y, ref coruchVelocity.y, crouchSmooth);
@@ -115,7 +124,7 @@ public class FpcontrollerCs : MonoBehaviour
 		}
 		else 
 		{
-			if (Vector3.Distance(camera.transform.position, initialCrouch) > 0.1)
+			if (Vector3.Distance(camera.transform.localPosition, initialCrouch) >1.85)
 			{
                 Vector3 newPosition = camera.transform.localPosition;
 				//.transform.position = Vector3.SmoothDamp(camera.transform.position, initialCrouch, ref coruchVelocity, crouchSmooth);
@@ -133,14 +142,15 @@ public class FpcontrollerCs : MonoBehaviour
 
 	void Run()
 	{
-        if (Input.GetKey(KeyCode.LeftShift) && tempStamina <= 0)
+        if (Input.GetKey(KeyCode.LeftShift) && stamina <= 0)
 		{
 			forwardVel = runVel ;
+			stamina -= 2;
 		}
-		if (Input.GetKeyUp(KeyCode.LeftShift))
+		else if (Input.GetKeyUp(KeyCode.LeftShift))
 		{
 			forwardVel = walkVel;
-		}
+		} 
 	}
 
 
