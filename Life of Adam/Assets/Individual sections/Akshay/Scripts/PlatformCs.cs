@@ -49,7 +49,8 @@ public class PlatformCs : MonoBehaviour
 
                 posPoint++;
 
-            }
+            }                     
+
 
         }
     }

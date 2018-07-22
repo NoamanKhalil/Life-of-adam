@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Akshay/Day 2 - Happy.unity
+- path: Assets/Individual sections/Akshay/Day 3 - Happy.unity
   isLoaded: 1
   isActive: 1

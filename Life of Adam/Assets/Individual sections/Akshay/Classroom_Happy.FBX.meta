@@ -1,0 +1,2491 @@
+fileFormatVersion: 2
+guid: 35e7e1f55b26e4e8a9516bcad3e714ea
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Alarm003
+    100002: Alarm004
+    100004: Alarm005
+    100006: Alarm006
+    100008: Alarm011
+    100010: Alarm012
+    100012: Apple_TeacherDesk
+    100014: beaker type - wide bottom003
+    100016: beaker type - wide bottom004
+    100018: beaker type - wide bottom1
+    100020: beaker type - wide bottom2
+    100022: big open book on long table
+    100024: big open book paper on long table
+    100026: BlackBoard001
+    100028: BlackBoard002
+    100030: BOARD_HALLWAY
+    100032: book cover of closed book on floor
+    100034: Book1_TeacherDesk
+    100036: bottom book cover on closed book on long table
+    100038: bottom book in stack on long table
+    100040: 'bottom open book paper on floor '
+    100042: bottom open bottom book next to open book
+    100044: box
+    100046: box001
+    100048: box002
+    100050: box006
+    100052: box007
+    100054: Box012
+    100056: Box013
+    100058: Box014
+    100060: Box015
+    100062: Box016
+    100064: Box017
+    100066: Box018
+    100068: Box019
+    100070: Box1000
+    100072: Box1001
+    100074: Box1002
+    100076: Box1003
+    100078: Box1004
+    100080: Box1005
+    100082: Box1006
+    100084: Box1007
+    100086: Box1008
+    100088: Box1009
+    100090: Box1010
+    100092: Box1011
+    100094: Box1012
+    100096: Box1013
+    100098: Box1014
+    100100: Box1015
+    100102: Box1016
+    100104: Box1017
+    100106: Box1018
+    100108: Box1019
+    100110: Box1020
+    100112: Box1021
+    100114: Box1022
+    100116: Box1023
+    100118: Box1024
+    100120: Box1025
+    100122: Box1026
+    100124: Box1027
+    100126: Box954
+    100128: Box955
+    100130: Box956
+    100132: Box957
+    100134: Box958
+    100136: Box959
+    100138: Box960
+    100140: Box961
+    100142: Box962
+    100144: Box963
+    100146: Box964
+    100148: Box965
+    100150: Box966
+    100152: Box967
+    100154: Box971
+    100156: Box978
+    100158: Box982
+    100160: Box984
+    100162: Box985
+    100164: Box986
+    100166: Box987
+    100168: Box988
+    100170: Box989
+    100172: Box990
+    100174: Box992
+    100176: Box993
+    100178: Box994
+    100180: Box995
+    100182: Box996
+    100184: Box999
+    100186: burette stand
+    100188: burette stand001
+    100190: Cabinet006
+    100192: Cabinet014
+    100194: Cabinet015
+    100196: Cabinet016
+    100198: Cabinet017
+    100200: Cabinet018
+    100202: ceiling
+    100204: CEILING LIGHTS
+    100206: CHAIR_STUDENT
+    100208: CHAIR_STUDENT002
+    100210: CHAIR_STUDENT003
+    100212: CHAIR_STUDENT004
+    100214: CHAIR_STUDENT005
+    100216: CHAIR_STUDENT006
+    100218: CHAIR_STUDENT007
+    100220: CHAIR_STUDENT008
+    100222: CHAIR_STUDENT009
+    100224: CHAIR_STUDENT010
+    100226: CHAIR_STUDENT011
+    100228: CHAIR_STUDENT012
+    100230: CHAIR_STUDENT013
+    100232: CHAIR_STUDENT014
+    100234: CHAIR_STUDENT015
+    100236: CHAIR_STUDENT016
+    100238: CHAIR_STUDENT017
+    100240: CHAIR_STUDENT018
+    100242: CHAIR_STUDENT019
+    100244: CHAIR_TEACHER
+    100246: Chalk Holder003
+    100248: Chalk Holder004
+    100250: //RootNode
+    100252: CLOCK1_HALLWAY
+    100254: closed book on floor
+    100256: Cylinder003
+    100258: Cylinder029
+    100260: Cylinder069
+    100262: Cylinder070
+    100264: Cylinder071
+    100266: Cylinder072
+    100268: Cylinder073
+    100270: Cylinder074
+    100272: Cylinder080
+    100274: Cylinder081
+    100276: Cylinder082
+    100278: Cylinder083
+    100280: Cylinder084
+    100282: Cylinder085
+    100284: Cylinder086
+    100286: Cylinder087
+    100288: Cylinder088
+    100290: Cylinder089
+    100292: Cylinder090
+    100294: Cylinder091
+    100296: Cylinder094
+    100298: Cylinder095
+    100300: Cylinder096
+    100302: Cylinder097
+    100304: Cylinder098
+    100306: Cylinder099
+    100308: Cylinder100
+    100310: Cylinder101
+    100312: Cylinder102
+    100314: Cylinder103
+    100316: Cylinder104
+    100318: Cylinder105
+    100320: Cylinder106
+    100322: Cylinder107
+    100324: Cylinder108
+    100326: Cylinder109
+    100328: Cylinder110
+    100330: Cylinder111
+    100332: Cylinder112
+    100334: Cylinder113
+    100336: Cylinder122
+    100338: Cylinder123
+    100340: Cylinder124
+    100342: Cylinder125
+    100344: Cylinder126
+    100346: Cylinder127
+    100348: Cylinder128
+    100350: Cylinder129
+    100352: Cylinder130
+    100354: Cylinder131
+    100356: Cylinder132
+    100358: Cylinder133
+    100360: Cylinder134
+    100362: Cylinder135
+    100364: Cylinder136
+    100366: Cylinder137
+    100368: Cylinder138
+    100370: Cylinder139
+    100372: Cylinder140
+    100374: Cylinder141
+    100376: Cylinder142
+    100378: Cylinder143
+    100380: Cylinder144
+    100382: Cylinder145
+    100384: Cylinder146
+    100386: Cylinder147
+    100388: Cylinder148
+    100390: Cylinder149
+    100392: Cylinder150
+    100394: Cylinder151
+    100396: Cylinder152
+    100398: Cylinder153
+    100400: Cylinder154
+    100402: Cylinder155
+    100404: Cylinder156
+    100406: Cylinder157
+    100408: Cylinder158
+    100410: Cylinder159
+    100412: Cylinder160
+    100414: Cylinder161
+    100416: Cylinder162
+    100418: Cylinder163
+    100420: Cylinder164
+    100422: Cylinder165
+    100424: Cylinder166
+    100426: Cylinder167
+    100428: Cylinder168
+    100430: Cylinder169
+    100432: Cylinder170
+    100434: Cylinder171
+    100436: Cylinder172
+    100438: Cylinder173
+    100440: Cylinder174
+    100442: Cylinder175
+    100444: Cylinder176
+    100446: Cylinder177
+    100448: Cylinder178
+    100450: Cylinder179
+    100452: Cylinder180
+    100454: Cylinder181
+    100456: Cylinder182
+    100458: Cylinder183
+    100460: Cylinder184
+    100462: Cylinder185
+    100464: Cylinder186
+    100466: Cylinder187
+    100468: Cylinder188
+    100470: Cylinder189
+    100472: Cylinder190
+    100474: Cylinder191
+    100476: Cylinder192
+    100478: Cylinder193
+    100480: Cylinder194
+    100482: Cylinder195
+    100484: Cylinder196
+    100486: Cylinder197
+    100488: Cylinder198
+    100490: Cylinder199
+    100492: Cylinder200
+    100494: Cylinder201
+    100496: Cylinder202
+    100498: Cylinder203
+    100500: Cylinder204
+    100502: Cylinder205
+    100504: Cylinder206
+    100506: Cylinder207
+    100508: Cylinder208
+    100510: Cylinder209
+    100512: Cylinder213
+    100514: Cylinder214
+    100516: Cylinder215
+    100518: Cylinder216
+    100520: Cylinder217
+    100522: Cylinder218
+    100524: Cylinder219
+    100526: Cylinder220
+    100528: Cylinder221
+    100530: Cylinder222
+    100532: Cylinder223
+    100534: Cylinder224
+    100536: Cylinder225
+    100538: Cylinder226
+    100540: Cylinder227
+    100542: Cylinder228
+    100544: Cylinder229
+    100546: Cylinder230
+    100548: Cylinder231
+    100550: Cylinder232
+    100552: Cylinder233
+    100554: Cylinder234
+    100556: Cylinder235
+    100558: Cylinder236
+    100560: Cylinder237
+    100562: Cylinder238
+    100564: Cylinder239
+    100566: Cylinder240
+    100568: Cylinder241
+    100570: Cylinder242
+    100572: Cylinder243
+    100574: Cylinder244
+    100576: Cylinder245
+    100578: Cylinder246
+    100580: DESK_STUDENT001
+    100582: DESK_STUDENT002
+    100584: DESK_STUDENT003
+    100586: DESK_STUDENT004
+    100588: DESK_STUDENT005
+    100590: DESK_STUDENT006
+    100592: DESK_STUDENT007
+    100594: DESK_STUDENT008
+    100596: DESK_STUDENT009
+    100598: DESK_STUDENT010
+    100600: DESK_STUDENT011
+    100602: DESK_STUDENT012
+    100604: DESK_STUDENT013
+    100606: DESK_STUDENT014
+    100608: DESK_STUDENT015
+    100610: DESK_STUDENT016
+    100612: DESK_STUDENT017
+    100614: DESK_STUDENT018
+    100616: DESK_TEACHER
+    100618: door frame001
+    100620: door frame002
+    100622: door frame003
+    100624: door frame004
+    100626: door frame005
+    100628: door001
+    100630: door002
+    100632: door003
+    100634: door004
+    100636: door005
+    100638: Electrical Junction
+    100640: Electrical Junction001
+    100642: Electrical Line
+    100644: Electrical Line001
+    100646: EntryToSecretPath
+    100648: fridge
+    100650: gas tank 2
+    100652: Line113
+    100654: Line115
+    100656: Line117
+    100658: LOCKER1
+    100660: Lockers
+    100662: Lockpad_lockers
+    100664: Lockpad_lockers 1
+    100666: Lockpad_lockers 2
+    100668: Lockpad_lockers 3
+    100670: Lockpad_lockers 4
+    100672: Lockpad_lockers 5
+    100674: Lockpad_lockers 6
+    100676: Lockpad_lockers 7
+    100678: middle book coverin stack on long table
+    100680: middle book in stack on long table
+    100682: MUG
+    100684: Noteboard003
+    100686: Noteboard004
+    100688: Noteboard008
+    100690: Noteboard009
+    100692: Noteboard010
+    100694: Noteboard011
+    100696: Noteboard012
+    100698: Noteboard013
+    100700: Noteboard014
+    100702: Noteboard2
+    100704: Object002
+    100706: Object003
+    100708: Object004
+    100710: Object015
+    100712: Object016
+    100714: Object017
+    100716: Object018
+    100718: Object019
+    100720: Object029
+    100722: open book paper under small table
+    100724: open book under small table
+    100726: Paper018
+    100728: Paper019
+    100730: Paper020
+    100732: Paper021
+    100734: Paper022
+    100736: Plane008
+    100738: Plane009
+    100740: Plane010
+    100742: Plane063
+    100744: Plane064
+    100746: Plane065
+    100748: Plane066
+    100750: Plane067
+    100752: Plane069
+    100754: Plane070
+    100756: Plane071
+    100758: Plane072
+    100760: Plane073
+    100762: Plane074
+    100764: Plane075
+    100766: Plane077
+    100768: Plane078
+    100770: Plane079
+    100772: Plane080
+    100774: Plane081
+    100776: Plane082
+    100778: Plane083
+    100780: Plane084
+    100782: Plane085
+    100784: Plane086
+    100786: Plane087
+    100788: Plane088
+    100790: Plane089
+    100792: Plane090
+    100794: Plane091
+    100796: Plane092
+    100798: Plane093
+    100800: Plane094
+    100802: Plane095
+    100804: Plane100
+    100806: Plane101
+    100808: Plane102
+    100810: Plane103
+    100812: Plane104
+    100814: Plane106
+    100816: Plane107
+    100818: Plane108
+    100820: Plane109
+    100822: Plane110
+    100824: Plane111
+    100826: RecycingBin7_Paper
+    100828: RecyclingBin1_Paper
+    100830: RecyclingBin2_Plastic
+    100832: RecyclingBin3_Cans
+    100834: RecyclingBin4_Paper
+    100836: RecyclingBin5_Plastic
+    100838: RecyclingBin6_Cans
+    100840: RecyclingBin8_Plastic
+    100842: RecyclingBin9_Cans
+    100844: Roof Lamp001
+    100846: Roof Lamp002
+    100848: Roof Lamp003
+    100850: Roof Lamp004
+    100852: Roof Lamp005
+    100854: Roof Lamp006
+    100856: small open book on long table
+    100858: small open book paper on long table
+    100860: standing shelves
+    100862: standing shelves001
+    100864: standing shelves002
+    100866: standing shelves006
+    100868: standing shelves008
+    100870: TABLE1_CLASS
+    100872: TABLE3_STORE
+    100874: TABLE4_STORE
+    100876: THIN BOOK
+    100878: THIN BOOK001
+    100880: THIN BOOK003
+    100882: THIN BOOK004
+    100884: THIN BOOK005
+    100886: THIN BOOK006
+    100888: THIN BOOK007
+    100890: THIN BOOK008
+    100892: THIN BOOK009
+    100894: THIN BOOK010
+    100896: top book cover in stack on long table
+    100898: top book in stack on long table
+    100900: top open book on floor
+    100902: top open book paper on floor
+    100904: Trash1_Class
+    100906: Trash2_Hall
+    100908: VendingMachine
+    100910: Wall10_Hall
+    100912: Wall11_Store
+    100914: Wall12_Store
+    100916: Wall13_Store
+    100918: Wall14_Store
+    100920: Wall15_Secret
+    100922: Wall16_Secret
+    100924: Wall1_Class
+    100926: Wall2_Class
+    100928: Wall3_Class
+    100930: Wall4_Class
+    100932: Wall5_Hall
+    100934: Wall6_Hall
+    100936: Wall7_Hall
+    100938: Wall8_Hall
+    100940: Wall9_Hall
+    100942: WaterFountain1
+    100944: WaterFountain2
+    100946: WaterFountain3_Hall
+    100948: WaterFountain4_Hall
+    100950: WaterFountain5_Hall
+    100952: WaterFountain6_Hall
+    100954: WaterFountain7_Store
+    100956: WaterFountain8_Store
+    100958: WindowFrame1_Class
+    100960: WindowFrame2_Class
+    400000: Alarm003
+    400002: Alarm004
+    400004: Alarm005
+    400006: Alarm006
+    400008: Alarm011
+    400010: Alarm012
+    400012: Apple_TeacherDesk
+    400014: beaker type - wide bottom003
+    400016: beaker type - wide bottom004
+    400018: beaker type - wide bottom1
+    400020: beaker type - wide bottom2
+    400022: big open book on long table
+    400024: big open book paper on long table
+    400026: BlackBoard001
+    400028: BlackBoard002
+    400030: BOARD_HALLWAY
+    400032: book cover of closed book on floor
+    400034: Book1_TeacherDesk
+    400036: bottom book cover on closed book on long table
+    400038: bottom book in stack on long table
+    400040: 'bottom open book paper on floor '
+    400042: bottom open bottom book next to open book
+    400044: box
+    400046: box001
+    400048: box002
+    400050: box006
+    400052: box007
+    400054: Box012
+    400056: Box013
+    400058: Box014
+    400060: Box015
+    400062: Box016
+    400064: Box017
+    400066: Box018
+    400068: Box019
+    400070: Box1000
+    400072: Box1001
+    400074: Box1002
+    400076: Box1003
+    400078: Box1004
+    400080: Box1005
+    400082: Box1006
+    400084: Box1007
+    400086: Box1008
+    400088: Box1009
+    400090: Box1010
+    400092: Box1011
+    400094: Box1012
+    400096: Box1013
+    400098: Box1014
+    400100: Box1015
+    400102: Box1016
+    400104: Box1017
+    400106: Box1018
+    400108: Box1019
+    400110: Box1020
+    400112: Box1021
+    400114: Box1022
+    400116: Box1023
+    400118: Box1024
+    400120: Box1025
+    400122: Box1026
+    400124: Box1027
+    400126: Box954
+    400128: Box955
+    400130: Box956
+    400132: Box957
+    400134: Box958
+    400136: Box959
+    400138: Box960
+    400140: Box961
+    400142: Box962
+    400144: Box963
+    400146: Box964
+    400148: Box965
+    400150: Box966
+    400152: Box967
+    400154: Box971
+    400156: Box978
+    400158: Box982
+    400160: Box984
+    400162: Box985
+    400164: Box986
+    400166: Box987
+    400168: Box988
+    400170: Box989
+    400172: Box990
+    400174: Box992
+    400176: Box993
+    400178: Box994
+    400180: Box995
+    400182: Box996
+    400184: Box999
+    400186: burette stand
+    400188: burette stand001
+    400190: Cabinet006
+    400192: Cabinet014
+    400194: Cabinet015
+    400196: Cabinet016
+    400198: Cabinet017
+    400200: Cabinet018
+    400202: ceiling
+    400204: CEILING LIGHTS
+    400206: CHAIR_STUDENT
+    400208: CHAIR_STUDENT002
+    400210: CHAIR_STUDENT003
+    400212: CHAIR_STUDENT004
+    400214: CHAIR_STUDENT005
+    400216: CHAIR_STUDENT006
+    400218: CHAIR_STUDENT007
+    400220: CHAIR_STUDENT008
+    400222: CHAIR_STUDENT009
+    400224: CHAIR_STUDENT010
+    400226: CHAIR_STUDENT011
+    400228: CHAIR_STUDENT012
+    400230: CHAIR_STUDENT013
+    400232: CHAIR_STUDENT014
+    400234: CHAIR_STUDENT015
+    400236: CHAIR_STUDENT016
+    400238: CHAIR_STUDENT017
+    400240: CHAIR_STUDENT018
+    400242: CHAIR_STUDENT019
+    400244: CHAIR_TEACHER
+    400246: Chalk Holder003
+    400248: Chalk Holder004
+    400250: //RootNode
+    400252: CLOCK1_HALLWAY
+    400254: closed book on floor
+    400256: Cylinder003
+    400258: Cylinder029
+    400260: Cylinder069
+    400262: Cylinder070
+    400264: Cylinder071
+    400266: Cylinder072
+    400268: Cylinder073
+    400270: Cylinder074
+    400272: Cylinder080
+    400274: Cylinder081
+    400276: Cylinder082
+    400278: Cylinder083
+    400280: Cylinder084
+    400282: Cylinder085
+    400284: Cylinder086
+    400286: Cylinder087
+    400288: Cylinder088
+    400290: Cylinder089
+    400292: Cylinder090
+    400294: Cylinder091
+    400296: Cylinder094
+    400298: Cylinder095
+    400300: Cylinder096
+    400302: Cylinder097
+    400304: Cylinder098
+    400306: Cylinder099
+    400308: Cylinder100
+    400310: Cylinder101
+    400312: Cylinder102
+    400314: Cylinder103
+    400316: Cylinder104
+    400318: Cylinder105
+    400320: Cylinder106
+    400322: Cylinder107
+    400324: Cylinder108
+    400326: Cylinder109
+    400328: Cylinder110
+    400330: Cylinder111
+    400332: Cylinder112
+    400334: Cylinder113
+    400336: Cylinder122
+    400338: Cylinder123
+    400340: Cylinder124
+    400342: Cylinder125
+    400344: Cylinder126
+    400346: Cylinder127
+    400348: Cylinder128
+    400350: Cylinder129
+    400352: Cylinder130
+    400354: Cylinder131
+    400356: Cylinder132
+    400358: Cylinder133
+    400360: Cylinder134
+    400362: Cylinder135
+    400364: Cylinder136
+    400366: Cylinder137
+    400368: Cylinder138
+    400370: Cylinder139
+    400372: Cylinder140
+    400374: Cylinder141
+    400376: Cylinder142
+    400378: Cylinder143
+    400380: Cylinder144
+    400382: Cylinder145
+    400384: Cylinder146
+    400386: Cylinder147
+    400388: Cylinder148
+    400390: Cylinder149
+    400392: Cylinder150
+    400394: Cylinder151
+    400396: Cylinder152
+    400398: Cylinder153
+    400400: Cylinder154
+    400402: Cylinder155
+    400404: Cylinder156
+    400406: Cylinder157
+    400408: Cylinder158
+    400410: Cylinder159
+    400412: Cylinder160
+    400414: Cylinder161
+    400416: Cylinder162
+    400418: Cylinder163
+    400420: Cylinder164
+    400422: Cylinder165
+    400424: Cylinder166
+    400426: Cylinder167
+    400428: Cylinder168
+    400430: Cylinder169
+    400432: Cylinder170
+    400434: Cylinder171
+    400436: Cylinder172
+    400438: Cylinder173
+    400440: Cylinder174
+    400442: Cylinder175
+    400444: Cylinder176
+    400446: Cylinder177
+    400448: Cylinder178
+    400450: Cylinder179
+    400452: Cylinder180
+    400454: Cylinder181
+    400456: Cylinder182
+    400458: Cylinder183
+    400460: Cylinder184
+    400462: Cylinder185
+    400464: Cylinder186
+    400466: Cylinder187
+    400468: Cylinder188
+    400470: Cylinder189
+    400472: Cylinder190
+    400474: Cylinder191
+    400476: Cylinder192
+    400478: Cylinder193
+    400480: Cylinder194
+    400482: Cylinder195
+    400484: Cylinder196
+    400486: Cylinder197
+    400488: Cylinder198
+    400490: Cylinder199
+    400492: Cylinder200
+    400494: Cylinder201
+    400496: Cylinder202
+    400498: Cylinder203
+    400500: Cylinder204
+    400502: Cylinder205
+    400504: Cylinder206
+    400506: Cylinder207
+    400508: Cylinder208
+    400510: Cylinder209
+    400512: Cylinder213
+    400514: Cylinder214
+    400516: Cylinder215
+    400518: Cylinder216
+    400520: Cylinder217
+    400522: Cylinder218
+    400524: Cylinder219
+    400526: Cylinder220
+    400528: Cylinder221
+    400530: Cylinder222
+    400532: Cylinder223
+    400534: Cylinder224
+    400536: Cylinder225
+    400538: Cylinder226
+    400540: Cylinder227
+    400542: Cylinder228
+    400544: Cylinder229
+    400546: Cylinder230
+    400548: Cylinder231
+    400550: Cylinder232
+    400552: Cylinder233
+    400554: Cylinder234
+    400556: Cylinder235
+    400558: Cylinder236
+    400560: Cylinder237
+    400562: Cylinder238
+    400564: Cylinder239
+    400566: Cylinder240
+    400568: Cylinder241
+    400570: Cylinder242
+    400572: Cylinder243
+    400574: Cylinder244
+    400576: Cylinder245
+    400578: Cylinder246
+    400580: DESK_STUDENT001
+    400582: DESK_STUDENT002
+    400584: DESK_STUDENT003
+    400586: DESK_STUDENT004
+    400588: DESK_STUDENT005
+    400590: DESK_STUDENT006
+    400592: DESK_STUDENT007
+    400594: DESK_STUDENT008
+    400596: DESK_STUDENT009
+    400598: DESK_STUDENT010
+    400600: DESK_STUDENT011
+    400602: DESK_STUDENT012
+    400604: DESK_STUDENT013
+    400606: DESK_STUDENT014
+    400608: DESK_STUDENT015
+    400610: DESK_STUDENT016
+    400612: DESK_STUDENT017
+    400614: DESK_STUDENT018
+    400616: DESK_TEACHER
+    400618: door frame001
+    400620: door frame002
+    400622: door frame003
+    400624: door frame004
+    400626: door frame005
+    400628: door001
+    400630: door002
+    400632: door003
+    400634: door004
+    400636: door005
+    400638: Electrical Junction
+    400640: Electrical Junction001
+    400642: Electrical Line
+    400644: Electrical Line001
+    400646: EntryToSecretPath
+    400648: fridge
+    400650: gas tank 2
+    400652: Line113
+    400654: Line115
+    400656: Line117
+    400658: LOCKER1
+    400660: Lockers
+    400662: Lockpad_lockers
+    400664: Lockpad_lockers 1
+    400666: Lockpad_lockers 2
+    400668: Lockpad_lockers 3
+    400670: Lockpad_lockers 4
+    400672: Lockpad_lockers 5
+    400674: Lockpad_lockers 6
+    400676: Lockpad_lockers 7
+    400678: middle book coverin stack on long table
+    400680: middle book in stack on long table
+    400682: MUG
+    400684: Noteboard003
+    400686: Noteboard004
+    400688: Noteboard008
+    400690: Noteboard009
+    400692: Noteboard010
+    400694: Noteboard011
+    400696: Noteboard012
+    400698: Noteboard013
+    400700: Noteboard014
+    400702: Noteboard2
+    400704: Object002
+    400706: Object003
+    400708: Object004
+    400710: Object015
+    400712: Object016
+    400714: Object017
+    400716: Object018
+    400718: Object019
+    400720: Object029
+    400722: open book paper under small table
+    400724: open book under small table
+    400726: Paper018
+    400728: Paper019
+    400730: Paper020
+    400732: Paper021
+    400734: Paper022
+    400736: Plane008
+    400738: Plane009
+    400740: Plane010
+    400742: Plane063
+    400744: Plane064
+    400746: Plane065
+    400748: Plane066
+    400750: Plane067
+    400752: Plane069
+    400754: Plane070
+    400756: Plane071
+    400758: Plane072
+    400760: Plane073
+    400762: Plane074
+    400764: Plane075
+    400766: Plane077
+    400768: Plane078
+    400770: Plane079
+    400772: Plane080
+    400774: Plane081
+    400776: Plane082
+    400778: Plane083
+    400780: Plane084
+    400782: Plane085
+    400784: Plane086
+    400786: Plane087
+    400788: Plane088
+    400790: Plane089
+    400792: Plane090
+    400794: Plane091
+    400796: Plane092
+    400798: Plane093
+    400800: Plane094
+    400802: Plane095
+    400804: Plane100
+    400806: Plane101
+    400808: Plane102
+    400810: Plane103
+    400812: Plane104
+    400814: Plane106
+    400816: Plane107
+    400818: Plane108
+    400820: Plane109
+    400822: Plane110
+    400824: Plane111
+    400826: RecycingBin7_Paper
+    400828: RecyclingBin1_Paper
+    400830: RecyclingBin2_Plastic
+    400832: RecyclingBin3_Cans
+    400834: RecyclingBin4_Paper
+    400836: RecyclingBin5_Plastic
+    400838: RecyclingBin6_Cans
+    400840: RecyclingBin8_Plastic
+    400842: RecyclingBin9_Cans
+    400844: Roof Lamp001
+    400846: Roof Lamp002
+    400848: Roof Lamp003
+    400850: Roof Lamp004
+    400852: Roof Lamp005
+    400854: Roof Lamp006
+    400856: small open book on long table
+    400858: small open book paper on long table
+    400860: standing shelves
+    400862: standing shelves001
+    400864: standing shelves002
+    400866: standing shelves006
+    400868: standing shelves008
+    400870: TABLE1_CLASS
+    400872: TABLE3_STORE
+    400874: TABLE4_STORE
+    400876: THIN BOOK
+    400878: THIN BOOK001
+    400880: THIN BOOK003
+    400882: THIN BOOK004
+    400884: THIN BOOK005
+    400886: THIN BOOK006
+    400888: THIN BOOK007
+    400890: THIN BOOK008
+    400892: THIN BOOK009
+    400894: THIN BOOK010
+    400896: top book cover in stack on long table
+    400898: top book in stack on long table
+    400900: top open book on floor
+    400902: top open book paper on floor
+    400904: Trash1_Class
+    400906: Trash2_Hall
+    400908: VendingMachine
+    400910: Wall10_Hall
+    400912: Wall11_Store
+    400914: Wall12_Store
+    400916: Wall13_Store
+    400918: Wall14_Store
+    400920: Wall15_Secret
+    400922: Wall16_Secret
+    400924: Wall1_Class
+    400926: Wall2_Class
+    400928: Wall3_Class
+    400930: Wall4_Class
+    400932: Wall5_Hall
+    400934: Wall6_Hall
+    400936: Wall7_Hall
+    400938: Wall8_Hall
+    400940: Wall9_Hall
+    400942: WaterFountain1
+    400944: WaterFountain2
+    400946: WaterFountain3_Hall
+    400948: WaterFountain4_Hall
+    400950: WaterFountain5_Hall
+    400952: WaterFountain6_Hall
+    400954: WaterFountain7_Store
+    400956: WaterFountain8_Store
+    400958: WindowFrame1_Class
+    400960: WindowFrame2_Class
+    2100000: 'Material #24'
+    2100002: 'Material #23'
+    2100004: 'Material #22'
+    2100006: No Name
+    2100008: 'Material #216'
+    2100010: 'Material #3'
+    2100012: 'Material #20'
+    2100014: 01 - Default
+    2100016: 'Material #21'
+    2100018: 'Material #5'
+    2100020: 'Material #13'
+    2100022: 'Material #2'
+    2100024: 'Material #217'
+    2300000: Alarm003
+    2300002: Alarm004
+    2300004: Alarm005
+    2300006: Alarm006
+    2300008: Alarm011
+    2300010: Alarm012
+    2300012: Apple_TeacherDesk
+    2300014: beaker type - wide bottom003
+    2300016: beaker type - wide bottom004
+    2300018: beaker type - wide bottom1
+    2300020: beaker type - wide bottom2
+    2300022: big open book on long table
+    2300024: big open book paper on long table
+    2300026: BlackBoard001
+    2300028: BlackBoard002
+    2300030: book cover of closed book on floor
+    2300032: Book1_TeacherDesk
+    2300034: bottom book cover on closed book on long table
+    2300036: bottom book in stack on long table
+    2300038: 'bottom open book paper on floor '
+    2300040: bottom open bottom book next to open book
+    2300042: box
+    2300044: box001
+    2300046: box002
+    2300048: box006
+    2300050: box007
+    2300052: Box012
+    2300054: Box013
+    2300056: Box014
+    2300058: Box015
+    2300060: Box016
+    2300062: Box017
+    2300064: Box018
+    2300066: Box019
+    2300068: Box1000
+    2300070: Box1001
+    2300072: Box1002
+    2300074: Box1003
+    2300076: Box1004
+    2300078: Box1005
+    2300080: Box1006
+    2300082: Box1007
+    2300084: Box1008
+    2300086: Box1009
+    2300088: Box1010
+    2300090: Box1011
+    2300092: Box1012
+    2300094: Box1013
+    2300096: Box1014
+    2300098: Box1015
+    2300100: Box1016
+    2300102: Box1017
+    2300104: Box1018
+    2300106: Box1019
+    2300108: Box1020
+    2300110: Box1021
+    2300112: Box1022
+    2300114: Box1023
+    2300116: Box1024
+    2300118: Box1025
+    2300120: Box1026
+    2300122: Box1027
+    2300124: Box954
+    2300126: Box955
+    2300128: Box956
+    2300130: Box957
+    2300132: Box958
+    2300134: Box959
+    2300136: Box960
+    2300138: Box961
+    2300140: Box962
+    2300142: Box963
+    2300144: Box964
+    2300146: Box965
+    2300148: Box966
+    2300150: Box967
+    2300152: Box971
+    2300154: Box978
+    2300156: Box982
+    2300158: Box984
+    2300160: Box985
+    2300162: Box986
+    2300164: Box987
+    2300166: Box988
+    2300168: Box989
+    2300170: Box990
+    2300172: Box992
+    2300174: Box993
+    2300176: Box994
+    2300178: Box995
+    2300180: Box996
+    2300182: Box999
+    2300184: burette stand
+    2300186: burette stand001
+    2300188: Cabinet006
+    2300190: Cabinet014
+    2300192: Cabinet015
+    2300194: Cabinet016
+    2300196: Cabinet017
+    2300198: Cabinet018
+    2300200: ceiling
+    2300202: CEILING LIGHTS
+    2300204: CHAIR_STUDENT
+    2300206: CHAIR_STUDENT002
+    2300208: CHAIR_STUDENT003
+    2300210: CHAIR_STUDENT004
+    2300212: CHAIR_STUDENT005
+    2300214: CHAIR_STUDENT006
+    2300216: CHAIR_STUDENT007
+    2300218: CHAIR_STUDENT008
+    2300220: CHAIR_STUDENT009
+    2300222: CHAIR_STUDENT010
+    2300224: CHAIR_STUDENT011
+    2300226: CHAIR_STUDENT012
+    2300228: CHAIR_STUDENT013
+    2300230: CHAIR_STUDENT014
+    2300232: CHAIR_STUDENT015
+    2300234: CHAIR_STUDENT016
+    2300236: CHAIR_STUDENT017
+    2300238: CHAIR_STUDENT018
+    2300240: CHAIR_STUDENT019
+    2300242: CHAIR_TEACHER
+    2300244: Chalk Holder003
+    2300246: Chalk Holder004
+    2300248: CLOCK1_HALLWAY
+    2300250: closed book on floor
+    2300252: Cylinder003
+    2300254: Cylinder029
+    2300256: Cylinder069
+    2300258: Cylinder070
+    2300260: Cylinder071
+    2300262: Cylinder072
+    2300264: Cylinder073
+    2300266: Cylinder074
+    2300268: Cylinder080
+    2300270: Cylinder081
+    2300272: Cylinder082
+    2300274: Cylinder083
+    2300276: Cylinder084
+    2300278: Cylinder085
+    2300280: Cylinder086
+    2300282: Cylinder087
+    2300284: Cylinder088
+    2300286: Cylinder089
+    2300288: Cylinder090
+    2300290: Cylinder091
+    2300292: Cylinder094
+    2300294: Cylinder095
+    2300296: Cylinder096
+    2300298: Cylinder097
+    2300300: Cylinder098
+    2300302: Cylinder099
+    2300304: Cylinder100
+    2300306: Cylinder101
+    2300308: Cylinder102
+    2300310: Cylinder103
+    2300312: Cylinder104
+    2300314: Cylinder105
+    2300316: Cylinder106
+    2300318: Cylinder107
+    2300320: Cylinder108
+    2300322: Cylinder109
+    2300324: Cylinder110
+    2300326: Cylinder111
+    2300328: Cylinder112
+    2300330: Cylinder113
+    2300332: Cylinder122
+    2300334: Cylinder123
+    2300336: Cylinder124
+    2300338: Cylinder125
+    2300340: Cylinder126
+    2300342: Cylinder127
+    2300344: Cylinder128
+    2300346: Cylinder129
+    2300348: Cylinder130
+    2300350: Cylinder131
+    2300352: Cylinder132
+    2300354: Cylinder133
+    2300356: Cylinder134
+    2300358: Cylinder135
+    2300360: Cylinder136
+    2300362: Cylinder137
+    2300364: Cylinder138
+    2300366: Cylinder139
+    2300368: Cylinder140
+    2300370: Cylinder141
+    2300372: Cylinder142
+    2300374: Cylinder143
+    2300376: Cylinder144
+    2300378: Cylinder145
+    2300380: Cylinder146
+    2300382: Cylinder147
+    2300384: Cylinder148
+    2300386: Cylinder149
+    2300388: Cylinder150
+    2300390: Cylinder151
+    2300392: Cylinder152
+    2300394: Cylinder153
+    2300396: Cylinder154
+    2300398: Cylinder155
+    2300400: Cylinder156
+    2300402: Cylinder157
+    2300404: Cylinder158
+    2300406: Cylinder159
+    2300408: Cylinder160
+    2300410: Cylinder161
+    2300412: Cylinder162
+    2300414: Cylinder163
+    2300416: Cylinder164
+    2300418: Cylinder165
+    2300420: Cylinder166
+    2300422: Cylinder167
+    2300424: Cylinder168
+    2300426: Cylinder169
+    2300428: Cylinder170
+    2300430: Cylinder171
+    2300432: Cylinder172
+    2300434: Cylinder173
+    2300436: Cylinder174
+    2300438: Cylinder175
+    2300440: Cylinder176
+    2300442: Cylinder177
+    2300444: Cylinder178
+    2300446: Cylinder179
+    2300448: Cylinder180
+    2300450: Cylinder181
+    2300452: Cylinder182
+    2300454: Cylinder183
+    2300456: Cylinder184
+    2300458: Cylinder185
+    2300460: Cylinder186
+    2300462: Cylinder187
+    2300464: Cylinder188
+    2300466: Cylinder189
+    2300468: Cylinder190
+    2300470: Cylinder191
+    2300472: Cylinder192
+    2300474: Cylinder193
+    2300476: Cylinder194
+    2300478: Cylinder195
+    2300480: Cylinder196
+    2300482: Cylinder197
+    2300484: Cylinder198
+    2300486: Cylinder199
+    2300488: Cylinder200
+    2300490: Cylinder201
+    2300492: Cylinder202
+    2300494: Cylinder203
+    2300496: Cylinder204
+    2300498: Cylinder205
+    2300500: Cylinder206
+    2300502: Cylinder207
+    2300504: Cylinder208
+    2300506: Cylinder209
+    2300508: Cylinder213
+    2300510: Cylinder214
+    2300512: Cylinder215
+    2300514: Cylinder216
+    2300516: Cylinder217
+    2300518: Cylinder218
+    2300520: Cylinder219
+    2300522: Cylinder220
+    2300524: Cylinder221
+    2300526: Cylinder222
+    2300528: Cylinder223
+    2300530: Cylinder224
+    2300532: Cylinder225
+    2300534: Cylinder226
+    2300536: Cylinder227
+    2300538: Cylinder228
+    2300540: Cylinder229
+    2300542: Cylinder230
+    2300544: Cylinder231
+    2300546: Cylinder232
+    2300548: Cylinder233
+    2300550: Cylinder234
+    2300552: Cylinder235
+    2300554: Cylinder236
+    2300556: Cylinder237
+    2300558: Cylinder238
+    2300560: Cylinder239
+    2300562: Cylinder240
+    2300564: Cylinder241
+    2300566: Cylinder242
+    2300568: Cylinder243
+    2300570: Cylinder244
+    2300572: Cylinder245
+    2300574: Cylinder246
+    2300576: DESK_STUDENT001
+    2300578: DESK_STUDENT002
+    2300580: DESK_STUDENT003
+    2300582: DESK_STUDENT004
+    2300584: DESK_STUDENT005
+    2300586: DESK_STUDENT006
+    2300588: DESK_STUDENT007
+    2300590: DESK_STUDENT008
+    2300592: DESK_STUDENT009
+    2300594: DESK_STUDENT010
+    2300596: DESK_STUDENT011
+    2300598: DESK_STUDENT012
+    2300600: DESK_STUDENT013
+    2300602: DESK_STUDENT014
+    2300604: DESK_STUDENT015
+    2300606: DESK_STUDENT016
+    2300608: DESK_STUDENT017
+    2300610: DESK_STUDENT018
+    2300612: DESK_TEACHER
+    2300614: door frame001
+    2300616: door frame002
+    2300618: door frame003
+    2300620: door frame004
+    2300622: door frame005
+    2300624: door001
+    2300626: door002
+    2300628: door003
+    2300630: door004
+    2300632: door005
+    2300634: Electrical Junction
+    2300636: Electrical Junction001
+    2300638: Electrical Line
+    2300640: Electrical Line001
+    2300642: EntryToSecretPath
+    2300644: fridge
+    2300646: gas tank 2
+    2300648: Line117
+    2300650: Lockers
+    2300652: Lockpad_lockers
+    2300654: Lockpad_lockers 1
+    2300656: Lockpad_lockers 2
+    2300658: Lockpad_lockers 3
+    2300660: Lockpad_lockers 4
+    2300662: Lockpad_lockers 5
+    2300664: Lockpad_lockers 6
+    2300666: Lockpad_lockers 7
+    2300668: middle book coverin stack on long table
+    2300670: middle book in stack on long table
+    2300672: MUG
+    2300674: Noteboard003
+    2300676: Noteboard004
+    2300678: Noteboard008
+    2300680: Noteboard009
+    2300682: Noteboard010
+    2300684: Noteboard011
+    2300686: Noteboard012
+    2300688: Noteboard013
+    2300690: Noteboard014
+    2300692: Noteboard2
+    2300694: Object002
+    2300696: Object003
+    2300698: Object004
+    2300700: Object015
+    2300702: Object016
+    2300704: Object017
+    2300706: Object018
+    2300708: Object019
+    2300710: Object029
+    2300712: open book paper under small table
+    2300714: open book under small table
+    2300716: Paper018
+    2300718: Paper019
+    2300720: Paper020
+    2300722: Paper021
+    2300724: Paper022
+    2300726: Plane008
+    2300728: Plane009
+    2300730: Plane010
+    2300732: Plane063
+    2300734: Plane064
+    2300736: Plane065
+    2300738: Plane066
+    2300740: Plane067
+    2300742: Plane069
+    2300744: Plane070
+    2300746: Plane071
+    2300748: Plane072
+    2300750: Plane073
+    2300752: Plane074
+    2300754: Plane075
+    2300756: Plane077
+    2300758: Plane078
+    2300760: Plane079
+    2300762: Plane080
+    2300764: Plane081
+    2300766: Plane082
+    2300768: Plane083
+    2300770: Plane084
+    2300772: Plane085
+    2300774: Plane086
+    2300776: Plane087
+    2300778: Plane088
+    2300780: Plane089
+    2300782: Plane090
+    2300784: Plane091
+    2300786: Plane092
+    2300788: Plane093
+    2300790: Plane094
+    2300792: Plane095
+    2300794: Plane100
+    2300796: Plane101
+    2300798: Plane102
+    2300800: Plane103
+    2300802: Plane104
+    2300804: Plane106
+    2300806: Plane107
+    2300808: Plane108
+    2300810: Plane109
+    2300812: Plane110
+    2300814: Plane111
+    2300816: RecycingBin7_Paper
+    2300818: RecyclingBin1_Paper
+    2300820: RecyclingBin2_Plastic
+    2300822: RecyclingBin3_Cans
+    2300824: RecyclingBin4_Paper
+    2300826: RecyclingBin5_Plastic
+    2300828: RecyclingBin6_Cans
+    2300830: RecyclingBin8_Plastic
+    2300832: RecyclingBin9_Cans
+    2300834: Roof Lamp001
+    2300836: Roof Lamp002
+    2300838: Roof Lamp003
+    2300840: Roof Lamp004
+    2300842: Roof Lamp005
+    2300844: Roof Lamp006
+    2300846: small open book on long table
+    2300848: small open book paper on long table
+    2300850: standing shelves
+    2300852: standing shelves001
+    2300854: standing shelves002
+    2300856: standing shelves006
+    2300858: standing shelves008
+    2300860: TABLE1_CLASS
+    2300862: TABLE3_STORE
+    2300864: TABLE4_STORE
+    2300866: THIN BOOK
+    2300868: THIN BOOK001
+    2300870: THIN BOOK003
+    2300872: THIN BOOK004
+    2300874: THIN BOOK005
+    2300876: THIN BOOK006
+    2300878: THIN BOOK007
+    2300880: THIN BOOK008
+    2300882: THIN BOOK009
+    2300884: THIN BOOK010
+    2300886: top book cover in stack on long table
+    2300888: top book in stack on long table
+    2300890: top open book on floor
+    2300892: top open book paper on floor
+    2300894: Trash1_Class
+    2300896: Trash2_Hall
+    2300898: VendingMachine
+    2300900: Wall10_Hall
+    2300902: Wall11_Store
+    2300904: Wall12_Store
+    2300906: Wall13_Store
+    2300908: Wall14_Store
+    2300910: Wall15_Secret
+    2300912: Wall16_Secret
+    2300914: Wall1_Class
+    2300916: Wall2_Class
+    2300918: Wall3_Class
+    2300920: Wall4_Class
+    2300922: Wall5_Hall
+    2300924: Wall6_Hall
+    2300926: Wall7_Hall
+    2300928: Wall8_Hall
+    2300930: Wall9_Hall
+    2300932: WaterFountain1
+    2300934: WaterFountain2
+    2300936: WaterFountain3_Hall
+    2300938: WaterFountain4_Hall
+    2300940: WaterFountain5_Hall
+    2300942: WaterFountain6_Hall
+    2300944: WaterFountain7_Store
+    2300946: WaterFountain8_Store
+    2300948: WindowFrame1_Class
+    2300950: WindowFrame2_Class
+    3300000: Alarm003
+    3300002: Alarm004
+    3300004: Alarm005
+    3300006: Alarm006
+    3300008: Alarm011
+    3300010: Alarm012
+    3300012: Apple_TeacherDesk
+    3300014: beaker type - wide bottom003
+    3300016: beaker type - wide bottom004
+    3300018: beaker type - wide bottom1
+    3300020: beaker type - wide bottom2
+    3300022: big open book on long table
+    3300024: big open book paper on long table
+    3300026: BlackBoard001
+    3300028: BlackBoard002
+    3300030: book cover of closed book on floor
+    3300032: Book1_TeacherDesk
+    3300034: bottom book cover on closed book on long table
+    3300036: bottom book in stack on long table
+    3300038: 'bottom open book paper on floor '
+    3300040: bottom open bottom book next to open book
+    3300042: box
+    3300044: box001
+    3300046: box002
+    3300048: box006
+    3300050: box007
+    3300052: Box012
+    3300054: Box013
+    3300056: Box014
+    3300058: Box015
+    3300060: Box016
+    3300062: Box017
+    3300064: Box018
+    3300066: Box019
+    3300068: Box1000
+    3300070: Box1001
+    3300072: Box1002
+    3300074: Box1003
+    3300076: Box1004
+    3300078: Box1005
+    3300080: Box1006
+    3300082: Box1007
+    3300084: Box1008
+    3300086: Box1009
+    3300088: Box1010
+    3300090: Box1011
+    3300092: Box1012
+    3300094: Box1013
+    3300096: Box1014
+    3300098: Box1015
+    3300100: Box1016
+    3300102: Box1017
+    3300104: Box1018
+    3300106: Box1019
+    3300108: Box1020
+    3300110: Box1021
+    3300112: Box1022
+    3300114: Box1023
+    3300116: Box1024
+    3300118: Box1025
+    3300120: Box1026
+    3300122: Box1027
+    3300124: Box954
+    3300126: Box955
+    3300128: Box956
+    3300130: Box957
+    3300132: Box958
+    3300134: Box959
+    3300136: Box960
+    3300138: Box961
+    3300140: Box962
+    3300142: Box963
+    3300144: Box964
+    3300146: Box965
+    3300148: Box966
+    3300150: Box967
+    3300152: Box971
+    3300154: Box978
+    3300156: Box982
+    3300158: Box984
+    3300160: Box985
+    3300162: Box986
+    3300164: Box987
+    3300166: Box988
+    3300168: Box989
+    3300170: Box990
+    3300172: Box992
+    3300174: Box993
+    3300176: Box994
+    3300178: Box995
+    3300180: Box996
+    3300182: Box999
+    3300184: burette stand
+    3300186: burette stand001
+    3300188: Cabinet006
+    3300190: Cabinet014
+    3300192: Cabinet015
+    3300194: Cabinet016
+    3300196: Cabinet017
+    3300198: Cabinet018
+    3300200: ceiling
+    3300202: CEILING LIGHTS
+    3300204: CHAIR_STUDENT
+    3300206: CHAIR_STUDENT002
+    3300208: CHAIR_STUDENT003
+    3300210: CHAIR_STUDENT004
+    3300212: CHAIR_STUDENT005
+    3300214: CHAIR_STUDENT006
+    3300216: CHAIR_STUDENT007
+    3300218: CHAIR_STUDENT008
+    3300220: CHAIR_STUDENT009
+    3300222: CHAIR_STUDENT010
+    3300224: CHAIR_STUDENT011
+    3300226: CHAIR_STUDENT012
+    3300228: CHAIR_STUDENT013
+    3300230: CHAIR_STUDENT014
+    3300232: CHAIR_STUDENT015
+    3300234: CHAIR_STUDENT016
+    3300236: CHAIR_STUDENT017
+    3300238: CHAIR_STUDENT018
+    3300240: CHAIR_STUDENT019
+    3300242: CHAIR_TEACHER
+    3300244: Chalk Holder003
+    3300246: Chalk Holder004
+    3300248: CLOCK1_HALLWAY
+    3300250: closed book on floor
+    3300252: Cylinder003
+    3300254: Cylinder029
+    3300256: Cylinder069
+    3300258: Cylinder070
+    3300260: Cylinder071
+    3300262: Cylinder072
+    3300264: Cylinder073
+    3300266: Cylinder074
+    3300268: Cylinder080
+    3300270: Cylinder081
+    3300272: Cylinder082
+    3300274: Cylinder083
+    3300276: Cylinder084
+    3300278: Cylinder085
+    3300280: Cylinder086
+    3300282: Cylinder087
+    3300284: Cylinder088
+    3300286: Cylinder089
+    3300288: Cylinder090
+    3300290: Cylinder091
+    3300292: Cylinder094
+    3300294: Cylinder095
+    3300296: Cylinder096
+    3300298: Cylinder097
+    3300300: Cylinder098
+    3300302: Cylinder099
+    3300304: Cylinder100
+    3300306: Cylinder101
+    3300308: Cylinder102
+    3300310: Cylinder103
+    3300312: Cylinder104
+    3300314: Cylinder105
+    3300316: Cylinder106
+    3300318: Cylinder107
+    3300320: Cylinder108
+    3300322: Cylinder109
+    3300324: Cylinder110
+    3300326: Cylinder111
+    3300328: Cylinder112
+    3300330: Cylinder113
+    3300332: Cylinder122
+    3300334: Cylinder123
+    3300336: Cylinder124
+    3300338: Cylinder125
+    3300340: Cylinder126
+    3300342: Cylinder127
+    3300344: Cylinder128
+    3300346: Cylinder129
+    3300348: Cylinder130
+    3300350: Cylinder131
+    3300352: Cylinder132
+    3300354: Cylinder133
+    3300356: Cylinder134
+    3300358: Cylinder135
+    3300360: Cylinder136
+    3300362: Cylinder137
+    3300364: Cylinder138
+    3300366: Cylinder139
+    3300368: Cylinder140
+    3300370: Cylinder141
+    3300372: Cylinder142
+    3300374: Cylinder143
+    3300376: Cylinder144
+    3300378: Cylinder145
+    3300380: Cylinder146
+    3300382: Cylinder147
+    3300384: Cylinder148
+    3300386: Cylinder149
+    3300388: Cylinder150
+    3300390: Cylinder151
+    3300392: Cylinder152
+    3300394: Cylinder153
+    3300396: Cylinder154
+    3300398: Cylinder155
+    3300400: Cylinder156
+    3300402: Cylinder157
+    3300404: Cylinder158
+    3300406: Cylinder159
+    3300408: Cylinder160
+    3300410: Cylinder161
+    3300412: Cylinder162
+    3300414: Cylinder163
+    3300416: Cylinder164
+    3300418: Cylinder165
+    3300420: Cylinder166
+    3300422: Cylinder167
+    3300424: Cylinder168
+    3300426: Cylinder169
+    3300428: Cylinder170
+    3300430: Cylinder171
+    3300432: Cylinder172
+    3300434: Cylinder173
+    3300436: Cylinder174
+    3300438: Cylinder175
+    3300440: Cylinder176
+    3300442: Cylinder177
+    3300444: Cylinder178
+    3300446: Cylinder179
+    3300448: Cylinder180
+    3300450: Cylinder181
+    3300452: Cylinder182
+    3300454: Cylinder183
+    3300456: Cylinder184
+    3300458: Cylinder185
+    3300460: Cylinder186
+    3300462: Cylinder187
+    3300464: Cylinder188
+    3300466: Cylinder189
+    3300468: Cylinder190
+    3300470: Cylinder191
+    3300472: Cylinder192
+    3300474: Cylinder193
+    3300476: Cylinder194
+    3300478: Cylinder195
+    3300480: Cylinder196
+    3300482: Cylinder197
+    3300484: Cylinder198
+    3300486: Cylinder199
+    3300488: Cylinder200
+    3300490: Cylinder201
+    3300492: Cylinder202
+    3300494: Cylinder203
+    3300496: Cylinder204
+    3300498: Cylinder205
+    3300500: Cylinder206
+    3300502: Cylinder207
+    3300504: Cylinder208
+    3300506: Cylinder209
+    3300508: Cylinder213
+    3300510: Cylinder214
+    3300512: Cylinder215
+    3300514: Cylinder216
+    3300516: Cylinder217
+    3300518: Cylinder218
+    3300520: Cylinder219
+    3300522: Cylinder220
+    3300524: Cylinder221
+    3300526: Cylinder222
+    3300528: Cylinder223
+    3300530: Cylinder224
+    3300532: Cylinder225
+    3300534: Cylinder226
+    3300536: Cylinder227
+    3300538: Cylinder228
+    3300540: Cylinder229
+    3300542: Cylinder230
+    3300544: Cylinder231
+    3300546: Cylinder232
+    3300548: Cylinder233
+    3300550: Cylinder234
+    3300552: Cylinder235
+    3300554: Cylinder236
+    3300556: Cylinder237
+    3300558: Cylinder238
+    3300560: Cylinder239
+    3300562: Cylinder240
+    3300564: Cylinder241
+    3300566: Cylinder242
+    3300568: Cylinder243
+    3300570: Cylinder244
+    3300572: Cylinder245
+    3300574: Cylinder246
+    3300576: DESK_STUDENT001
+    3300578: DESK_STUDENT002
+    3300580: DESK_STUDENT003
+    3300582: DESK_STUDENT004
+    3300584: DESK_STUDENT005
+    3300586: DESK_STUDENT006
+    3300588: DESK_STUDENT007
+    3300590: DESK_STUDENT008
+    3300592: DESK_STUDENT009
+    3300594: DESK_STUDENT010
+    3300596: DESK_STUDENT011
+    3300598: DESK_STUDENT012
+    3300600: DESK_STUDENT013
+    3300602: DESK_STUDENT014
+    3300604: DESK_STUDENT015
+    3300606: DESK_STUDENT016
+    3300608: DESK_STUDENT017
+    3300610: DESK_STUDENT018
+    3300612: DESK_TEACHER
+    3300614: door frame001
+    3300616: door frame002
+    3300618: door frame003
+    3300620: door frame004
+    3300622: door frame005
+    3300624: door001
+    3300626: door002
+    3300628: door003
+    3300630: door004
+    3300632: door005
+    3300634: Electrical Junction
+    3300636: Electrical Junction001
+    3300638: Electrical Line
+    3300640: Electrical Line001
+    3300642: EntryToSecretPath
+    3300644: fridge
+    3300646: gas tank 2
+    3300648: Line117
+    3300650: Lockers
+    3300652: Lockpad_lockers
+    3300654: Lockpad_lockers 1
+    3300656: Lockpad_lockers 2
+    3300658: Lockpad_lockers 3
+    3300660: Lockpad_lockers 4
+    3300662: Lockpad_lockers 5
+    3300664: Lockpad_lockers 6
+    3300666: Lockpad_lockers 7
+    3300668: middle book coverin stack on long table
+    3300670: middle book in stack on long table
+    3300672: MUG
+    3300674: Noteboard003
+    3300676: Noteboard004
+    3300678: Noteboard008
+    3300680: Noteboard009
+    3300682: Noteboard010
+    3300684: Noteboard011
+    3300686: Noteboard012
+    3300688: Noteboard013
+    3300690: Noteboard014
+    3300692: Noteboard2
+    3300694: Object002
+    3300696: Object003
+    3300698: Object004
+    3300700: Object015
+    3300702: Object016
+    3300704: Object017
+    3300706: Object018
+    3300708: Object019
+    3300710: Object029
+    3300712: open book paper under small table
+    3300714: open book under small table
+    3300716: Paper018
+    3300718: Paper019
+    3300720: Paper020
+    3300722: Paper021
+    3300724: Paper022
+    3300726: Plane008
+    3300728: Plane009
+    3300730: Plane010
+    3300732: Plane063
+    3300734: Plane064
+    3300736: Plane065
+    3300738: Plane066
+    3300740: Plane067
+    3300742: Plane069
+    3300744: Plane070
+    3300746: Plane071
+    3300748: Plane072
+    3300750: Plane073
+    3300752: Plane074
+    3300754: Plane075
+    3300756: Plane077
+    3300758: Plane078
+    3300760: Plane079
+    3300762: Plane080
+    3300764: Plane081
+    3300766: Plane082
+    3300768: Plane083
+    3300770: Plane084
+    3300772: Plane085
+    3300774: Plane086
+    3300776: Plane087
+    3300778: Plane088
+    3300780: Plane089
+    3300782: Plane090
+    3300784: Plane091
+    3300786: Plane092
+    3300788: Plane093
+    3300790: Plane094
+    3300792: Plane095
+    3300794: Plane100
+    3300796: Plane101
+    3300798: Plane102
+    3300800: Plane103
+    3300802: Plane104
+    3300804: Plane106
+    3300806: Plane107
+    3300808: Plane108
+    3300810: Plane109
+    3300812: Plane110
+    3300814: Plane111
+    3300816: RecycingBin7_Paper
+    3300818: RecyclingBin1_Paper
+    3300820: RecyclingBin2_Plastic
+    3300822: RecyclingBin3_Cans
+    3300824: RecyclingBin4_Paper
+    3300826: RecyclingBin5_Plastic
+    3300828: RecyclingBin6_Cans
+    3300830: RecyclingBin8_Plastic
+    3300832: RecyclingBin9_Cans
+    3300834: Roof Lamp001
+    3300836: Roof Lamp002
+    3300838: Roof Lamp003
+    3300840: Roof Lamp004
+    3300842: Roof Lamp005
+    3300844: Roof Lamp006
+    3300846: small open book on long table
+    3300848: small open book paper on long table
+    3300850: standing shelves
+    3300852: standing shelves001
+    3300854: standing shelves002
+    3300856: standing shelves006
+    3300858: standing shelves008
+    3300860: TABLE1_CLASS
+    3300862: TABLE3_STORE
+    3300864: TABLE4_STORE
+    3300866: THIN BOOK
+    3300868: THIN BOOK001
+    3300870: THIN BOOK003
+    3300872: THIN BOOK004
+    3300874: THIN BOOK005
+    3300876: THIN BOOK006
+    3300878: THIN BOOK007
+    3300880: THIN BOOK008
+    3300882: THIN BOOK009
+    3300884: THIN BOOK010
+    3300886: top book cover in stack on long table
+    3300888: top book in stack on long table
+    3300890: top open book on floor
+    3300892: top open book paper on floor
+    3300894: Trash1_Class
+    3300896: Trash2_Hall
+    3300898: VendingMachine
+    3300900: Wall10_Hall
+    3300902: Wall11_Store
+    3300904: Wall12_Store
+    3300906: Wall13_Store
+    3300908: Wall14_Store
+    3300910: Wall15_Secret
+    3300912: Wall16_Secret
+    3300914: Wall1_Class
+    3300916: Wall2_Class
+    3300918: Wall3_Class
+    3300920: Wall4_Class
+    3300922: Wall5_Hall
+    3300924: Wall6_Hall
+    3300926: Wall7_Hall
+    3300928: Wall8_Hall
+    3300930: Wall9_Hall
+    3300932: WaterFountain1
+    3300934: WaterFountain2
+    3300936: WaterFountain3_Hall
+    3300938: WaterFountain4_Hall
+    3300940: WaterFountain5_Hall
+    3300942: WaterFountain6_Hall
+    3300944: WaterFountain7_Store
+    3300946: WaterFountain8_Store
+    3300948: WindowFrame1_Class
+    3300950: WindowFrame2_Class
+    4300000: Trash1_Class
+    4300002: Box957
+    4300004: Plane063
+    4300006: Plane064
+    4300008: Plane065
+    4300010: Plane066
+    4300012: Plane067
+    4300014: Cylinder069
+    4300016: Cylinder070
+    4300018: Cylinder071
+    4300020: Cylinder072
+    4300022: Cylinder073
+    4300024: Cylinder074
+    4300026: Cylinder080
+    4300028: Object015
+    4300030: MUG
+    4300032: Apple_TeacherDesk
+    4300034: THIN BOOK
+    4300036: Book1_TeacherDesk
+    4300038: Cylinder205
+    4300040: Cylinder206
+    4300042: Cylinder207
+    4300044: Cylinder208
+    4300046: Cylinder209
+    4300048: Plane091
+    4300050: Plane092
+    4300052: Plane093
+    4300054: Plane094
+    4300056: Plane095
+    4300058: Plane100
+    4300060: Plane106
+    4300062: Box1009
+    4300064: Box1011
+    4300066: Cylinder216
+    4300068: Cylinder217
+    4300070: Cylinder218
+    4300072: Cylinder219
+    4300074: Cylinder220
+    4300076: Cylinder221
+    4300078: Cylinder222
+    4300080: Cylinder223
+    4300082: Cylinder224
+    4300084: Cylinder225
+    4300086: Cylinder226
+    4300088: Cylinder227
+    4300090: Cylinder228
+    4300092: Cylinder229
+    4300094: Cylinder230
+    4300096: Cylinder231
+    4300098: Cylinder232
+    4300100: Cylinder233
+    4300102: Cylinder234
+    4300104: Cylinder235
+    4300106: Cylinder236
+    4300108: Cylinder237
+    4300110: Box1012
+    4300112: Box1013
+    4300114: Cylinder029
+    4300116: DESK_TEACHER
+    4300118: big open book paper on long table
+    4300120: big open book on long table
+    4300122: Object002
+    4300124: bottom book in stack on long table
+    4300126: small open book on long table
+    4300128: small open book paper on long table
+    4300130: top book cover in stack on long table
+    4300132: middle book coverin stack on long table
+    4300134: bottom book cover on closed book on long table
+    4300136: middle book in stack on long table
+    4300138: top book in stack on long table
+    4300140: Alarm004
+    4300142: CHAIR_TEACHER
+    4300144: Noteboard012
+    4300146: Noteboard013
+    4300148: CHAIR_STUDENT002
+    4300150: DESK_STUDENT001
+    4300152: Box954
+    4300154: Box955
+    4300156: Box956
+    4300158: Box958
+    4300160: Box959
+    4300162: Cylinder081
+    4300164: Plane069
+    4300166: Plane070
+    4300168: DESK_STUDENT017
+    4300170: DESK_STUDENT016
+    4300172: Plane073
+    4300174: Cylinder082
+    4300176: Cylinder083
+    4300178: Cylinder084
+    4300180: Plane074
+    4300182: Object016
+    4300184: Box960
+    4300186: Box961
+    4300188: Box962
+    4300190: Box963
+    4300192: Box964
+    4300194: THIN BOOK001
+    4300196: THIN BOOK003
+    4300198: THIN BOOK004
+    4300200: THIN BOOK005
+    4300202: THIN BOOK006
+    4300204: Object017
+    4300206: Object018
+    4300208: Object019
+    4300210: Cylinder085
+    4300212: Plane075
+    4300214: Plane077
+    4300216: Plane078
+    4300218: Plane079
+    4300220: Plane080
+    4300222: Cylinder086
+    4300224: Cylinder087
+    4300226: Cylinder088
+    4300228: Cylinder089
+    4300230: Box965
+    4300232: Box966
+    4300234: Box967
+    4300236: Cylinder090
+    4300238: Cylinder091
+    4300240: Cylinder094
+    4300242: Cylinder095
+    4300244: Cylinder096
+    4300246: Cylinder097
+    4300248: Cylinder098
+    4300250: Cylinder099
+    4300252: Cylinder100
+    4300254: Cylinder101
+    4300256: Cylinder102
+    4300258: Cylinder103
+    4300260: Cylinder104
+    4300262: Cylinder105
+    4300264: Cylinder106
+    4300266: Cylinder107
+    4300268: Cylinder108
+    4300270: Cylinder109
+    4300272: Cylinder110
+    4300274: Cylinder111
+    4300276: Cylinder112
+    4300278: Plane081
+    4300280: Plane082
+    4300282: Plane083
+    4300284: Plane084
+    4300286: Plane085
+    4300288: Box971
+    4300290: Cylinder113
+    4300292: Box978
+    4300294: RecyclingBin1_Paper
+    4300296: RecyclingBin2_Plastic
+    4300298: RecyclingBin3_Cans
+    4300300: RecyclingBin4_Paper
+    4300302: RecyclingBin5_Plastic
+    4300304: RecyclingBin6_Cans
+    4300306: RecycingBin7_Paper
+    4300308: RecyclingBin8_Plastic
+    4300310: RecyclingBin9_Cans
+    4300312: VendingMachine
+    4300314: WaterFountain3_Hall
+    4300316: Box982
+    4300318: THIN BOOK007
+    4300320: THIN BOOK008
+    4300322: DESK_STUDENT015
+    4300324: Box984
+    4300326: Box985
+    4300328: Box986
+    4300330: Box987
+    4300332: Box988
+    4300334: Box989
+    4300336: Box990
+    4300338: CHAIR_STUDENT
+    4300340: Box992
+    4300342: Box993
+    4300344: Box994
+    4300346: Box995
+    4300348: Box996
+    4300350: Trash2_Hall
+    4300352: Box999
+    4300354: Cylinder122
+    4300356: Cylinder123
+    4300358: Cylinder124
+    4300360: Cylinder125
+    4300362: Cylinder126
+    4300364: Cylinder127
+    4300366: Cylinder128
+    4300368: Cylinder129
+    4300370: Box1000
+    4300372: Cylinder130
+    4300374: Cylinder131
+    4300376: Cylinder132
+    4300378: Cylinder133
+    4300380: Cylinder134
+    4300382: Cylinder135
+    4300384: Cylinder136
+    4300386: Cylinder137
+    4300388: Box1001
+    4300390: Cylinder138
+    4300392: Cylinder139
+    4300394: Cylinder140
+    4300396: Cylinder141
+    4300398: Cylinder142
+    4300400: Cylinder143
+    4300402: Cylinder144
+    4300404: Cylinder145
+    4300406: Box1002
+    4300408: Box1003
+    4300410: Cylinder146
+    4300412: Cylinder147
+    4300414: Cylinder148
+    4300416: Cylinder149
+    4300418: Cylinder150
+    4300420: Cylinder151
+    4300422: Cylinder152
+    4300424: Cylinder153
+    4300426: Cylinder154
+    4300428: Cylinder155
+    4300430: Cylinder156
+    4300432: Cylinder157
+    4300434: Cylinder158
+    4300436: Cylinder159
+    4300438: Box1004
+    4300440: Cylinder160
+    4300442: Cylinder161
+    4300444: Cylinder162
+    4300446: Cylinder163
+    4300448: Cylinder164
+    4300450: Cylinder165
+    4300452: Cylinder166
+    4300454: Cylinder167
+    4300456: Box1005
+    4300458: Cylinder168
+    4300460: Cylinder169
+    4300462: Cylinder170
+    4300464: Cylinder171
+    4300466: Cylinder172
+    4300468: Cylinder173
+    4300470: Cylinder174
+    4300472: Cylinder175
+    4300474: Box1006
+    4300476: Box1007
+    4300478: Cylinder176
+    4300480: Cylinder177
+    4300482: Cylinder178
+    4300484: Cylinder179
+    4300486: Cylinder180
+    4300488: Cylinder181
+    4300490: Cylinder182
+    4300492: Cylinder183
+    4300494: Cylinder184
+    4300496: Cylinder185
+    4300498: Cylinder186
+    4300500: Cylinder187
+    4300502: Cylinder188
+    4300504: Cylinder189
+    4300506: Cylinder190
+    4300508: Cylinder191
+    4300510: Box1008
+    4300512: Cylinder192
+    4300514: Cylinder193
+    4300516: Cylinder194
+    4300518: Cylinder195
+    4300520: Cylinder196
+    4300522: Cylinder197
+    4300524: Cylinder198
+    4300526: Cylinder199
+    4300528: WaterFountain4_Hall
+    4300530: WaterFountain1
+    4300532: WaterFountain2
+    4300534: WaterFountain5_Hall
+    4300536: WaterFountain6_Hall
+    4300538: Cylinder200
+    4300540: Cylinder201
+    4300542: Cylinder202
+    4300544: Cylinder203
+    4300546: Cylinder204
+    4300548: Plane086
+    4300550: Plane087
+    4300552: Plane088
+    4300554: Plane089
+    4300556: Plane090
+    4300558: THIN BOOK009
+    4300560: THIN BOOK010
+    4300562: Cylinder213
+    4300564: Cylinder214
+    4300566: Cylinder215
+    4300568: Plane101
+    4300570: Plane102
+    4300572: Plane103
+    4300574: Plane104
+    4300576: DESK_STUDENT014
+    4300578: Cylinder238
+    4300580: Cylinder239
+    4300582: Cylinder240
+    4300584: Cylinder241
+    4300586: Cylinder242
+    4300588: Plane107
+    4300590: Plane108
+    4300592: Plane109
+    4300594: Plane110
+    4300596: Plane111
+    4300598: DESK_STUDENT013
+    4300600: CHAIR_STUDENT019
+    4300602: CHAIR_STUDENT018
+    4300604: CHAIR_STUDENT017
+    4300606: CHAIR_STUDENT016
+    4300608: CHAIR_STUDENT015
+    4300610: CHAIR_STUDENT014
+    4300612: DESK_STUDENT012
+    4300614: Box1022
+    4300616: Box1023
+    4300618: WaterFountain7_Store
+    4300620: WaterFountain8_Store
+    4300622: Box1024
+    4300624: Box1025
+    4300626: Box1026
+    4300628: Box1027
+    4300630: door frame004
+    4300632: Alarm005
+    4300634: door004
+    4300636: DESK_STUDENT011
+    4300638: DESK_STUDENT010
+    4300640: Wall8_Hall
+    4300642: DESK_STUDENT009
+    4300644: Box012
+    4300646: Box015
+    4300648: CHAIR_STUDENT013
+    4300650: door frame005
+    4300652: door005
+    4300654: Plane010
+    4300656: WindowFrame2_Class
+    4300658: CHAIR_STUDENT012
+    4300660: CHAIR_STUDENT011
+    4300662: Cabinet006
+    4300664: standing shelves002
+    4300666: standing shelves001
+    4300668: burette stand001
+    4300670: box002
+    4300672: beaker type - wide bottom004
+    4300674: beaker type - wide bottom003
+    4300676: Object004
+    4300678: Electrical Line001
+    4300680: Electrical Junction001
+    4300682: EntryToSecretPath
+    4300684: Roof Lamp006
+    4300686: Roof Lamp005
+    4300688: Roof Lamp004
+    4300690: Roof Lamp003
+    4300692: Roof Lamp002
+    4300694: box001
+    4300696: Paper022
+    4300698: Paper021
+    4300700: Paper020
+    4300702: Paper019
+    4300704: Paper018
+    4300706: Noteboard004
+    4300708: door003
+    4300710: door frame003
+    4300712: door002
+    4300714: door frame002
+    4300716: door001
+    4300718: door frame001
+    4300720: Object003
+    4300722: CHAIR_STUDENT010
+    4300724: Roof Lamp001
+    4300726: Chalk Holder004
+    4300728: DESK_STUDENT006
+    4300730: DESK_STUDENT005
+    4300732: Electrical Junction
+    4300734: Electrical Line
+    4300736: CHAIR_STUDENT007
+    4300738: Box019
+    4300740: Box018
+    4300742: Box017
+    4300744: Box016
+    4300746: Box014
+    4300748: Box013
+    4300750: book cover of closed book on floor
+    4300752: top open book paper on floor
+    4300754: 'bottom open book paper on floor '
+    4300756: bottom open bottom book next to open book
+    4300758: top open book on floor
+    4300760: closed book on floor
+    4300762: open book under small table
+    4300764: open book paper under small table
+    4300766: standing shelves
+    4300768: beaker type - wide bottom2
+    4300770: beaker type - wide bottom1
+    4300772: burette stand
+    4300774: fridge
+    4300776: gas tank 2
+    4300778: box
+    4300780: Wall16_Secret
+    4300782: Wall15_Secret
+    4300784: Wall14_Store
+    4300786: CHAIR_STUDENT006
+    4300788: Wall12_Store
+    4300790: Line117
+    4300792: Wall10_Hall
+    4300794: Wall9_Hall
+    4300796: Alarm003
+    4300798: Wall6_Hall
+    4300800: Alarm006
+    4300802: Wall4_Class
+    4300804: Cylinder246
+    4300806: Cylinder245
+    4300808: standing shelves006
+    4300810: Noteboard003
+    4300812: box006
+    4300814: Noteboard008
+    4300816: Cabinet014
+    4300818: Cabinet015
+    4300820: Cabinet016
+    4300822: Cabinet017
+    4300824: Cabinet018
+    4300826: Noteboard009
+    4300828: Alarm011
+    4300830: Alarm012
+    4300832: standing shelves008
+    4300834: TABLE1_CLASS
+    4300836: Noteboard010
+    4300838: Noteboard011
+    4300840: box007
+    4300842: Noteboard014
+    4300844: TABLE3_STORE
+    4300846: TABLE4_STORE
+    4300848: Cylinder244
+    4300850: Cylinder243
+    4300852: CLOCK1_HALLWAY
+    4300854: Lockpad_lockers
+    4300856: Lockers
+    4300858: Lockpad_lockers
+    4300860: Lockpad_lockers
+    4300862: Lockpad_lockers
+    4300864: Lockpad_lockers
+    4300866: Lockpad_lockers
+    4300868: Lockpad_lockers
+    4300870: Lockpad_lockers
+    4300872: DESK_STUDENT018
+    4300874: Noteboard2
+    4300876: Wall1_Class
+    4300878: Wall2_Class
+    4300880: Wall3_Class
+    4300882: Wall11_Store
+    4300884: CHAIR_STUDENT003
+    4300886: DESK_STUDENT002
+    4300888: CHAIR_STUDENT004
+    4300890: CHAIR_STUDENT005
+    4300892: DESK_STUDENT003
+    4300894: DESK_STUDENT004
+    4300896: Wall13_Store
+    4300898: Cylinder003
+    4300900: BlackBoard001
+    4300902: Chalk Holder003
+    4300904: CHAIR_STUDENT008
+    4300906: CHAIR_STUDENT009
+    4300908: BlackBoard002
+    4300910: WindowFrame1_Class
+    4300912: Plane009
+    4300914: Plane008
+    4300916: DESK_STUDENT007
+    4300918: DESK_STUDENT008
+    4300920: CEILING LIGHTS
+    4300922: Wall7_Hall
+    4300924: Wall5_Hall
+    4300926: Box1021
+    4300928: Box1020
+    4300930: Box1019
+    4300932: Box1018
+    4300934: Box1017
+    4300936: Box1016
+    4300938: Box1015
+    4300940: Box1014
+    4300942: Box1010
+    4300944: Object029
+    4300946: Plane072
+    4300948: Plane071
+    4300950: ceiling
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
