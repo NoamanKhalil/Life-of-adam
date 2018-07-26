@@ -15,15 +15,17 @@ public class TeacherBehaviourCs : MonoBehaviour
     public MySteeringBehaviour steer;
 	public LayerMask layer;
     private AiState currentState;
-    public Transform[] pathToFollow;
+    public Transform[] pathToFollowA;
+    public Transform[] pathToFollowB;
     public int posPoint;
     public float speed;
 	public GameObject playerObj;
-	public float Speed;
 	public float turnSpeed;
 	public float minDist;
 	public float attackDistance;
 
+	private bool isPathA;
+    private bool isPathB;
 	void Awake()
 	{
 		 steer= this.gameObject.AddComponent<MySteeringBehaviour>();
@@ -31,8 +33,8 @@ public class TeacherBehaviourCs : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        pathToFollow = GameObject.Find("wayPointParent").GetComponentsInChildren<Transform>();
-		 agent.autoBraking = false;
+        pathToFollowA = GameObject.Find("wayPointParent").GetComponentsInChildren<Transform>();
+		agent.autoBraking = false;
     }
 	
 	// Update is called once per frame
@@ -86,7 +88,15 @@ public class TeacherBehaviourCs : MonoBehaviour
                 break;
 			case AiState.Patrol:
 				//Flee();
-				patrol();
+				if (isPathA)
+				{
+					patrol(pathToFollowA);
+				}
+				else if (isPathB)
+				{
+					patrol(pathToFollowB);
+				}
+
                 break;
             
         }
@@ -101,18 +111,18 @@ public class TeacherBehaviourCs : MonoBehaviour
 	}
 
 
-	void patrol()
+	void patrol(Transform [] arr)
 	{
-		if (posPoint < pathToFollow.Length)
+		if (posPoint < arr.Length)
         {
             //transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
-			agent.SetDestination(pathToFollow[posPoint].position);
+			agent.SetDestination(arr[posPoint].position);
 			//transform.LookAt(pathToFollow[posPoint].position);
         }
 
-		if (Vector3.Distance(transform.position, pathToFollow[posPoint].position) < 0.1f)
+		if (Vector3.Distance(transform.position, arr[posPoint].position) < 0.1f)
         {
-            if (posPoint == pathToFollow.Length - 1)
+			if (posPoint == arr.Length - 1)
             {
                 posPoint = 0;
                 return;
@@ -121,15 +131,18 @@ public class TeacherBehaviourCs : MonoBehaviour
         }
 	}
 
+	void setA()
+	{
+		isPathA = true;
+	}
+	void setB()
+	{
+		isPathB = true;
+	}
+
 	void idle()
 	{
 		Debug.Log("Is Idle");
 	}
 
-	/*void OnDrawGizmos()
-	{
-		// Draw a yellow sphere at the transform's position
-		Gizmos.color = Color.green;
-		Gizmos.DrawSphere(transform.position, minDist); 
-	}*/
-	}
+}

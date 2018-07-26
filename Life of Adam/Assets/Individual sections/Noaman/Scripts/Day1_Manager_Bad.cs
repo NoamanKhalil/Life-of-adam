@@ -10,10 +10,11 @@ public class Day1_Manager_Bad : MonoBehaviour
 	public bool blue;
 	public bool red;
 
+	public string sceneName;
+
 	void Awake()
 	{
-		blue = false;
-		red = false;
+		
 	}
 
 	// Update is called once per frame
@@ -24,7 +25,7 @@ public class Day1_Manager_Bad : MonoBehaviour
 			timer -= Time.deltaTime;
 			if (timer <= 0)
 			{
-				SceneManager.LoadScene("VideoScene_Day2");
+				SceneManager.LoadScene(sceneName);
 			}
 		}
 

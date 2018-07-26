@@ -66,9 +66,5 @@ public class DayManager : MonoBehaviour
 		}
 		//check for day then enable the door for it based on the option 
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
 }

@@ -29,10 +29,17 @@ public class FpcontrollerCs : MonoBehaviour
 	float stamina;
 	bool isPlaying;
 	bool canJump;
-    
-    bool canCrouch;
+
+	bool canCrouch;
+
+	//if true do action 
+	bool canPush;
+	bool canPull;
 
    Vector3 coruchVelocity = Vector3.zero;
+
+
+
 
 	void Start()
 	{
@@ -46,14 +53,29 @@ public class FpcontrollerCs : MonoBehaviour
 		crouchVect = new Vector3(camera.transform.localPosition.x , camera.transform.localPosition.y, camera.transform.localPosition.z);
 		/*initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
         crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);*/
+
+		canPush = false;
+		canPull = false;
 	}
 
 	void Update()
     { 
 		Run();
-
-		forwardInput = Input.GetAxis("Vertical") * forwardVel;
-		straffeInput = Input.GetAxis("Horizontal") * forwardVel;
+		if (!canPull && !canPush)
+		{
+			forwardInput = Input.GetAxis("Vertical") * forwardVel;
+			straffeInput = Input.GetAxis("Horizontal") * forwardVel;
+		}
+		else if (canPull&&Input.GetAxis("Vertical") < 0)
+		{
+			//vector3.back
+			forwardInput = Input.GetAxis("Vertical") * forwardVel;
+		}
+		else if (canPush &&Input.GetAxis("Vertical") > 0)
+		{ 
+			//vector3.forward
+			forwardInput = Input.GetAxis("Vertical") * forwardVel;
+		}
 //		Debug.Log(straffeInput);
 		//transform.Translate(straffeInput, 0, forwardInput);
 		velocity = new Vector3(straffeInput, 0, forwardInput);
@@ -153,6 +175,14 @@ public class FpcontrollerCs : MonoBehaviour
 		} 
 	}
 
+    public void setPush(bool push)
+    {
+		canPush = push;
+	}
+	public void setPull(bool pull)
+	{
+		canPull = pull;
+	}
 
 	void OnCollisionStay(Collision other)
 	{
