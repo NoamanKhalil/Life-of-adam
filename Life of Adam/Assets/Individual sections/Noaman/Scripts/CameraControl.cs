@@ -27,7 +27,7 @@ public class CameraControl : MonoBehaviour
     bool isholding;
     bool canDrop;
 
-	private Day1_Manager_Bad day;
+	private DayManagerBad day;
 	public GameObject thingToPull;
 
     // Use this for initialization
@@ -35,7 +35,16 @@ public class CameraControl : MonoBehaviour
 	{
 		Character = this.transform.parent.gameObject;
         isholding = false;
-		day = GameObject.Find("LevelManager").GetComponent<Day1_Manager_Bad>();
+
+		if (GameObject.Find("LevelManager") != null)
+		{
+			day = GameObject.Find("LevelManager").GetComponent<DayManagerBad>();
+		}
+		else
+		{
+			day = null;
+		}
+
 	}
 	void Update () 
 	{
@@ -96,7 +105,7 @@ public class CameraControl : MonoBehaviour
 					pickedObj.SetActive(false);
 					pickedObj = null;
 
-					bluePlacePos.GetComponent<Test>().setSlotActive();
+				    bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
 					isholding = false;
 					day.setBlueTrue();
 				}
@@ -111,7 +120,7 @@ public class CameraControl : MonoBehaviour
 					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					pickedObj.SetActive(false);
 					pickedObj = null;
-					redPlacePos.GetComponent<Test>().setSlotActive();
+				    redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
 					isholding = false;
 					day.setRedTrue();
 				}

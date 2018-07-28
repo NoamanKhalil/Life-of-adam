@@ -23,6 +23,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 	public float turnSpeed;
 	public float minDist;
 	public float attackDistance;
+	public DayManagerBad day;
 
 	private bool isPathA;
     private bool isPathB;
@@ -35,6 +36,8 @@ public class TeacherBehaviourCs : MonoBehaviour
     {
         pathToFollowA = GameObject.Find("wayPointParent").GetComponentsInChildren<Transform>();
 		agent.autoBraking = false;
+		isPathA = true;
+		isPathB = false;
     }
 	
 	// Update is called once per frame
@@ -63,10 +66,19 @@ public class TeacherBehaviourCs : MonoBehaviour
 			//on hit chase player 
 		}
 
+		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= 1f)
+		{
+
+			Debug.Log("You just died");
+			playerObj.GetComponent<FpcontrollerCs>().OnDie();
+		    day.resetLevel();	
+			currentState = AiState.Patrol;
+		}
 
 		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
 		{
 			currentState= AiState.Chase;
+
 	//		Debug.Log("is chasing");
 		}
 		else

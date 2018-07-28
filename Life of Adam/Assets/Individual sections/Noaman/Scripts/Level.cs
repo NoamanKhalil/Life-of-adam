@@ -6,21 +6,34 @@ using UnityEngine.SceneManagement;
 public class Level : MonoBehaviour 
 {
 	public string levelName;
-
+	public CanvasFadeCs can;
+	public float timer;
+	private bool canProgress;
 	// Use this for initialization
-	void Start () {
-		
+	void Start () 
+	{
+		canProgress = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
+		if (canProgress)
+		{
+			timer -= Time.deltaTime;
+			if (timer <= 0)
+			{ 
+				SceneManager.LoadScene(levelName);
+			}
+		}
 		
 	}
 	void OnTriggerStay(Collider other)
 	{
 		if (other.attachedRigidbody)
 		{
-			SceneManager.LoadScene(levelName);
+			can.FadeOut();
+			canProgress = true;
             
 		}
 
