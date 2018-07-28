@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -216,7 +216,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1523942930}
-        m_MethodName: isDayOne
+        m_MethodName: isDayThree
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -413,7 +413,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Oh... I dont know sir..
+  m_Text: day 3 horro
 --- !u!222 &497475238
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -491,7 +491,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The mitochondria is the power house of the cell.
+  m_Text: 'Day3 _Happy
+
+'
 --- !u!222 &641444205
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1091,7 +1093,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1523942930}
-        m_MethodName: isDayOne
+        m_MethodName: isDayThree
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

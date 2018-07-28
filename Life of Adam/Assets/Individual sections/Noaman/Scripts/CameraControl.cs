@@ -28,7 +28,7 @@ public class CameraControl : MonoBehaviour
     bool canDrop;
 
 	private Day1_Manager_Bad day;
-	public Transform thingToPull;
+	public GameObject thingToPull;
 
     // Use this for initialization
     void Start () 
@@ -39,6 +39,7 @@ public class CameraControl : MonoBehaviour
 	}
 	void Update () 
 	{
+
 		Push();
 
 		Vector2 nd = new Vector2 (Input.GetAxisRaw ("Mouse X"), Input.GetAxisRaw ("Mouse Y"));
@@ -138,43 +139,60 @@ public class CameraControl : MonoBehaviour
 	void Push()
 	{
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
-		if (Input.GetKeyDown(KeyCode.F) && thingToPull == null)
+		if (thingToPull == null)
 		{
 			RaycastHit hit;
 			if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
 			{
-				Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
-				Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Move")
+				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
+				//Debug.Log("Did Hit");
+				if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(this.transform.position, hit.transform.position) <= 2 && Input.GetKey(KeyCode.Mouse0))
 				{
-					thingToPull = hit.transform;
+					thingToPull = hit.transform.gameObject;
+					thingToPull.AddComponent<FixedJoint>();
+					thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
+					thingToPull.GetComponentInParent<Rigidbody>().mass = 100;
+					fp.setPush(true);
 					Debug.Log("Started pushing ");
 
 				}
+				else if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(this.transform.position, hit.transform.position) <= 2 && Input.GetKey(KeyCode.Mouse1))
+				{
+					thingToPull = hit.transform.gameObject;
+					thingToPull.AddComponent<FixedJoint>();
+					thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
+					thingToPull.GetComponentInParent<Rigidbody>().mass = 100;
+					fp.setPull(true);
+					Debug.Log("Started pushing ");
+				}
 			}
 		}
-		else if (Input.GetKeyDown(KeyCode.F) && thingToPull != null)
+		else if (thingToPull != null &&(Input.GetKey(KeyCode.Mouse1)||Input.GetKey(KeyCode.Mouse0)))
 		{
+			thingToPull.GetComponentInParent<Rigidbody>().mass = 10000;
+			Destroy(thingToPull.GetComponent<FixedJoint>());
 			thingToPull = null; 
+			fp.setPush(false);
+			fp.setPull(false);
 			Debug.Log("stopped pushing ");
 				
 		}
 
-		if(thingToPull!=null) 
+		/*if(thingToPull!=null) 
 		{
 			   // line from crate to player
-			   Vector3 D = transform.position - thingToPull.position; 
+			   Vector3 D = transform.position - thingToPull.transform.position; 
 			   float dist = D.magnitude;
                // short blue arrow from crate to player
 			   Vector3 pullDir = D.normalized; 
 				//lose tracking if too far
-			   if(dist>2) 
+			    if(dist>2) 
 				{
 				thingToPull=null; 
 				}
-			   // you have to be less than 1 m for the code to work
-			   else if(dist>1) 
-			   { 
+			    // you have to be less than 1 m for the code to work
+			    else if(dist>2) 
+			    { 
 
 
 				float fakeGrav = 10.0f;
@@ -185,11 +203,12 @@ public class CameraControl : MonoBehaviour
 					pullForDist=20;
 			     fakeGrav += pullForDist;
 			     // Now apply to pull force, using standard meters/sec converted
-			     //    into meters/frame:
+			    //    into meters/frame:
 			     thingToPull.GetComponent<Rigidbody>().velocity += pullDir*(fakeGrav* Time.deltaTime);
-			   }
-		}
+			     }
+		}*/
 	}
+
 
 
     public void setCanDrop (bool drop)
