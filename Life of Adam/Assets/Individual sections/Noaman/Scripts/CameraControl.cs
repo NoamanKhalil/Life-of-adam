@@ -28,7 +28,6 @@ public class CameraControl : MonoBehaviour
     bool canDrop;
 
 	private DayManagerBad day;
-	public GameObject thingToPull;
 
     // Use this for initialization
     void Start () 
@@ -48,21 +47,14 @@ public class CameraControl : MonoBehaviour
 	}
 	void Update () 
 	{
+		CameraMove();
+		//PickUp();
+    }
 
-		Push();
-
-		Vector2 nd = new Vector2 (Input.GetAxisRaw ("Mouse X"), Input.GetAxisRaw ("Mouse Y"));
-
-		nd =Vector2.Scale (nd, new Vector2 (Sensitivity * Smoothness, Sensitivity * Smoothness));
-		Smoothing.x = Mathf.Lerp (Smoothing.x, nd.x, 1f / Smoothness);
-		Smoothing.y = Mathf.Lerp (Smoothing.y, nd.y, 1f / Smoothness);
-		MouseControl += Smoothing;
-		MouseControl.y = Mathf.Clamp (MouseControl.y, minClamp, maxClamp);
-
-		transform.localRotation = Quaternion.AngleAxis (-MouseControl.y, Vector3.right);
-		Character.transform.localRotation = Quaternion.AngleAxis (MouseControl.x, Character.transform.up);
-
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+	void PickUp()
+	{ 
+		//add pickup code 
+		Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
 		// when a object can be picked up 
 		if (Input.GetKeyDown(KeyCode.E) && isholding == false && fp != null)
@@ -94,7 +86,7 @@ public class CameraControl : MonoBehaviour
 		else if (Input.GetKeyDown(KeyCode.E) && isholding == true &&day!=null)
         {
 				//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
+			    if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
 				{
 					Debug.Log("Is close to blue pos ");
 					fp.setSpeed(8.0f);
@@ -105,11 +97,11 @@ public class CameraControl : MonoBehaviour
 					pickedObj.SetActive(false);
 					pickedObj = null;
 
-				    bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
+					bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
 					isholding = false;
 					day.setBlueTrue();
 				}
-			    else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red"&& canDrop == true)
+				else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red"&& canDrop == true)
 				{
 
 					Debug.Log("Is close to red pos ");
@@ -120,7 +112,7 @@ public class CameraControl : MonoBehaviour
 					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					pickedObj.SetActive(false);
 					pickedObj = null;
-				    redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
+					redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
 					isholding = false;
 					day.setRedTrue();
 				}
@@ -138,84 +130,25 @@ public class CameraControl : MonoBehaviour
 				}
 
 
-        }
+		}
 
         if (pickupPoint !=null&&isholding ==true)
         {
             pickedObj.transform.position = pickupPoint.transform.position;
         }
-    }
-	void Push()
+	}
+	void CameraMove()
 	{
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
-		if (thingToPull == null)
-		{
-			RaycastHit hit;
-			if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
-			{
-				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
-				//Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(this.transform.position, hit.transform.position) <= 2 && Input.GetKey(KeyCode.Mouse0))
-				{
-					thingToPull = hit.transform.gameObject;
-					thingToPull.AddComponent<FixedJoint>();
-					thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
-					thingToPull.GetComponentInParent<Rigidbody>().mass = 100;
-					fp.setPush(true);
-					Debug.Log("Started pushing ");
+		Vector2 nd = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
-				}
-				else if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(this.transform.position, hit.transform.position) <= 2 && Input.GetKey(KeyCode.Mouse1))
-				{
-					thingToPull = hit.transform.gameObject;
-					thingToPull.AddComponent<FixedJoint>();
-					thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
-					thingToPull.GetComponentInParent<Rigidbody>().mass = 100;
-					fp.setPull(true);
-					Debug.Log("Started pushing ");
-				}
-			}
-		}
-		else if (thingToPull != null &&(Input.GetKey(KeyCode.Mouse1)||Input.GetKey(KeyCode.Mouse0)))
-		{
-			thingToPull.GetComponentInParent<Rigidbody>().mass = 10000;
-			Destroy(thingToPull.GetComponent<FixedJoint>());
-			thingToPull = null; 
-			fp.setPush(false);
-			fp.setPull(false);
-			Debug.Log("stopped pushing ");
-				
-		}
+		nd =Vector2.Scale (nd, new Vector2(Sensitivity* Smoothness, Sensitivity* Smoothness));
+		Smoothing.x = Mathf.Lerp (Smoothing.x, nd.x, 1f / Smoothness);
+		Smoothing.y = Mathf.Lerp (Smoothing.y, nd.y, 1f / Smoothness);
+		MouseControl += Smoothing;
+		MouseControl.y = Mathf.Clamp (MouseControl.y, minClamp, maxClamp);
 
-		/*if(thingToPull!=null) 
-		{
-			   // line from crate to player
-			   Vector3 D = transform.position - thingToPull.transform.position; 
-			   float dist = D.magnitude;
-               // short blue arrow from crate to player
-			   Vector3 pullDir = D.normalized; 
-				//lose tracking if too far
-			    if(dist>2) 
-				{
-				thingToPull=null; 
-				}
-			    // you have to be less than 1 m for the code to work
-			    else if(dist>2) 
-			    { 
-
-
-				float fakeGrav = 10.0f;
-			     // for fun, pull a little bit more if further away:
-				 // (so, random, optional junk):
-				 float pullForDist = (dist - 3) / 2.0f;
-			     if(pullForDist>20)
-					pullForDist=20;
-			     fakeGrav += pullForDist;
-			     // Now apply to pull force, using standard meters/sec converted
-			    //    into meters/frame:
-			     thingToPull.GetComponent<Rigidbody>().velocity += pullDir*(fakeGrav* Time.deltaTime);
-			     }
-		}*/
+		transform.localRotation = Quaternion.AngleAxis (-MouseControl.y, Vector3.right);
+		Character.transform.localRotation = Quaternion.AngleAxis (MouseControl.x, Character.transform.up);
 	}
 
 

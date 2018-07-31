@@ -35,7 +35,7 @@ public class PuzzleCs : MonoBehaviour
     {
         if (Vector3.Distance(this.transform.position, player.transform.position) < Dist)
         {
-            player.GetComponentInChildren<CameraControl>().setCanDrop(true);
+			player.GetComponent<PickUpCs>().setCanDrop(true);
         }
     }
 

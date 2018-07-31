@@ -231,10 +231,8 @@ public class FpcontrollerCs : MonoBehaviour
 				myCollider.enabled.Equals(true);
 				rb.constraints = RigidbodyConstraints.None;
 				Debug.Log("lerping");
-				rb.constraints= RigidbodyConstraints.FreezePositionY;
-				Debug.Log("lerping at 50");
-				rb.constraints= RigidbodyConstraints.FreezeRotation;
-				Debug.Log("lerping done");
+				rb.constraints= RigidbodyConstraints.FreezePositionY|RigidbodyConstraints.FreezeRotation;
+
 
 				yield return null;
 			}
