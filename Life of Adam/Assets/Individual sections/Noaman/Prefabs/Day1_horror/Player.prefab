@@ -355,6 +355,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9c516f0652ce8341bb99e6ab6cb05c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fp: {fileID: 114122618876267192}
+  redPlacePos: {fileID: 0}
+  bluePlacePos: {fileID: 0}
+  pickupPoint: {fileID: 1246934293026546}
+  cam: {fileID: 1941845338889260}
 --- !u!114 &114859705042685542
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -9,6 +9,8 @@ public class PickUpCs : MonoBehaviour
 	public GameObject redPlacePos;
 	public GameObject bluePlacePos;
 	public GameObject pickupPoint;
+    public GameObject cam;
+
 
 	private GameObject pickedObj;
 	private float Dist;
@@ -41,15 +43,15 @@ public class PickUpCs : MonoBehaviour
 	void PickUp()
 	{
 		//add pickup code 
-		Vector3 fwd = transform.TransformDirection(Vector3.forward);
+		Vector3 fwd = cam.transform.TransformDirection(Vector3.forward);
 
 		// when a object can be picked up 
 		if (Input.GetKeyDown(KeyCode.E) && isholding == false && fp != null)
 		{
 			RaycastHit hit;
-			if (Physics.Raycast(transform.position, fwd, out hit, Mathf.Infinity))
+			if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
 			{
-				Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
+				Debug.DrawRay(cam.transform.position, cam.transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				Debug.Log("Did Hit");
 				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue")
 				{
@@ -73,7 +75,7 @@ public class PickUpCs : MonoBehaviour
 		else if (Input.GetKeyDown(KeyCode.E) && isholding == true && day != null)
 		{
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (Vector3.Distance(this.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
+			if (Vector3.Distance(cam.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
 			{
 				Debug.Log("Is close to blue pos ");
 				fp.setSpeed(8.0f);
@@ -83,12 +85,11 @@ public class PickUpCs : MonoBehaviour
 				//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 				pickedObj.SetActive(false);
 				pickedObj = null;
-
 				bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setBlueTrue();
 			}
-			else if (Vector3.Distance(this.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red" && canDrop == true)
+			else if (Vector3.Distance(cam.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red" && canDrop == true)
 			{
 
 				Debug.Log("Is close to red pos ");
