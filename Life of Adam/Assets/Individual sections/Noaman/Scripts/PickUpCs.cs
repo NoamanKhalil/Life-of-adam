@@ -13,6 +13,7 @@ public class PickUpCs : MonoBehaviour
 
 
 	private GameObject pickedObj;
+    [SerializeField]
 	private float Dist;
 	private DayManagerBad day;
 

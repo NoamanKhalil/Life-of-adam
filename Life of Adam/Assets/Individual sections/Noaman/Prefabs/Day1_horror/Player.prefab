@@ -360,6 +360,7 @@ MonoBehaviour:
   bluePlacePos: {fileID: 0}
   pickupPoint: {fileID: 1246934293026546}
   cam: {fileID: 1941845338889260}
+  Dist: 3
 --- !u!114 &114859705042685542
 MonoBehaviour:
   m_ObjectHideFlags: 1
