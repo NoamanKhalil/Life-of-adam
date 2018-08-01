@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Base path: /Applications/Unity/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -168,5 +169,8 @@ Cmd: compileSnippet
   api=14 type=1 insize=2215 outsize=7808 kw=_EMISSION INSTANCING_ON pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+=======
+Base path: /Applications/Unity/Hub/Editor/2018.1.1f1/Unity.app/Contents
+>>>>>>> fe2df2099e86b8c237be37c58a5328aafcb0cc50
 Cmd: initializeCompiler
 Cmd: initializeCompiler
