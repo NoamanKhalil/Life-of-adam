@@ -47,7 +47,7 @@ public class PickUpCs : MonoBehaviour
 		Vector3 fwd = cam.transform.TransformDirection(Vector3.forward);
 
 		// when a object can be picked up 
-		if (Input.GetKeyDown(KeyCode.E) && isholding == false && fp != null)
+		if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == false && fp != null)
 		{
 			RaycastHit hit;
 			if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
@@ -73,7 +73,7 @@ public class PickUpCs : MonoBehaviour
 
 		}
 		// when a object can be dropped 
-		else if (Input.GetKeyDown(KeyCode.E) && isholding == true && day != null)
+		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
 		{
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
 			if (Vector3.Distance(cam.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
