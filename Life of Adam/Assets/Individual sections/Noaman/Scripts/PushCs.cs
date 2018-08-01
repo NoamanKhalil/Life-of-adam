@@ -32,17 +32,9 @@ public class PushCs : MonoBehaviour {
 				thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
 				thingToPull.GetComponentInParent<Rigidbody>().mass = 100;
 				fp.setPush(true);
+					cam.GetComponentInParent<CameraControl>().canMoveCheck(false);
 				Debug.Log("Started pushing ");
 
-			    }
-				else if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(cam.transform.position, hit.transform.position) <= 2 && Input.GetKey(KeyCode.Mouse1))
-				{
-				thingToPull = hit.transform.gameObject;
-				thingToPull.AddComponent<FixedJoint>();
-				thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponent<Rigidbody>();
-				thingToPull.GetComponent<Rigidbody>().mass = 100;
-				fp.setPull(true);
-				Debug.Log("Started pushing ");
 			    }
 			}
 		}
@@ -52,7 +44,7 @@ public class PushCs : MonoBehaviour {
 			Destroy(thingToPull.GetComponent<FixedJoint>());
 			thingToPull = null; 
 			fp.setPush(false);
-			fp.setPull(false);
+			cam.GetComponentInParent<CameraControl>().canMoveCheck(true);
 			Debug.Log("stopped pushing ");
 				
 		}

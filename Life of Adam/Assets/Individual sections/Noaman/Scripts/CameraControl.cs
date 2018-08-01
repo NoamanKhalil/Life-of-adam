@@ -5,17 +5,9 @@ using UnityEngine;
 public class CameraControl : MonoBehaviour 
 {
 	public FpcontrollerCs fp;
-	public GameObject redPlacePos;
-	public GameObject bluePlacePos;
-
     public float Sensitivity = 2f;
     public float Smoothness = 2f;
-    public GameObject pickupPoint;
-
-    private GameObject pickedObj;
-
-	[SerializeField]
-	private float Dist;
+	public Vector2 lookAngle;
 
     Vector2 MouseControl;
 	Vector2 Smoothing;
@@ -28,35 +20,24 @@ public class CameraControl : MonoBehaviour
     bool canDrop;
 	bool canMove;
 
-	private DayManagerBad day;
 
     // Use this for initialization
     void Start () 
 	{
-
-
 		Character = this.transform.parent.gameObject;
         isholding = false;
 		canMove = true;
-		if (GameObject.Find("LevelManager") != null)
-		{
-			day = GameObject.Find("LevelManager").GetComponent<DayManagerBad>();
-		}
-		else
-		{
-			day = null;
-		}
-
 	}
 	void Update () 
 	{
+
 		if (canMove)
 		{
 			CameraMove();
 		}
 		else
 		{
-			//clamp movemnt to camera forward 
+			//this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(25, 0, 0), Time.deltaTime*Smoothness);
 		}
     }
 	void CameraMove()
@@ -87,15 +68,8 @@ public class CameraControl : MonoBehaviour
         return isholding;
     }
 
-	public bool canMoveCheck(bool con)
+	public void canMoveCheck(bool con)
 	{
-		if ( con == true)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
+		canMove = con;
 	}
 }

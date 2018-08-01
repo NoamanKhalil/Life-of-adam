@@ -36,7 +36,6 @@ public class FpcontrollerCs : MonoBehaviour
 
 	//if true do action 
 	bool canPush;
-	bool canPull;
 	bool canMove;
 
 	Vector3 coruchVelocity = Vector3.zero;
@@ -61,7 +60,6 @@ public class FpcontrollerCs : MonoBehaviour
         crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);*/
 		canMove = true;
 		canPush = false;
-		canPull = false;
 	}
 
 	void Update()
@@ -72,23 +70,18 @@ public class FpcontrollerCs : MonoBehaviour
 		{
 			OnDie();
 		}
-
+		Debug.Log(canPush);
 
 		if (canMove)
 		{
-			if (!canPull && !canPush )
+			if (!canPush)
 			{
 				forwardInput = Input.GetAxis("Vertical") * forwardVel;
 				straffeInput = Input.GetAxis("Horizontal") * forwardVel;
 			}
-			else if (canPull && Input.GetAxis("Vertical") < 0)
+			else if (canPush&& Input.GetAxis("Vertical") < 0||Input.GetAxis("Vertical") > 0)
 			{
 				//vector3.back
-				forwardInput = Input.GetAxis("Vertical") * forwardVel;
-			}
-			else if (canPush && Input.GetAxis("Vertical") > 0)
-			{
-				//vector3.forward
 				forwardInput = Input.GetAxis("Vertical") * forwardVel;
 			}
 		}
@@ -194,11 +187,6 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		canPush = push;
 	}
-	public void setPull(bool pull)
-	{
-		canPull = pull;
-	}
-
 	void OnCollisionStay(Collision other)
 	{
 		canJump = true;

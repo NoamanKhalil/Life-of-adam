@@ -125,16 +125,20 @@ public class TeacherBehaviourCs : MonoBehaviour
 
 	void patrol(Transform [] arr)
 	{
-		if (posPoint < arr.Length)
+		if (posPoint <= arr.Length)
         {
             //transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
 			agent.SetDestination(arr[posPoint].position);
+			//Debug.Log("Debug of pos point during partrol " +posPoint);
+			//Debug.Log("Debug of distnace  " +Vector3.Distance(transform.position, arr[posPoint].position));
 			//transform.LookAt(pathToFollow[posPoint].position);
         }
 
-		if (Vector3.Distance(transform.position, arr[posPoint].position) < 0.1f)
+		if (Vector3.Distance(transform.position, arr[posPoint].position) < 0.25f)
         {
-			if (posPoint == arr.Length - 1)
+
+			//Debug.Log("Debug of distnace  " +Vector3.Distance(transform.position, arr[posPoint].position));
+			if (posPoint == arr.Length-1)
             {
                 posPoint = 0;
                 return;

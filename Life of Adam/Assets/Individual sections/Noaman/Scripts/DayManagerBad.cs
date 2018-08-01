@@ -24,12 +24,15 @@ public class DayManagerBad : MonoBehaviour
 			red = true;
 		}
 
-		levelTimer -= Time.deltaTime;
+		if (timerTxt != null)
+		{
+			levelTimer -= Time.deltaTime;
 
-		int minutes = Mathf.FloorToInt(levelTimer / 60F);
-		int seconds = Mathf.FloorToInt(levelTimer - minutes * 60);
-        string timeString = string.Format("{0:0}:{1:00}", minutes, seconds);
-		timerTxt.text = timeString;
+			int minutes = Mathf.FloorToInt(levelTimer / 60F);
+			int seconds = Mathf.FloorToInt(levelTimer - minutes * 60);
+			string timeString = string.Format("{0:0}:{1:00}", minutes, seconds);
+			timerTxt.text = timeString;
+		}
 
 		if (levelTimer <= 0)
 		{
