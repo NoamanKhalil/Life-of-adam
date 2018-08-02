@@ -19,7 +19,9 @@ public class FpcontrollerCs : MonoBehaviour
 	private float forwardVel;
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
+    [SerializeField]
 	private Vector3 initialCrouch;
+    [SerializeField]
 	private Vector3 crouchVect;
 	[SerializeField]
 	private float walkVel = 8f;
