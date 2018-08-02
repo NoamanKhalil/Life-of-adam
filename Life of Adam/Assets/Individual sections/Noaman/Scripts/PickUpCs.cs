@@ -65,7 +65,7 @@ public class PickUpCs : MonoBehaviour
 					isholding = true;
 					canDrop = false;
 					hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-					fp.setSpeed(3.5f);
+					//fp.setSpeed(3.5f);
 
 					Debug.Log("Picked object");
 				}
@@ -79,7 +79,7 @@ public class PickUpCs : MonoBehaviour
 			if (Vector3.Distance(cam.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
 			{
 				Debug.Log("Is close to blue pos ");
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
 				pickupPoint.transform.DetachChildren();
@@ -94,7 +94,7 @@ public class PickUpCs : MonoBehaviour
 			{
 
 				Debug.Log("Is close to red pos ");
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
 				pickupPoint.transform.DetachChildren();
