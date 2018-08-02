@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class Test : MonoBehaviour
+public class PuzzleCs : MonoBehaviour
 {
 	[SerializeField]
 	private GameObject shapeSlot;
@@ -33,10 +33,14 @@ public class Test : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (Vector3.Distance(this.transform.position, player.transform.position) < Dist)
-        {
-            player.GetComponentInChildren<CameraControl>().setCanDrop(true);
-        }
+		if (Vector3.Distance(this.transform.position, player.transform.position) < Dist)
+		{
+			player.GetComponent<PickUpCs>().setCanDrop(true);
+		}
+		else
+		{ 
+			player.GetComponent<PickUpCs>().setCanDrop(false);
+		}
     }
 
 	public void setSlotActive()
@@ -44,6 +48,13 @@ public class Test : MonoBehaviour
 		shapeSlot.SetActive(true);
 	}
 
+
+	public void Reset()
+	{
+		shapeSlot.SetActive(false);
+		otherObj.SetActive(true);
+		otherObj.GetComponent<objectHandler>().Reset();
+	}
     /*void OnDrawGizmos()
     {
         Gizmos.color = Color.yellow;

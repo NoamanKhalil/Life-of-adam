@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Individual sections/Leon/Scenes/Horror_Test_Scene.unity
     guid: ceaa3b3f02f478c4ea20e56d66925c79
   - enabled: 1

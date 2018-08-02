@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4851070598795806}
   - component: {fileID: 114797257570750842}
+  - component: {fileID: 114351713304748370}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114351713304748370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1899546924741262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24c70cbfb3c93470f939f8e715065829, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  can: {fileID: 0}
 --- !u!114 &114797257570750842
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,5 +65,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 8
-  blue: 0
-  red: 0
+  blue: 1
+  red: 1
+  sceneName: VideoScene_Day2
