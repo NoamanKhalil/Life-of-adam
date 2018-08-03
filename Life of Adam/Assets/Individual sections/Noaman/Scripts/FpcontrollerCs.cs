@@ -139,13 +139,11 @@ public class FpcontrollerCs : MonoBehaviour
 
 
 		//debug to find the sweet spot in the crouch 
-		//Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
+		Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
 		//Debug.Log(Vector3.Distance(camera.transform.localPosition, initialCrouch));
-
-
 		if (canCrouch)
 		{
-			if (Vector3.Distance(camera.transform.localPosition, crouchVect) > 1)
+			if (Vector3.Distance(camera.transform.localPosition, crouchVect) >1f)
 			{
 				//Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
 				Vector3 newPosition = camera.transform.localPosition;

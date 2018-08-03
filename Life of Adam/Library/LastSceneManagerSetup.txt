@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Leon/Scenes/T Area.unity
+- path: Assets/Individual sections/Leon/Scenes/Day_1_Horror.unity
   isLoaded: 1
   isActive: 1

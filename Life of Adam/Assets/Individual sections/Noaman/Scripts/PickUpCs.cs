@@ -109,7 +109,7 @@ public class PickUpCs : MonoBehaviour
 			{
 				//Debug.Log("Is dropping object ");
 
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(8.0f);
 				Debug.Log("Object dropped");
 				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
