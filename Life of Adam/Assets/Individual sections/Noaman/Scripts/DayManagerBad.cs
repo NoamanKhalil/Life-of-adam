@@ -11,6 +11,7 @@ public class DayManagerBad : MonoBehaviour
 	public float timer;
 	public bool blue;
 	public bool red;
+	public bool isHappy;
 	public Text timerTxt;
 	public string sceneName;
 	public PuzzleCs[] puzzle;
@@ -24,7 +25,7 @@ public class DayManagerBad : MonoBehaviour
 			red = true;
 		}
 
-		if (timerTxt != null)
+		if (timerTxt != null && isHappy)
 		{
 			levelTimer -= Time.deltaTime;
 
@@ -53,6 +54,12 @@ public class DayManagerBad : MonoBehaviour
 
 		
 	}
+
+	public void setTimerTrue()
+	{
+		isHappy = true;
+	}
+		
 
 	public void setBlueTrue()
 	{

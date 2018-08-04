@@ -53,7 +53,7 @@ public class PuzzleCs : MonoBehaviour
 	{
 		shapeSlot.SetActive(false);
 		otherObj.SetActive(true);
-		otherObj.GetComponent<objectHandler>().Reset();
+		otherObj.GetComponent<objectHandlerCs>().Reset();
 	}
     /*void OnDrawGizmos()
     {

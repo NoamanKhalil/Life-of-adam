@@ -8,6 +8,7 @@ TagManager:
   - Red
   - audio
   - Move
+  - Pick
   layers:
   - Default
   - TransparentFX

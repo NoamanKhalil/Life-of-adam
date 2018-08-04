@@ -11,7 +11,6 @@ public class PickUpCs : MonoBehaviour
 	public GameObject pickupPoint;
     public GameObject cam;
 
-
 	private GameObject pickedObj;
     [SerializeField]
 	private float Dist;
@@ -45,16 +44,17 @@ public class PickUpCs : MonoBehaviour
 	{
 		//add pickup code 
 		Vector3 fwd = cam.transform.TransformDirection(Vector3.forward);
+        RaycastHit hit;
 
 		// when a object can be picked up 
 		if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == false && fp != null)
 		{
-			RaycastHit hit;
+
 			if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
 			{
 				Debug.DrawRay(cam.transform.position, cam.transform.TransformDirection(Vector3.forward) * 10, Color.black);
-				Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue")
+				//Debug.Log("Did Hit");
+				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue"||hit.collider.gameObject.tag == "Pick")
 				{
 					hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
 					pickedObj = hit.collider.gameObject;

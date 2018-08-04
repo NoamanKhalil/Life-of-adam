@@ -72,7 +72,7 @@ public class FpcontrollerCs : MonoBehaviour
 		{
 			OnDie();
 		}
-		Debug.Log(canPush);
+		//Debug.Log(canPush);
 
 		if (canMove)
 		{
@@ -139,7 +139,7 @@ public class FpcontrollerCs : MonoBehaviour
 
 
 		//debug to find the sweet spot in the crouch 
-		Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
+		//Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
 		//Debug.Log(Vector3.Distance(camera.transform.localPosition, initialCrouch));
 		if (canCrouch)
 		{
