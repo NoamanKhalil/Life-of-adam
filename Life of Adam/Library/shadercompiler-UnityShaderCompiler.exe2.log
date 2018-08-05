@@ -1,33 +1,66 @@
 Base path: D:/Unity 2018/Editor/Data
 Cmd: initializeCompiler
-Cmd: compileComputeKernel
-  api=4 insize=2863 outsize=48113 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=9421 outsize=8853 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=1864 outsize=537 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=431 outsize=417 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=1505 outsize=581 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=6097 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=6289 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=7989 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=8293 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=6853 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=8245 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=8825 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=8781 ok=1
-Cmd: compileComputeKernel
-  api=4 insize=15322 outsize=11205 ok=1
+Cmd: disassembleShader
+  api=4 insize=2650 outsize=4353 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=13200 outsize=2782 kw=DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE _SHADOWS_ENABLED pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=2782 outsize=4514 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=13200 outsize=3882 kw=_VERTEX_LIGHTS _MIXED_LIGHTING_SUBTRACTIVE _SHADOWS_ENABLED pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=3882 outsize=5985 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=13200 outsize=3778 kw=DIRLIGHTMAP_COMBINED _ADDITIONAL_LIGHTS _VERTEX_LIGHTS pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=3778 outsize=5856 ok=1
+Cmd: disassembleShader
+  api=4 insize=3098 outsize=4887 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=13200 outsize=3230 kw=DIRLIGHTMAP_COMBINED _MIXED_LIGHTING_SUBTRACTIVE _SHADOWS_ENABLED pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=3230 outsize=5117 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=13200 outsize=3098 kw=_VERTEX_LIGHTS _MIXED_LIGHTING_SUBTRACTIVE pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=3098 outsize=4887 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=13200 outsize=4774 kw=_ADDITIONAL_LIGHTS _MIXED_LIGHTING_SUBTRACTIVE _SHADOWS_ENABLED pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=4774 outsize=7129 ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=13200 outsize=4774 kw=DIRLIGHTMAP_COMBINED _ADDITIONAL_LIGHTS _VERTEX_LIGHTS _MIXED_LIGHTING_SUBTRACTIVE _SHADOWS_ENABLED pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_RGBM_ENCODING ok=1
+Cmd: disassembleShader
+  api=4 insize=4774 outsize=7129 ok=1
+Cmd: disassembleShader
+  api=4 insize=690 outsize=1441 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: disassembleShader
+  api=4 insize=2782 outsize=4514 ok=1
+Cmd: disassembleShader
+  api=4 insize=3778 outsize=5856 ok=1
+Cmd: disassembleShader
+  api=4 insize=2650 outsize=4353 ok=1
+Cmd: disassembleShader
+  api=4 insize=2782 outsize=4514 ok=1
+Cmd: disassembleShader
+  api=4 insize=3882 outsize=5985 ok=1
+Cmd: disassembleShader
+  api=4 insize=3098 outsize=4887 ok=1
+Cmd: disassembleShader
+  api=4 insize=3230 outsize=5117 ok=1
+Cmd: disassembleShader
+  api=4 insize=4774 outsize=7129 ok=1
+Cmd: disassembleShader
+  api=4 insize=4642 outsize=6899 ok=1
+Cmd: disassembleShader
+  api=4 insize=1142 outsize=2030 ok=1
+Cmd: disassembleShader
+  api=4 insize=690 outsize=1441 ok=1
