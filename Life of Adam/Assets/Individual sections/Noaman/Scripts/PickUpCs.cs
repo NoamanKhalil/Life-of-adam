@@ -14,6 +14,7 @@ public class PickUpCs : MonoBehaviour
 	private GameObject pickedObj;
     [SerializeField]
 	private float Dist;
+    [SerializeField]
 	private DayManagerBad day;
 	private Rigidbody rb;
 
@@ -39,6 +40,7 @@ public class PickUpCs : MonoBehaviour
 
 	void Update()
 	{
+		
 		PickUp();
 	}
 
@@ -77,9 +79,11 @@ public class PickUpCs : MonoBehaviour
 		// when a object can be dropped 
 		else if (Input.GetKeyDown(KeyCode.Mouse1) && isholding == true && day != null)
 		{
+			Debug.Log(canDrop);
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (Vector3.Distance(cam.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
+			if (pickedObj.tag == "Blue" && canDrop == true)
 			{
+				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
 				fp.setSpeed(8.0f);
 				Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
@@ -89,12 +93,13 @@ public class PickUpCs : MonoBehaviour
 				pickedObj.SetActive(false);
 				pickedObj = null;
 				bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
+				bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setBlueTrue();
 			}
-			else if (Vector3.Distance(cam.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red" && canDrop == true)
+			else if (pickedObj.tag == "Red" && canDrop == true)
 			{
-
+				Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
 				fp.setSpeed(8.0f);
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
@@ -104,11 +109,13 @@ public class PickUpCs : MonoBehaviour
 				pickedObj.SetActive(false);
 				pickedObj = null;
 				redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
+				redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setRedTrue();
 			}
-			else if (pickedObj != null)
+			else if (pickedObj != null && canDrop == false)
 			{
+				Debug.Log("Null object called ");
 				fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());

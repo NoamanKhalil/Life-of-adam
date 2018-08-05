@@ -33,17 +33,17 @@ public class UiHandlerCs : MonoBehaviour
 
 		if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity) && pickUpText != null &&pushText!=null )
 		{
-				if ((hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue" || hit.collider.gameObject.tag == "Pick"))
+			    if ((hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue" || hit.collider.gameObject.tag == "Pick") && pickUpText.activeSelf!=true)
 				{
 					pickUpText.SetActive(true);
 					//text stuff here
 				}
-				else if (hit.collider.gameObject.tag == "Move")
+			    else if (hit.collider.gameObject.tag == "Move"&&pushText.activeSelf!=true)
 				{
 					pushText.SetActive(true);
 					//text stuff for 
 				}
-				else if (hit.collider.gameObject.tag != "Red" && hit.collider.gameObject.tag != "Blue" && hit.collider.gameObject.tag != "Pick")
+			    else if (hit.collider.gameObject.tag == "Untagged")
 				{
 					pickUpText.SetActive(false);
 					pushText.SetActive(false);

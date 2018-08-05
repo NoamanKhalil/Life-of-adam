@@ -8,6 +8,7 @@ public class PushCs : MonoBehaviour {
 	public FpcontrollerCs fp;
 	public GameObject cam;
 	public GameObject thingToPull;
+	public float dist;
 	// Use this for initialization
 	void Start ()
 	{
@@ -25,7 +26,7 @@ public class PushCs : MonoBehaviour {
 			{
 				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				//Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(cam.transform.position, hit.transform.position) <= 2 && Input.GetKey(KeyCode.Mouse0))
+				if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(cam.transform.position, hit.transform.position) <= dist && Input.GetKey(KeyCode.Mouse0))
 				{
 				thingToPull = hit.transform.gameObject;
 				thingToPull.AddComponent<FixedJoint>();
