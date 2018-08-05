@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+[RequireComponent(typeof(Rigidbody))]
 public class PickUpCs : MonoBehaviour
 {
 	public FpcontrollerCs fp;
@@ -15,12 +15,14 @@ public class PickUpCs : MonoBehaviour
     [SerializeField]
 	private float Dist;
 	private DayManagerBad day;
+	private Rigidbody rb;
 
 	bool isholding;
 	bool canDrop;
 	// Use this for initialization
 	void Start()
 	{
+		rb = GetComponent<Rigidbody>();
 		fp = GetComponent<FpcontrollerCs>();
 
 		isholding = false;
@@ -61,29 +63,29 @@ public class PickUpCs : MonoBehaviour
 					//hit.collider.gameObject.GetComponent<Rigidbody>().constraints
 					hit.collider.gameObject.transform.position = pickupPoint.transform.position;
 					hit.collider.gameObject.transform.parent = pickupPoint.transform;
-					hit.collider.gameObject.GetComponent<Collider>().enabled = false;
 					isholding = true;
 					canDrop = false;
-					hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-					//fp.setSpeed(3.5f);
-
+					hit.collider.gameObject.AddComponent<FixedJoint>();
+					hit.collider.gameObject.GetComponent<FixedJoint>().connectedBody =rb;
+					fp.setSpeed(15f);
+					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					Debug.Log("Picked object");
 				}
 			}
 
 		}
 		// when a object can be dropped 
-		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
+		else if (Input.GetKeyDown(KeyCode.Mouse1) && isholding == true && day != null)
 		{
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
 			if (Vector3.Distance(cam.transform.position, bluePlacePos.transform.position) <= Dist && pickedObj.tag == "Blue" && canDrop == true)
 			{
-				Debug.Log("Is close to blue pos ");
-				//fp.setSpeed(8.0f);
-				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
-				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+                Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
+				fp.setSpeed(8.0f);
+				Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
+				tempRb.useGravity = true;
 				pickupPoint.transform.DetachChildren();
-				//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+				tempRb.constraints  &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
 				pickedObj.SetActive(false);
 				pickedObj = null;
 				bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
@@ -93,12 +95,12 @@ public class PickUpCs : MonoBehaviour
 			else if (Vector3.Distance(cam.transform.position, redPlacePos.transform.position) <= Dist && pickedObj.tag == "Red" && canDrop == true)
 			{
 
-				Debug.Log("Is close to red pos ");
-				//fp.setSpeed(8.0f);
-				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
-				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;
+				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
+				fp.setSpeed(8.0f);
+                Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
+				tempRb.useGravity = true;
 				pickupPoint.transform.DetachChildren();
-				//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+				tempRb.constraints  &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
 				pickedObj.SetActive(false);
 				pickedObj = null;
 				redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
@@ -107,9 +109,9 @@ public class PickUpCs : MonoBehaviour
 			}
 			else if (pickedObj != null)
 			{
-				//Debug.Log("Is dropping object ");
-
-				//fp.setSpeed(8.0f);
+				fp.setSpeed(8.0f);
+				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
+                Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				Debug.Log("Object dropped");
 				pickupPoint.GetComponentInChildren<Collider>().enabled = true;
 				pickupPoint.GetComponentInChildren<Rigidbody>().useGravity = true;

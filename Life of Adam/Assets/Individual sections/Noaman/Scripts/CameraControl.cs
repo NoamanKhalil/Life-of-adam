@@ -33,10 +33,6 @@ public class CameraControl : MonoBehaviour
 	void Update () 
 	{
 
-		Debug.Log(Time.timeScale);
-
-		// 0 
-
 		if (canMove && Time.timeScale>= 1)
 		{
 			CameraMove();

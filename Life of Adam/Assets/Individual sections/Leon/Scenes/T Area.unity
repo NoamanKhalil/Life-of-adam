@@ -192,6 +192,10 @@ Prefab:
       propertyPath: m_CollisionDetection
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1899251107740094, guid: e2552012a306e4434bc0a3f165263a9a, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2552012a306e4434bc0a3f165263a9a, type: 2}
   m_IsPrefabParent: 0
@@ -2372,6 +2376,11 @@ Prefab:
         type: 2}
       propertyPath: m_IsKinematic
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 54545693069758950, guid: e2552012a306e4434bc0a3f165263a9a,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2552012a306e4434bc0a3f165263a9a, type: 2}
@@ -8051,31 +8060,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1899251107740094, guid: e2552012a306e4434bc0a3f165263a9a,
     type: 2}
   m_PrefabInternal: {fileID: 530684229}
---- !u!1773428102 &1391673850
-ParentConstraint:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1391673843}
-  m_Enabled: 1
-  m_Weight: 1
-  m_TranslationAtRest: {x: -21.977, y: 0.45, z: 42.92}
-  m_RotationAtRest: {x: 0, y: 0, z: 0}
-  m_TranslationOffsets:
-  - {x: 0, y: 0, z: 0}
-  m_RotationOffsets:
-  - {x: 0, y: 0, z: 0}
-  m_AffectTranslationX: 1
-  m_AffectTranslationY: 1
-  m_AffectTranslationZ: 1
-  m_AffectRotationX: 1
-  m_AffectRotationY: 1
-  m_AffectRotationZ: 1
-  m_IsContraintActive: 0
-  m_IsLocked: 0
-  m_Sources:
-  - sourceTransform: {fileID: 0}
-    weight: 1
 --- !u!1 &1408733109
 GameObject:
   m_ObjectHideFlags: 0
@@ -15264,6 +15248,11 @@ Prefab:
     - target: {fileID: 4708783681477952, guid: 751bd7240265146a1b39482df50e7159, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 54229831504552392, guid: 751bd7240265146a1b39482df50e7159,
+        type: 2}
+      propertyPath: m_Constraints
+      value: 112
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 751bd7240265146a1b39482df50e7159, type: 2}
