@@ -90,7 +90,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -3004,7 +3004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &184977718
 Transform:
   m_ObjectHideFlags: 0
@@ -7926,17 +7926,22 @@ Prefab:
     - target: {fileID: 114797257570750842, guid: 98d629acb890c4a60b4eb8173bfe7367,
         type: 2}
       propertyPath: blue
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114797257570750842, guid: 98d629acb890c4a60b4eb8173bfe7367,
         type: 2}
       propertyPath: red
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114797257570750842, guid: 98d629acb890c4a60b4eb8173bfe7367,
         type: 2}
       propertyPath: sceneName
       value: VideoScene_Day2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114797257570750842, guid: 98d629acb890c4a60b4eb8173bfe7367,
+        type: 2}
+      propertyPath: timer
+      value: 100000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 98d629acb890c4a60b4eb8173bfe7367, type: 2}
@@ -24877,7 +24882,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4362778151725402, guid: e606b6b6b3ba847b7b01ad6ce6db3c50, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -13.625366
+      value: 12.77
       objectReference: {fileID: 0}
     - target: {fileID: 4362778151725402, guid: e606b6b6b3ba847b7b01ad6ce6db3c50, type: 2}
       propertyPath: m_LocalPosition.y
