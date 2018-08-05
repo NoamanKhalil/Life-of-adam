@@ -64,7 +64,7 @@ public class PickUpCs : MonoBehaviour
 					hit.collider.gameObject.GetComponent<Collider>().enabled = false;
 					isholding = true;
 					canDrop = false;
-					hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+					hit.collider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					//fp.setSpeed(3.5f);
 
 					Debug.Log("Picked object");

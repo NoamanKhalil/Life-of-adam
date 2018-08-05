@@ -15,6 +15,7 @@ public class DayManagerBad : MonoBehaviour
 	public Text timerTxt;
 	public string sceneName;
 	public PuzzleCs[] puzzle;
+
 	// Update is called once per frame
 	void Update () 
 	{

@@ -20,9 +20,9 @@ public class FpcontrollerCs : MonoBehaviour
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
     [SerializeField]
-	private Vector3 initialCrouch;
+	private Transform initialCrouch;
     [SerializeField]
-	private Vector3 crouchVect;
+	private Transform crouchVect;
 	[SerializeField]
 	private float walkVel = 8f;
 	private BoxCollider myCollider;
@@ -45,7 +45,6 @@ public class FpcontrollerCs : MonoBehaviour
 	Quaternion startRot;
 
 
-
 	void Start()
 	{
 		startPos = transform.position;
@@ -56,8 +55,8 @@ public class FpcontrollerCs : MonoBehaviour
 		canCrouch = true;
 		forwardVel = walkVel;
 		myCollider = GetComponent<BoxCollider>();
-		initialCrouch = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y - crouchVal, camera.transform.localPosition.z);
-		crouchVect = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y, camera.transform.localPosition.z);
+		//initialCrouch = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y - crouchVal, camera.transform.localPosition.z);
+		//crouchVect = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y, camera.transform.localPosition.z);
 		/*initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
         crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);*/
 		canMove = true;
@@ -74,7 +73,7 @@ public class FpcontrollerCs : MonoBehaviour
 		}
 		//Debug.Log(canPush);
 
-		if (canMove)
+		if (canMove && Time.timeScale<= 1)
 		{
 			if (!canPush)
 			{
@@ -96,8 +95,9 @@ public class FpcontrollerCs : MonoBehaviour
 		//velocity.y = rb.velocity.y; 
 
 		rb.velocity = velocity;
-
-
+		// ahmed changes for testing 
+		//rb.AddForce(velocity * 10);
+		//rb.velocity = Vector3.ClampMagnitude(rb.velocity, forwardVel);
 		if (canJump & Input.GetKeyUp(KeyCode.Space))
 		{
 			rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
@@ -110,60 +110,33 @@ public class FpcontrollerCs : MonoBehaviour
 
 	void Crouch()
 	{
+
+		// on true
 		if (canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			Vector3 colliderPos = myCollider.transform.position;
 			//Vector3 velocity = Vector3.zero;
 			Debug.Log("Left control hit going down");
-			//camera.transform.position =new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-			//camera.transform.position =Vector3.SmoothDamp (transform.position, initialCrouch,ref coruchVelocity, crouchSmooth);
-			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY-1, colliderSizeZ);
 			colliderPos.y = colliderPos.y - 0.2f;
 			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
 			canCrouch = false;
+            StopAllCoroutines();
+			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, deathSmoothness));
 		}
+		//on false 
 		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			Vector3 colliderPos = myCollider.transform.position;
-			//Vector3 velocity = Vector3.zero;
-			//Debug.Log("Left control hit going up");
-			//.transform.position = new Vector3(camera.transform.position.x, camera.transform.position.y + crouchVal, camera.transform.position.z);
-			//camera.transform.position =Vector3.SmoothDamp (transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
-			//myCollider.size = new Vector3(colliderSizeX, colliderSizeY+1, colliderSizeZ);
 			colliderPos.y = colliderPos.y + 0.2f;
 			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
 			canCrouch = true;
+            StopAllCoroutines();
+			StartCoroutine(onCrouch(camera.transform, initialCrouch.transform.position, deathSmoothness));
 		}
 
-
-		//debug to find the sweet spot in the crouch 
-		//Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
-		//Debug.Log(Vector3.Distance(camera.transform.localPosition, initialCrouch));
-		if (canCrouch)
-		{
-			if (Vector3.Distance(camera.transform.localPosition, crouchVect) >1f)
-			{
-				//Debug.Log(Vector3.Distance(camera.transform.localPosition, crouchVect));
-				Vector3 newPosition = camera.transform.localPosition;
-				//camera.transform.localPosition =Vector3.SmoothDamp (camera.transform.position,crouchVect,ref coruchVelocity, crouchSmooth);
-				newPosition.y = Mathf.SmoothDamp(camera.transform.localPosition.z, crouchVect.y, ref coruchVelocity.y, crouchSmooth);
-				camera.transform.localPosition = newPosition;
-
-			}
-
-		}
-		else
-		{
-			if (Vector3.Distance(camera.transform.localPosition, initialCrouch) > 1.85)
-			{
-				Vector3 newPosition = camera.transform.localPosition;
-				//.transform.position = Vector3.SmoothDamp(camera.transform.position, initialCrouch, ref coruchVelocity, crouchSmooth);
-				newPosition.y = Mathf.SmoothDamp(camera.transform.localPosition.z, initialCrouch.y, ref coruchVelocity.y, crouchSmooth);
-				camera.transform.localPosition = newPosition;
-			}
-		}
+		
 	}
 	public void setSpeed(float mySpeed)
 	{
@@ -197,6 +170,25 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		StopAllCoroutines();
 		StartCoroutine(Die(this.transform, startPos, deathSmoothness));
+	}
+
+
+	private IEnumerator onCrouch(Transform transform, Vector3 position, float timeToMove)
+	{
+		Vector3 currentPos = this.transform.position;
+		float t = 0f;
+		while (t < 1)
+		{
+			t += Time.deltaTime / timeToMove;
+			transform.position = Vector3.Lerp(currentPos, position, t);
+
+			if (camera.transform.position == position)
+			{
+				yield return null;
+			}
+
+			yield return new WaitForEndOfFrame();
+		}
 	}
 
 	private IEnumerator Die(Transform transform, Vector3 position, float timeToMove)
