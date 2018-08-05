@@ -16,9 +16,13 @@ public class HelpTriggerCs : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
+		Time.timeScale = 0; 
+		Cursor.visible = true;
+		Cursor.lockState = CursorLockMode.Confined;
 		thingToEnable.SetActive(true);
 		this.gameObject.SetActive(false);
 	}
+
 
 
 }

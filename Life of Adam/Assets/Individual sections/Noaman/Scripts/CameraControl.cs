@@ -27,11 +27,17 @@ public class CameraControl : MonoBehaviour
 		Character = this.transform.parent.gameObject;
         isholding = false;
 		canMove = true;
+		Cursor.visible = false;
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 	void Update () 
 	{
 
-		if (canMove)
+		Debug.Log(Time.timeScale);
+
+		// 0 
+
+		if (canMove && Time.timeScale>= 1)
 		{
 			CameraMove();
 		}
