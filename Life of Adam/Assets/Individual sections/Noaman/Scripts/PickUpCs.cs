@@ -91,7 +91,7 @@ public class PickUpCs : MonoBehaviour
 			{
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(4.0f);
 				Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				tempRb.useGravity = true;
 				pickupPoint.transform.DetachChildren();
@@ -108,7 +108,7 @@ public class PickUpCs : MonoBehaviour
 			{
 				Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(8.0f);
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				tempRb.useGravity = true;
 				pickupPoint.transform.DetachChildren();

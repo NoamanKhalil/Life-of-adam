@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44229326, g: 0.49132842, b: 0.57121104, a: 1}
+  m_IndirectSpecularColor: {r: 0.44229347, g: 0.49132872, b: 0.5712112, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -28105,6 +28105,10 @@ Prefab:
     - target: {fileID: 1246934293026546, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_Name
       value: PickPoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562346772138726, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.14
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
