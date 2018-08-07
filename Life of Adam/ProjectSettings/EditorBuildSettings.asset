@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Individual sections/Leon/Scenes/EndGame.unity
     guid: 9ab2aaf4813e24c0f8bf0c823a69570b
+  - enabled: 1
+    path: Assets/Individual sections/Leon/Scenes/T_Area_PostLive.unity
+    guid: 660cbb6b8b7e640eb9d2d5dc933e1133
   m_configObjects: {}
