@@ -45,7 +45,7 @@ public class PickUpCs : MonoBehaviour
 
 	void Update()
 	{
-		
+
 		PickUp();
 	}
 
@@ -74,7 +74,7 @@ public class PickUpCs : MonoBehaviour
 					canDrop = false;
 					hit.collider.gameObject.AddComponent<FixedJoint>();
 					hit.collider.gameObject.GetComponent<FixedJoint>().connectedBody =rb;
-					fp.setSpeed(15f);
+					//fp.setSpeed(15f);
 					GetComponent<UiHandlerCs>().setRay(false);
 					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					Debug.Log("Picked object");
@@ -85,9 +85,9 @@ public class PickUpCs : MonoBehaviour
 		// when a object can be dropped 
 		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
 		{
-			Debug.Log(canDrop);
+			Debug.Log(Vector3.Distance(this.transform.position, bluePlacePos.transform.position));
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (pickedObj.tag == "Blue" && canDrop  && Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<=Dist)
+			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist)
 			{
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
@@ -104,7 +104,7 @@ public class PickUpCs : MonoBehaviour
 				day.setBlueTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj.tag == "Red" && canDrop && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<=Dist)
+			else if (pickedObj.tag == "Red" && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<Dist)
 			{
 				Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
@@ -124,7 +124,7 @@ public class PickUpCs : MonoBehaviour
 			else if (pickedObj != null && !canDrop)
 			{
 				//Debug.Log("Null object called ");
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				Debug.Log("Object dropped");

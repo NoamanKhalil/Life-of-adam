@@ -22,12 +22,15 @@ public class PushCs : MonoBehaviour {
 		if (thingToPull == null)
 		{
 			RaycastHit hit;
-			if (Physics.Raycast(cam.transform.position, fwd, out hit, dist))
+			if (Physics.Raycast(cam.transform.position, fwd, out hit, dist)&& Input.GetKey(KeyCode.Mouse0)&&thingToPull==null)
 			{
 				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				//Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Move" &&thingToPull==null && Input.GetKey(KeyCode.Mouse0))
+				if (hit.collider.gameObject.tag == "Move")
 				{
+				Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                Debug.Log("Did Hit");
+                print("Found an object - distance: " + hit.distance);
 				thingToPull = hit.transform.gameObject;
 				thingToPull.AddComponent<FixedJoint>();
 				thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
@@ -41,7 +44,7 @@ public class PushCs : MonoBehaviour {
 			    }
 			}
 		}
-		else if (thingToPull != null &&(Input.GetKey(KeyCode.Mouse1)||Input.GetKey(KeyCode.Mouse0)))
+		else if (thingToPull != null &&(Input.GetKey(KeyCode.Mouse0)))
 		{
 			fp.setSpeed(8);
 			thingToPull.GetComponent<Rigidbody>().mass = 10000;

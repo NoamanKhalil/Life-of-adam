@@ -36,7 +36,7 @@ public class PuzzleCs : MonoBehaviour
 		if (Vector3.Distance(this.transform.position, player.transform.position) <= Dist)
 		{
 			Debug.Log("set can drop is working ");
-			//Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
+			Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
 			player.GetComponent<PickUpCs>().setCanDrop(true);
 		}
 		else if (Vector3.Distance(this.transform.position, player.transform.position) >= Dist)
