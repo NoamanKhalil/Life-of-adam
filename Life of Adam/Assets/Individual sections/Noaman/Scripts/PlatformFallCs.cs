@@ -20,11 +20,11 @@ public class PlatformFallCs : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
-		//Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
+		Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
 		if (Vector3.Distance(this.transform.position, player.transform.position) <= distToDrop)
 		{
 	     rb.useGravity = true;
-		rb.constraints = RigidbodyConstraints.None;
+		 rb.constraints = RigidbodyConstraints.None;
 		}
 	}
 }

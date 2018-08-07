@@ -5,13 +5,18 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PickUpCs : MonoBehaviour
 {
+    [Header("Add player object here")]
 	public FpcontrollerCs fp;
+
+    [Header("Add the place points here")]
 	public GameObject redPlacePos;
 	public GameObject bluePlacePos;
+   [Header("Add the child object 'PickPoint'")]
 	public GameObject pickupPoint;
     public GameObject cam;
 
 	private GameObject pickedObj;
+    [Header("Value to pickup object")]
     [SerializeField]
 	private float Dist;
     [SerializeField]
@@ -78,7 +83,7 @@ public class PickUpCs : MonoBehaviour
 
 		}
 		// when a object can be dropped 
-		else if (Input.GetKeyDown(KeyCode.Mouse1) && isholding == true && day != null)
+		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
 		{
 			Debug.Log(canDrop);
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
