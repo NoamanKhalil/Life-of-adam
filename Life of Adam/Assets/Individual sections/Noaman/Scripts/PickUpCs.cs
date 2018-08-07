@@ -82,7 +82,7 @@ public class PickUpCs : MonoBehaviour
 		{
 			Debug.Log(canDrop);
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (pickedObj.tag == "Blue" && canDrop == true)
+			if (pickedObj.tag == "Blue" && canDrop  && Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<=Dist)
 			{
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
@@ -99,7 +99,7 @@ public class PickUpCs : MonoBehaviour
 				day.setBlueTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj.tag == "Red" && canDrop == true)
+			else if (pickedObj.tag == "Red" && canDrop && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<=Dist)
 			{
 				Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
@@ -116,7 +116,7 @@ public class PickUpCs : MonoBehaviour
 				day.setRedTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj != null && canDrop == false)
+			else if (pickedObj != null && !canDrop)
 			{
 				//Debug.Log("Null object called ");
 				fp.setSpeed(8.0f);

@@ -52,6 +52,15 @@ public class LevelManagerCs : MonoBehaviour
 				SceneManager.LoadScene(sceneName);
 			}
 		}
+		if (red == true && isHappy)
+		{ 
+			timer -= Time.deltaTime;
+			GetComponent<CanvasFadeCs>().FadeOut();
+			if (timer <= 0)
+			{
+				SceneManager.LoadScene(sceneName);
+			}
+		}
 
 		
 	}

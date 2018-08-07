@@ -24,6 +24,7 @@ public class PlatformFallCs : MonoBehaviour
 		if (Vector3.Distance(this.transform.position, player.transform.position) <= distToDrop)
 		{
 	     rb.useGravity = true;
+		rb.constraints = RigidbodyConstraints.None;
 		}
 	}
 }

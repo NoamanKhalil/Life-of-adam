@@ -552,6 +552,7 @@ MonoBehaviour:
   pickupPoint: {fileID: 1246934293026546}
   cam: {fileID: 1941845338889260}
   Dist: 3
+  day: {fileID: 0}
 --- !u!114 &114859705042685542
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -566,6 +567,7 @@ MonoBehaviour:
   fp: {fileID: 114122618876267192}
   cam: {fileID: 1941845338889260}
   thingToPull: {fileID: 0}
+  dist: 0
 --- !u!124 &124220594834235338
 Behaviour:
   m_ObjectHideFlags: 1
