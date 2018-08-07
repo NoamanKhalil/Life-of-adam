@@ -85,9 +85,9 @@ public class PickUpCs : MonoBehaviour
 		// when a object can be dropped 
 		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
 		{
-			Debug.Log(Vector3.Distance(this.transform.position, bluePlacePos.transform.position));
+			//Debug.Log(Vector3.Distance(this.transform.position, bluePlacePos.transform.position));
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist)
+			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist&& bluePlacePos!=null)
 			{
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
@@ -104,7 +104,7 @@ public class PickUpCs : MonoBehaviour
 				day.setBlueTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj.tag == "Red" && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<Dist)
+			else if (pickedObj.tag == "Red" && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<Dist&&redPlacePos!= null)
 			{
 				Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();

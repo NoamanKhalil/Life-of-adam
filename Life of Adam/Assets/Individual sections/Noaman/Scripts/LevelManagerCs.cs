@@ -11,7 +11,12 @@ public class LevelManagerCs : MonoBehaviour
 	public float timer;
 	public bool blue;
 	public bool red;
+	public bool green;
 	public bool isHappy;
+	public bool isTutorial;
+	public bool isDayOne;
+	public bool isDayTwo;
+	public bool isDayThree;
 	public Text timerTxt;
 	public string sceneName;
 	public PuzzleCs[] puzzle;
@@ -25,6 +30,24 @@ public class LevelManagerCs : MonoBehaviour
 			blue = true;
 			red = true;
 		}
+
+
+
+		if (isDayOne && !isHappy)
+		{
+			if (blue)
+			{
+				timer -= Time.deltaTime;
+				GetComponent
+					<CanvasFadeCs>().FadeOut();
+				if (timer <= 0)
+				{
+					SceneManager.LoadScene(sceneName);
+				}
+			}
+		}
+
+
 
 		if (timerTxt != null && isHappy)
 		{
@@ -43,7 +66,7 @@ public class LevelManagerCs : MonoBehaviour
 		}
 
 
-		if (blue == true &&red == true )
+		if (blue == true &&red == true&& !isTutorial )
 		{
 			timer -= Time.deltaTime;
 			GetComponent<CanvasFadeCs>().FadeOut();
@@ -52,7 +75,7 @@ public class LevelManagerCs : MonoBehaviour
 				SceneManager.LoadScene(sceneName);
 			}
 		}
-		if (red == true && isHappy)
+		if (red == true && isHappy&&!isTutorial)
 		{ 
 			timer -= Time.deltaTime;
 			GetComponent<CanvasFadeCs>().FadeOut();
