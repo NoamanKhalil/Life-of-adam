@@ -15,7 +15,7 @@ public class PickUpCs : MonoBehaviour
     [SerializeField]
 	private float Dist;
     [SerializeField]
-	private DayManagerBad day;
+    private LevelManagerCs day;
 	private Rigidbody rb;
 
 	bool isholding;
@@ -30,7 +30,7 @@ public class PickUpCs : MonoBehaviour
 
 		if (GameObject.Find("LevelManager") != null)
 		{
-			day = GameObject.Find("LevelManager").GetComponent<DayManagerBad>();
+			day = GameObject.Find("LevelManager").GetComponent<LevelManagerCs>();
 		}
 		else
 		{
@@ -70,6 +70,7 @@ public class PickUpCs : MonoBehaviour
 					hit.collider.gameObject.AddComponent<FixedJoint>();
 					hit.collider.gameObject.GetComponent<FixedJoint>().connectedBody =rb;
 					fp.setSpeed(15f);
+					GetComponent<UiHandlerCs>().setRay(false);
 					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					Debug.Log("Picked object");
 				}
@@ -96,6 +97,7 @@ public class PickUpCs : MonoBehaviour
 				bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setBlueTrue();
+				GetComponent<UiHandlerCs>().setRay(true);
 			}
 			else if (pickedObj.tag == "Red" && canDrop == true)
 			{
@@ -112,10 +114,11 @@ public class PickUpCs : MonoBehaviour
 				redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setRedTrue();
+				GetComponent<UiHandlerCs>().setRay(true);
 			}
 			else if (pickedObj != null && canDrop == false)
 			{
-				Debug.Log("Null object called ");
+				//Debug.Log("Null object called ");
 				fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
@@ -125,6 +128,7 @@ public class PickUpCs : MonoBehaviour
 				pickupPoint.transform.DetachChildren();
 				pickedObj = null;
 				isholding = false;
+				GetComponent<UiHandlerCs>().setRay(true);
 			}
 
 

@@ -22,31 +22,35 @@ public class PushCs : MonoBehaviour {
 		if (thingToPull == null)
 		{
 			RaycastHit hit;
-			if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
+			if (Physics.Raycast(cam.transform.position, fwd, out hit, dist))
 			{
 				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				//Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Move" && Vector3.Distance(cam.transform.position, hit.transform.position) <= dist && Input.GetKey(KeyCode.Mouse0))
+				if (hit.collider.gameObject.tag == "Move" &&thingToPull==null && Input.GetKey(KeyCode.Mouse0))
 				{
 				thingToPull = hit.transform.gameObject;
 				thingToPull.AddComponent<FixedJoint>();
 				thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
-				thingToPull.GetComponentInParent<Rigidbody>().mass = 100;
+				thingToPull.GetComponentInParent<Rigidbody>().mass = 1;
 				thingToPull.GetComponent<PushObjectCs>().isPushing();
 				fp.setPush(true);
+				fp.setSpeed(8);
 				cam.GetComponentInParent<CameraControl>().canMoveCheck(false);
+				GetComponent<UiHandlerCs>().setRay(false);
 				Debug.Log("Started pushing ");
 			    }
 			}
 		}
 		else if (thingToPull != null &&(Input.GetKey(KeyCode.Mouse1)||Input.GetKey(KeyCode.Mouse0)))
 		{
+			fp.setSpeed(8);
 			thingToPull.GetComponent<Rigidbody>().mass = 10000;
 			Destroy(thingToPull.GetComponent<FixedJoint>());
 			thingToPull.GetComponent<PushObjectCs>().notPushing();
 			thingToPull = null; 
 			fp.setPush(false);
 			cam.GetComponentInParent<CameraControl>().canMoveCheck(true);
+			GetComponent<UiHandlerCs>().setRay(true);
 			Debug.Log("stopped pushing ");
 				
 		}
