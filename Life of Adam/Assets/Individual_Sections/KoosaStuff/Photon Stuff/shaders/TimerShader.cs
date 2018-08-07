@@ -31,16 +31,11 @@ public class TimerShader : MonoBehaviour
         push = GameObject.FindGameObjectsWithTag(tagOfThePushable);
         pick = GameObject.FindGameObjectsWithTag(tagOfPickable);
         weak = GameObject.FindGameObjectsWithTag(tagOfTheWeak);
-
-
-
     }
 
     // Update is called once per frame
     void Update ()
     {
-
-        
         timer+=Time.deltaTime;
         coolDownEffectTimer += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Q) && !effectActive && timer >= cooldownability)
@@ -66,8 +61,6 @@ public class TimerShader : MonoBehaviour
             effectActive = true;
             coolDownEffectTimer = 0;
         }
-        
-
         if(coolDownEffectTimer >= cooldowneffect&& effectActive)
         {
             foreach (GameObject obj in push)
@@ -84,16 +77,6 @@ public class TimerShader : MonoBehaviour
             {
                 obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 0);
             }
-
-
-
-
-
-
-
-
-
-
             effectActive = false;
            // cube.GetComponent<Renderer>().material = defaultMat;
             timer = 0;

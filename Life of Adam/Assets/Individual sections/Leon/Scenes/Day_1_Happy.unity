@@ -28102,6 +28102,10 @@ Prefab:
       propertyPath: m_Constraints
       value: 112
       objectReference: {fileID: 0}
+    - target: {fileID: 1246934293026546, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
+      propertyPath: m_Name
+      value: PickPoint
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
   m_IsPrefabParent: 0
