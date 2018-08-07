@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302310356545754}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 5.98, y: -0.139, z: -12.61}
+  m_LocalPosition: {x: -33.01854, y: 0.94, z: 34.67078}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -104,7 +104,7 @@ MonoBehaviour:
     m_Bits: 256
   pathToFollowA: []
   pathToFollowB: []
-  posPoint: 1
+  posPoint: 0
   speed: 1
   playerObj: {fileID: 0}
   turnSpeed: 2

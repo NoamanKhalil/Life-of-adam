@@ -23,7 +23,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 	public float turnSpeed;
 	public float minDist;
 	public float attackDistance;
-	public DayManagerBad day;
+   public LevelManagerCs day;
 
 	private bool isPathA;
     private bool isPathB;
