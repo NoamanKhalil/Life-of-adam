@@ -47,18 +47,18 @@ public class TimerShader : MonoBehaviour
         {
             foreach (GameObject obj in push)
             {
-                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 2);
+                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
                 obj.GetComponent<Renderer>().material.SetColor("_OutlineColor", pushColor);
             }
             foreach (GameObject obj in pick)
             {
-                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 2);
+                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
                 obj.GetComponent<Renderer>().material.SetColor("_OutlineColor", pickColor);
 
             }
             foreach (GameObject obj in weak)
             {
-                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 2);
+                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
                 obj.GetComponent<Renderer>().material.SetColor("_OutlineColor",weakColor);
 
             }
