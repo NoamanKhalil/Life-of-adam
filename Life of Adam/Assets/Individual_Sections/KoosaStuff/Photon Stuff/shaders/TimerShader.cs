@@ -31,34 +31,29 @@ public class TimerShader : MonoBehaviour
         push = GameObject.FindGameObjectsWithTag(tagOfThePushable);
         pick = GameObject.FindGameObjectsWithTag(tagOfPickable);
         weak = GameObject.FindGameObjectsWithTag(tagOfTheWeak);
-
-
-
     }
 
     // Update is called once per frame
     void Update ()
     {
-
-        
         timer+=Time.deltaTime;
         coolDownEffectTimer += Time.deltaTime;
         if (Input.GetKeyDown(KeyCode.Q) && !effectActive && timer >= cooldownability)
         {
             foreach (GameObject obj in push)
             {
-                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 2);
+                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
                 obj.GetComponent<Renderer>().material.SetColor("_OutlineColor", pushColor);
             }
             foreach (GameObject obj in pick)
             {
-                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 2);
+                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
                 obj.GetComponent<Renderer>().material.SetColor("_OutlineColor", pickColor);
 
             }
             foreach (GameObject obj in weak)
             {
-                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 2);
+                obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
                 obj.GetComponent<Renderer>().material.SetColor("_OutlineColor",weakColor);
 
             }
@@ -66,8 +61,6 @@ public class TimerShader : MonoBehaviour
             effectActive = true;
             coolDownEffectTimer = 0;
         }
-        
-
         if(coolDownEffectTimer >= cooldowneffect&& effectActive)
         {
             foreach (GameObject obj in push)
@@ -84,16 +77,6 @@ public class TimerShader : MonoBehaviour
             {
                 obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 0);
             }
-
-
-
-
-
-
-
-
-
-
             effectActive = false;
            // cube.GetComponent<Renderer>().material = defaultMat;
             timer = 0;

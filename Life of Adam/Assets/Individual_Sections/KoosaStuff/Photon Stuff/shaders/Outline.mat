@@ -20,10 +20,10 @@ Material:
     m_TexEnvs:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: af3e5060f0f907144b52de68ab4a4687, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.85, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _OutlineSize: 0
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.1336714, g: 1, b: 0, a: 1}
+    - _OutlineColor: {r: 1, g: 1, b: 1, a: 1}

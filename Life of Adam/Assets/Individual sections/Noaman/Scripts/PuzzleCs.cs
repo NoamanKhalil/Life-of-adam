@@ -33,14 +33,13 @@ public class PuzzleCs : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-
-
 		if (Vector3.Distance(this.transform.position, player.transform.position) <= Dist)
 		{
-			//Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
+			Debug.Log("set can drop is working ");
+			Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
 			player.GetComponent<PickUpCs>().setCanDrop(true);
 		}
-		else
+		else if (Vector3.Distance(this.transform.position, player.transform.position) >= Dist)
 		{ 
 			player.GetComponent<PickUpCs>().setCanDrop(false);
 		}

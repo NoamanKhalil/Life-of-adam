@@ -15,7 +15,7 @@ public class FpcontrollerCs : MonoBehaviour
 	public float colliderSizeX, colliderSizeY, colliderSizeZ;
 	public float crouchSmooth;
 	public float deathSmoothness;
-
+	public float coruchSmoothness;
 	private float forwardVel;
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
@@ -65,45 +65,41 @@ public class FpcontrollerCs : MonoBehaviour
 
 	void Update()
 	{
-		Run();
-
-		if (Input.GetKeyDown(KeyCode.I))
+		if (Time.timeScale <= 1)
 		{
-			OnDie();
-		}
-		//Debug.Log(canPush);
-
-		if (canMove && Time.timeScale<= 1)
-		{
-			if (!canPush)
+			Run();
+			if (canMove)
 			{
-				forwardInput = Input.GetAxis("Vertical") * forwardVel;
-				straffeInput = Input.GetAxis("Horizontal") * forwardVel;
+				if (!canPush)
+				{
+					forwardInput = Input.GetAxis("Vertical") * forwardVel;
+					straffeInput = Input.GetAxis("Horizontal") * forwardVel;
+				}
+				else if (canPush && Input.GetAxis("Vertical") < 0 || Input.GetAxis("Vertical") > 0)
+				{
+					//vector3.back
+					forwardInput = Input.GetAxis("Vertical") * forwardVel;
+				}
 			}
-			else if (canPush&& Input.GetAxis("Vertical") < 0||Input.GetAxis("Vertical") > 0)
+
+			//		Debug.Log(straffeInput);
+			//transform.Translate(straffeInput, 0, forwardInput);
+			velocity = new Vector3(straffeInput, 0, forwardInput);
+			//velocity = transform.localToWorldMatrix * velocity ;
+			velocity = transform.TransformDirection(velocity);
+			//velocity.y = rb.velocity.y; 
+
+			rb.velocity = velocity;
+			// ahmed changes for testing 
+			//rb.AddForce(velocity * 10);
+			//rb.velocity = Vector3.ClampMagnitude(rb.velocity, forwardVel);
+			if (canJump & Input.GetKeyUp(KeyCode.Space))
 			{
-				//vector3.back
-				forwardInput = Input.GetAxis("Vertical") * forwardVel;
+				rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
+				canJump = false;
 			}
+			Crouch();
 		}
-
-		//		Debug.Log(straffeInput);
-		//transform.Translate(straffeInput, 0, forwardInput);
-		velocity = new Vector3(straffeInput, 0, forwardInput);
-		//velocity = transform.localToWorldMatrix * velocity ;
-		velocity = transform.TransformDirection(velocity);
-		//velocity.y = rb.velocity.y; 
-
-		rb.velocity = velocity;
-		// ahmed changes for testing 
-		//rb.AddForce(velocity * 10);
-		//rb.velocity = Vector3.ClampMagnitude(rb.velocity, forwardVel);
-		if (canJump & Input.GetKeyUp(KeyCode.Space))
-		{
-			rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
-			canJump = false;
-		}
-		Crouch();
 
 	}
 
@@ -114,6 +110,7 @@ public class FpcontrollerCs : MonoBehaviour
 		// on true
 		if (canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
+			canMove = false;
 			Vector3 colliderPos = myCollider.transform.position;
 			//Vector3 velocity = Vector3.zero;
 			Debug.Log("Left control hit going down");
@@ -122,18 +119,20 @@ public class FpcontrollerCs : MonoBehaviour
 			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
 			canCrouch = false;
             StopAllCoroutines();
-			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, deathSmoothness));
+			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, coruchSmoothness));
+
 		}
 		//on false 
 		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
+			canMove = false;
 			Vector3 colliderPos = myCollider.transform.position;
 			colliderPos.y = colliderPos.y + 0.2f;
 			myCollider.transform.position = colliderPos;
 			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
 			canCrouch = true;
             StopAllCoroutines();
-			StartCoroutine(onCrouch(camera.transform, initialCrouch.transform.position, deathSmoothness));
+			StartCoroutine(onCrouch(camera.transform, initialCrouch.transform.position, coruchSmoothness));
 		}
 
 		
@@ -175,7 +174,7 @@ public class FpcontrollerCs : MonoBehaviour
 
 	private IEnumerator onCrouch(Transform transform, Vector3 position, float timeToMove)
 	{
-		Vector3 currentPos = this.transform.position;
+		Vector3 currentPos = camera.transform.position;
 		float t = 0f;
 		while (t < 1)
 		{
@@ -184,10 +183,13 @@ public class FpcontrollerCs : MonoBehaviour
 
 			if (camera.transform.position == position)
 			{
+
 				yield return null;
+				Debug.Log("canmove thingie working ");
+				canMove = true;
 			}
 
-			yield return new WaitForEndOfFrame();
+			yield return null;
 		}
 	}
 

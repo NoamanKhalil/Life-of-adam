@@ -5,17 +5,22 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PickUpCs : MonoBehaviour
 {
+    [Header("Add player object here")]
 	public FpcontrollerCs fp;
+
+    [Header("Add the place points here")]
 	public GameObject redPlacePos;
 	public GameObject bluePlacePos;
+   [Header("Add the child object 'PickPoint'")]
 	public GameObject pickupPoint;
     public GameObject cam;
 
 	private GameObject pickedObj;
+    [Header("Value to pickup object")]
     [SerializeField]
 	private float Dist;
     [SerializeField]
-	private DayManagerBad day;
+    private LevelManagerCs day;
 	private Rigidbody rb;
 
 	bool isholding;
@@ -30,7 +35,7 @@ public class PickUpCs : MonoBehaviour
 
 		if (GameObject.Find("LevelManager") != null)
 		{
-			day = GameObject.Find("LevelManager").GetComponent<DayManagerBad>();
+			day = GameObject.Find("LevelManager").GetComponent<LevelManagerCs>();
 		}
 		else
 		{
@@ -40,7 +45,7 @@ public class PickUpCs : MonoBehaviour
 
 	void Update()
 	{
-		
+
 		PickUp();
 	}
 
@@ -69,7 +74,8 @@ public class PickUpCs : MonoBehaviour
 					canDrop = false;
 					hit.collider.gameObject.AddComponent<FixedJoint>();
 					hit.collider.gameObject.GetComponent<FixedJoint>().connectedBody =rb;
-					fp.setSpeed(15f);
+					//fp.setSpeed(15f);
+					GetComponent<UiHandlerCs>().setRay(false);
 					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					Debug.Log("Picked object");
 				}
@@ -77,15 +83,15 @@ public class PickUpCs : MonoBehaviour
 
 		}
 		// when a object can be dropped 
-		else if (Input.GetKeyDown(KeyCode.Mouse1) && isholding == true && day != null)
+		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
 		{
-			Debug.Log(canDrop);
+			//Debug.Log(Vector3.Distance(this.transform.position, bluePlacePos.transform.position));
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
-			if (pickedObj.tag == "Blue" && canDrop == true)
+			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist&& bluePlacePos!=null)
 			{
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(4.0f);
 				Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				tempRb.useGravity = true;
 				pickupPoint.transform.DetachChildren();
@@ -96,12 +102,13 @@ public class PickUpCs : MonoBehaviour
 				bluePlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setBlueTrue();
+				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj.tag == "Red" && canDrop == true)
+			else if (pickedObj.tag == "Red" && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<Dist&&redPlacePos!= null)
 			{
 				Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
-				fp.setSpeed(8.0f);
+				//fp.setSpeed(8.0f);
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				tempRb.useGravity = true;
 				pickupPoint.transform.DetachChildren();
@@ -112,11 +119,12 @@ public class PickUpCs : MonoBehaviour
 				redPlacePos.GetComponent<PuzzleCs>().setSlotActive();
 				isholding = false;
 				day.setRedTrue();
+				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj != null && canDrop == false)
+			else if (pickedObj != null && !canDrop)
 			{
-				Debug.Log("Null object called ");
-				fp.setSpeed(8.0f);
+				//Debug.Log("Null object called ");
+				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
 				Debug.Log("Object dropped");
@@ -125,6 +133,7 @@ public class PickUpCs : MonoBehaviour
 				pickupPoint.transform.DetachChildren();
 				pickedObj = null;
 				isholding = false;
+				GetComponent<UiHandlerCs>().setRay(true);
 			}
 
 
