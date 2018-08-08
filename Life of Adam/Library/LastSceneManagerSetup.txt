@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Leon/Scenes/T_Area_PostLive.unity
+- path: Assets/Individual sections/Leon/Scenes/Day_1_Happy.unity
   isLoaded: 1
   isActive: 1

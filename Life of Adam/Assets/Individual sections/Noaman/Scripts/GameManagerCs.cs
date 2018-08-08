@@ -11,7 +11,8 @@ public class GameManagerCs : MonoBehaviour
     public float mainTimer;
     public float goodTimer;
     public float badTimer;
-	public string levelName;
+	public string levelNameGood;
+    public string levelNameBad;
 
     bool SceneA;
     bool SceneB;
@@ -43,7 +44,7 @@ public class GameManagerCs : MonoBehaviour
 
                 Debug.Log("Scene A loaded ");
                 //SceneManager.LoadScene("SceneA");
-				SceneManager.LoadScene(levelName);
+				SceneManager.LoadScene(levelNameGood);
             }
         }
         if (SceneB)
@@ -55,7 +56,7 @@ public class GameManagerCs : MonoBehaviour
                 // put Game scene here
                 Debug.Log("Scene B loaded ");
                 //SceneManager.LoadScene("TestScene");
-				SceneManager.LoadScene("T Area");
+				SceneManager.LoadScene(levelNameBad);
             }
         }
 
