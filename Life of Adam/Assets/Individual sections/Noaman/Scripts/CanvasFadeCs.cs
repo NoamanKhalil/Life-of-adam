@@ -26,7 +26,7 @@ public class CanvasFadeCs : MonoBehaviour
 		StopAllCoroutines();
 		StartCoroutine(Fadeout(can));
 	}
-
+    
 	private IEnumerator Fadein(CanvasGroup cg)
 	{
 		while (can.alpha >=0)
