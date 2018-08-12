@@ -35,7 +35,10 @@ public class Scene  : MonoBehaviour
     {
         SceneManager.LoadScene("VideoScene");
     }
-
+    public void ToTutScene()
+    {
+        SceneManager.LoadScene("T_Area_PostLive");
+    }
     public void ToMainMenuScene()
     {
         SceneManager.LoadScene("MainMenu");

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -701,8 +701,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941452521}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8, y: -0.8, z: 96}
-  m_LocalScale: {x: 997.37573, y: 567.1025, z: 0.549875}
+  m_LocalPosition: {x: -53.3, y: -4.8, z: 96}
+  m_LocalScale: {x: 1501.8231, y: 847.59454, z: 0.549875}
   m_Children: []
   m_Father: {fileID: 1198205566}
   m_RootOrder: 0
@@ -1222,7 +1222,8 @@ MonoBehaviour:
   mainTimer: 13
   goodTimer: 4
   badTimer: 4
-  levelName: T_Area_PostLive
+  levelNameGood: Day_1_Happy
+  levelNameBad: Day_1_Horror
 --- !u!114 &1523942930
 MonoBehaviour:
   m_ObjectHideFlags: 0
