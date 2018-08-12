@@ -1315,7 +1315,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Use E to use special abilites '
+  m_Text: 'Use Q to use special abilites '
 --- !u!222 &215513765
 CanvasRenderer:
   m_ObjectHideFlags: 0
