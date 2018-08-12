@@ -10,6 +10,7 @@ TagManager:
   - Move
   - Pick
   - Weak
+  - Ground
   layers:
   - Default
   - TransparentFX

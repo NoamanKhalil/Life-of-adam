@@ -64,6 +64,8 @@ public class PushObjectCs : MonoBehaviour
             rb.constraints=RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY|RigidbodyConstraints.FreezeRotation;
 		}
 		//set specific constriants off 
+		//~ inverts values IE : value A = 0000 0000 it will become 1111 1111 
+        //rb.constraints & RigidbodyConstraints.FreezePositionZ) == RigidbodyConstraints.FreezePositionZ
 	}
 	public void notPushing()
 	{

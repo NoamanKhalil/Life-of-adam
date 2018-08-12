@@ -28,19 +28,19 @@ public class PushCs : MonoBehaviour {
 				//Debug.Log("Did Hit");
 				if (hit.collider.gameObject.tag == "Move")
 				{
-				Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                Debug.Log("Did Hit");
-                print("Found an object - distance: " + hit.distance);
-				thingToPull = hit.transform.gameObject;
-				thingToPull.AddComponent<FixedJoint>();
-				thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
-				thingToPull.GetComponentInParent<Rigidbody>().mass = 1;
-				thingToPull.GetComponent<PushObjectCs>().isPushing();
-				fp.setPush(true);
-				fp.setSpeed(8);
-				cam.GetComponentInParent<CameraControl>().canMoveCheck(false);
-				GetComponent<UiHandlerCs>().setRay(false);
-				Debug.Log("Started pushing ");
+					Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+	                Debug.Log("Did Hit");
+	                print("Found an object - distance: " + hit.distance);
+					thingToPull = hit.transform.gameObject;
+					thingToPull.AddComponent<FixedJoint>();
+					thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
+					thingToPull.GetComponentInParent<Rigidbody>().mass = 1;
+					thingToPull.GetComponent<PushObjectCs>().isPushing();
+					fp.setPush(true);
+					fp.setSpeed(8);
+					cam.GetComponentInParent<CameraControl>().canMoveCheck(false);
+					GetComponent<UiHandlerCs>().setRay(false);
+					Debug.Log("Started pushing ");
 			    }
 			}
 		}
@@ -55,6 +55,7 @@ public class PushCs : MonoBehaviour {
 			cam.GetComponentInParent<CameraControl>().canMoveCheck(true);
 			GetComponent<UiHandlerCs>().setRay(true);
 			Debug.Log("stopped pushing ");
+			//this.transform.rotation = Quaternion.identity;
 				
 		}
 	}

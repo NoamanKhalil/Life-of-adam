@@ -5,6 +5,7 @@ using UnityEngine;
 public class FpcontrollerCs : MonoBehaviour
 {
 	public GameObject camera;
+	public LayerMask layer;
 	public float inputDelay;
 	public float rotationSpeed;
 	public float Xaxis, YAxis;
@@ -35,6 +36,7 @@ public class FpcontrollerCs : MonoBehaviour
 	bool canDie;
 
 	bool canCrouch;
+	bool isGrounded;
 
 	//if true do action 
 	bool canPush;
@@ -98,15 +100,36 @@ public class FpcontrollerCs : MonoBehaviour
 				rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
 				canJump = false;
 			}
+
 			Crouch();
+			//GroundCheck();
 		}
+
+
 
 	}
 
+	void GroundCheck()
+	{
+		RaycastHit hit;
+		float distance = 2f;
+		Vector3 dirD = Vector3.down;
+		Vector3 pos = transform.position;
+		pos.x += 1;
 
+		if (Physics.Raycast(pos, dirD, out hit, distance))
+		{
+			
+			rb.constraints= RigidbodyConstraints.FreezePositionY|RigidbodyConstraints.FreezeRotation;
+		}
+		else
+		{
+			rb.constraints = ~RigidbodyConstraints.FreezePositionY;
+			rb.mass = 5000;
+		}
+	}
 	void Crouch()
 	{
-
 		// on true
 		if (canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
@@ -162,9 +185,12 @@ public class FpcontrollerCs : MonoBehaviour
 	void OnCollisionStay(Collision other)
 	{
 		canJump = true;
+
+		if (other.gameObject.tag.Equals("Ground"))
+		{
+			//isGrounded = true;
+		}
 	}
-
-
 	public void OnDie()
 	{
 		StopAllCoroutines();

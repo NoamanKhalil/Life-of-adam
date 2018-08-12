@@ -16795,7 +16795,7 @@ GameObject:
   - component: {fileID: 740647561}
   - component: {fileID: 740647560}
   - component: {fileID: 740647559}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17321,7 +17321,7 @@ GameObject:
   - component: {fileID: 755288091}
   - component: {fileID: 755288090}
   - component: {fileID: 755288089}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -22345,7 +22345,7 @@ GameObject:
   - component: {fileID: 911804177}
   - component: {fileID: 911804176}
   - component: {fileID: 911804175}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27149,15 +27149,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 28.291
+      value: -8.449
       objectReference: {fileID: 0}
     - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.65744746
+      value: -0.952
       objectReference: {fileID: 0}
     - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.223
+      value: 5.744
       objectReference: {fileID: 0}
     - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_LocalRotation.x
@@ -27239,7 +27239,7 @@ Prefab:
     - target: {fileID: 54323088000417338, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}
       propertyPath: m_Constraints
-      value: 112
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 1246934293026546, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_Name
@@ -27253,7 +27253,18 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -57.2
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 54323088000417338, guid: f0e0907f428d844cb9fa00af5625d411,
+        type: 2}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114122618876267192, guid: f0e0907f428d844cb9fa00af5625d411,
+        type: 2}
+      propertyPath: layer.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 65615319502889660, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1079941396 stripped
@@ -27288,6 +27299,19 @@ MonoBehaviour:
   weakColor: {r: 1, g: 0, b: 0, a: 1}
   pushColor: {r: 1, g: 0.9215687, b: 0.015686275, a: 1}
   pickColor: {r: 0.015686274, g: 1, b: 0.077482566, a: 1}
+--- !u!136 &1079941398
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1079941396}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.3
+  m_Height: 2.2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!1 &1083281038
 GameObject:
   m_ObjectHideFlags: 0
@@ -30249,9 +30273,9 @@ GameObject:
   - component: {fileID: 1194462326}
   - component: {fileID: 1194462325}
   - component: {fileID: 1194462324}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Floor
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -34225,7 +34249,7 @@ GameObject:
   - component: {fileID: 1402719242}
   - component: {fileID: 1402719241}
   - component: {fileID: 1402719240}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34315,7 +34339,7 @@ GameObject:
   - component: {fileID: 1412279632}
   - component: {fileID: 1412279631}
   - component: {fileID: 1412279630}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35574,6 +35598,11 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224308597119386488, guid: eaedcbeb7aff74f96908b3877306db8e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.1429749
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eaedcbeb7aff74f96908b3877306db8e, type: 2}
@@ -38656,7 +38685,7 @@ GameObject:
   - component: {fileID: 1547095372}
   - component: {fileID: 1547095371}
   - component: {fileID: 1547095370}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
