@@ -27179,92 +27179,22 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114859705042685542, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: dist
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114205512790700464, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 114599062008527826, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}
       propertyPath: redPlacePos
       value: 
       objectReference: {fileID: 261245154}
-    - target: {fileID: 54323088000417338, guid: f0e0907f428d844cb9fa00af5625d411,
+    - target: {fileID: 114619185751458982, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}
-      propertyPath: m_UseGravity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114599062008527826, guid: f0e0907f428d844cb9fa00af5625d411,
+      propertyPath: push.Array.data[0]
+      value: 
+      objectReference: {fileID: 1254986656}
+    - target: {fileID: 114619185751458982, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}
-      propertyPath: Dist
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65615319502889660, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.61222094
-      objectReference: {fileID: 0}
-    - target: {fileID: 65615319502889660, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Center.x
-      value: -0.07142615
-      objectReference: {fileID: 0}
-    - target: {fileID: 65615319502889660, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Center.z
-      value: 0.069582276
-      objectReference: {fileID: 0}
-    - target: {fileID: 65615319502889660, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 0.6172408
-      objectReference: {fileID: 0}
-    - target: {fileID: 54323088000417338, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Constraints
-      value: 116
-      objectReference: {fileID: 0}
-    - target: {fileID: 1246934293026546, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
-      propertyPath: m_Name
-      value: PickPoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 4562346772138726, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4090586761843610, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -57.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 54323088000417338, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: m_Mass
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114122618876267192, guid: f0e0907f428d844cb9fa00af5625d411,
-        type: 2}
-      propertyPath: layer.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 65615319502889660, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
+      propertyPath: weak.Array.data[0]
+      value: 
+      objectReference: {fileID: 356729442}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1079941396 stripped
@@ -27272,46 +27202,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1391477524881462, guid: f0e0907f428d844cb9fa00af5625d411,
     type: 2}
   m_PrefabInternal: {fileID: 1079941395}
---- !u!114 &1079941397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1079941396}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fc3be7cdec4d1147bed4e56236d07b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pick: []
-  push:
-  - {fileID: 1254986656}
-  weak:
-  - {fileID: 356729442}
-  effectActive: 0
-  cooldownability: 10
-  cooldowneffect: 5
-  coolDownEffectTimer: 0
-  timer: 10
-  tagOfPickable: Pick
-  tagOfThePushable: Move
-  tagOfTheWeak: Weak
-  weakColor: {r: 1, g: 0, b: 0, a: 1}
-  pushColor: {r: 1, g: 0.9215687, b: 0.015686275, a: 1}
-  pickColor: {r: 0.015686274, g: 1, b: 0.077482566, a: 1}
---- !u!136 &1079941398
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1079941396}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 2.2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!1 &1083281038
 GameObject:
   m_ObjectHideFlags: 0

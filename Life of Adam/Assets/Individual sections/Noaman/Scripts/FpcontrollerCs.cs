@@ -102,7 +102,7 @@ public class FpcontrollerCs : MonoBehaviour
 			}
 
 			Crouch();
-			//GroundCheck();
+			GroundCheck();
 		}
 
 
