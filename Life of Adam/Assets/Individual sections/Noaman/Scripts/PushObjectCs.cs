@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PushObjectCs : MonoBehaviour
 {
-	// if true it is constriant if false its not constraint  
+	// if true it is constriant if false its not constraint 
+    [Header("Just unfreeze the object axis you would like moved and it just works ")]
     [SerializeField]
 	private bool posX;
 	[SerializeField]

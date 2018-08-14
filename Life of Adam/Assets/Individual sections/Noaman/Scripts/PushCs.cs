@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class PushCs : MonoBehaviour {
-
+public class PushCs : MonoBehaviour
+{
+    [Header("This component helps in pushing objects , they need the pushibject component atatched to them and need to be tagged as 'Move'")]
 	public FpcontrollerCs fp;
 	public GameObject cam;
+    [Header("To see if object is being pulled ")]
 	public GameObject thingToPull;
+    [Header("Distance before the object can be psuhed ")]
 	public float dist;
 	// Use this for initialization
 	void Start ()
@@ -22,7 +25,7 @@ public class PushCs : MonoBehaviour {
 		if (thingToPull == null)
 		{
 			RaycastHit hit;
-			if (Physics.Raycast(cam.transform.position, fwd, out hit, dist)&& Input.GetKey(KeyCode.Mouse0)&&thingToPull==null)
+			if (Physics.Raycast(cam.transform.position, fwd, out hit, dist)&& Input.GetKeyUp(KeyCode.Mouse0)&&thingToPull==null)
 			{
 				//Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				//Debug.Log("Did Hit");
@@ -30,7 +33,7 @@ public class PushCs : MonoBehaviour {
 				{
 					Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
 	                Debug.Log("Did Hit");
-	                print("Found an object - distance: " + hit.distance);
+	                //print("Found an object - distance: " + hit.distance);
 					thingToPull = hit.transform.gameObject;
 					thingToPull.AddComponent<FixedJoint>();
 					thingToPull.GetComponent<FixedJoint>().connectedBody = GetComponentInParent<Rigidbody>();
@@ -44,7 +47,7 @@ public class PushCs : MonoBehaviour {
 			    }
 			}
 		}
-		else if (thingToPull != null &&(Input.GetKey(KeyCode.Mouse0)))
+		else if (thingToPull != null &&(Input.GetKeyUp(KeyCode.Mouse0)))
 		{
 			fp.setSpeed(8);
 			thingToPull.GetComponent<Rigidbody>().mass = 10000;

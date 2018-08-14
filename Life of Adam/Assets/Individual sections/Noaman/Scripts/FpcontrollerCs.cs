@@ -4,24 +4,24 @@ using UnityEngine;
 
 public class FpcontrollerCs : MonoBehaviour
 {
+    [Header("Pass in the camera here")]
 	public GameObject camera;
-	public LayerMask layer;
-	public float inputDelay;
-	public float rotationSpeed;
-	public float Xaxis, YAxis;
-	public float crouchVal;
 	public float straffeVel;
+    [Header("Speed of which player runs")]
 	public float runVel = 36f;
+	[Header("How high the player jumps")]
 	public float jumpVel = 0.2f;
-	public float colliderSizeX, colliderSizeY, colliderSizeZ;
-	public float crouchSmooth;
+    [Header("Speed of which dies and returns to the start postion")]
 	public float deathSmoothness;
+    [Header("Speed of which player crouches")]
 	public float coruchSmoothness;
 	private float forwardVel;
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
+    [Header("Transform for camera to move to while not crocuhing")]
     [SerializeField]
 	private Transform initialCrouch;
+    [Header("Transform for camera to move to while crocuhing")]
     [SerializeField]
 	private Transform crouchVect;
 	[SerializeField]
@@ -62,10 +62,6 @@ public class FpcontrollerCs : MonoBehaviour
 		canCrouch = true;
 		forwardVel = walkVel;
 		myCollider = GetComponent<BoxCollider>();
-		//initialCrouch = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y - crouchVal, camera.transform.localPosition.z);
-		//crouchVect = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y, camera.transform.localPosition.z);
-		/*initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-        crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);*/
 		canMove = true;
 		canPush = false;
 	}
@@ -88,18 +84,9 @@ public class FpcontrollerCs : MonoBehaviour
 					forwardInput = Input.GetAxis("Vertical") * forwardVel;
 				}
 			}
-
-			//		Debug.Log(straffeInput);
-			//transform.Translate(straffeInput, 0, forwardInput);
 			velocity = new Vector3(straffeInput, 0, forwardInput);
-			//velocity = transform.localToWorldMatrix * velocity ;
 			velocity = transform.TransformDirection(velocity);
-			//velocity.y = rb.velocity.y; 
-
 			rb.velocity = velocity;
-			// ahmed changes for testing 
-			//rb.AddForce(velocity * 10);
-			//rb.velocity = Vector3.ClampMagnitude(rb.velocity, forwardVel);
 			if (canJump & Input.GetKeyUp(KeyCode.Space))
 			{
 				rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
@@ -107,17 +94,15 @@ public class FpcontrollerCs : MonoBehaviour
 			}
 
 			Crouch();
-			GroundCheck();
+			//GroundCheck();
 		}
 
-
-
 	}
-
+	/* ground check is used to make sure the player has a platform under it , if its not we can make the player fall*/
 	void GroundCheck()
 	{
 		RaycastHit hit;
-		float distance = 2f;
+		float distance = 3f;
 		Vector3 dirD = Vector3.down;
 		Vector3 pos = transform.position;
 		pos.x += 1;
@@ -129,10 +114,13 @@ public class FpcontrollerCs : MonoBehaviour
 		}
 		else
 		{
-			rb.constraints = ~RigidbodyConstraints.FreezePositionY;
-			rb.mass = 5000;
+			// make player fall 
+			//rb.constraints = RigidbodyConstraints.;
+			//rb.mass = 5000;
 		}
 	}
+   /* Called when player crouched , initiated the coroutine to move back and forth to the crouch postion smoothly */
+   /* we also adjust the colldier size so adam can go throguh small areas */
 	void Crouch()
 	{
 		// on true
@@ -172,7 +160,7 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		forwardVel = mySpeed;
 	}
-
+    /* code for player to run*/
 	void Run()
 	{
 		if (Input.GetKey(KeyCode.LeftShift) && stamina <= 0)
@@ -193,12 +181,8 @@ public class FpcontrollerCs : MonoBehaviour
 	void OnCollisionStay(Collision other)
 	{
 		canJump = true;
-
-		if (other.gameObject.tag.Equals("Ground"))
-		{
-			//isGrounded = true;
-		}
 	}
+    /* Called when player dies , initiated the coroutine to move back to the start postion smoothly */
 	public void OnDie()
 	{
 		StopAllCoroutines();

@@ -7349,7 +7349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1079941396}
-  distToDrop: 2
+  distToDrop: 1.5
 --- !u!65 &356729446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35507,7 +35507,12 @@ Prefab:
     - target: {fileID: 224175117640379168, guid: eaedcbeb7aff74f96908b3877306db8e,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -0.49998474
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224231812910257102, guid: eaedcbeb7aff74f96908b3877306db8e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eaedcbeb7aff74f96908b3877306db8e, type: 2}
@@ -45695,7 +45700,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1079941396}
-  distToDrop: 2
+  distToDrop: 1.5
 --- !u!65 &1866464465
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class PauseHandlerCs : MonoBehaviour
 {
+    [Header("Pass in canvas with canvas group so fade in can work")]
 	public CanvasGroup can;
+    [Header("controls how smooth the fade is ")]
 	public float smooth;
 	public GameObject myCanvas;
 	public bool isPaused;
@@ -40,11 +42,6 @@ public class PauseHandlerCs : MonoBehaviour
 			Cursor.lockState = CursorLockMode.Locked;
             StopAllCoroutines();
 			StartCoroutine(uiFadein(can));
-			/*if (can.alpha <=1)
-			{
-				Time.timeScale = 1;
-				//myCanvas.SetActive(false);
-			}*/
 			Time.timeScale = 1;
 			return;
 
@@ -58,12 +55,7 @@ public class PauseHandlerCs : MonoBehaviour
 			Cursor.visible = true;
 	        Cursor.lockState = CursorLockMode.None;
             StopAllCoroutines();
-
 			StartCoroutine(uiFadeout(can));
-			/*if (can.alpha>=1)
-			{
-				Time.timeScale = 0;
-			}*/
 			Time.timeScale = 0;
 			return;
 		}
