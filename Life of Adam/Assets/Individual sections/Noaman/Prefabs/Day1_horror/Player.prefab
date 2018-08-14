@@ -81,8 +81,8 @@ GameObject:
   - component: {fileID: 82986408949650872}
   - component: {fileID: 114579144570549748}
   - component: {fileID: 114205512790700464}
-  - component: {fileID: 136255691320299362}
   - component: {fileID: 114619185751458982}
+  - component: {fileID: 65139574266236552}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -149,7 +149,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391477524881462}
   m_LocalRotation: {x: 0, y: -0.47869182, z: 0, w: 0.8779831}
-  m_LocalPosition: {x: -8.449, y: -0.952, z: 5.744}
+  m_LocalPosition: {x: -8.449, y: -0.755, z: 5.744}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4002673041278424}
@@ -361,6 +361,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!65 &65139574266236552
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391477524881462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1.714514, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65353402027558422
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -527,6 +539,8 @@ MonoBehaviour:
   initialCrouch: {fileID: 4183624112421638}
   crouchVect: {fileID: 4562346772138726}
   walkVel: 8
+  crouchPosSize: {x: 0.5, y: -0.7, z: 0.5}
+  startCrouchSize: {x: 0.5, y: 1.7, z: 0.5}
 --- !u!114 &114188954190196164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -754,19 +768,6 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1941845338889260}
   m_Enabled: 1
---- !u!136 &136255691320299362
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1391477524881462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.3
-  m_Height: 2.2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!138 &138631114896513256
 FixedJoint:
   m_ObjectHideFlags: 1

@@ -27,7 +27,12 @@ public class FpcontrollerCs : MonoBehaviour
 	[SerializeField]
 	private float walkVel = 8f;
 	private BoxCollider myCollider;
-
+    [Header("When playe is crocuhed")]
+    [SerializeField]
+    private Vector3 crouchPosSize;
+    [Header("When playe is not crocuhed")]
+    [SerializeField]
+    private Vector3 startCrouchSize;
 	Rigidbody rb;
 	float forwardInput, straffeInput;
 	float stamina;
@@ -137,9 +142,11 @@ public class FpcontrollerCs : MonoBehaviour
 			Vector3 colliderPos = myCollider.transform.position;
 			//Vector3 velocity = Vector3.zero;
 			Debug.Log("Left control hit going down");
-			colliderPos.y = colliderPos.y - 0.2f;
+            //pos should be 0- 0.5 
+			colliderPos.y = colliderPos.y - 0.5f;
 			myCollider.transform.position = colliderPos;
-			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
+            // mess with the collider size 
+            myCollider.size = crouchPosSize;
 			canCrouch = false;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, coruchSmoothness));
@@ -150,9 +157,10 @@ public class FpcontrollerCs : MonoBehaviour
 		{
 			canMove = false;
 			Vector3 colliderPos = myCollider.transform.position;
-			colliderPos.y = colliderPos.y + 0.2f;
+            //pos should be 0+ 0.5
+			colliderPos.y = colliderPos.y + 0.5f;
 			myCollider.transform.position = colliderPos;
-			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
+			myCollider.size = startCrouchSize;
 			canCrouch = true;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, initialCrouch.transform.position, coruchSmoothness));
