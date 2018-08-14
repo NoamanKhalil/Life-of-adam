@@ -25,6 +25,7 @@ public class PlatformFallCs : MonoBehaviour
 		{
 	     rb.useGravity = true;
 		 rb.constraints = RigidbodyConstraints.None;
+			rb.mass = 100;
 		}
 	}
 }

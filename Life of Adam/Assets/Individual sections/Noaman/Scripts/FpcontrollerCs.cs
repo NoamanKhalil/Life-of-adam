@@ -26,13 +26,16 @@ public class FpcontrollerCs : MonoBehaviour
 	private Transform crouchVect;
 	[SerializeField]
 	private float walkVel = 8f;
-	private BoxCollider myCollider;
+	private CapsuleCollider myCollider;
     [Header("When playe is crocuhed")]
     [SerializeField]
     private Vector3 crouchPosSize;
     [Header("When playe is not crocuhed")]
     [SerializeField]
     private Vector3 startCrouchSize;
+	[Header("Players fall time before they die")]
+	[SerializeField]
+    float tempTime = 5f;
 	Rigidbody rb;
 	float forwardInput, straffeInput;
 	float stamina;
@@ -61,7 +64,7 @@ public class FpcontrollerCs : MonoBehaviour
 		isPlaying = false;
 		canCrouch = true;
 		forwardVel = walkVel;
-		myCollider = GetComponent<BoxCollider>();
+		myCollider = GetComponent<CapsuleCollider>();
 		canMove = true;
 		canPush = false;
 	}
@@ -92,11 +95,10 @@ public class FpcontrollerCs : MonoBehaviour
 				rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
 				canJump = false;
 			}
-
 			Crouch();
-			//GroundCheck();
+            GroundCheck();
 		}
-
+        
 	}
 	/* ground check is used to make sure the player has a platform under it , if its not we can make the player fall*/
 	void GroundCheck()
@@ -105,18 +107,25 @@ public class FpcontrollerCs : MonoBehaviour
 		float distance = 3f;
 		Vector3 dirD = Vector3.down;
 		Vector3 pos = transform.position;
-		pos.x += 1;
+		//pos.x += 0.5f;
 
 		if (Physics.Raycast(pos, dirD, out hit, distance))
 		{
-			
 			rb.constraints= RigidbodyConstraints.FreezePositionY|RigidbodyConstraints.FreezeRotation;
+			Debug.Log(Physics.Raycast(pos, dirD, out hit, distance));
+
 		}
 		else
 		{
-			// make player fall 
-			//rb.constraints = RigidbodyConstraints.;
-			//rb.mass = 5000;
+			myCollider.enabled = false;
+			Debug.Log(Physics.Raycast(pos, dirD, out hit, distance));
+			rb.constraints = ~RigidbodyConstraints.FreezePositionY;
+			rb.AddForce(new Vector3(0, -jumpVel, 0), ForceMode.Impulse);
+			tempTime -= Time.deltaTime;
+			if (tempTime<=0)
+			{
+				OnDie();
+			}
 		}
 	}
    /* Called when player crouched , initiated the coroutine to move back and forth to the crouch postion smoothly */
@@ -127,14 +136,9 @@ public class FpcontrollerCs : MonoBehaviour
 		if (canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			canMove = false;
-			Vector3 colliderPos = myCollider.transform.position;
-			//Vector3 velocity = Vector3.zero;
-			Debug.Log("Left control hit going down");
-            //pos should be 0- 0.5 
-			colliderPos.y = colliderPos.y - 0.5f;
-			myCollider.transform.position = colliderPos;
-            // mess with the collider size 
-            myCollider.size = crouchPosSize;
+			//Vector3 mypos = myCollider.bounds.center;
+			myCollider.center = crouchPosSize;
+			myCollider.height = 0.8f;
 			canCrouch = false;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, coruchSmoothness));
@@ -144,11 +148,8 @@ public class FpcontrollerCs : MonoBehaviour
 		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			canMove = false;
-			Vector3 colliderPos = myCollider.transform.position;
-            //pos should be 0+ 0.5
-			colliderPos.y = colliderPos.y + 0.5f;
-			myCollider.transform.position = colliderPos;
-			myCollider.size = startCrouchSize;
+			myCollider.center = startCrouchSize;
+			myCollider.height = 2f;
 			canCrouch = true;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, initialCrouch.transform.position, coruchSmoothness));

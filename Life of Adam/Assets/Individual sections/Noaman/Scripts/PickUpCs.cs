@@ -7,7 +7,6 @@ public class PickUpCs : MonoBehaviour
 {
     [Header("Add player object here")]
 	public FpcontrollerCs fp;
-
     [Header("Add the place points here")]
 	public GameObject redPlacePos;
 	public GameObject bluePlacePos;
