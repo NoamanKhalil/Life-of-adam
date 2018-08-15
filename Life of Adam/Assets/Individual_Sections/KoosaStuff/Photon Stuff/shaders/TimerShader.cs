@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class TimerShader : MonoBehaviour
 {
     [Header("your objects")]
@@ -24,20 +24,41 @@ public class TimerShader : MonoBehaviour
     public Color weakColor = Color.red;
     public Color pushColor = Color.green;
     public Color pickColor = Color.yellow;
-
-    // Use this for initialization
-    void Start ()
-    {
-        push = GameObject.FindGameObjectsWithTag(tagOfThePushable);
-        pick = GameObject.FindGameObjectsWithTag(tagOfPickable);
-        weak = GameObject.FindGameObjectsWithTag(tagOfTheWeak);
-    }
+    [Header("refrence to the image component")]
+	public Image powerUI;
+	private float powerUiAlpha;
+	// Use this for initialization
+	void Start()
+	{
+		push = GameObject.FindGameObjectsWithTag(tagOfThePushable);
+		pick = GameObject.FindGameObjectsWithTag(tagOfPickable);
+		weak = GameObject.FindGameObjectsWithTag(tagOfTheWeak);
+		powerUiAlpha = 1;
+		timer = cooldownability;
+	}
 
     // Update is called once per frame
     void Update ()
     {
-        timer+=Time.deltaTime;
-        coolDownEffectTimer += Time.deltaTime;
+		timer += Time.deltaTime;
+	    // why is it counting up ?
+		coolDownEffectTimer += Time.deltaTime;
+		powerUI.fillAmount = powerUiAlpha;
+    
+
+
+		// when active UI alpha will be 1 
+		if (!effectActive)
+		{
+			powerUiAlpha = Mathf.Lerp(powerUiAlpha, 1, Time.deltaTime);
+		}
+		//wehn inactive the alpha value will decrese to 0 
+		else if (effectActive)
+		{
+			powerUiAlpha = Mathf.Lerp(powerUiAlpha, 0, Time.deltaTime);
+		}
+		// adjust alpha to be 
+
         if (Input.GetKeyDown(KeyCode.Q) && !effectActive && timer >= cooldownability)
         {
             foreach (GameObject obj in push)

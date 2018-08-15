@@ -1,14 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class FpcontrollerCs : MonoBehaviour
 {
     [Header("Pass in the camera here")]
 	public GameObject camera;
 	public float straffeVel;
-    [Header("Speed of which player runs")]
-	public float runVel = 36f;
+    [Header("Speed of which player runs & walks")]
+	public float runVel ;
+	[SerializeField]
+	private float walkVel;
 	[Header("How high the player jumps")]
 	public float jumpVel = 0.2f;
     [Header("Speed of which dies and returns to the start postion")]
@@ -24,8 +26,6 @@ public class FpcontrollerCs : MonoBehaviour
     [Header("Transform for camera to move to while crocuhing")]
     [SerializeField]
 	private Transform crouchVect;
-	[SerializeField]
-	private float walkVel = 8f;
 	private CapsuleCollider myCollider;
     [Header("When playe is crocuhed")]
     [SerializeField]
@@ -36,9 +36,17 @@ public class FpcontrollerCs : MonoBehaviour
 	[Header("Players fall time before they die")]
 	[SerializeField]
     float tempTime = 5f;
+	[Header("refrence to the stamina image component")]
+	public Image staminaUi;
+	private float staminaUifill;
 	Rigidbody rb;
 	float forwardInput, straffeInput;
+	[Header("stamina regen speed & stamina value (Do not change)")]
+    [SerializeField]
+    float staminaRegenSpeed;
+    [SerializeField]
 	float stamina;
+
 	bool isPlaying;
 	bool canJump;
 	bool canDie;
@@ -49,6 +57,8 @@ public class FpcontrollerCs : MonoBehaviour
 	//if true do action 
 	bool canPush;
 	bool canMove;
+
+    bool canRun ;
 
 	Vector3 coruchVelocity = Vector3.zero;
 	Vector3 startPos;
@@ -67,6 +77,9 @@ public class FpcontrollerCs : MonoBehaviour
 		myCollider = GetComponent<CapsuleCollider>();
 		canMove = true;
 		canPush = false;
+		stamina = 100;
+		staminaUifill = stamina / 100;
+		canRun = true;
 	}
 
 	void Update()
@@ -164,14 +177,27 @@ public class FpcontrollerCs : MonoBehaviour
     /* code for player to run*/
 	void Run()
 	{
-		if (Input.GetKey(KeyCode.LeftShift) && stamina <= 0)
+		if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1)
 		{
 			forwardVel = runVel;
-			stamina -= 2;
+			stamina--;
+			staminaUifill = stamina / 100;
+			staminaUi.fillAmount = staminaUifill;
+			canRun = true;
 		}
-		else if (Input.GetKeyUp(KeyCode.LeftShift))
+		else
 		{
+			canRun = false;
+		}
+		/* stamin regen code */
+		if (stamina <= 100.0f && canRun == false)
+		{
+			Debug.Log("Stamina going up " + stamina);
 			forwardVel = walkVel;
+			stamina += Time.deltaTime* staminaRegenSpeed;
+            staminaUifill = stamina /100;
+			staminaUi.fillAmount = staminaUifill;
+
 		}
 	}
 
