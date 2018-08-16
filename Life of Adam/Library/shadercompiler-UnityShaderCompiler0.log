@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+Base path: /Applications/Unity/Unity.app/Contents
+=======
 Base path: /Applications/Unity/Hub/Editor/2018.1.1f1/Unity.app/Contents
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -11,6 +14,7 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+>>>>>>> d9382a3c3471b82ccf36c5ee0ef107d50da95662
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
