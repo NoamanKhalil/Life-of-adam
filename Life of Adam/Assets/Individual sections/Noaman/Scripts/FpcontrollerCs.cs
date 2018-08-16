@@ -46,6 +46,9 @@ public class FpcontrollerCs : MonoBehaviour
     float staminaRegenSpeed;
     [SerializeField]
 	float stamina;
+    [Header("Place tun normal in 0 , run fast 1 & walk crouch at 3 ")]
+    [SerializeField]
+    AudioClip []myClip;
 
 	bool isPlaying;
 	bool canJump;
@@ -59,6 +62,7 @@ public class FpcontrollerCs : MonoBehaviour
 	bool canMove;
 
     bool canRun ;
+    AudioSource aud;
 
 	Vector3 coruchVelocity = Vector3.zero;
 	Vector3 startPos;
@@ -80,6 +84,7 @@ public class FpcontrollerCs : MonoBehaviour
 		stamina = 100;
 		staminaUifill = stamina / 100;
 		canRun = true;
+        aud = GetComponent<AudioSource>();
 	}
 
 	void Update()
@@ -100,6 +105,21 @@ public class FpcontrollerCs : MonoBehaviour
 					forwardInput = Input.GetAxis("Vertical") * forwardVel;
 				}
 			}
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) &&(!canCrouch&& !canPush))
+            {
+                if (!aud.isPlaying)
+                {
+                    aud.clip = myClip[0];
+                    aud.Play();
+                }
+            }
+            else
+            {
+                if (aud.isPlaying)
+                {
+                    aud.Pause();
+                }
+            }
 			velocity = new Vector3(straffeInput, 0, forwardInput);
 			velocity = transform.TransformDirection(velocity);
 			rb.velocity = velocity;
@@ -155,6 +175,14 @@ public class FpcontrollerCs : MonoBehaviour
 			canCrouch = false;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, coruchSmoothness));
+            if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D))
+            {
+                if (!aud.isPlaying)
+                {
+                    aud.clip = myClip[2];
+                    aud.Play();
+                }
+            }
 
 		}
 		//on false 
@@ -179,6 +207,11 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1)
 		{
+            if (!aud.isPlaying)
+            {
+                aud.clip = myClip[1];
+                aud.Play();
+            }
 			forwardVel = runVel;
 			stamina--;
 			staminaUifill = stamina / 100;
@@ -187,6 +220,10 @@ public class FpcontrollerCs : MonoBehaviour
 		}
 		else
 		{
+            if (aud.isPlaying)
+            {
+                aud.Pause();
+            }
 			canRun = false;
 		}
 		/* stamin regen code */

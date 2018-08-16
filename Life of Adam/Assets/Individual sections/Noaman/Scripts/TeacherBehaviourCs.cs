@@ -11,6 +11,8 @@ enum AiState
 [RequireComponent(typeof(MySteeringBehaviour))]
 public class TeacherBehaviourCs : MonoBehaviour
 {
+
+    public string name;
 	public NavMeshAgent agent;
     public MySteeringBehaviour steer;
 	public LayerMask layer;
@@ -18,10 +20,16 @@ public class TeacherBehaviourCs : MonoBehaviour
     public Transform[] pathToFollowA;
     public Transform[] pathToFollowB;
     public int posPoint;
+    [Header("MoveSpeed")]
     public float speed;
 	public GameObject playerObj;
+    [Header("TurnSpeed")]
 	public float turnSpeed;
+    [Header("MinDist before attacking player")]
 	public float minDist;
+    [Header("MinDist before attacking player")]
+    public float minpointDist;
+    [Header("dist before ttack player")]
 	public float attackDistance;
    public LevelManagerCs day;
 
@@ -34,7 +42,7 @@ public class TeacherBehaviourCs : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        pathToFollowA = GameObject.Find("wayPointParent").GetComponentsInChildren<Transform>();
+        pathToFollowA = GameObject.Find(name).GetComponentsInChildren<Transform>();
 		agent.autoBraking = false;
 		isPathA = true;
 		isPathB = false;
@@ -134,7 +142,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 			//transform.LookAt(pathToFollow[posPoint].position);
         }
 
-		if (Vector3.Distance(transform.position, arr[posPoint].position) < 0.25f)
+        if (Vector3.Distance(transform.position, arr[posPoint].position) < minpointDist)
         {
 
 			//Debug.Log("Debug of distnace  " +Vector3.Distance(transform.position, arr[posPoint].position));

@@ -2,7 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HeadBobCs : MonoBehaviour {
+//Got from http://wiki.unity3d.com/index.php?title=Headbobber
+//converted to c# from JS by noaman khalil 
+
+public class HeadBobCs : MonoBehaviour 
+{
 
 	public float timer = 0.0f;
 	public float bobbingSpeed = 0.18f;

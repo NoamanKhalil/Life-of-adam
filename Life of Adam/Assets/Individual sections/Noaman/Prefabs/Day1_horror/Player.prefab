@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 114579144570549748}
   - component: {fileID: 114205512790700464}
   - component: {fileID: 114619185751458982}
-  - component: {fileID: 65139574266236552}
+  - component: {fileID: 136222476910535848}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -121,9 +121,26 @@ GameObject:
   - component: {fileID: 114500508125373366}
   - component: {fileID: 114188954190196164}
   - component: {fileID: 114755999948104074}
+  - component: {fileID: 114904277196621084}
   m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1980568966740400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4566064215639818}
+  - component: {fileID: 114381687910348490}
+  m_Layer: 8
+  m_Name: raycastPos2
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,13 +166,14 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391477524881462}
   m_LocalRotation: {x: 0, y: -0.47869182, z: 0, w: 0.8779831}
-  m_LocalPosition: {x: -8.449, y: -0.755, z: 5.744}
+  m_LocalPosition: {x: -12.996, y: -0.755, z: 7.279}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4002673041278424}
   - {fileID: 4455012138259514}
   - {fileID: 4183624112421638}
   - {fileID: 4562346772138726}
+  - {fileID: 4566064215639818}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -57.2, z: 0}
@@ -197,6 +215,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4090586761843610}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4566064215639818
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1980568966740400}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.00000017881393, y: -0.568, z: 0.5340005}
+  m_LocalScale: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 4090586761843610}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4635670319274924
 Transform:
@@ -361,18 +392,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!65 &65139574266236552
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1391477524881462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.5, y: 1.714514, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65353402027558422
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -519,28 +538,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1941845338889260}
-  layer:
-    serializedVersion: 2
-    m_Bits: 512
-  inputDelay: 0
-  rotationSpeed: 5
-  Xaxis: 0
-  YAxis: 0
-  crouchVal: 3
   straffeVel: 4
   runVel: 12
+  walkVel: 8
   jumpVel: 4
-  colliderSizeX: 1
-  colliderSizeY: 1
-  colliderSizeZ: 1
-  crouchSmooth: 0.2
   deathSmoothness: 0.1
   coruchSmoothness: 0.01
   initialCrouch: {fileID: 4183624112421638}
   crouchVect: {fileID: 4562346772138726}
-  walkVel: 8
-  crouchPosSize: {x: 0.5, y: -0.7, z: 0.5}
-  startCrouchSize: {x: 0.5, y: 1.7, z: 0.5}
+  crouchPosSize: {x: 0, y: -0.56, z: 0}
+  startCrouchSize: {x: 0, y: 0, z: 0}
+  tempTime: 5
+  staminaUi: {fileID: 0}
+  staminaRegenSpeed: 10
+  stamina: 100
+  myClip:
+  - {fileID: 8300000, guid: 3de8ad386b405ad46b79643532a9bd18, type: 3}
+  - {fileID: 8300000, guid: 3451e546159877748957101b1f92016b, type: 3}
+  - {fileID: 8300000, guid: 52336392f33024d4aa68e6b534f8a87b, type: 3}
 --- !u!114 &114188954190196164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -613,6 +628,19 @@ MonoBehaviour:
   hitDist: 4
   pickUpText: {fileID: 0}
   pushText: {fileID: 0}
+--- !u!114 &114381687910348490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1980568966740400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de0be51f4998f14d975f3852a05c717, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  col: {r: 0.14117648, g: 1, b: 0.627451, a: 1}
+  radius: 0.1
 --- !u!114 &114500508125373366
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -709,6 +737,7 @@ MonoBehaviour:
   weakColor: {r: 1, g: 0, b: 0, a: 1}
   pushColor: {r: 1, g: 0.9215687, b: 0.015686275, a: 1}
   pickColor: {r: 0.015686274, g: 1, b: 0.077482566, a: 1}
+  powerUI: {fileID: 0}
 --- !u!114 &114704554239765664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -758,9 +787,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fp: {fileID: 114122618876267192}
+  secondary: {fileID: 1980568966740400}
   cam: {fileID: 1941845338889260}
   thingToPull: {fileID: 0}
-  dist: 4
+  dist: 2.4
+  secondaryDist: 2
+  textObj: {fileID: 0}
+--- !u!114 &114904277196621084
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1941845338889260}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce383cda255274bc482ff31028b9ff6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 0
+  bobbingSpeed: 0.18
+  bobbingAmount: 0.1
+  midpoint: 0.9
 --- !u!124 &124220594834235338
 Behaviour:
   m_ObjectHideFlags: 1
@@ -768,6 +815,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1941845338889260}
   m_Enabled: 1
+--- !u!136 &136222476910535848
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391477524881462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.4
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!138 &138631114896513256
 FixedJoint:
   m_ObjectHideFlags: 1
