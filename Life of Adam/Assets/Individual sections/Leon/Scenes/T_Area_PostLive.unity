@@ -3423,33 +3423,9 @@ Prefab:
       objectReference: {fileID: 1777974573}
     - target: {fileID: 114484703350626630, guid: 1a969fa9a57114a6189991cb0f5ce353,
         type: 2}
-      propertyPath: posPoint
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 195227315544357092, guid: 1a969fa9a57114a6189991cb0f5ce353,
-        type: 2}
-      propertyPath: m_StoppingDistance
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 195227315544357092, guid: 1a969fa9a57114a6189991cb0f5ce353,
-        type: 2}
-      propertyPath: m_Acceleration
-      value: 8.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 195227315544357092, guid: 1a969fa9a57114a6189991cb0f5ce353,
-        type: 2}
-      propertyPath: m_AngularSpeed
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 114484703350626630, guid: 1a969fa9a57114a6189991cb0f5ce353,
-        type: 2}
       propertyPath: day
       value: 
       objectReference: {fileID: 2107037500}
-    - target: {fileID: 1302310356545754, guid: 1a969fa9a57114a6189991cb0f5ce353, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a969fa9a57114a6189991cb0f5ce353, type: 2}
   m_IsPrefabParent: 0
