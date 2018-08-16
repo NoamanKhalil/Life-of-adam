@@ -32,14 +32,13 @@ public class LevelManagerCs : MonoBehaviour
 		}
 
 
-
+        // if bad
 		if (isDayOne && !isHappy)
 		{
 			if (blue)
 			{
 				timer -= Time.deltaTime;
-				GetComponent
-					<CanvasFadeCs>().FadeOut();
+				GetComponent<CanvasFadeCs>().FadeOut();
 				if (timer <= 0)
 				{
 					SceneManager.LoadScene(sceneName);
@@ -75,6 +74,7 @@ public class LevelManagerCs : MonoBehaviour
 				SceneManager.LoadScene(sceneName);
 			}
 		}
+        // day 1 happy 
 		if (red == true && isHappy&&!isTutorial)
 		{ 
 			timer -= Time.deltaTime;

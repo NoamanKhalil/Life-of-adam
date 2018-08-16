@@ -7,7 +7,6 @@ public class PickUpCs : MonoBehaviour
 {
     [Header("Add player object here")]
 	public FpcontrollerCs fp;
-
     [Header("Add the place points here")]
 	public GameObject redPlacePos;
 	public GameObject bluePlacePos;
@@ -56,10 +55,10 @@ public class PickUpCs : MonoBehaviour
         RaycastHit hit;
 
 		// when a object can be picked up 
-		if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == false && fp != null)
+		if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
 		{
 
-			if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
+			if ((Input.GetMouseButtonDown(0)) && isholding == false && fp != null)
 			{
 				Debug.DrawRay(cam.transform.position, cam.transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				//Debug.Log("Did Hit");
@@ -83,7 +82,7 @@ public class PickUpCs : MonoBehaviour
 
 		}
 		// when a object can be dropped 
-		else if (Input.GetKeyDown(KeyCode.Mouse0) && isholding == true && day != null)
+		else if ((Input.GetMouseButtonDown(0)) && isholding == true && day != null)
 		{
 			//Debug.Log(Vector3.Distance(this.transform.position, bluePlacePos.transform.position));
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();

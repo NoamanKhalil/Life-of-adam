@@ -1,44 +1,64 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class FpcontrollerCs : MonoBehaviour
 {
+    [Header("Pass in the camera here")]
 	public GameObject camera;
-	public float inputDelay;
-	public float rotationSpeed;
-	public float Xaxis, YAxis;
-	public float crouchVal;
 	public float straffeVel;
-	public float runVel = 36f;
+    [Header("Speed of which player runs & walks")]
+	public float runVel ;
+	[SerializeField]
+	private float walkVel;
+	[Header("How high the player jumps")]
 	public float jumpVel = 0.2f;
-	public float colliderSizeX, colliderSizeY, colliderSizeZ;
-	public float crouchSmooth;
+    [Header("Speed of which dies and returns to the start postion")]
 	public float deathSmoothness;
+    [Header("Speed of which player crouches")]
 	public float coruchSmoothness;
 	private float forwardVel;
 	private Vector3 velocity;
 	private Vector3 IVeloctiy;
+    [Header("Transform for camera to move to while not crocuhing")]
     [SerializeField]
 	private Transform initialCrouch;
+    [Header("Transform for camera to move to while crocuhing")]
     [SerializeField]
 	private Transform crouchVect;
+	private CapsuleCollider myCollider;
+    [Header("When playe is crocuhed")]
+    [SerializeField]
+    private Vector3 crouchPosSize;
+    [Header("When playe is not crocuhed")]
+    [SerializeField]
+    private Vector3 startCrouchSize;
+	[Header("Players fall time before they die")]
 	[SerializeField]
-	private float walkVel = 8f;
-	private BoxCollider myCollider;
-
+    float tempTime = 5f;
+	[Header("refrence to the stamina image component")]
+	public Image staminaUi;
+	private float staminaUifill;
 	Rigidbody rb;
 	float forwardInput, straffeInput;
+	[Header("stamina regen speed & stamina value (Do not change)")]
+    [SerializeField]
+    float staminaRegenSpeed;
+    [SerializeField]
 	float stamina;
+
 	bool isPlaying;
 	bool canJump;
 	bool canDie;
 
 	bool canCrouch;
+	bool isGrounded;
 
 	//if true do action 
 	bool canPush;
 	bool canMove;
+
+    bool canRun ;
 
 	Vector3 coruchVelocity = Vector3.zero;
 	Vector3 startPos;
@@ -54,13 +74,12 @@ public class FpcontrollerCs : MonoBehaviour
 		isPlaying = false;
 		canCrouch = true;
 		forwardVel = walkVel;
-		myCollider = GetComponent<BoxCollider>();
-		//initialCrouch = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y - crouchVal, camera.transform.localPosition.z);
-		//crouchVect = new Vector3(camera.transform.localPosition.x, camera.transform.localPosition.y, camera.transform.localPosition.z);
-		/*initialCrouch = new Vector3(camera.transform.position.x , camera.transform.position.y-crouchVal, camera.transform.position.z);
-        crouchVect = new Vector3(camera.transform.position.x , camera.transform.position.y, camera.transform.position.z);*/
+		myCollider = GetComponent<CapsuleCollider>();
 		canMove = true;
 		canPush = false;
+		stamina = 100;
+		staminaUifill = stamina / 100;
+		canRun = true;
 	}
 
 	void Update()
@@ -81,42 +100,58 @@ public class FpcontrollerCs : MonoBehaviour
 					forwardInput = Input.GetAxis("Vertical") * forwardVel;
 				}
 			}
-
-			//		Debug.Log(straffeInput);
-			//transform.Translate(straffeInput, 0, forwardInput);
 			velocity = new Vector3(straffeInput, 0, forwardInput);
-			//velocity = transform.localToWorldMatrix * velocity ;
 			velocity = transform.TransformDirection(velocity);
-			//velocity.y = rb.velocity.y; 
-
 			rb.velocity = velocity;
-			// ahmed changes for testing 
-			//rb.AddForce(velocity * 10);
-			//rb.velocity = Vector3.ClampMagnitude(rb.velocity, forwardVel);
 			if (canJump & Input.GetKeyUp(KeyCode.Space))
 			{
 				rb.AddForce(new Vector3(0, jumpVel, 0), ForceMode.Impulse);
 				canJump = false;
 			}
 			Crouch();
+            GroundCheck();
 		}
-
+        
 	}
+	/* ground check is used to make sure the player has a platform under it , if its not we can make the player fall*/
+	void GroundCheck()
+	{
+		RaycastHit hit;
+		float distance = 3f;
+		Vector3 dirD = Vector3.down;
+		Vector3 pos = transform.position;
+		//pos.x += 0.5f;
 
+		if (Physics.Raycast(pos, dirD, out hit, distance))
+		{
+			rb.constraints= RigidbodyConstraints.FreezePositionY|RigidbodyConstraints.FreezeRotation;
+			Debug.Log(Physics.Raycast(pos, dirD, out hit, distance));
 
+		}
+		else
+		{
+			myCollider.enabled = false;
+			Debug.Log(Physics.Raycast(pos, dirD, out hit, distance));
+			rb.constraints = ~RigidbodyConstraints.FreezePositionY;
+			rb.AddForce(new Vector3(0, -jumpVel, 0), ForceMode.Impulse);
+			tempTime -= Time.deltaTime;
+			if (tempTime<=0)
+			{
+				OnDie();
+			}
+		}
+	}
+   /* Called when player crouched , initiated the coroutine to move back and forth to the crouch postion smoothly */
+   /* we also adjust the colldier size so adam can go throguh small areas */
 	void Crouch()
 	{
-
 		// on true
 		if (canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			canMove = false;
-			Vector3 colliderPos = myCollider.transform.position;
-			//Vector3 velocity = Vector3.zero;
-			Debug.Log("Left control hit going down");
-			colliderPos.y = colliderPos.y - 0.2f;
-			myCollider.transform.position = colliderPos;
-			myCollider.size = new Vector3(colliderSizeX, 1, colliderSizeZ);
+			//Vector3 mypos = myCollider.bounds.center;
+			myCollider.center = crouchPosSize;
+			myCollider.height = 0.8f;
 			canCrouch = false;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, crouchVect.transform.position, coruchSmoothness));
@@ -126,10 +161,8 @@ public class FpcontrollerCs : MonoBehaviour
 		else if (!canCrouch && Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			canMove = false;
-			Vector3 colliderPos = myCollider.transform.position;
-			colliderPos.y = colliderPos.y + 0.2f;
-			myCollider.transform.position = colliderPos;
-			myCollider.size = new Vector3(colliderSizeX, 2, colliderSizeZ);
+			myCollider.center = startCrouchSize;
+			myCollider.height = 2f;
 			canCrouch = true;
             StopAllCoroutines();
 			StartCoroutine(onCrouch(camera.transform, initialCrouch.transform.position, coruchSmoothness));
@@ -141,17 +174,30 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		forwardVel = mySpeed;
 	}
-
+    /* code for player to run*/
 	void Run()
 	{
-		if (Input.GetKey(KeyCode.LeftShift) && stamina <= 0)
+		if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1)
 		{
 			forwardVel = runVel;
-			stamina -= 2;
+			stamina--;
+			staminaUifill = stamina / 100;
+			staminaUi.fillAmount = staminaUifill;
+			canRun = true;
 		}
-		else if (Input.GetKeyUp(KeyCode.LeftShift))
+		else
 		{
+			canRun = false;
+		}
+		/* stamin regen code */
+		if (stamina <= 100.0f && canRun == false)
+		{
+			Debug.Log("Stamina going up " + stamina);
 			forwardVel = walkVel;
+			stamina += Time.deltaTime* staminaRegenSpeed;
+            staminaUifill = stamina /100;
+			staminaUi.fillAmount = staminaUifill;
+
 		}
 	}
 
@@ -163,8 +209,7 @@ public class FpcontrollerCs : MonoBehaviour
 	{
 		canJump = true;
 	}
-
-
+    /* Called when player dies , initiated the coroutine to move back to the start postion smoothly */
 	public void OnDie()
 	{
 		StopAllCoroutines();

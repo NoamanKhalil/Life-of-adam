@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 4002673041278424}
   - component: {fileID: 114552313669027478}
   m_Layer: 8
-  m_Name: GameObject
+  m_Name: PickPoint
   m_TagString: Untagged
   m_Icon: {fileID: 7240890024493199768, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -78,10 +78,11 @@ GameObject:
   - component: {fileID: 114122618876267192}
   - component: {fileID: 114859705042685542}
   - component: {fileID: 114599062008527826}
-  - component: {fileID: 65615319502889660}
   - component: {fileID: 82986408949650872}
   - component: {fileID: 114579144570549748}
   - component: {fileID: 114205512790700464}
+  - component: {fileID: 114619185751458982}
+  - component: {fileID: 65139574266236552}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -147,8 +148,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391477524881462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.8, y: 1.16, z: 35.8}
+  m_LocalRotation: {x: 0, y: -0.47869182, z: 0, w: 0.8779831}
+  m_LocalPosition: {x: -8.449, y: -0.755, z: 5.744}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4002673041278424}
@@ -157,7 +158,7 @@ Transform:
   - {fileID: 4562346772138726}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -57.2, z: 0}
 --- !u!4 &4183624112421638
 Transform:
   m_ObjectHideFlags: 1
@@ -191,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1667528358245382}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.336, z: 0.534}
+  m_LocalPosition: {x: 0, y: 0.14, z: 0.534}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4090586761843610}
@@ -360,6 +361,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!65 &65139574266236552
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391477524881462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 1.714514, z: 0.5}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65353402027558422
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -371,18 +384,6 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65615319502889660
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1391477524881462}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!81 &81373665075809662
 AudioListener:
@@ -518,6 +519,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1941845338889260}
+  layer:
+    serializedVersion: 2
+    m_Bits: 512
   inputDelay: 0
   rotationSpeed: 5
   Xaxis: 0
@@ -535,6 +539,8 @@ MonoBehaviour:
   initialCrouch: {fileID: 4183624112421638}
   crouchVect: {fileID: 4562346772138726}
   walkVel: 8
+  crouchPosSize: {x: 0.5, y: -0.7, z: 0.5}
+  startCrouchSize: {x: 0.5, y: 1.7, z: 0.5}
 --- !u!114 &114188954190196164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -598,7 +604,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391477524881462}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a68b920518d164a1ba53be961e33f079, type: 3}
   m_Name: 
@@ -674,8 +680,35 @@ MonoBehaviour:
   bluePlacePos: {fileID: 0}
   pickupPoint: {fileID: 1246934293026546}
   cam: {fileID: 1941845338889260}
-  Dist: 6
+  Dist: 4
   day: {fileID: 0}
+--- !u!114 &114619185751458982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391477524881462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fc3be7cdec4d1147bed4e56236d07b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pick: []
+  push:
+  - {fileID: 0}
+  weak:
+  - {fileID: 0}
+  effectActive: 0
+  cooldownability: 10
+  cooldowneffect: 5
+  coolDownEffectTimer: 0
+  timer: 10
+  tagOfPickable: Pick
+  tagOfThePushable: Move
+  tagOfTheWeak: Weak
+  weakColor: {r: 1, g: 0, b: 0, a: 1}
+  pushColor: {r: 1, g: 0.9215687, b: 0.015686275, a: 1}
+  pickColor: {r: 0.015686274, g: 1, b: 0.077482566, a: 1}
 --- !u!114 &114704554239765664
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -727,7 +760,7 @@ MonoBehaviour:
   fp: {fileID: 114122618876267192}
   cam: {fileID: 1941845338889260}
   thingToPull: {fileID: 0}
-  dist: 6
+  dist: 4
 --- !u!124 &124220594834235338
 Behaviour:
   m_ObjectHideFlags: 1
