@@ -46,7 +46,7 @@ public class FpcontrollerCs : MonoBehaviour
     float staminaRegenSpeed;
     [SerializeField]
 	float stamina;
-    [Header("Place tun normal in 0 , run fast 1 & walk crouch at 3 ")]
+    [Header("Place tun normal in 0 , run fast 1 , walk crouch at 3, 4 push walk  ")]
     [SerializeField]
     AudioClip []myClip;
 
@@ -113,7 +113,15 @@ public class FpcontrollerCs : MonoBehaviour
                     aud.Play();
                 }
             }
-            else
+            else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)&&canPush)
+            {
+                if (!aud.isPlaying)
+                {
+                    aud.clip = myClip[4];
+                    aud.Play();
+                }
+            }
+            else 
             {
                 if (aud.isPlaying)
                 {

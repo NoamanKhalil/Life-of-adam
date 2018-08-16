@@ -27,6 +27,10 @@ public class TimerShader : MonoBehaviour
     [Header("refrence to the image component")]
 	public Image powerUI;
 	private float powerUiAlpha;
+    [Header("AudioSourceOnCamera")]
+    public AudioSource aud;
+    [Header("0 start audio for ability , 1 deactivate ")]
+    public AudioClip[] clip;
 	// Use this for initialization
 	void Start()
 	{
@@ -61,6 +65,15 @@ public class TimerShader : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Q) && !effectActive && timer >= cooldownability)
         {
+            if (!aud.isPlaying)
+            {
+                aud.clip = clip[0];
+                aud.Play();
+            }
+            else 
+            {
+                aud.Pause();
+            }
             foreach (GameObject obj in push)
             {
                 obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 1.1f);
@@ -84,6 +97,16 @@ public class TimerShader : MonoBehaviour
         }
         if(coolDownEffectTimer >= cooldowneffect&& effectActive)
         {
+
+            if (!aud.isPlaying)
+            {
+                aud.clip = clip[3];
+                aud.Play();
+            }
+            else
+            {
+                aud.Pause();
+            }
             foreach (GameObject obj in push)
             {
                 obj.GetComponent<Renderer>().material.SetFloat("_OutlineSize", 0);

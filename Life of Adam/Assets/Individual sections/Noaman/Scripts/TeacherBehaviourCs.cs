@@ -27,8 +27,6 @@ public class TeacherBehaviourCs : MonoBehaviour
 	public float turnSpeed;
     [Header("MinDist before attacking player")]
 	public float minDist;
-    [Header("MinDist before attacking player")]
-    public float minpointDist;
     [Header("dist before ttack player")]
 	public float attackDistance;
    public LevelManagerCs day;
@@ -38,6 +36,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 	void Awake()
 	{
 		 steer= this.gameObject.AddComponent<MySteeringBehaviour>();
+        agent.autoBraking = false;
 	}
     // Use this for initialization
     void Start ()
@@ -70,8 +69,7 @@ public class TeacherBehaviourCs : MonoBehaviour
 		    Physics.Raycast(transform.position, leftD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore) ||
 		    Physics.Raycast(transform.position, rightD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore))
 		{
-			currentState= AiState.Chase;
-			//on hit chase player 
+			currentState= AiState.Chase; 
 		}
 
 		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= 1f)
@@ -86,13 +84,10 @@ public class TeacherBehaviourCs : MonoBehaviour
 		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
 		{
 			currentState= AiState.Chase;
-
-	//		Debug.Log("is chasing");
 		}
 		else
 		{
 			currentState = AiState.Patrol;
-//			Debug.Log("is patroling");
 		}
 
 
@@ -108,14 +103,18 @@ public class TeacherBehaviourCs : MonoBehaviour
                 break;
 			case AiState.Patrol:
 				//Flee();
-				if (isPathA)
-				{
-					patrol(pathToFollowA);
-				}
-				else if (isPathB)
-				{
-					patrol(pathToFollowB);
-				}
+                if (!agent.pathPending && agent.remainingDistance<0.5f)
+                {
+                    if (isPathA)
+                    {
+                        patrol(pathToFollowA);
+                    }
+                    else if (isPathB)
+                    {
+                        patrol(pathToFollowB);
+                    }
+                }
+			
 
                 break;
             
@@ -125,34 +124,22 @@ public class TeacherBehaviourCs : MonoBehaviour
 
 	void chase()
 	{
-		//transform.position = Vector3.MoveTowards(transform.position, playerObj.transform.position, Time.deltaTime* speed);
 		agent.SetDestination(playerObj.transform.position);
-		//transform.LookAt(playerObj.transform.position);
 	}
 
 
 	void patrol(Transform [] arr)
 	{
-		if (posPoint <= arr.Length)
-        {
-            //transform.position = Vector3.MoveTowards(transform.position, pathToFollow[posPoint].position, Time.deltaTime* speed);
-			agent.SetDestination(arr[posPoint].position);
-			//Debug.Log("Debug of pos point during partrol " +posPoint);
-			//Debug.Log("Debug of distnace  " +Vector3.Distance(transform.position, arr[posPoint].position));
-			//transform.LookAt(pathToFollow[posPoint].position);
-        }
 
-        if (Vector3.Distance(transform.position, arr[posPoint].position) < minpointDist)
-        {
+        if (arr.Length == 0)
+            return;
 
-			//Debug.Log("Debug of distnace  " +Vector3.Distance(transform.position, arr[posPoint].position));
-			if (posPoint == arr.Length-1)
-            {
-                posPoint = 0;
-                return;
-            }
-            posPoint++;
-        }
+        // Set the agent to go to the currently selected destination.
+        agent.destination = arr[posPoint].position;
+        // Choose the next point in the array as the destination,
+        // cycling to the start if necessary.
+        posPoint = (posPoint + 1) % arr.Length;
+
 	}
 
 	void setA()
