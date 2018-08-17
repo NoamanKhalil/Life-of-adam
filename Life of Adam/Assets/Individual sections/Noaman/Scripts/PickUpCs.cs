@@ -6,13 +6,18 @@ using UnityEngine;
 public class PickUpCs : MonoBehaviour
 {
     [Header("Add player object here")]
-	public FpcontrollerCs fp;
+    [SerializeField]
+    private FpcontrollerCs fp;
     [Header("Add the place points here")]
-	public GameObject redPlacePos;
-	public GameObject bluePlacePos;
-   [Header("Add the child object 'PickPoint'")]
-	public GameObject pickupPoint;
-    public GameObject cam;
+    [SerializeField]
+    private GameObject redPlacePos;
+    [SerializeField]
+    private GameObject bluePlacePos;
+    [Header("Add the child object 'PickPoint'")]
+    [SerializeField]
+    private GameObject pickupPoint;
+    [SerializeField]
+    private GameObject cam;
 
 	private GameObject pickedObj;
     [Header("Value to pickup object")]
@@ -21,6 +26,11 @@ public class PickUpCs : MonoBehaviour
     [SerializeField]
     private LevelManagerCs day;
 	private Rigidbody rb;
+
+    [SerializeField]
+    private AudioClip myClip;
+    [SerializeField]
+    private AudioSource myAudio;
 
 	bool isholding;
 	bool canDrop;

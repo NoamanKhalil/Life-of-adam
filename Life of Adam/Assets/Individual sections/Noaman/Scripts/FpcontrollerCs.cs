@@ -63,6 +63,7 @@ public class FpcontrollerCs : MonoBehaviour
 
     bool canRun ;
     AudioSource aud;
+    LevelManagerCs level;
 
 	Vector3 coruchVelocity = Vector3.zero;
 	Vector3 startPos;
@@ -71,6 +72,7 @@ public class FpcontrollerCs : MonoBehaviour
 
 	void Start()
 	{
+        level = GameObject.Find("LevelManager").GetComponent<LevelManagerCs>();
 		startPos = transform.position;
 		startRot = camera.transform.rotation;
 		rb = GetComponent<Rigidbody>();
@@ -165,7 +167,9 @@ public class FpcontrollerCs : MonoBehaviour
 			tempTime -= Time.deltaTime;
 			if (tempTime<=0)
 			{
+                
 				OnDie();
+                level.resetLevel();
 			}
 		}
 	}
