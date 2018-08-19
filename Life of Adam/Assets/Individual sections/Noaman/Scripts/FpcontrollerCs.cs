@@ -241,7 +241,7 @@ public class FpcontrollerCs : MonoBehaviour
 		/* stamin regen code */
 		if (stamina <= 100.0f && canRun == false)
 		{
-			Debug.Log("Stamina going up " + stamina);
+			//Debug.Log("Stamina going up " + stamina);
 			forwardVel = walkVel;
 			stamina += Time.deltaTime* staminaRegenSpeed;
             staminaUifill = stamina /100;

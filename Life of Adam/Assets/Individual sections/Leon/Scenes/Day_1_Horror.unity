@@ -13006,6 +13006,11 @@ Prefab:
       propertyPath: posPoint
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 195227315544357092, guid: 1a969fa9a57114a6189991cb0f5ce353,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1a969fa9a57114a6189991cb0f5ce353, type: 2}
   m_IsPrefabParent: 0
@@ -41347,7 +41352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1683987521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41370,7 +41375,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 7b8773006dc4ebf4ab38be11b09db33f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -48336,7 +48341,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4455012138259514, guid: f0e0907f428d844cb9fa00af5625d411, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.916
       objectReference: {fileID: 0}
     - target: {fileID: 114122618876267192, guid: f0e0907f428d844cb9fa00af5625d411,
         type: 2}
@@ -49344,7 +49349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2002882562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50915,6 +50920,10 @@ Prefab:
         type: 2}
       propertyPath: m_Color.a
       value: 0.47058824
+      objectReference: {fileID: 0}
+    - target: {fileID: 1025021415358194, guid: ae68230bf55a54fa8a4dd8f08bbe9e3f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae68230bf55a54fa8a4dd8f08bbe9e3f, type: 2}
@@ -53804,7 +53813,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2122100742
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,7 +18,8 @@ public class PickUpCs : MonoBehaviour
     private GameObject pickupPoint;
     [SerializeField]
     private GameObject cam;
-
+    [Header("Object you picked")]
+    [SerializeField]
 	private GameObject pickedObj;
     [Header("Value to pickup object")]
     [SerializeField]
@@ -65,7 +66,7 @@ public class PickUpCs : MonoBehaviour
         RaycastHit hit;
 
 		// when a object can be picked up 
-		if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity))
+        if (Physics.Raycast(cam.transform.position, fwd, out hit, Mathf.Infinity)&&!isholding)
 		{
 
 			if ((Input.GetMouseButtonDown(0)) && isholding == false && fp != null)
@@ -92,8 +93,9 @@ public class PickUpCs : MonoBehaviour
 
 		}
 		// when a object can be dropped 
-		else if ((Input.GetMouseButtonDown(0)) && isholding == true && day != null)
+		else if ((Input.GetMouseButtonDown(0)) && isholding == true )
 		{
+            Debug.Log("trying to drop object");
 			//Debug.Log(Vector3.Distance(this.transform.position, bluePlacePos.transform.position));
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
 			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist&& bluePlacePos!=null)
@@ -130,9 +132,9 @@ public class PickUpCs : MonoBehaviour
 				day.setRedTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
 			}
-			else if (pickedObj != null && !canDrop)
+            else if (pickedObj != null &&isholding)
 			{
-				//Debug.Log("Null object called ");
+				Debug.Log("Null object called ");
 				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
