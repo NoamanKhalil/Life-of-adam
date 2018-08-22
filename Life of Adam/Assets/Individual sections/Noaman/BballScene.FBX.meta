@@ -1,0 +1,2632 @@
+fileFormatVersion: 2
+guid: a6962c5a1ebbd41819a2fab26473b01d
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AC4_Class007
+    100002: AC4_Class008
+    100004: AC4_Class009
+    100006: AC4_Class010
+    100008: AC4_Class011
+    100010: AC4_Class012
+    100012: Alarm3_Hall005
+    100014: Alarm3_Hall006
+    100016: Alarm3_Hall007
+    100018: Basketball Lowpoly
+    100020: Basketball Lowpoly001
+    100022: Basketball Lowpoly002
+    100024: Basketball Lowpoly003
+    100026: Basketball Lowpoly004
+    100028: Basketball Lowpoly005
+    100030: Basketball Lowpoly006
+    100032: Basketball Lowpoly007
+    100034: Basketball Lowpoly008
+    100036: Basketball Lowpoly009
+    100038: Basketball Lowpoly010
+    100040: Basketball Lowpoly011
+    100042: Basketball Lowpoly012
+    100044: Basketball Lowpoly013
+    100046: Basketball Lowpoly014
+    100048: Basketball Lowpoly015
+    100050: Basketball Lowpoly016
+    100052: Basketball Lowpoly017
+    100054: Basketball Lowpoly018
+    100056: Basketball Lowpoly019
+    100058: Basketball Lowpoly020
+    100060: Basketball Lowpoly021
+    100062: Basketball Lowpoly022
+    100064: Basketball Lowpoly023
+    100066: Basketball Lowpoly024
+    100068: Basketball Lowpoly025
+    100070: Basketball Lowpoly026
+    100072: Basketball Lowpoly027
+    100074: Basketball Lowpoly028
+    100076: Basketball Lowpoly029
+    100078: Basketball Lowpoly030
+    100080: Basketball Lowpoly031
+    100082: Basketball Lowpoly032
+    100084: Basketball Lowpoly033
+    100086: Basketball Lowpoly034
+    100088: Basketball Lowpoly035
+    100090: BballCeiling
+    100092: //RootNode
+    100094: Board3_Class004
+    100096: Board6_Hall003
+    100098: Board6_Hall004
+    100100: Board6_Hall005
+    100102: Board6_Hall006
+    100104: Book1_TeacherDesk001
+    100106: Book2_TeacherDesk007
+    100108: Book2_TeacherDesk008
+    100110: Book2_TeacherDesk009
+    100112: Book2_TeacherDesk010
+    100114: Box002
+    100116: Box1028
+    100118: Box1029
+    100120: Box1030
+    100122: Box1031
+    100124: Box1032
+    100126: Box1033
+    100128: Box1034
+    100130: Box1035
+    100132: Box1036
+    100134: Box1037
+    100136: Box1038
+    100138: Box1039
+    100140: Box1040
+    100142: Box1041
+    100144: Box1042
+    100146: Box1043
+    100148: Box1045
+    100150: Box1048
+    100152: Box1049
+    100154: Box1050
+    100156: Box1051
+    100158: Box1052
+    100160: Box1053
+    100162: Box1054
+    100164: Box1055
+    100166: Box1058
+    100168: Box1059
+    100170: Box1060
+    100172: Box1061
+    100174: Box1062
+    100176: Box1064
+    100178: Box1065
+    100180: Box1066
+    100182: Box1072
+    100184: Box1073
+    100186: Box1074
+    100188: Box1075
+    100190: Box1076
+    100192: Box1077
+    100194: Box1078
+    100196: Box1079
+    100198: Box1080
+    100200: Box1081
+    100202: Box1082
+    100204: Box1083
+    100206: Box1084
+    100208: Box1085
+    100210: Box1086
+    100212: Box1087
+    100214: Box599
+    100216: Box600
+    100218: Box601
+    100220: Box602
+    100222: Box603
+    100224: Box604
+    100226: Box605
+    100228: Box606
+    100230: Box607
+    100232: Box608
+    100234: Box609
+    100236: Box610
+    100238: Box611
+    100240: Box612
+    100242: Box613
+    100244: Box614
+    100246: Box615
+    100248: Box616
+    100250: Box618
+    100252: Box619
+    100254: Box620
+    100256: Box621
+    100258: Box622
+    100260: Box622 1
+    100262: Box623
+    100264: Box624
+    100266: Box625
+    100268: Box626
+    100270: Box627
+    100272: Box628
+    100274: Box629
+    100276: Box630
+    100278: Box645
+    100280: Box650
+    100282: Box651
+    100284: Box653
+    100286: Box655
+    100288: Box664
+    100290: Box671
+    100292: Box672
+    100294: Box673
+    100296: Box689
+    100298: Box690
+    100300: Box691
+    100302: Cabinet1_Class001
+    100304: Cabinet2_Class006
+    100306: Cabinet2_Class007
+    100308: CeilingLight015
+    100310: CeilingLight017
+    100312: CeilingLight018
+    100314: CeilingLight019
+    100316: CeilingLight020
+    100318: CeilingLight021
+    100320: CeilingLight022
+    100322: CeilingLight023
+    100324: CeilingLight024
+    100326: CeilingLight025
+    100328: CeilingLight026
+    100330: CeilingLight027
+    100332: CeilingLight028
+    100334: CeilingLight029
+    100336: CeilingLight030
+    100338: CeilingLight031
+    100340: CeilingLight032
+    100342: CeilingLight033
+    100344: CeilingLight034
+    100346: CeilingLight035
+    100348: CeilingLight036
+    100350: CeilingLight037
+    100352: CeilingLights_Base062
+    100354: CeilingLights_Base064
+    100356: CeilingLights_Base065
+    100358: CeilingLights_Base066
+    100360: CeilingLights_Base067
+    100362: CeilingLights_Base068
+    100364: CeilingLights_Base069
+    100366: CeilingLights_Base070
+    100368: CeilingLights_Base071
+    100370: CeilingLights_Base072
+    100372: CeilingLights_Base073
+    100374: CeilingLights_Base074
+    100376: CeilingLights_Base075
+    100378: CeilingLights_Base076
+    100380: CeilingLights_Base077
+    100382: CeilingLights_Base078
+    100384: CeilingLights_Base079
+    100386: CeilingLights_Base080
+    100388: CeilingLights_Base081
+    100390: CeilingLights_Base082
+    100392: CeilingLights_Base083
+    100394: CeilingLights_Base084
+    100396: CeilingLights_Bulbs034
+    100398: CeilingLights_Bulbs036
+    100400: CeilingLights_Bulbs037
+    100402: CeilingLights_Bulbs038
+    100404: CeilingLights_Bulbs039
+    100406: CeilingLights_Bulbs040
+    100408: CeilingLights_Bulbs041
+    100410: CeilingLights_Bulbs042
+    100412: CeilingLights_Bulbs043
+    100414: CeilingLights_Bulbs044
+    100416: CeilingLights_Bulbs045
+    100418: CeilingLights_Bulbs046
+    100420: CeilingLights_Bulbs047
+    100422: CeilingLights_Bulbs048
+    100424: CeilingLights_Bulbs049
+    100426: CeilingLights_Bulbs050
+    100428: CeilingLights_Bulbs051
+    100430: CeilingLights_Bulbs052
+    100432: CeilingLights_Bulbs053
+    100434: CeilingLights_Bulbs054
+    100436: CeilingLights_Bulbs055
+    100438: CeilingLights_Bulbs056
+    100440: Curtain2_Window003
+    100442: CurtainRod2_Window003
+    100444: Cylinder036
+    100446: Cylinder037
+    100448: Cylinder038
+    100450: Cylinder039
+    100452: Cylinder040
+    100454: Cylinder243
+    100456: Cylinder245
+    100458: Cylinder474
+    100460: Cylinder475
+    100462: Cylinder476
+    100464: Cylinder477
+    100466: Cylinder478
+    100468: Cylinder479
+    100470: Cylinder480
+    100472: Cylinder481
+    100474: Cylinder482
+    100476: Cylinder483
+    100478: Cylinder484
+    100480: Cylinder485
+    100482: Cylinder486
+    100484: Cylinder487
+    100486: Cylinder488
+    100488: Cylinder489
+    100490: Cylinder490
+    100492: Cylinder491
+    100494: Cylinder492
+    100496: door frame019
+    100498: door frame020
+    100500: door frame021
+    100502: door frame022
+    100504: door frame023
+    100506: door handles016
+    100508: door handles017
+    100510: door handles018
+    100512: door019
+    100514: door020
+    100516: door021
+    100518: door022
+    100520: door023
+    100522: ElectricalJunction1_Class003
+    100524: ElectricalJunction1_Class004
+    100526: ElectricalJunction2_Store002
+    100528: FileCabinet1_Class009
+    100530: FileCabinet1_Class010
+    100532: FileCabinet1_Class011
+    100534: Floor
+    100536: GasTank1_Class004
+    100538: GasTank1_Class005
+    100540: GasTank1_Class006
+    100542: Group001
+    100544: GymLockers
+    100546: GymLockers001
+    100548: GymLockers002
+    100550: GymLockers003
+    100552: GymLockers004
+    100554: GymLockers005
+    100556: GymLockers006
+    100558: GymLockers007
+    100560: GymLockers008
+    100562: GymLockers009
+    100564: GymLockers010
+    100566: GymLockers011
+    100568: GymLockers012
+    100570: GymLockers013
+    100572: GymLockers014
+    100574: GymLockers015
+    100576: LightSwitch1_Class004
+    100578: LightSwitch1_Class005
+    100580: LightSwitch1_Class006
+    100582: LightSwitch1_Class007
+    100584: LightSwitch1_Class008
+    100586: LightSwitch1_Class009
+    100588: LightSwitch1_Class010
+    100590: LightSwitch1_Class011
+    100592: LightSwitch1_Class012
+    100594: Line255
+    100596: Line256
+    100598: Line257
+    100600: LowPoly Cone
+    100602: LowPoly Cone001
+    100604: LowPoly Cone002
+    100606: LowPoly Cone003
+    100608: LowPoly Cone004
+    100610: LowPoly Cone005
+    100612: LowPoly Cone006
+    100614: LowPoly Cone007
+    100616: LowPoly Cone008
+    100618: LowPoly Cone009
+    100620: LowPoly Cone010
+    100622: LowPoly Cone012
+    100624: LowPoly Cone013
+    100626: LowPoly Cone014
+    100628: LowPoly Cone015
+    100630: LowPoly Cone016
+    100632: LowPolyCup
+    100634: LowPolyCup001
+    100636: LowPolyCup002
+    100638: LowPolyCup003
+    100640: LowPolyCup004
+    100642: LowPolyCup005
+    100644: LowPolyCup006
+    100646: LowPolyCup007
+    100648: LowPolyCup008
+    100650: LowPolyCup009
+    100652: LowPolyCup010
+    100654: LowPolyCup011
+    100656: LowPolyCup012
+    100658: LowPolyCup013
+    100660: LowPolyCup014
+    100662: LowPolyCup015
+    100664: LowPolyCup016
+    100666: LowPolyCup017
+    100668: LowPolyCup018
+    100670: LowPolyCup019
+    100672: LowPolyCup020
+    100674: LowPolyCup021
+    100676: LowPolyCup022
+    100678: LowPolyCup023
+    100680: LowPolyCup024
+    100682: LowPolyCup025
+    100684: LowPolyCup026
+    100686: LowPolyCup027
+    100688: LowPolyCup028
+    100690: LowPolyCup029
+    100692: Mug_Class001
+    100694: Mug_Class002
+    100696: Object030
+    100698: Object031
+    100700: Object261
+    100702: Object278
+    100704: Object279
+    100706: Object280
+    100708: Object281
+    100710: Object286
+    100712: Object287
+    100714: Object288
+    100716: Object289
+    100718: Object290
+    100720: Object291
+    100722: Object292
+    100724: Object293
+    100726: Object294
+    100728: Object295
+    100730: Object296
+    100732: Object297
+    100734: Object298
+    100736: Object299
+    100738: Object300
+    100740: Object301
+    100742: Object302
+    100744: Object303
+    100746: Object304
+    100748: Object305
+    100750: Object306
+    100752: Object307
+    100754: Object308
+    100756: Object309
+    100758: Object310
+    100760: Object311
+    100762: Object312
+    100764: Object313
+    100766: Object314
+    100768: Object315
+    100770: Object316
+    100772: Object317
+    100774: Object318
+    100776: Object319
+    100778: Object320
+    100780: Object321
+    100782: Object322
+    100784: Object323
+    100786: Object324
+    100788: Object325
+    100790: Object326
+    100792: Object327
+    100794: Object328
+    100796: Object329
+    100798: Object330
+    100800: Object331
+    100802: Object332
+    100804: Object333
+    100806: Object334
+    100808: Object335
+    100810: Object336
+    100812: Object337
+    100814: Object338
+    100816: Object339
+    100818: Object340
+    100820: Object341
+    100822: Object342
+    100824: Object343
+    100826: Object344
+    100828: Object345
+    100830: Object346
+    100832: Object347
+    100834: Object348
+    100836: Object349
+    100838: Object350
+    100840: Object351
+    100842: Object352
+    100844: Object353
+    100846: Object354
+    100848: Object355
+    100850: Object356
+    100852: Object357
+    100854: Object358
+    100856: Object359
+    100858: Object360
+    100860: Object361
+    100862: Object362
+    100864: Object363
+    100866: Object364
+    100868: Object365
+    100870: Object366
+    100872: Object367
+    100874: Object368
+    100876: Object369
+    100878: Object370
+    100880: Object371
+    100882: Object372
+    100884: Object373
+    100886: Object374
+    100888: Object375
+    100890: Object376
+    100892: Object377
+    100894: Object378
+    100896: Object379
+    100898: Object380
+    100900: Object381
+    100902: Object382
+    100904: Object383
+    100906: Object384
+    100908: Object385
+    100910: Object386
+    100912: Object387
+    100914: Object388
+    100916: Object389
+    100918: Object390
+    100920: Object391
+    100922: Object392
+    100924: Object393
+    100926: OpenBook1_TeacherDesk003
+    100928: OpenBook1_TeacherDesk004
+    100930: Papers_Board016
+    100932: Papers_Board017
+    100934: Papers_Board018
+    100936: Papers_Board019
+    100938: Pins_Board063
+    100940: Pins_Board064
+    100942: Pins_Board065
+    100944: Pins_Board066
+    100946: Pins_Board067
+    100948: Pins_Board068
+    100950: Pins_Board069
+    100952: Pins_Board070
+    100954: Pins_Board071
+    100956: Pins_Board072
+    100958: Pins_Board073
+    100960: Pins_Board074
+    100962: Pins_Board075
+    100964: Pins_Board076
+    100966: Pins_Board077
+    100968: Pins_Board078
+    100970: Plane042
+    100972: Plane043
+    100974: Plane044
+    100976: Plane046
+    100978: Plane047
+    100980: Plane048
+    100982: Plane049
+    100984: Plane050
+    100986: Plane051
+    100988: Plane052
+    100990: RecyclingBin7_Paper009
+    100992: RecyclingBin7_Paper010
+    100994: RecyclingBin7_Paper011
+    100996: Shape014
+    100998: Shape015
+    101000: Shape016
+    101002: Stationary1_Holder005
+    101004: Stationary1_Holder006
+    101006: StationaryHolder1_Class004
+    101008: StationaryHolder1_Class005
+    101010: StudentChair_065
+    101012: StudentChair_066
+    101014: StudentChair_067
+    101016: StudentChair_068
+    101018: StudentChair_069
+    101020: StudentChair_070
+    101022: StudentChair_071
+    101024: StudentChair_072
+    101026: StudentChair_073
+    101028: StudentChair_074
+    101030: StudentChair_075
+    101032: StudentChair_076
+    101034: StudentChair_077
+    101036: Trash1_Class008
+    101038: Trash1_Class009
+    101040: Trash1_Class010
+    101042: Trash1_Class011
+    101044: Trash1_Class012
+    101046: Trash1_Class013
+    101048: WaterFountain1_Hall008
+    101050: WaterFountain1_Hall009
+    101052: WaterFountain1_Hall010
+    101054: WaterFountain1_Hall011
+    101056: WhiteBoard2_Class001
+    400000: AC4_Class007
+    400002: AC4_Class008
+    400004: AC4_Class009
+    400006: AC4_Class010
+    400008: AC4_Class011
+    400010: AC4_Class012
+    400012: Alarm3_Hall005
+    400014: Alarm3_Hall006
+    400016: Alarm3_Hall007
+    400018: Basketball Lowpoly
+    400020: Basketball Lowpoly001
+    400022: Basketball Lowpoly002
+    400024: Basketball Lowpoly003
+    400026: Basketball Lowpoly004
+    400028: Basketball Lowpoly005
+    400030: Basketball Lowpoly006
+    400032: Basketball Lowpoly007
+    400034: Basketball Lowpoly008
+    400036: Basketball Lowpoly009
+    400038: Basketball Lowpoly010
+    400040: Basketball Lowpoly011
+    400042: Basketball Lowpoly012
+    400044: Basketball Lowpoly013
+    400046: Basketball Lowpoly014
+    400048: Basketball Lowpoly015
+    400050: Basketball Lowpoly016
+    400052: Basketball Lowpoly017
+    400054: Basketball Lowpoly018
+    400056: Basketball Lowpoly019
+    400058: Basketball Lowpoly020
+    400060: Basketball Lowpoly021
+    400062: Basketball Lowpoly022
+    400064: Basketball Lowpoly023
+    400066: Basketball Lowpoly024
+    400068: Basketball Lowpoly025
+    400070: Basketball Lowpoly026
+    400072: Basketball Lowpoly027
+    400074: Basketball Lowpoly028
+    400076: Basketball Lowpoly029
+    400078: Basketball Lowpoly030
+    400080: Basketball Lowpoly031
+    400082: Basketball Lowpoly032
+    400084: Basketball Lowpoly033
+    400086: Basketball Lowpoly034
+    400088: Basketball Lowpoly035
+    400090: BballCeiling
+    400092: //RootNode
+    400094: Board3_Class004
+    400096: Board6_Hall003
+    400098: Board6_Hall004
+    400100: Board6_Hall005
+    400102: Board6_Hall006
+    400104: Book1_TeacherDesk001
+    400106: Book2_TeacherDesk007
+    400108: Book2_TeacherDesk008
+    400110: Book2_TeacherDesk009
+    400112: Book2_TeacherDesk010
+    400114: Box002
+    400116: Box1028
+    400118: Box1029
+    400120: Box1030
+    400122: Box1031
+    400124: Box1032
+    400126: Box1033
+    400128: Box1034
+    400130: Box1035
+    400132: Box1036
+    400134: Box1037
+    400136: Box1038
+    400138: Box1039
+    400140: Box1040
+    400142: Box1041
+    400144: Box1042
+    400146: Box1043
+    400148: Box1045
+    400150: Box1048
+    400152: Box1049
+    400154: Box1050
+    400156: Box1051
+    400158: Box1052
+    400160: Box1053
+    400162: Box1054
+    400164: Box1055
+    400166: Box1058
+    400168: Box1059
+    400170: Box1060
+    400172: Box1061
+    400174: Box1062
+    400176: Box1064
+    400178: Box1065
+    400180: Box1066
+    400182: Box1072
+    400184: Box1073
+    400186: Box1074
+    400188: Box1075
+    400190: Box1076
+    400192: Box1077
+    400194: Box1078
+    400196: Box1079
+    400198: Box1080
+    400200: Box1081
+    400202: Box1082
+    400204: Box1083
+    400206: Box1084
+    400208: Box1085
+    400210: Box1086
+    400212: Box1087
+    400214: Box599
+    400216: Box600
+    400218: Box601
+    400220: Box602
+    400222: Box603
+    400224: Box604
+    400226: Box605
+    400228: Box606
+    400230: Box607
+    400232: Box608
+    400234: Box609
+    400236: Box610
+    400238: Box611
+    400240: Box612
+    400242: Box613
+    400244: Box614
+    400246: Box615
+    400248: Box616
+    400250: Box618
+    400252: Box619
+    400254: Box620
+    400256: Box621
+    400258: Box622
+    400260: Box622 1
+    400262: Box623
+    400264: Box624
+    400266: Box625
+    400268: Box626
+    400270: Box627
+    400272: Box628
+    400274: Box629
+    400276: Box630
+    400278: Box645
+    400280: Box650
+    400282: Box651
+    400284: Box653
+    400286: Box655
+    400288: Box664
+    400290: Box671
+    400292: Box672
+    400294: Box673
+    400296: Box689
+    400298: Box690
+    400300: Box691
+    400302: Cabinet1_Class001
+    400304: Cabinet2_Class006
+    400306: Cabinet2_Class007
+    400308: CeilingLight015
+    400310: CeilingLight017
+    400312: CeilingLight018
+    400314: CeilingLight019
+    400316: CeilingLight020
+    400318: CeilingLight021
+    400320: CeilingLight022
+    400322: CeilingLight023
+    400324: CeilingLight024
+    400326: CeilingLight025
+    400328: CeilingLight026
+    400330: CeilingLight027
+    400332: CeilingLight028
+    400334: CeilingLight029
+    400336: CeilingLight030
+    400338: CeilingLight031
+    400340: CeilingLight032
+    400342: CeilingLight033
+    400344: CeilingLight034
+    400346: CeilingLight035
+    400348: CeilingLight036
+    400350: CeilingLight037
+    400352: CeilingLights_Base062
+    400354: CeilingLights_Base064
+    400356: CeilingLights_Base065
+    400358: CeilingLights_Base066
+    400360: CeilingLights_Base067
+    400362: CeilingLights_Base068
+    400364: CeilingLights_Base069
+    400366: CeilingLights_Base070
+    400368: CeilingLights_Base071
+    400370: CeilingLights_Base072
+    400372: CeilingLights_Base073
+    400374: CeilingLights_Base074
+    400376: CeilingLights_Base075
+    400378: CeilingLights_Base076
+    400380: CeilingLights_Base077
+    400382: CeilingLights_Base078
+    400384: CeilingLights_Base079
+    400386: CeilingLights_Base080
+    400388: CeilingLights_Base081
+    400390: CeilingLights_Base082
+    400392: CeilingLights_Base083
+    400394: CeilingLights_Base084
+    400396: CeilingLights_Bulbs034
+    400398: CeilingLights_Bulbs036
+    400400: CeilingLights_Bulbs037
+    400402: CeilingLights_Bulbs038
+    400404: CeilingLights_Bulbs039
+    400406: CeilingLights_Bulbs040
+    400408: CeilingLights_Bulbs041
+    400410: CeilingLights_Bulbs042
+    400412: CeilingLights_Bulbs043
+    400414: CeilingLights_Bulbs044
+    400416: CeilingLights_Bulbs045
+    400418: CeilingLights_Bulbs046
+    400420: CeilingLights_Bulbs047
+    400422: CeilingLights_Bulbs048
+    400424: CeilingLights_Bulbs049
+    400426: CeilingLights_Bulbs050
+    400428: CeilingLights_Bulbs051
+    400430: CeilingLights_Bulbs052
+    400432: CeilingLights_Bulbs053
+    400434: CeilingLights_Bulbs054
+    400436: CeilingLights_Bulbs055
+    400438: CeilingLights_Bulbs056
+    400440: Curtain2_Window003
+    400442: CurtainRod2_Window003
+    400444: Cylinder036
+    400446: Cylinder037
+    400448: Cylinder038
+    400450: Cylinder039
+    400452: Cylinder040
+    400454: Cylinder243
+    400456: Cylinder245
+    400458: Cylinder474
+    400460: Cylinder475
+    400462: Cylinder476
+    400464: Cylinder477
+    400466: Cylinder478
+    400468: Cylinder479
+    400470: Cylinder480
+    400472: Cylinder481
+    400474: Cylinder482
+    400476: Cylinder483
+    400478: Cylinder484
+    400480: Cylinder485
+    400482: Cylinder486
+    400484: Cylinder487
+    400486: Cylinder488
+    400488: Cylinder489
+    400490: Cylinder490
+    400492: Cylinder491
+    400494: Cylinder492
+    400496: door frame019
+    400498: door frame020
+    400500: door frame021
+    400502: door frame022
+    400504: door frame023
+    400506: door handles016
+    400508: door handles017
+    400510: door handles018
+    400512: door019
+    400514: door020
+    400516: door021
+    400518: door022
+    400520: door023
+    400522: ElectricalJunction1_Class003
+    400524: ElectricalJunction1_Class004
+    400526: ElectricalJunction2_Store002
+    400528: FileCabinet1_Class009
+    400530: FileCabinet1_Class010
+    400532: FileCabinet1_Class011
+    400534: Floor
+    400536: GasTank1_Class004
+    400538: GasTank1_Class005
+    400540: GasTank1_Class006
+    400542: Group001
+    400544: GymLockers
+    400546: GymLockers001
+    400548: GymLockers002
+    400550: GymLockers003
+    400552: GymLockers004
+    400554: GymLockers005
+    400556: GymLockers006
+    400558: GymLockers007
+    400560: GymLockers008
+    400562: GymLockers009
+    400564: GymLockers010
+    400566: GymLockers011
+    400568: GymLockers012
+    400570: GymLockers013
+    400572: GymLockers014
+    400574: GymLockers015
+    400576: LightSwitch1_Class004
+    400578: LightSwitch1_Class005
+    400580: LightSwitch1_Class006
+    400582: LightSwitch1_Class007
+    400584: LightSwitch1_Class008
+    400586: LightSwitch1_Class009
+    400588: LightSwitch1_Class010
+    400590: LightSwitch1_Class011
+    400592: LightSwitch1_Class012
+    400594: Line255
+    400596: Line256
+    400598: Line257
+    400600: LowPoly Cone
+    400602: LowPoly Cone001
+    400604: LowPoly Cone002
+    400606: LowPoly Cone003
+    400608: LowPoly Cone004
+    400610: LowPoly Cone005
+    400612: LowPoly Cone006
+    400614: LowPoly Cone007
+    400616: LowPoly Cone008
+    400618: LowPoly Cone009
+    400620: LowPoly Cone010
+    400622: LowPoly Cone012
+    400624: LowPoly Cone013
+    400626: LowPoly Cone014
+    400628: LowPoly Cone015
+    400630: LowPoly Cone016
+    400632: LowPolyCup
+    400634: LowPolyCup001
+    400636: LowPolyCup002
+    400638: LowPolyCup003
+    400640: LowPolyCup004
+    400642: LowPolyCup005
+    400644: LowPolyCup006
+    400646: LowPolyCup007
+    400648: LowPolyCup008
+    400650: LowPolyCup009
+    400652: LowPolyCup010
+    400654: LowPolyCup011
+    400656: LowPolyCup012
+    400658: LowPolyCup013
+    400660: LowPolyCup014
+    400662: LowPolyCup015
+    400664: LowPolyCup016
+    400666: LowPolyCup017
+    400668: LowPolyCup018
+    400670: LowPolyCup019
+    400672: LowPolyCup020
+    400674: LowPolyCup021
+    400676: LowPolyCup022
+    400678: LowPolyCup023
+    400680: LowPolyCup024
+    400682: LowPolyCup025
+    400684: LowPolyCup026
+    400686: LowPolyCup027
+    400688: LowPolyCup028
+    400690: LowPolyCup029
+    400692: Mug_Class001
+    400694: Mug_Class002
+    400696: Object030
+    400698: Object031
+    400700: Object261
+    400702: Object278
+    400704: Object279
+    400706: Object280
+    400708: Object281
+    400710: Object286
+    400712: Object287
+    400714: Object288
+    400716: Object289
+    400718: Object290
+    400720: Object291
+    400722: Object292
+    400724: Object293
+    400726: Object294
+    400728: Object295
+    400730: Object296
+    400732: Object297
+    400734: Object298
+    400736: Object299
+    400738: Object300
+    400740: Object301
+    400742: Object302
+    400744: Object303
+    400746: Object304
+    400748: Object305
+    400750: Object306
+    400752: Object307
+    400754: Object308
+    400756: Object309
+    400758: Object310
+    400760: Object311
+    400762: Object312
+    400764: Object313
+    400766: Object314
+    400768: Object315
+    400770: Object316
+    400772: Object317
+    400774: Object318
+    400776: Object319
+    400778: Object320
+    400780: Object321
+    400782: Object322
+    400784: Object323
+    400786: Object324
+    400788: Object325
+    400790: Object326
+    400792: Object327
+    400794: Object328
+    400796: Object329
+    400798: Object330
+    400800: Object331
+    400802: Object332
+    400804: Object333
+    400806: Object334
+    400808: Object335
+    400810: Object336
+    400812: Object337
+    400814: Object338
+    400816: Object339
+    400818: Object340
+    400820: Object341
+    400822: Object342
+    400824: Object343
+    400826: Object344
+    400828: Object345
+    400830: Object346
+    400832: Object347
+    400834: Object348
+    400836: Object349
+    400838: Object350
+    400840: Object351
+    400842: Object352
+    400844: Object353
+    400846: Object354
+    400848: Object355
+    400850: Object356
+    400852: Object357
+    400854: Object358
+    400856: Object359
+    400858: Object360
+    400860: Object361
+    400862: Object362
+    400864: Object363
+    400866: Object364
+    400868: Object365
+    400870: Object366
+    400872: Object367
+    400874: Object368
+    400876: Object369
+    400878: Object370
+    400880: Object371
+    400882: Object372
+    400884: Object373
+    400886: Object374
+    400888: Object375
+    400890: Object376
+    400892: Object377
+    400894: Object378
+    400896: Object379
+    400898: Object380
+    400900: Object381
+    400902: Object382
+    400904: Object383
+    400906: Object384
+    400908: Object385
+    400910: Object386
+    400912: Object387
+    400914: Object388
+    400916: Object389
+    400918: Object390
+    400920: Object391
+    400922: Object392
+    400924: Object393
+    400926: OpenBook1_TeacherDesk003
+    400928: OpenBook1_TeacherDesk004
+    400930: Papers_Board016
+    400932: Papers_Board017
+    400934: Papers_Board018
+    400936: Papers_Board019
+    400938: Pins_Board063
+    400940: Pins_Board064
+    400942: Pins_Board065
+    400944: Pins_Board066
+    400946: Pins_Board067
+    400948: Pins_Board068
+    400950: Pins_Board069
+    400952: Pins_Board070
+    400954: Pins_Board071
+    400956: Pins_Board072
+    400958: Pins_Board073
+    400960: Pins_Board074
+    400962: Pins_Board075
+    400964: Pins_Board076
+    400966: Pins_Board077
+    400968: Pins_Board078
+    400970: Plane042
+    400972: Plane043
+    400974: Plane044
+    400976: Plane046
+    400978: Plane047
+    400980: Plane048
+    400982: Plane049
+    400984: Plane050
+    400986: Plane051
+    400988: Plane052
+    400990: RecyclingBin7_Paper009
+    400992: RecyclingBin7_Paper010
+    400994: RecyclingBin7_Paper011
+    400996: Shape014
+    400998: Shape015
+    401000: Shape016
+    401002: Stationary1_Holder005
+    401004: Stationary1_Holder006
+    401006: StationaryHolder1_Class004
+    401008: StationaryHolder1_Class005
+    401010: StudentChair_065
+    401012: StudentChair_066
+    401014: StudentChair_067
+    401016: StudentChair_068
+    401018: StudentChair_069
+    401020: StudentChair_070
+    401022: StudentChair_071
+    401024: StudentChair_072
+    401026: StudentChair_073
+    401028: StudentChair_074
+    401030: StudentChair_075
+    401032: StudentChair_076
+    401034: StudentChair_077
+    401036: Trash1_Class008
+    401038: Trash1_Class009
+    401040: Trash1_Class010
+    401042: Trash1_Class011
+    401044: Trash1_Class012
+    401046: Trash1_Class013
+    401048: WaterFountain1_Hall008
+    401050: WaterFountain1_Hall009
+    401052: WaterFountain1_Hall010
+    401054: WaterFountain1_Hall011
+    401056: WhiteBoard2_Class001
+    2100000: 01 - Default
+    2100002: 'Material #3'
+    2100004: 'Material #444'
+    2100006: 'Material #443'
+    2100008: 'Material #447'
+    2100010: 'Material #446'
+    2100012: 'Material #448'
+    2100014: 'Material #445'
+    2100016: No Name
+    2100018: 'Material #23'
+    2100020: 'Material #216'
+    2100022: 'Material #5'
+    2100024: 'Material #217'
+    2100026: 'Material #21'
+    2100028: 'Material #24'
+    2100030: 'Material #12'
+    2100032: 'Material #9'
+    2100034: 'Material #16'
+    2100036: 'Material #19'
+    2100038: 'Material #22'
+    2100040: 'Material #2'
+    2100042: 'Material #20'
+    2300000: AC4_Class007
+    2300002: AC4_Class008
+    2300004: AC4_Class009
+    2300006: AC4_Class010
+    2300008: AC4_Class011
+    2300010: AC4_Class012
+    2300012: Alarm3_Hall005
+    2300014: Alarm3_Hall006
+    2300016: Alarm3_Hall007
+    2300018: Basketball Lowpoly
+    2300020: Basketball Lowpoly001
+    2300022: Basketball Lowpoly002
+    2300024: Basketball Lowpoly003
+    2300026: Basketball Lowpoly004
+    2300028: Basketball Lowpoly005
+    2300030: Basketball Lowpoly006
+    2300032: Basketball Lowpoly007
+    2300034: Basketball Lowpoly008
+    2300036: Basketball Lowpoly009
+    2300038: Basketball Lowpoly010
+    2300040: Basketball Lowpoly011
+    2300042: Basketball Lowpoly012
+    2300044: Basketball Lowpoly013
+    2300046: Basketball Lowpoly014
+    2300048: Basketball Lowpoly015
+    2300050: Basketball Lowpoly016
+    2300052: Basketball Lowpoly017
+    2300054: Basketball Lowpoly018
+    2300056: Basketball Lowpoly019
+    2300058: Basketball Lowpoly020
+    2300060: Basketball Lowpoly021
+    2300062: Basketball Lowpoly022
+    2300064: Basketball Lowpoly023
+    2300066: Basketball Lowpoly024
+    2300068: Basketball Lowpoly025
+    2300070: Basketball Lowpoly026
+    2300072: Basketball Lowpoly027
+    2300074: Basketball Lowpoly028
+    2300076: Basketball Lowpoly029
+    2300078: Basketball Lowpoly030
+    2300080: Basketball Lowpoly031
+    2300082: Basketball Lowpoly032
+    2300084: Basketball Lowpoly033
+    2300086: Basketball Lowpoly034
+    2300088: Basketball Lowpoly035
+    2300090: BballCeiling
+    2300092: Board3_Class004
+    2300094: Board6_Hall003
+    2300096: Board6_Hall004
+    2300098: Board6_Hall005
+    2300100: Board6_Hall006
+    2300102: Book1_TeacherDesk001
+    2300104: Book2_TeacherDesk007
+    2300106: Book2_TeacherDesk008
+    2300108: Book2_TeacherDesk009
+    2300110: Book2_TeacherDesk010
+    2300112: Box002
+    2300114: Box1028
+    2300116: Box1029
+    2300118: Box1030
+    2300120: Box1031
+    2300122: Box1032
+    2300124: Box1033
+    2300126: Box1034
+    2300128: Box1035
+    2300130: Box1036
+    2300132: Box1037
+    2300134: Box1038
+    2300136: Box1039
+    2300138: Box1040
+    2300140: Box1041
+    2300142: Box1042
+    2300144: Box1043
+    2300146: Box1045
+    2300148: Box1048
+    2300150: Box1049
+    2300152: Box1050
+    2300154: Box1051
+    2300156: Box1052
+    2300158: Box1053
+    2300160: Box1054
+    2300162: Box1055
+    2300164: Box1058
+    2300166: Box1059
+    2300168: Box1060
+    2300170: Box1061
+    2300172: Box1062
+    2300174: Box1064
+    2300176: Box1065
+    2300178: Box1066
+    2300180: Box1072
+    2300182: Box1073
+    2300184: Box1074
+    2300186: Box1075
+    2300188: Box1076
+    2300190: Box1077
+    2300192: Box1078
+    2300194: Box1079
+    2300196: Box1080
+    2300198: Box1081
+    2300200: Box1082
+    2300202: Box1083
+    2300204: Box1084
+    2300206: Box1085
+    2300208: Box1086
+    2300210: Box1087
+    2300212: Box599
+    2300214: Box600
+    2300216: Box601
+    2300218: Box602
+    2300220: Box603
+    2300222: Box604
+    2300224: Box605
+    2300226: Box606
+    2300228: Box607
+    2300230: Box608
+    2300232: Box609
+    2300234: Box610
+    2300236: Box611
+    2300238: Box612
+    2300240: Box613
+    2300242: Box614
+    2300244: Box615
+    2300246: Box616
+    2300248: Box618
+    2300250: Box619
+    2300252: Box620
+    2300254: Box621
+    2300256: Box622
+    2300258: Box622 1
+    2300260: Box623
+    2300262: Box624
+    2300264: Box625
+    2300266: Box626
+    2300268: Box627
+    2300270: Box628
+    2300272: Box629
+    2300274: Box630
+    2300276: Box645
+    2300278: Box650
+    2300280: Box651
+    2300282: Box653
+    2300284: Box655
+    2300286: Box664
+    2300288: Box671
+    2300290: Box672
+    2300292: Box673
+    2300294: Box689
+    2300296: Box690
+    2300298: Box691
+    2300300: Cabinet1_Class001
+    2300302: Cabinet2_Class006
+    2300304: Cabinet2_Class007
+    2300306: CeilingLights_Base062
+    2300308: CeilingLights_Base064
+    2300310: CeilingLights_Base065
+    2300312: CeilingLights_Base066
+    2300314: CeilingLights_Base067
+    2300316: CeilingLights_Base068
+    2300318: CeilingLights_Base069
+    2300320: CeilingLights_Base070
+    2300322: CeilingLights_Base071
+    2300324: CeilingLights_Base072
+    2300326: CeilingLights_Base073
+    2300328: CeilingLights_Base074
+    2300330: CeilingLights_Base075
+    2300332: CeilingLights_Base076
+    2300334: CeilingLights_Base077
+    2300336: CeilingLights_Base078
+    2300338: CeilingLights_Base079
+    2300340: CeilingLights_Base080
+    2300342: CeilingLights_Base081
+    2300344: CeilingLights_Base082
+    2300346: CeilingLights_Base083
+    2300348: CeilingLights_Base084
+    2300350: CeilingLights_Bulbs034
+    2300352: CeilingLights_Bulbs036
+    2300354: CeilingLights_Bulbs037
+    2300356: CeilingLights_Bulbs038
+    2300358: CeilingLights_Bulbs039
+    2300360: CeilingLights_Bulbs040
+    2300362: CeilingLights_Bulbs041
+    2300364: CeilingLights_Bulbs042
+    2300366: CeilingLights_Bulbs043
+    2300368: CeilingLights_Bulbs044
+    2300370: CeilingLights_Bulbs045
+    2300372: CeilingLights_Bulbs046
+    2300374: CeilingLights_Bulbs047
+    2300376: CeilingLights_Bulbs048
+    2300378: CeilingLights_Bulbs049
+    2300380: CeilingLights_Bulbs050
+    2300382: CeilingLights_Bulbs051
+    2300384: CeilingLights_Bulbs052
+    2300386: CeilingLights_Bulbs053
+    2300388: CeilingLights_Bulbs054
+    2300390: CeilingLights_Bulbs055
+    2300392: CeilingLights_Bulbs056
+    2300394: Curtain2_Window003
+    2300396: CurtainRod2_Window003
+    2300398: Cylinder036
+    2300400: Cylinder037
+    2300402: Cylinder038
+    2300404: Cylinder039
+    2300406: Cylinder040
+    2300408: Cylinder243
+    2300410: Cylinder245
+    2300412: Cylinder474
+    2300414: Cylinder475
+    2300416: Cylinder476
+    2300418: Cylinder477
+    2300420: Cylinder478
+    2300422: Cylinder479
+    2300424: Cylinder480
+    2300426: Cylinder481
+    2300428: Cylinder482
+    2300430: Cylinder483
+    2300432: Cylinder484
+    2300434: Cylinder485
+    2300436: Cylinder486
+    2300438: Cylinder487
+    2300440: Cylinder488
+    2300442: Cylinder489
+    2300444: Cylinder490
+    2300446: Cylinder491
+    2300448: Cylinder492
+    2300450: door frame019
+    2300452: door frame020
+    2300454: door frame021
+    2300456: door frame022
+    2300458: door frame023
+    2300460: door handles016
+    2300462: door handles017
+    2300464: door handles018
+    2300466: door019
+    2300468: door020
+    2300470: door021
+    2300472: door022
+    2300474: door023
+    2300476: ElectricalJunction1_Class003
+    2300478: ElectricalJunction1_Class004
+    2300480: ElectricalJunction2_Store002
+    2300482: FileCabinet1_Class009
+    2300484: FileCabinet1_Class010
+    2300486: FileCabinet1_Class011
+    2300488: Floor
+    2300490: GasTank1_Class004
+    2300492: GasTank1_Class005
+    2300494: GasTank1_Class006
+    2300496: LightSwitch1_Class004
+    2300498: LightSwitch1_Class005
+    2300500: LightSwitch1_Class006
+    2300502: LightSwitch1_Class007
+    2300504: LightSwitch1_Class008
+    2300506: LightSwitch1_Class009
+    2300508: LightSwitch1_Class010
+    2300510: LightSwitch1_Class011
+    2300512: LightSwitch1_Class012
+    2300514: Line256
+    2300516: Line257
+    2300518: LowPoly Cone
+    2300520: LowPoly Cone001
+    2300522: LowPoly Cone002
+    2300524: LowPoly Cone003
+    2300526: LowPoly Cone004
+    2300528: LowPoly Cone005
+    2300530: LowPoly Cone006
+    2300532: LowPoly Cone007
+    2300534: LowPoly Cone008
+    2300536: LowPoly Cone009
+    2300538: LowPoly Cone010
+    2300540: LowPoly Cone012
+    2300542: LowPoly Cone013
+    2300544: LowPoly Cone014
+    2300546: LowPoly Cone015
+    2300548: LowPoly Cone016
+    2300550: LowPolyCup
+    2300552: LowPolyCup001
+    2300554: LowPolyCup002
+    2300556: LowPolyCup003
+    2300558: LowPolyCup004
+    2300560: LowPolyCup005
+    2300562: LowPolyCup006
+    2300564: LowPolyCup007
+    2300566: LowPolyCup008
+    2300568: LowPolyCup009
+    2300570: LowPolyCup010
+    2300572: LowPolyCup011
+    2300574: LowPolyCup012
+    2300576: LowPolyCup013
+    2300578: LowPolyCup014
+    2300580: LowPolyCup015
+    2300582: LowPolyCup016
+    2300584: LowPolyCup017
+    2300586: LowPolyCup018
+    2300588: LowPolyCup019
+    2300590: LowPolyCup020
+    2300592: LowPolyCup021
+    2300594: LowPolyCup022
+    2300596: LowPolyCup023
+    2300598: LowPolyCup024
+    2300600: LowPolyCup025
+    2300602: LowPolyCup026
+    2300604: LowPolyCup027
+    2300606: LowPolyCup028
+    2300608: LowPolyCup029
+    2300610: Mug_Class001
+    2300612: Mug_Class002
+    2300614: Object030
+    2300616: Object031
+    2300618: Object261
+    2300620: Object278
+    2300622: Object279
+    2300624: Object280
+    2300626: Object281
+    2300628: Object286
+    2300630: Object287
+    2300632: Object288
+    2300634: Object289
+    2300636: Object290
+    2300638: Object291
+    2300640: Object292
+    2300642: Object293
+    2300644: Object294
+    2300646: Object295
+    2300648: Object296
+    2300650: Object297
+    2300652: Object298
+    2300654: Object299
+    2300656: Object300
+    2300658: Object301
+    2300660: Object302
+    2300662: Object303
+    2300664: Object304
+    2300666: Object305
+    2300668: Object306
+    2300670: Object307
+    2300672: Object308
+    2300674: Object309
+    2300676: Object310
+    2300678: Object311
+    2300680: Object312
+    2300682: Object313
+    2300684: Object314
+    2300686: Object315
+    2300688: Object316
+    2300690: Object317
+    2300692: Object318
+    2300694: Object319
+    2300696: Object320
+    2300698: Object321
+    2300700: Object322
+    2300702: Object323
+    2300704: Object324
+    2300706: Object325
+    2300708: Object326
+    2300710: Object327
+    2300712: Object328
+    2300714: Object329
+    2300716: Object330
+    2300718: Object331
+    2300720: Object332
+    2300722: Object333
+    2300724: Object334
+    2300726: Object335
+    2300728: Object336
+    2300730: Object337
+    2300732: Object338
+    2300734: Object339
+    2300736: Object340
+    2300738: Object341
+    2300740: Object342
+    2300742: Object343
+    2300744: Object344
+    2300746: Object345
+    2300748: Object346
+    2300750: Object347
+    2300752: Object348
+    2300754: Object349
+    2300756: Object350
+    2300758: Object351
+    2300760: Object352
+    2300762: Object353
+    2300764: Object354
+    2300766: Object355
+    2300768: Object356
+    2300770: Object357
+    2300772: Object358
+    2300774: Object359
+    2300776: Object360
+    2300778: Object361
+    2300780: Object362
+    2300782: Object363
+    2300784: Object364
+    2300786: Object365
+    2300788: Object366
+    2300790: Object367
+    2300792: Object368
+    2300794: Object369
+    2300796: Object370
+    2300798: Object371
+    2300800: Object372
+    2300802: Object373
+    2300804: Object374
+    2300806: Object375
+    2300808: Object376
+    2300810: Object377
+    2300812: Object378
+    2300814: Object379
+    2300816: Object380
+    2300818: Object381
+    2300820: Object382
+    2300822: Object383
+    2300824: Object384
+    2300826: Object385
+    2300828: Object386
+    2300830: Object387
+    2300832: Object388
+    2300834: Object389
+    2300836: Object390
+    2300838: Object391
+    2300840: Object392
+    2300842: Object393
+    2300844: OpenBook1_TeacherDesk003
+    2300846: OpenBook1_TeacherDesk004
+    2300848: Papers_Board016
+    2300850: Papers_Board017
+    2300852: Papers_Board018
+    2300854: Papers_Board019
+    2300856: Pins_Board063
+    2300858: Pins_Board064
+    2300860: Pins_Board065
+    2300862: Pins_Board066
+    2300864: Pins_Board067
+    2300866: Pins_Board068
+    2300868: Pins_Board069
+    2300870: Pins_Board070
+    2300872: Pins_Board071
+    2300874: Pins_Board072
+    2300876: Pins_Board073
+    2300878: Pins_Board074
+    2300880: Pins_Board075
+    2300882: Pins_Board076
+    2300884: Pins_Board077
+    2300886: Pins_Board078
+    2300888: Plane042
+    2300890: Plane043
+    2300892: Plane044
+    2300894: Plane046
+    2300896: Plane047
+    2300898: Plane048
+    2300900: Plane049
+    2300902: Plane050
+    2300904: Plane051
+    2300906: Plane052
+    2300908: RecyclingBin7_Paper009
+    2300910: RecyclingBin7_Paper010
+    2300912: RecyclingBin7_Paper011
+    2300914: Shape014
+    2300916: Shape015
+    2300918: Shape016
+    2300920: Stationary1_Holder005
+    2300922: Stationary1_Holder006
+    2300924: StationaryHolder1_Class004
+    2300926: StationaryHolder1_Class005
+    2300928: StudentChair_065
+    2300930: StudentChair_066
+    2300932: StudentChair_067
+    2300934: StudentChair_068
+    2300936: StudentChair_069
+    2300938: StudentChair_070
+    2300940: StudentChair_071
+    2300942: StudentChair_072
+    2300944: StudentChair_073
+    2300946: StudentChair_074
+    2300948: StudentChair_075
+    2300950: StudentChair_076
+    2300952: StudentChair_077
+    2300954: Trash1_Class008
+    2300956: Trash1_Class009
+    2300958: Trash1_Class010
+    2300960: Trash1_Class011
+    2300962: Trash1_Class012
+    2300964: Trash1_Class013
+    2300966: WaterFountain1_Hall008
+    2300968: WaterFountain1_Hall009
+    2300970: WaterFountain1_Hall010
+    2300972: WaterFountain1_Hall011
+    2300974: WhiteBoard2_Class001
+    3300000: AC4_Class007
+    3300002: AC4_Class008
+    3300004: AC4_Class009
+    3300006: AC4_Class010
+    3300008: AC4_Class011
+    3300010: AC4_Class012
+    3300012: Alarm3_Hall005
+    3300014: Alarm3_Hall006
+    3300016: Alarm3_Hall007
+    3300018: Basketball Lowpoly
+    3300020: Basketball Lowpoly001
+    3300022: Basketball Lowpoly002
+    3300024: Basketball Lowpoly003
+    3300026: Basketball Lowpoly004
+    3300028: Basketball Lowpoly005
+    3300030: Basketball Lowpoly006
+    3300032: Basketball Lowpoly007
+    3300034: Basketball Lowpoly008
+    3300036: Basketball Lowpoly009
+    3300038: Basketball Lowpoly010
+    3300040: Basketball Lowpoly011
+    3300042: Basketball Lowpoly012
+    3300044: Basketball Lowpoly013
+    3300046: Basketball Lowpoly014
+    3300048: Basketball Lowpoly015
+    3300050: Basketball Lowpoly016
+    3300052: Basketball Lowpoly017
+    3300054: Basketball Lowpoly018
+    3300056: Basketball Lowpoly019
+    3300058: Basketball Lowpoly020
+    3300060: Basketball Lowpoly021
+    3300062: Basketball Lowpoly022
+    3300064: Basketball Lowpoly023
+    3300066: Basketball Lowpoly024
+    3300068: Basketball Lowpoly025
+    3300070: Basketball Lowpoly026
+    3300072: Basketball Lowpoly027
+    3300074: Basketball Lowpoly028
+    3300076: Basketball Lowpoly029
+    3300078: Basketball Lowpoly030
+    3300080: Basketball Lowpoly031
+    3300082: Basketball Lowpoly032
+    3300084: Basketball Lowpoly033
+    3300086: Basketball Lowpoly034
+    3300088: Basketball Lowpoly035
+    3300090: BballCeiling
+    3300092: Board3_Class004
+    3300094: Board6_Hall003
+    3300096: Board6_Hall004
+    3300098: Board6_Hall005
+    3300100: Board6_Hall006
+    3300102: Book1_TeacherDesk001
+    3300104: Book2_TeacherDesk007
+    3300106: Book2_TeacherDesk008
+    3300108: Book2_TeacherDesk009
+    3300110: Book2_TeacherDesk010
+    3300112: Box002
+    3300114: Box1028
+    3300116: Box1029
+    3300118: Box1030
+    3300120: Box1031
+    3300122: Box1032
+    3300124: Box1033
+    3300126: Box1034
+    3300128: Box1035
+    3300130: Box1036
+    3300132: Box1037
+    3300134: Box1038
+    3300136: Box1039
+    3300138: Box1040
+    3300140: Box1041
+    3300142: Box1042
+    3300144: Box1043
+    3300146: Box1045
+    3300148: Box1048
+    3300150: Box1049
+    3300152: Box1050
+    3300154: Box1051
+    3300156: Box1052
+    3300158: Box1053
+    3300160: Box1054
+    3300162: Box1055
+    3300164: Box1058
+    3300166: Box1059
+    3300168: Box1060
+    3300170: Box1061
+    3300172: Box1062
+    3300174: Box1064
+    3300176: Box1065
+    3300178: Box1066
+    3300180: Box1072
+    3300182: Box1073
+    3300184: Box1074
+    3300186: Box1075
+    3300188: Box1076
+    3300190: Box1077
+    3300192: Box1078
+    3300194: Box1079
+    3300196: Box1080
+    3300198: Box1081
+    3300200: Box1082
+    3300202: Box1083
+    3300204: Box1084
+    3300206: Box1085
+    3300208: Box1086
+    3300210: Box1087
+    3300212: Box599
+    3300214: Box600
+    3300216: Box601
+    3300218: Box602
+    3300220: Box603
+    3300222: Box604
+    3300224: Box605
+    3300226: Box606
+    3300228: Box607
+    3300230: Box608
+    3300232: Box609
+    3300234: Box610
+    3300236: Box611
+    3300238: Box612
+    3300240: Box613
+    3300242: Box614
+    3300244: Box615
+    3300246: Box616
+    3300248: Box618
+    3300250: Box619
+    3300252: Box620
+    3300254: Box621
+    3300256: Box622
+    3300258: Box622 1
+    3300260: Box623
+    3300262: Box624
+    3300264: Box625
+    3300266: Box626
+    3300268: Box627
+    3300270: Box628
+    3300272: Box629
+    3300274: Box630
+    3300276: Box645
+    3300278: Box650
+    3300280: Box651
+    3300282: Box653
+    3300284: Box655
+    3300286: Box664
+    3300288: Box671
+    3300290: Box672
+    3300292: Box673
+    3300294: Box689
+    3300296: Box690
+    3300298: Box691
+    3300300: Cabinet1_Class001
+    3300302: Cabinet2_Class006
+    3300304: Cabinet2_Class007
+    3300306: CeilingLights_Base062
+    3300308: CeilingLights_Base064
+    3300310: CeilingLights_Base065
+    3300312: CeilingLights_Base066
+    3300314: CeilingLights_Base067
+    3300316: CeilingLights_Base068
+    3300318: CeilingLights_Base069
+    3300320: CeilingLights_Base070
+    3300322: CeilingLights_Base071
+    3300324: CeilingLights_Base072
+    3300326: CeilingLights_Base073
+    3300328: CeilingLights_Base074
+    3300330: CeilingLights_Base075
+    3300332: CeilingLights_Base076
+    3300334: CeilingLights_Base077
+    3300336: CeilingLights_Base078
+    3300338: CeilingLights_Base079
+    3300340: CeilingLights_Base080
+    3300342: CeilingLights_Base081
+    3300344: CeilingLights_Base082
+    3300346: CeilingLights_Base083
+    3300348: CeilingLights_Base084
+    3300350: CeilingLights_Bulbs034
+    3300352: CeilingLights_Bulbs036
+    3300354: CeilingLights_Bulbs037
+    3300356: CeilingLights_Bulbs038
+    3300358: CeilingLights_Bulbs039
+    3300360: CeilingLights_Bulbs040
+    3300362: CeilingLights_Bulbs041
+    3300364: CeilingLights_Bulbs042
+    3300366: CeilingLights_Bulbs043
+    3300368: CeilingLights_Bulbs044
+    3300370: CeilingLights_Bulbs045
+    3300372: CeilingLights_Bulbs046
+    3300374: CeilingLights_Bulbs047
+    3300376: CeilingLights_Bulbs048
+    3300378: CeilingLights_Bulbs049
+    3300380: CeilingLights_Bulbs050
+    3300382: CeilingLights_Bulbs051
+    3300384: CeilingLights_Bulbs052
+    3300386: CeilingLights_Bulbs053
+    3300388: CeilingLights_Bulbs054
+    3300390: CeilingLights_Bulbs055
+    3300392: CeilingLights_Bulbs056
+    3300394: Curtain2_Window003
+    3300396: CurtainRod2_Window003
+    3300398: Cylinder036
+    3300400: Cylinder037
+    3300402: Cylinder038
+    3300404: Cylinder039
+    3300406: Cylinder040
+    3300408: Cylinder243
+    3300410: Cylinder245
+    3300412: Cylinder474
+    3300414: Cylinder475
+    3300416: Cylinder476
+    3300418: Cylinder477
+    3300420: Cylinder478
+    3300422: Cylinder479
+    3300424: Cylinder480
+    3300426: Cylinder481
+    3300428: Cylinder482
+    3300430: Cylinder483
+    3300432: Cylinder484
+    3300434: Cylinder485
+    3300436: Cylinder486
+    3300438: Cylinder487
+    3300440: Cylinder488
+    3300442: Cylinder489
+    3300444: Cylinder490
+    3300446: Cylinder491
+    3300448: Cylinder492
+    3300450: door frame019
+    3300452: door frame020
+    3300454: door frame021
+    3300456: door frame022
+    3300458: door frame023
+    3300460: door handles016
+    3300462: door handles017
+    3300464: door handles018
+    3300466: door019
+    3300468: door020
+    3300470: door021
+    3300472: door022
+    3300474: door023
+    3300476: ElectricalJunction1_Class003
+    3300478: ElectricalJunction1_Class004
+    3300480: ElectricalJunction2_Store002
+    3300482: FileCabinet1_Class009
+    3300484: FileCabinet1_Class010
+    3300486: FileCabinet1_Class011
+    3300488: Floor
+    3300490: GasTank1_Class004
+    3300492: GasTank1_Class005
+    3300494: GasTank1_Class006
+    3300496: LightSwitch1_Class004
+    3300498: LightSwitch1_Class005
+    3300500: LightSwitch1_Class006
+    3300502: LightSwitch1_Class007
+    3300504: LightSwitch1_Class008
+    3300506: LightSwitch1_Class009
+    3300508: LightSwitch1_Class010
+    3300510: LightSwitch1_Class011
+    3300512: LightSwitch1_Class012
+    3300514: Line256
+    3300516: Line257
+    3300518: LowPoly Cone
+    3300520: LowPoly Cone001
+    3300522: LowPoly Cone002
+    3300524: LowPoly Cone003
+    3300526: LowPoly Cone004
+    3300528: LowPoly Cone005
+    3300530: LowPoly Cone006
+    3300532: LowPoly Cone007
+    3300534: LowPoly Cone008
+    3300536: LowPoly Cone009
+    3300538: LowPoly Cone010
+    3300540: LowPoly Cone012
+    3300542: LowPoly Cone013
+    3300544: LowPoly Cone014
+    3300546: LowPoly Cone015
+    3300548: LowPoly Cone016
+    3300550: LowPolyCup
+    3300552: LowPolyCup001
+    3300554: LowPolyCup002
+    3300556: LowPolyCup003
+    3300558: LowPolyCup004
+    3300560: LowPolyCup005
+    3300562: LowPolyCup006
+    3300564: LowPolyCup007
+    3300566: LowPolyCup008
+    3300568: LowPolyCup009
+    3300570: LowPolyCup010
+    3300572: LowPolyCup011
+    3300574: LowPolyCup012
+    3300576: LowPolyCup013
+    3300578: LowPolyCup014
+    3300580: LowPolyCup015
+    3300582: LowPolyCup016
+    3300584: LowPolyCup017
+    3300586: LowPolyCup018
+    3300588: LowPolyCup019
+    3300590: LowPolyCup020
+    3300592: LowPolyCup021
+    3300594: LowPolyCup022
+    3300596: LowPolyCup023
+    3300598: LowPolyCup024
+    3300600: LowPolyCup025
+    3300602: LowPolyCup026
+    3300604: LowPolyCup027
+    3300606: LowPolyCup028
+    3300608: LowPolyCup029
+    3300610: Mug_Class001
+    3300612: Mug_Class002
+    3300614: Object030
+    3300616: Object031
+    3300618: Object261
+    3300620: Object278
+    3300622: Object279
+    3300624: Object280
+    3300626: Object281
+    3300628: Object286
+    3300630: Object287
+    3300632: Object288
+    3300634: Object289
+    3300636: Object290
+    3300638: Object291
+    3300640: Object292
+    3300642: Object293
+    3300644: Object294
+    3300646: Object295
+    3300648: Object296
+    3300650: Object297
+    3300652: Object298
+    3300654: Object299
+    3300656: Object300
+    3300658: Object301
+    3300660: Object302
+    3300662: Object303
+    3300664: Object304
+    3300666: Object305
+    3300668: Object306
+    3300670: Object307
+    3300672: Object308
+    3300674: Object309
+    3300676: Object310
+    3300678: Object311
+    3300680: Object312
+    3300682: Object313
+    3300684: Object314
+    3300686: Object315
+    3300688: Object316
+    3300690: Object317
+    3300692: Object318
+    3300694: Object319
+    3300696: Object320
+    3300698: Object321
+    3300700: Object322
+    3300702: Object323
+    3300704: Object324
+    3300706: Object325
+    3300708: Object326
+    3300710: Object327
+    3300712: Object328
+    3300714: Object329
+    3300716: Object330
+    3300718: Object331
+    3300720: Object332
+    3300722: Object333
+    3300724: Object334
+    3300726: Object335
+    3300728: Object336
+    3300730: Object337
+    3300732: Object338
+    3300734: Object339
+    3300736: Object340
+    3300738: Object341
+    3300740: Object342
+    3300742: Object343
+    3300744: Object344
+    3300746: Object345
+    3300748: Object346
+    3300750: Object347
+    3300752: Object348
+    3300754: Object349
+    3300756: Object350
+    3300758: Object351
+    3300760: Object352
+    3300762: Object353
+    3300764: Object354
+    3300766: Object355
+    3300768: Object356
+    3300770: Object357
+    3300772: Object358
+    3300774: Object359
+    3300776: Object360
+    3300778: Object361
+    3300780: Object362
+    3300782: Object363
+    3300784: Object364
+    3300786: Object365
+    3300788: Object366
+    3300790: Object367
+    3300792: Object368
+    3300794: Object369
+    3300796: Object370
+    3300798: Object371
+    3300800: Object372
+    3300802: Object373
+    3300804: Object374
+    3300806: Object375
+    3300808: Object376
+    3300810: Object377
+    3300812: Object378
+    3300814: Object379
+    3300816: Object380
+    3300818: Object381
+    3300820: Object382
+    3300822: Object383
+    3300824: Object384
+    3300826: Object385
+    3300828: Object386
+    3300830: Object387
+    3300832: Object388
+    3300834: Object389
+    3300836: Object390
+    3300838: Object391
+    3300840: Object392
+    3300842: Object393
+    3300844: OpenBook1_TeacherDesk003
+    3300846: OpenBook1_TeacherDesk004
+    3300848: Papers_Board016
+    3300850: Papers_Board017
+    3300852: Papers_Board018
+    3300854: Papers_Board019
+    3300856: Pins_Board063
+    3300858: Pins_Board064
+    3300860: Pins_Board065
+    3300862: Pins_Board066
+    3300864: Pins_Board067
+    3300866: Pins_Board068
+    3300868: Pins_Board069
+    3300870: Pins_Board070
+    3300872: Pins_Board071
+    3300874: Pins_Board072
+    3300876: Pins_Board073
+    3300878: Pins_Board074
+    3300880: Pins_Board075
+    3300882: Pins_Board076
+    3300884: Pins_Board077
+    3300886: Pins_Board078
+    3300888: Plane042
+    3300890: Plane043
+    3300892: Plane044
+    3300894: Plane046
+    3300896: Plane047
+    3300898: Plane048
+    3300900: Plane049
+    3300902: Plane050
+    3300904: Plane051
+    3300906: Plane052
+    3300908: RecyclingBin7_Paper009
+    3300910: RecyclingBin7_Paper010
+    3300912: RecyclingBin7_Paper011
+    3300914: Shape014
+    3300916: Shape015
+    3300918: Shape016
+    3300920: Stationary1_Holder005
+    3300922: Stationary1_Holder006
+    3300924: StationaryHolder1_Class004
+    3300926: StationaryHolder1_Class005
+    3300928: StudentChair_065
+    3300930: StudentChair_066
+    3300932: StudentChair_067
+    3300934: StudentChair_068
+    3300936: StudentChair_069
+    3300938: StudentChair_070
+    3300940: StudentChair_071
+    3300942: StudentChair_072
+    3300944: StudentChair_073
+    3300946: StudentChair_074
+    3300948: StudentChair_075
+    3300950: StudentChair_076
+    3300952: StudentChair_077
+    3300954: Trash1_Class008
+    3300956: Trash1_Class009
+    3300958: Trash1_Class010
+    3300960: Trash1_Class011
+    3300962: Trash1_Class012
+    3300964: Trash1_Class013
+    3300966: WaterFountain1_Hall008
+    3300968: WaterFountain1_Hall009
+    3300970: WaterFountain1_Hall010
+    3300972: WaterFountain1_Hall011
+    3300974: WhiteBoard2_Class001
+    4300000: Box1055
+    4300002: Box645
+    4300004: Box650
+    4300006: Box651
+    4300008: Box653
+    4300010: Box655
+    4300012: Box689
+    4300014: Box690
+    4300016: Box691
+    4300018: Cylinder036
+    4300020: Cylinder037
+    4300022: Cylinder038
+    4300024: Cylinder039
+    4300026: Cylinder040
+    4300028: Box1029
+    4300030: Box1030
+    4300032: Box1031
+    4300034: door handles016
+    4300036: door frame022
+    4300038: door handles017
+    4300040: door022
+    4300042: Box600
+    4300044: Box602
+    4300046: Box604
+    4300048: Box608
+    4300050: Box610
+    4300052: Box1053
+    4300054: Curtain2_Window003
+    4300056: CurtainRod2_Window003
+    4300058: Box1054
+    4300060: Cylinder474
+    4300062: Cylinder475
+    4300064: Cylinder476
+    4300066: Cylinder477
+    4300068: Cylinder478
+    4300070: Box1058
+    4300072: Object261
+    4300074: Box1059
+    4300076: Line256
+    4300078: Line257
+    4300080: Cylinder479
+    4300082: Box1060
+    4300084: Box1061
+    4300086: Box1062
+    4300088: Box1064
+    4300090: Box1065
+    4300092: Box1072
+    4300094: Box1073
+    4300096: Object286
+    4300098: Object278
+    4300100: Object279
+    4300102: Object280
+    4300104: Object281
+    4300106: Object287
+    4300108: Object288
+    4300110: Object289
+    4300112: Object290
+    4300114: Object291
+    4300116: Object292
+    4300118: Object293
+    4300120: Object294
+    4300122: Object295
+    4300124: Object296
+    4300126: Object297
+    4300128: Object298
+    4300130: Object299
+    4300132: Object300
+    4300134: Object301
+    4300136: Object302
+    4300138: Object303
+    4300140: Object304
+    4300142: Object305
+    4300144: Object306
+    4300146: Object307
+    4300148: Object308
+    4300150: Object309
+    4300152: Object310
+    4300154: Object311
+    4300156: Object312
+    4300158: Object313
+    4300160: Object314
+    4300162: Object315
+    4300164: Object316
+    4300166: Object317
+    4300168: Object318
+    4300170: Object319
+    4300172: Object320
+    4300174: Object321
+    4300176: Object322
+    4300178: Object323
+    4300180: Box1074
+    4300182: Object324
+    4300184: Object325
+    4300186: Object326
+    4300188: Object327
+    4300190: Object328
+    4300192: Object329
+    4300194: Object330
+    4300196: Object331
+    4300198: Object332
+    4300200: Object333
+    4300202: Object334
+    4300204: Object335
+    4300206: Object336
+    4300208: Plane044
+    4300210: Plane046
+    4300212: Cylinder481
+    4300214: Plane047
+    4300216: Plane048
+    4300218: Box1078
+    4300220: Box1079
+    4300222: Box1080
+    4300224: Cylinder483
+    4300226: Object337
+    4300228: Object338
+    4300230: Object339
+    4300232: Object340
+    4300234: Object341
+    4300236: Object342
+    4300238: Object343
+    4300240: Object344
+    4300242: Object345
+    4300244: Object346
+    4300246: Object347
+    4300248: Object348
+    4300250: Object349
+    4300252: Object350
+    4300254: Object351
+    4300256: Object352
+    4300258: Object353
+    4300260: Object354
+    4300262: Object355
+    4300264: Object356
+    4300266: Object357
+    4300268: Object358
+    4300270: Object359
+    4300272: Object360
+    4300274: Object361
+    4300276: Object362
+    4300278: Object363
+    4300280: Object364
+    4300282: Object365
+    4300284: Object366
+    4300286: Object367
+    4300288: Object368
+    4300290: Object369
+    4300292: Object370
+    4300294: Object371
+    4300296: Object372
+    4300298: Object373
+    4300300: Object374
+    4300302: Object375
+    4300304: Object376
+    4300306: Object377
+    4300308: Object378
+    4300310: Object379
+    4300312: Object380
+    4300314: Object381
+    4300316: Object382
+    4300318: Object383
+    4300320: Object384
+    4300322: Object385
+    4300324: Object386
+    4300326: Object387
+    4300328: Object388
+    4300330: Object389
+    4300332: Object390
+    4300334: Object391
+    4300336: Plane049
+    4300338: Plane050
+    4300340: Plane051
+    4300342: Plane052
+    4300344: StudentChair_067
+    4300346: StudentChair_066
+    4300348: StudentChair_065
+    4300350: StudentChair_068
+    4300352: StudentChair_069
+    4300354: WhiteBoard2_Class001
+    4300356: Cylinder485
+    4300358: Cylinder486
+    4300360: Cylinder487
+    4300362: Cylinder488
+    4300364: ElectricalJunction1_Class003
+    4300366: ElectricalJunction2_Store002
+    4300368: ElectricalJunction1_Class004
+    4300370: CeilingLights_Base080
+    4300372: CeilingLights_Bulbs052
+    4300374: CeilingLights_Base062
+    4300376: CeilingLights_Bulbs034
+    4300378: CeilingLights_Base064
+    4300380: CeilingLights_Bulbs036
+    4300382: CeilingLights_Base065
+    4300384: CeilingLights_Bulbs037
+    4300386: CeilingLights_Base066
+    4300388: CeilingLights_Bulbs038
+    4300390: CeilingLights_Base067
+    4300392: CeilingLights_Bulbs039
+    4300394: CeilingLights_Base068
+    4300396: CeilingLights_Bulbs040
+    4300398: CeilingLights_Base069
+    4300400: CeilingLights_Bulbs041
+    4300402: CeilingLights_Base070
+    4300404: CeilingLights_Bulbs042
+    4300406: CeilingLights_Base071
+    4300408: CeilingLights_Bulbs043
+    4300410: CeilingLights_Base072
+    4300412: CeilingLights_Bulbs044
+    4300414: CeilingLights_Base073
+    4300416: CeilingLights_Bulbs045
+    4300418: CeilingLights_Base074
+    4300420: CeilingLights_Bulbs046
+    4300422: CeilingLights_Base075
+    4300424: CeilingLights_Bulbs047
+    4300426: CeilingLights_Base076
+    4300428: CeilingLights_Bulbs048
+    4300430: CeilingLights_Base077
+    4300432: CeilingLights_Bulbs049
+    4300434: CeilingLights_Base078
+    4300436: CeilingLights_Bulbs050
+    4300438: CeilingLights_Base079
+    4300440: CeilingLights_Bulbs051
+    4300442: CeilingLights_Base081
+    4300444: CeilingLights_Bulbs053
+    4300446: CeilingLights_Base082
+    4300448: CeilingLights_Bulbs054
+    4300450: CeilingLights_Base083
+    4300452: CeilingLights_Bulbs055
+    4300454: CeilingLights_Base084
+    4300456: CeilingLights_Bulbs056
+    4300458: Box1084
+    4300460: Box1085
+    4300462: Box1086
+    4300464: WaterFountain1_Hall008
+    4300466: WaterFountain1_Hall009
+    4300468: WaterFountain1_Hall010
+    4300470: WaterFountain1_Hall011
+    4300472: Board3_Class004
+    4300474: Papers_Board016
+    4300476: Pins_Board063
+    4300478: Pins_Board064
+    4300480: Pins_Board065
+    4300482: Pins_Board066
+    4300484: Pins_Board067
+    4300486: Alarm3_Hall005
+    4300488: FileCabinet1_Class009
+    4300490: FileCabinet1_Class010
+    4300492: FileCabinet1_Class011
+    4300494: Alarm3_Hall006
+    4300496: Alarm3_Hall007
+    4300498: GasTank1_Class004
+    4300500: GasTank1_Class005
+    4300502: GasTank1_Class006
+    4300504: AC4_Class007
+    4300506: AC4_Class008
+    4300508: AC4_Class009
+    4300510: AC4_Class010
+    4300512: AC4_Class011
+    4300514: AC4_Class012
+    4300516: Board6_Hall003
+    4300518: Board6_Hall004
+    4300520: Papers_Board017
+    4300522: Pins_Board068
+    4300524: Pins_Board069
+    4300526: Pins_Board070
+    4300528: Pins_Board071
+    4300530: Pins_Board072
+    4300532: Pins_Board073
+    4300534: Pins_Board074
+    4300536: Pins_Board075
+    4300538: Pins_Board076
+    4300540: Pins_Board077
+    4300542: Pins_Board078
+    4300544: Board6_Hall005
+    4300546: Papers_Board018
+    4300548: LightSwitch1_Class004
+    4300550: LightSwitch1_Class005
+    4300552: LightSwitch1_Class006
+    4300554: LightSwitch1_Class007
+    4300556: LightSwitch1_Class008
+    4300558: LightSwitch1_Class009
+    4300560: LightSwitch1_Class010
+    4300562: LightSwitch1_Class011
+    4300564: LightSwitch1_Class012
+    4300566: Stationary1_Holder005
+    4300568: StationaryHolder1_Class004
+    4300570: Stationary1_Holder006
+    4300572: StationaryHolder1_Class005
+    4300574: Cabinet1_Class001
+    4300576: Board6_Hall006
+    4300578: Papers_Board019
+    4300580: Trash1_Class013
+    4300582: Trash1_Class012
+    4300584: Trash1_Class011
+    4300586: Trash1_Class010
+    4300588: Trash1_Class009
+    4300590: Trash1_Class008
+    4300592: Book2_TeacherDesk010
+    4300594: Book2_TeacherDesk009
+    4300596: Book2_TeacherDesk008
+    4300598: Mug_Class002
+    4300600: OpenBook1_TeacherDesk004
+    4300602: OpenBook1_TeacherDesk003
+    4300604: Mug_Class001
+    4300606: Book2_TeacherDesk007
+    4300608: Book1_TeacherDesk001
+    4300610: Cabinet2_Class007
+    4300612: Cabinet2_Class006
+    4300614: StudentChair_070
+    4300616: StudentChair_071
+    4300618: StudentChair_072
+    4300620: StudentChair_073
+    4300622: StudentChair_074
+    4300624: StudentChair_075
+    4300626: StudentChair_076
+    4300628: StudentChair_077
+    4300630: RecyclingBin7_Paper011
+    4300632: RecyclingBin7_Paper010
+    4300634: RecyclingBin7_Paper009
+    4300636: LowPolyCup
+    4300638: Box002
+    4300640: Box1028
+    4300642: Object031
+    4300644: LowPolyCup001
+    4300646: Box671
+    4300648: Box672
+    4300650: Box673
+    4300652: Plane042
+    4300654: Plane043
+    4300656: Box1035
+    4300658: Object030
+    4300660: Shape014
+    4300662: Basketball Lowpoly007
+    4300664: Basketball Lowpoly006
+    4300666: Basketball Lowpoly001
+    4300668: Basketball Lowpoly
+    4300670: Basketball Lowpoly008
+    4300672: Basketball Lowpoly005
+    4300674: Basketball Lowpoly002
+    4300676: Basketball Lowpoly010
+    4300678: Basketball Lowpoly011
+    4300680: Basketball Lowpoly004
+    4300682: Basketball Lowpoly003
+    4300684: Basketball Lowpoly009
+    4300686: Box1034
+    4300688: Box1033
+    4300690: Cylinder245
+    4300692: Cylinder243
+    4300694: Box1032
+    4300696: LowPoly Cone
+    4300698: LowPoly Cone001
+    4300700: LowPoly Cone002
+    4300702: LowPoly Cone003
+    4300704: LowPoly Cone004
+    4300706: LowPoly Cone005
+    4300708: LowPoly Cone006
+    4300710: LowPoly Cone007
+    4300712: LowPoly Cone008
+    4300714: door frame019
+    4300716: door019
+    4300718: door frame020
+    4300720: door020
+    4300722: door frame023
+    4300724: door handles018
+    4300726: door023
+    4300728: Box599
+    4300730: Box605
+    4300732: Box613
+    4300734: Box614
+    4300736: Box615
+    4300738: Box616
+    4300740: Box618
+    4300742: Box619
+    4300744: Box620
+    4300746: Box621
+    4300748: Box622
+    4300750: Box623
+    4300752: Box624
+    4300754: Box625
+    4300756: Box628
+    4300758: Box629
+    4300760: Box630
+    4300762: LowPolyCup002
+    4300764: LowPolyCup003
+    4300766: LowPolyCup004
+    4300768: LowPolyCup005
+    4300770: LowPolyCup006
+    4300772: LowPolyCup007
+    4300774: LowPolyCup008
+    4300776: LowPolyCup009
+    4300778: LowPolyCup010
+    4300780: LowPolyCup011
+    4300782: Box622
+    4300784: Box1036
+    4300786: Box1037
+    4300788: Box1038
+    4300790: Box1039
+    4300792: Box1040
+    4300794: Box1041
+    4300796: Box1042
+    4300798: Box1043
+    4300800: Box1045
+    4300802: Box1048
+    4300804: Box1049
+    4300806: Box1050
+    4300808: Box1051
+    4300810: Box1052
+    4300812: Box627
+    4300814: Box626
+    4300816: Box612
+    4300818: Box611
+    4300820: Box609
+    4300822: Box607
+    4300824: Box606
+    4300826: Box603
+    4300828: Box601
+    4300830: door021
+    4300832: door frame021
+    4300834: Floor
+    4300836: Box664
+    4300838: Box1066
+    4300840: Cylinder480
+    4300842: LowPolyCup012
+    4300844: LowPolyCup013
+    4300846: LowPolyCup014
+    4300848: LowPolyCup015
+    4300850: LowPolyCup016
+    4300852: LowPolyCup017
+    4300854: LowPolyCup018
+    4300856: LowPolyCup019
+    4300858: Box1075
+    4300860: Cylinder482
+    4300862: LowPolyCup020
+    4300864: LowPolyCup021
+    4300866: LowPolyCup022
+    4300868: LowPolyCup023
+    4300870: Box1076
+    4300872: Box1077
+    4300874: Box1081
+    4300876: Cylinder484
+    4300878: LowPolyCup024
+    4300880: LowPolyCup025
+    4300882: LowPolyCup026
+    4300884: LowPolyCup027
+    4300886: BballCeiling
+    4300888: Basketball Lowpoly012
+    4300890: Basketball Lowpoly013
+    4300892: Basketball Lowpoly014
+    4300894: Basketball Lowpoly015
+    4300896: Basketball Lowpoly016
+    4300898: Basketball Lowpoly017
+    4300900: Basketball Lowpoly018
+    4300902: Basketball Lowpoly019
+    4300904: Basketball Lowpoly020
+    4300906: Basketball Lowpoly021
+    4300908: Basketball Lowpoly022
+    4300910: Basketball Lowpoly023
+    4300912: Object392
+    4300914: Shape015
+    4300916: Basketball Lowpoly024
+    4300918: Basketball Lowpoly025
+    4300920: Basketball Lowpoly026
+    4300922: Basketball Lowpoly027
+    4300924: Basketball Lowpoly028
+    4300926: Basketball Lowpoly029
+    4300928: Basketball Lowpoly030
+    4300930: Basketball Lowpoly031
+    4300932: Basketball Lowpoly032
+    4300934: Basketball Lowpoly033
+    4300936: Basketball Lowpoly034
+    4300938: Basketball Lowpoly035
+    4300940: Object393
+    4300942: Shape016
+    4300944: Cylinder489
+    4300946: Cylinder490
+    4300948: Cylinder491
+    4300950: Cylinder492
+    4300952: LowPoly Cone009
+    4300954: LowPoly Cone010
+    4300956: LowPoly Cone012
+    4300958: LowPoly Cone013
+    4300960: LowPoly Cone014
+    4300962: LowPoly Cone015
+    4300964: LowPoly Cone016
+    4300966: Box1082
+    4300968: Box1083
+    4300970: LowPolyCup028
+    4300972: LowPolyCup029
+    4300974: Box1087
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Leon/Scenes/Day_1_Happy.unity
+- path: Assets/Individual sections/Noaman/Scenes/DayTwoPatrol_Test.unity
   isLoaded: 1
   isActive: 1

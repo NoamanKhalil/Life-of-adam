@@ -11,8 +11,10 @@ enum AiState
 [RequireComponent(typeof(MySteeringBehaviour))]
 public class TeacherBehaviourCs : MonoBehaviour
 {
-
-    public string name;
+    [Header("Paste in the A object name here for enemy to follow path")]
+    public string nameA;
+    [Header("Paste in the B object name here for enemy to follow path")]
+    public string nameB;
 	public NavMeshAgent agent;
     public MySteeringBehaviour steer;
 	public LayerMask layer;
@@ -41,7 +43,8 @@ public class TeacherBehaviourCs : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        pathToFollowA = GameObject.Find(name).GetComponentsInChildren<Transform>();
+        pathToFollowA = GameObject.Find(nameA).GetComponentsInChildren<Transform>();
+        pathToFollowB = GameObject.Find(nameB).GetComponentsInChildren<Transform>();
 		agent.autoBraking = false;
 		isPathA = true;
 		isPathB = false;

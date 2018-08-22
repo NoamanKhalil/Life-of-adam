@@ -7,7 +7,13 @@ AnimatorController:
   m_PrefabInternal: {fileID: 0}
   m_Name: AI
   serializedVersion: 5
-  m_AnimatorParameters: []
+  m_AnimatorParameters:
+  - m_Name: EnemyNpc
+    m_Type: 3
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -27,7 +33,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: EnemyNpc
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102610936773945252}
   m_Solo: 0
@@ -48,7 +57,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: EnemyNpc
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102846283231316536}
   m_Solo: 0
@@ -69,7 +81,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: EnemyNpc
+    m_EventTreshold: 1
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102846283231316536}
   m_Solo: 0
@@ -90,7 +105,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: EnemyNpc
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102294483300530626}
   m_Solo: 0
@@ -111,7 +129,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: EnemyNpc
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102294483300530626}
   m_Solo: 0
@@ -132,7 +153,10 @@ AnimatorStateTransition:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 6
+    m_ConditionEvent: EnemyNpc
+    m_EventTreshold: 2
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102610936773945252}
   m_Solo: 0
@@ -238,20 +262,20 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102610936773945252}
-    m_Position: {x: 252, y: 36, z: 0}
+    m_Position: {x: 1392, y: 96, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102846283231316536}
-    m_Position: {x: 552, y: -72, z: 0}
+    m_Position: {x: 1644, y: 432, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102294483300530626}
-    m_Position: {x: 492, y: 192, z: 0}
+    m_Position: {x: 1164, y: 432, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
   m_AnyStatePosition: {x: 50, y: 20, z: 0}
-  m_EntryPosition: {x: 50, y: 120, z: 0}
-  m_ExitPosition: {x: 800, y: 120, z: 0}
+  m_EntryPosition: {x: 1476, y: -300, z: 0}
+  m_ExitPosition: {x: 1068, y: -276, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102610936773945252}
