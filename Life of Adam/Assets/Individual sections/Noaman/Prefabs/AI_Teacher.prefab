@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 23879910750776452}
   - component: {fileID: 114484703350626630}
   - component: {fileID: 195227315544357092}
+  - component: {fileID: 114558176737015232}
+  - component: {fileID: 95896186214725406}
   m_Layer: 10
   m_Name: AI_Teacher
   m_TagString: Untagged
@@ -86,6 +88,24 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1302310356545754}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &95896186214725406
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302310356545754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114484703350626630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -97,6 +117,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0687624dd119af04abafe5cc714c8122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameA: 
+  nameB: 
   agent: {fileID: 195227315544357092}
   steer: {fileID: 0}
   layer:
@@ -111,6 +133,23 @@ MonoBehaviour:
   minDist: 4
   attackDistance: 2
   day: {fileID: 0}
+--- !u!114 &114558176737015232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1302310356545754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0086c880b34d8424c8206ed8c50e8284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AiAnimStateName:
+  - EnemyNpcTeacher
+  - EnemyNpcBully
+  - EnemyNpcFather
+  AiName: 0
+  myAnim: {fileID: 0}
 --- !u!136 &136424544952793230
 CapsuleCollider:
   m_ObjectHideFlags: 1

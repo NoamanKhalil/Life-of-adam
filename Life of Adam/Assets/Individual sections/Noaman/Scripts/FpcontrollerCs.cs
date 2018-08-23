@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+[RequireComponent(typeof(Animator))]
 public class FpcontrollerCs : MonoBehaviour
 {
     [Header("Pass in the camera here")]
@@ -49,8 +51,11 @@ public class FpcontrollerCs : MonoBehaviour
     [Header("Place tun normal in 0 , run fast 1 , walk crouch at 3, 4 push walk  ")]
     [SerializeField]
     AudioClip []myClip;
+    [Header(" either assign in unity or it will be assigned at runtime ")]
+    [SerializeField]
+    private Animator myAnim;
 
-	bool isPlaying;
+    bool isPlaying;
 	bool canJump;
 	bool canDie;
 
@@ -62,6 +67,7 @@ public class FpcontrollerCs : MonoBehaviour
 	bool canMove;
 
     bool canRun ;
+    bool isHolding;
     AudioSource aud;
     LevelManagerCs level;
 
@@ -72,6 +78,10 @@ public class FpcontrollerCs : MonoBehaviour
 
 	void Start()
 	{
+        if (!myAnim)
+        {
+            myAnim = GetComponent<Animator>();
+        }
         level = GameObject.Find("LevelManager").GetComponent<LevelManagerCs>();
 		startPos = transform.position;
 		startRot = camera.transform.rotation;
@@ -87,11 +97,38 @@ public class FpcontrollerCs : MonoBehaviour
 		staminaUifill = stamina / 100;
 		canRun = true;
         aud = GetComponent<AudioSource>();
+        isHolding = false;
 	}
 
 	void Update()
 	{
-		if (Time.timeScale <= 1)
+        if (!transform.hasChanged&&!canCrouch&&!canRun)
+        {
+            // play idle anim
+            onAnim(0);
+        }
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D) &&!canCrouch&&!canRun)
+        {
+            //crouch walk anim
+            onAnim(4);
+        }
+        if (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.D)&&canCrouch && !canRun)
+        {
+            //walk anim
+            onAnim(1);
+        }
+        if (!transform.hasChanged && !canCrouch && !canRun&& isHolding)
+        {
+            // play idle holding anim
+            onAnim(8);
+        }
+        if (transform.hasChanged&&isHolding)
+        {
+            // play walk holding anim
+            onAnim(5);
+        }
+
+        if (Time.timeScale <= 1)
 		{
 			Run();
 			if (canMove)
@@ -195,6 +232,7 @@ public class FpcontrollerCs : MonoBehaviour
                     aud.Play();
                 }
             }
+            onAnim(3);
 
 		}
 		//on false 
@@ -224,7 +262,12 @@ public class FpcontrollerCs : MonoBehaviour
                 aud.clip = myClip[1];
                 aud.Play();
             }
-			forwardVel = runVel;
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) && (!canCrouch && !canPush))
+            {
+                // run anim
+                onAnim(2);
+            }
+            forwardVel = runVel;
 			stamina--;
 			staminaUifill = stamina / 100;
 			staminaUi.fillAmount = staminaUifill;
@@ -265,6 +308,14 @@ public class FpcontrollerCs : MonoBehaviour
 		StartCoroutine(Die(this.transform, startPos, deathSmoothness));
 	}
 
+    public void setHolding(bool hold)
+    {
+        isHolding = hold;
+    }
+    public void onAnim(int an)
+    {
+        myAnim.SetInteger("PlayerMove", an);
+    }
 
 	private IEnumerator onCrouch(Transform transform, Vector3 position, float timeToMove)
 	{

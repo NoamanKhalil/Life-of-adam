@@ -75,7 +75,9 @@ public class PickUpCs : MonoBehaviour
 				//Debug.Log("Did Hit");
 				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue"||hit.collider.gameObject.tag == "Pick")
 				{
-					hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
+                    fp.onAnim(6);
+
+                    hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
 					pickedObj = hit.collider.gameObject;
 					//hit.collider.gameObject.GetComponent<Rigidbody>().constraints
 					hit.collider.gameObject.transform.position = pickupPoint.transform.position;
@@ -88,6 +90,7 @@ public class PickUpCs : MonoBehaviour
 					GetComponent<UiHandlerCs>().setRay(false);
 					//pickupPoint.GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
 					Debug.Log("Picked object");
+                    fp.setHolding(true);
 				}
 			}
 
@@ -100,6 +103,7 @@ public class PickUpCs : MonoBehaviour
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
 			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist&& bluePlacePos!=null)
 			{
+                fp.onAnim(7);
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
 				//fp.setSpeed(4.0f);
@@ -114,10 +118,12 @@ public class PickUpCs : MonoBehaviour
 				isholding = false;
 				day.setBlueTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
-			}
+                fp.setHolding(false);
+            }
 			else if (pickedObj.tag == "Red" && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<Dist&&redPlacePos!= null)
 			{
-				Debug.Log("red code called ");
+                fp.onAnim(7);
+                Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
 				//fp.setSpeed(8.0f);
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
@@ -131,10 +137,12 @@ public class PickUpCs : MonoBehaviour
 				isholding = false;
 				day.setRedTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
-			}
+                fp.setHolding(false);
+            }
             else if (pickedObj != null &&isholding)
 			{
-				Debug.Log("Null object called ");
+                fp.onAnim(7);
+                Debug.Log("Null object called ");
 				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;
                 Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
@@ -145,7 +153,8 @@ public class PickUpCs : MonoBehaviour
 				pickedObj = null;
 				isholding = false;
 				GetComponent<UiHandlerCs>().setRay(true);
-			}
+                fp.setHolding(false);
+            }
 
 
 		}
