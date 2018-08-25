@@ -20,6 +20,7 @@ public class LevelManagerCs : MonoBehaviour
 	public Text timerTxt;
 	public string sceneName;
 	public PuzzleCs[] puzzle;
+    public FpcontrollerCs player;
 
 	// Update is called once per frame
 	void Update () 
@@ -45,7 +46,21 @@ public class LevelManagerCs : MonoBehaviour
 				}
 			}
 		}
-
+        if (isHappy&& isDayOne&&levelTimer<=0&&lives>0)
+        {
+            GetComponent<CanvasFadeCs>().FadeOut();
+            resetLevel();
+            //Debug.Log("You were right");
+        }
+        else if (isHappy && isDayOne&& lives <= 0)
+        {
+            timer -= Time.deltaTime;
+            GetComponent<CanvasFadeCs>().FadeOut();
+            if (timer <= 0)
+            {
+                SceneManager.LoadScene(sceneName);
+            }
+        }
 
 
 		if (timerTxt != null && isHappy)
@@ -58,11 +73,11 @@ public class LevelManagerCs : MonoBehaviour
 			timerTxt.text = timeString;
 		}
 
-		if  (levelTimer <= 0)
+		/*if  (levelTimer <= 0)
 		{
 			blue = true;
 			red = true;
-		}
+		}*/
 
 
 		if (blue == true &&red == true&& !isTutorial )
@@ -74,7 +89,7 @@ public class LevelManagerCs : MonoBehaviour
 				SceneManager.LoadScene(sceneName);
 			}
 		}
-        // day 1 happy 
+        // day 1 happy (if the player sets red true)
 		if (red == true && isHappy&&!isTutorial)
 		{ 
 			timer -= Time.deltaTime;
@@ -106,10 +121,16 @@ public class LevelManagerCs : MonoBehaviour
 	public void resetLevel()
 	{
 		lives--;
-		levelTimer = 600;
+		levelTimer = 120;
 		blue = false;
 		red = false;
-		puzzle[0].Reset();
-		puzzle[1].Reset();
-	}
+        for (int i = 0; i < puzzle.Length; i++)
+        {
+            puzzle[i].Reset();
+        }
+        player.OnDie();
+        //puzzle[0].Reset();
+		//puzzle[1].Reset();
+
+    }
 }
