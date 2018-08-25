@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="/5eccbfc8" t="IncludeRecursive" />
+    <e p="/app" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="demo.cs" t="Include" />
+        <e p="Individual sections" t="Include">
+          <e p="Akshay" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="Destory.cs" t="Include" />
+              <e p="PlatformCs.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Leon" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="FloatingObject.cs" t="Include" />
+              <e p="ObjectDestroy.cs" t="Include" />
+              <e p="Scene.cs" t="Include" />
+            </e>
+            <e p="UI" t="Include">
+              <e p="Fonts" t="Include">
+                <e p="glass-antiqua" t="Include">
+                  <e p="OFL.txt" t="Include" />
+                </e>
+                <e p="JMH Euryale" t="Include">
+                  <e p="Personal Use Only-User Terms Agreement.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Videos" t="Include">
+              <e p="Day2" t="Include">
+                <e p="refrence.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Noaman" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="AiAnimator.cs" t="Include" />
+              <e p="AiBehaviourCs.cs" t="Include" />
+              <e p="AudioEventCs.cs" t="Include" />
+              <e p="CameraControl.cs" t="Include" />
+              <e p="CanvasFadeCs.cs" t="Include" />
+              <e p="DayManager.cs" t="Include" />
+              <e p="FpcontrollerCs.cs" t="Include" />
+              <e p="GameManagerCs.cs" t="Include" />
+              <e p="HeadBobCs.cs" t="Include" />
+              <e p="HelpTriggerCs.cs" t="Include" />
+              <e p="ItemDropAudioCs.cs" t="Include" />
+              <e p="Level.cs" t="Include" />
+              <e p="LevelData.cs" t="Include" />
+              <e p="LevelManagerCs.cs" t="Include" />
+              <e p="NpcAnimationCs.cs" t="Include" />
+              <e p="NpcUiCs.cs" t="Include" />
+              <e p="objectHandlerCs.cs" t="Include" />
+              <e p="onGizmoCs.cs" t="Include" />
+              <e p="PauseCs.cs" t="Include" />
+              <e p="PauseHandlerCs.cs" t="Include" />
+              <e p="PickUpCs.cs" t="Include" />
+              <e p="PlatformFallCs.cs" t="Include" />
+              <e p="PlatformMoveCs.cs" t="Include" />
+              <e p="PushCs.cs" t="Include" />
+              <e p="PushObjectCs.cs" t="Include" />
+              <e p="PuzzleCs.cs" t="Include" />
+              <e p="ShowMouseCs.cs" t="Include" />
+              <e p="TutorialCs.cs" t="Include" />
+              <e p="UiHandlerCs.cs" t="Include" />
+              <e p="WaypointVisualizer.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Individual_Sections" t="Include">
+          <e p="KoosaStuff" t="Include">
+            <e p="Photon Stuff" t="Include">
+              <e p="shaders" t="Include">
+                <e p="Outline.shader" t="Include" />
+                <e p="Persistant.shader" t="Include" />
+                <e p="shadertest.shader" t="Include" />
+                <e p="TimerShader.cs" t="Include" />
+                <e p="Vision.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TestCommit.cs" t="Include" />
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="Life of Adam.sln" t="IncludeFlat" />
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.2/resharper-host/local/Transient/ReSharperHost/v182/SolutionCaches/_Life of Adam.-492992331.00" t="ExcludeRecursive" />
+  </component>
+</project>

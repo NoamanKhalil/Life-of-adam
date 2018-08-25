@@ -75,7 +75,7 @@ public class PickUpCs : MonoBehaviour
 				//Debug.Log("Did Hit");
 				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue"||hit.collider.gameObject.tag == "Pick")
 				{
-                    fp.onAnim(6);
+                    //fp.onAnim(6);
 
                     hit.collider.gameObject.GetComponent<Rigidbody>().useGravity = false;
 					pickedObj = hit.collider.gameObject;
@@ -103,7 +103,7 @@ public class PickUpCs : MonoBehaviour
 			//hit.collider.gameObject.GetComponent<Test>().setSlotActive();
 			if (pickedObj.tag == "Blue"&& Vector3.Distance (this.transform.position, bluePlacePos.transform.position)<Dist&& bluePlacePos!=null)
 			{
-                fp.onAnim(7);
+                //fp.onAnim(7);
 				Debug.Log("blue code called ");
                 Rigidbody tempRb= GetComponentInChildren<Rigidbody>();
 				//fp.setSpeed(4.0f);
@@ -122,7 +122,7 @@ public class PickUpCs : MonoBehaviour
             }
 			else if (pickedObj.tag == "Red" && Vector3.Distance (this.transform.position, redPlacePos.transform.position)<Dist&&redPlacePos!= null)
 			{
-                fp.onAnim(7);
+                //fp.onAnim(7);
                 Debug.Log("red code called ");
 				Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
 				//fp.setSpeed(8.0f);
@@ -141,7 +141,7 @@ public class PickUpCs : MonoBehaviour
             }
             else if (pickedObj != null &&isholding)
 			{
-                fp.onAnim(7);
+                //fp.onAnim(7);
                 Debug.Log("Null object called ");
 				//fp.setSpeed(8.0f);
 				pickupPoint.GetComponentInChildren<Rigidbody>().constraints &= ~(RigidbodyConstraints.FreezePositionX |RigidbodyConstraints.FreezePositionY| RigidbodyConstraints.FreezePositionZ) ;

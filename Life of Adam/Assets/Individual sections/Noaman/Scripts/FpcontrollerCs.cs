@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Animator))]
+//[RequireComponent(typeof(Animator))]
 public class FpcontrollerCs : MonoBehaviour
 {
     [Header("Pass in the camera here")]
@@ -102,7 +102,7 @@ public class FpcontrollerCs : MonoBehaviour
 
 	void Update()
 	{
-        if (!transform.hasChanged&&!canCrouch&&!canRun)
+        /*if (!transform.hasChanged&&!canCrouch&&!canRun)
         {
             // play idle anim
             onAnim(0);
@@ -126,7 +126,7 @@ public class FpcontrollerCs : MonoBehaviour
         {
             // play walk holding anim
             onAnim(5);
-        }
+        }*/
 
         if (Time.timeScale <= 1)
 		{
@@ -232,7 +232,7 @@ public class FpcontrollerCs : MonoBehaviour
                     aud.Play();
                 }
             }
-            onAnim(3);
+           // onAnim(3);
 
 		}
 		//on false 
@@ -255,14 +255,14 @@ public class FpcontrollerCs : MonoBehaviour
     /* code for player to run*/
 	void Run()
 	{
-		if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1)
+        if (Input.GetKey(KeyCode.LeftShift) && stamina >= 1&&(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D)))
 		{
             if (!aud.isPlaying)
             {
                 aud.clip = myClip[1];
                 aud.Play();
             }
-            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) && (!canCrouch && !canPush))
+            if (!canCrouch && !canPush)
             {
                 // run anim
                 onAnim(2);

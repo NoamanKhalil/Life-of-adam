@@ -44,8 +44,15 @@ public class AiBehaviourCs : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-        pathToFollowA = GameObject.Find(nameA).GetComponentsInChildren<Transform>();
-        pathToFollowB = GameObject.Find(nameB).GetComponentsInChildren<Transform>();
+        if (!string.IsNullOrEmpty(nameA))
+        {
+            pathToFollowA = GameObject.Find(nameA).GetComponentsInChildren<Transform>();
+        }
+        if (!string.IsNullOrEmpty(nameB))
+        {
+            pathToFollowB = GameObject.Find(nameB).GetComponentsInChildren<Transform>();
+        }
+
 		agent.autoBraking = false;
 		isPathA = true;
 		isPathB = false;
@@ -55,60 +62,71 @@ public class AiBehaviourCs : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-		// stuff for collision avoidence 
-		Vector3 fwd = transform.TransformDirection(Vector3.forward);
-		//normalized vector between left & forward 
-		Vector3 leftD = transform.TransformDirection(Vector3.left + Vector3.forward).normalized;
-		//normalized vector between right & forward 
-		Vector3 rightD = transform.TransformDirection(Vector3.right + Vector3.forward).normalized;
-
-		RaycastHit hit;
-
-		Debug.DrawLine(transform.position, transform.position + fwd.normalized * attackDistance, Color.red);
-		Debug.DrawLine(transform.position, transform.position + leftD.normalized * attackDistance, Color.red);
-		Debug.DrawLine(transform.position, transform.position + rightD.normalized * attackDistance, Color.red);
-
-
-
-		if (Physics.Raycast(transform.position, fwd, out hit,attackDistance, layer, QueryTriggerInteraction.Ignore) ||
-		    Physics.Raycast(transform.position, leftD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore) ||
-		    Physics.Raycast(transform.position, rightD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore))
-		{
-			currentState= AiState.Chase; 
-		}
-
-		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= 1f)
-		{
-
-			Debug.Log("You just died");
-			playerObj.GetComponent<FpcontrollerCs>().OnDie();
-		    day.resetLevel();	
-			currentState = AiState.Patrol;
-		}
-
-		if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
-		{
-			currentState= AiState.Chase;
-		}
-		else
-		{
-			currentState = AiState.Patrol;
-		}
-
-
-		switch (currentState)
+        if (nameA!=null||nameB!=null)
         {
-            
+            Debug.Log("AI WORKING");
+            aiUpdate();
+        }
+
+    }
+
+
+    void aiUpdate()
+    {
+        // stuff for collision avoidence 
+        Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        //normalized vector between left & forward 
+        Vector3 leftD = transform.TransformDirection(Vector3.left + Vector3.forward).normalized;
+        //normalized vector between right & forward 
+        Vector3 rightD = transform.TransformDirection(Vector3.right + Vector3.forward).normalized;
+
+        RaycastHit hit;
+
+        Debug.DrawLine(transform.position, transform.position + fwd.normalized * attackDistance, Color.red);
+        Debug.DrawLine(transform.position, transform.position + leftD.normalized * attackDistance, Color.red);
+        Debug.DrawLine(transform.position, transform.position + rightD.normalized * attackDistance, Color.red);
+
+
+
+        if (Physics.Raycast(transform.position, fwd, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore) ||
+            Physics.Raycast(transform.position, leftD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore) ||
+            Physics.Raycast(transform.position, rightD, out hit, attackDistance, layer, QueryTriggerInteraction.Ignore))
+        {
+            currentState = AiState.Chase;
+        }
+
+        if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= 1f)
+        {
+
+            Debug.Log("You just died");
+            playerObj.GetComponent<FpcontrollerCs>().OnDie();
+            day.resetLevel();
+            currentState = AiState.Patrol;
+        }
+
+        if (Vector3.Distance(this.transform.position, playerObj.transform.position) <= minDist)
+        {
+            currentState = AiState.Chase;
+        }
+        else
+        {
+            currentState = AiState.Patrol;
+        }
+
+
+        switch (currentState)
+        {
+
             case AiState.Idle:
-				idle();
+                idle();
                 break;
-			case AiState.Chase:
-				// Seek();
-				chase();
+            case AiState.Chase:
+                // Seek();
+                chase();
                 break;
-			case AiState.Patrol:
-				//Flee();
-                if (!agent.pathPending && agent.remainingDistance<0.5f)
+            case AiState.Patrol:
+                //Flee();
+                if (!agent.pathPending && agent.remainingDistance < 0.5f)
                 {
                     if (isPathA)
                     {
@@ -119,12 +137,11 @@ public class AiBehaviourCs : MonoBehaviour
                         patrol(pathToFollowB);
                     }
                 }
-			
+
 
                 break;
-            
-        }
 
+        }
     }
 
 	void chase()

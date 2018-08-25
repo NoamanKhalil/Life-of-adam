@@ -1,0 +1,336 @@
+fileFormatVersion: 2
+guid: 1f8a47dec73ad4ad5a847ab643a0829f
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: A_BODY
+    100002: A_Clothes
+    100004: //RootNode
+    100006: CATRigLArmDigit11
+    100008: CATRigLArmDigit11Gizmo
+    100010: CATRigLArmDigit12
+    100012: CATRigLArmDigit12Gizmo
+    100014: CATRigLArmDigit13
+    100016: CATRigLArmDigit13Gizmo
+    100018: CATRigLArmDigit21
+    100020: CATRigLArmDigit21Gizmo
+    100022: CATRigLArmDigit22
+    100024: CATRigLArmDigit22Gizmo
+    100026: CATRigLArmDigit23
+    100028: CATRigLArmDigit23Gizmo
+    100030: CATRigLArmDigit31
+    100032: CATRigLArmDigit31Gizmo
+    100034: CATRigLArmDigit32
+    100036: CATRigLArmDigit32Gizmo
+    100038: CATRigLArmDigit33
+    100040: CATRigLArmDigit33Gizmo
+    100042: CATRigLArmDigit41
+    100044: CATRigLArmDigit41Gizmo
+    100046: CATRigLArmDigit42
+    100048: CATRigLArmDigit42Gizmo
+    100050: CATRigLArmDigit43
+    100052: CATRigLArmDigit43Gizmo
+    100054: CATRigLArmDigit51
+    100056: CATRigLArmDigit51Gizmo
+    100058: CATRigLArmDigit52
+    100060: CATRigLArmDigit52Gizmo
+    100062: CATRigLArmDigit53
+    100064: CATRigLArmDigit53Gizmo
+    100066: CATRigLLeg1
+    100068: CATRigLLeg1Gizmo
+    100070: CATRigLLeg2
+    100072: CATRigLLeg2Gizmo
+    100074: CATRigLLegAnkle
+    100076: CATRigLLegPlatform
+    100078: CATRigRArmDigit11
+    100080: CATRigRArmDigit11Gizmo
+    100082: CATRigRArmDigit12
+    100084: CATRigRArmDigit12Gizmo
+    100086: CATRigRArmDigit13
+    100088: CATRigRArmDigit13Gizmo
+    100090: CATRigRArmDigit21
+    100092: CATRigRArmDigit21Gizmo
+    100094: CATRigRArmDigit22
+    100096: CATRigRArmDigit22Gizmo
+    100098: CATRigRArmDigit23
+    100100: CATRigRArmDigit23Gizmo
+    100102: CATRigRArmDigit31
+    100104: CATRigRArmDigit31Gizmo
+    100106: CATRigRArmDigit32
+    100108: CATRigRArmDigit32Gizmo
+    100110: CATRigRArmDigit33
+    100112: CATRigRArmDigit33Gizmo
+    100114: CATRigRArmDigit41
+    100116: CATRigRArmDigit41Gizmo
+    100118: CATRigRArmDigit42
+    100120: CATRigRArmDigit42Gizmo
+    100122: CATRigRArmDigit43
+    100124: CATRigRArmDigit43Gizmo
+    100126: CATRigRArmDigit51
+    100128: CATRigRArmDigit51Gizmo
+    100130: CATRigRArmDigit52
+    100132: CATRigRArmDigit52Gizmo
+    100134: CATRigRArmDigit53
+    100136: CATRigRArmDigit53Gizmo
+    100138: CATRigRLeg1
+    100140: CATRigRLeg1Gizmo
+    100142: CATRigRLeg2
+    100144: CATRigRLeg2Gizmo
+    100146: CATRigRLegAnkle
+    100148: CATRigRLegPlatform
+    100150: Character001
+    100152: Eye Master Ctrl
+    100154: Head Bone
+    100156: Head BoneGizmo
+    100158: L Elbow Bone
+    100160: L Elbow BoneGizmo
+    100162: L Forearm Bone
+    100164: L Forearm BoneGizmo
+    100166: L Palm Bone
+    100168: L Palm BoneGizmo
+    100170: L Shoulder Bone
+    100172: L Shoulder BoneGizmo
+    100174: L_EYE
+    100176: LeftEye Ctrl
+    100178: Lower Chest  Bone
+    100180: Lower Chest  BoneGizmo
+    100182: Neck Bone
+    100184: Neck BoneGizmo
+    100186: Object013
+    100188: Object015
+    100190: Pelvis  Bone
+    100192: Pelvis  BoneGizmo
+    100194: R Elbow Bone
+    100196: R Elbow BoneGizmo
+    100198: R Forearm Bone
+    100200: R Forearm BoneGizmo
+    100202: R Palm Bone
+    100204: R Palm BoneGizmo
+    100206: R Shoulder Bone
+    100208: R Shoulder BoneGizmo
+    100210: R_EYE
+    100212: Ribs  Bone
+    100214: Ribs  BoneGizmo
+    100216: RightEye Ctrl
+    100218: Stomach Bone
+    100220: Stomach BoneGizmo
+    100222: Upper Chest  Bone
+    100224: Upper Chest  BoneGizmo
+    400000: A_BODY
+    400002: A_Clothes
+    400004: //RootNode
+    400006: CATRigLArmDigit11
+    400008: CATRigLArmDigit11Gizmo
+    400010: CATRigLArmDigit12
+    400012: CATRigLArmDigit12Gizmo
+    400014: CATRigLArmDigit13
+    400016: CATRigLArmDigit13Gizmo
+    400018: CATRigLArmDigit21
+    400020: CATRigLArmDigit21Gizmo
+    400022: CATRigLArmDigit22
+    400024: CATRigLArmDigit22Gizmo
+    400026: CATRigLArmDigit23
+    400028: CATRigLArmDigit23Gizmo
+    400030: CATRigLArmDigit31
+    400032: CATRigLArmDigit31Gizmo
+    400034: CATRigLArmDigit32
+    400036: CATRigLArmDigit32Gizmo
+    400038: CATRigLArmDigit33
+    400040: CATRigLArmDigit33Gizmo
+    400042: CATRigLArmDigit41
+    400044: CATRigLArmDigit41Gizmo
+    400046: CATRigLArmDigit42
+    400048: CATRigLArmDigit42Gizmo
+    400050: CATRigLArmDigit43
+    400052: CATRigLArmDigit43Gizmo
+    400054: CATRigLArmDigit51
+    400056: CATRigLArmDigit51Gizmo
+    400058: CATRigLArmDigit52
+    400060: CATRigLArmDigit52Gizmo
+    400062: CATRigLArmDigit53
+    400064: CATRigLArmDigit53Gizmo
+    400066: CATRigLLeg1
+    400068: CATRigLLeg1Gizmo
+    400070: CATRigLLeg2
+    400072: CATRigLLeg2Gizmo
+    400074: CATRigLLegAnkle
+    400076: CATRigLLegPlatform
+    400078: CATRigRArmDigit11
+    400080: CATRigRArmDigit11Gizmo
+    400082: CATRigRArmDigit12
+    400084: CATRigRArmDigit12Gizmo
+    400086: CATRigRArmDigit13
+    400088: CATRigRArmDigit13Gizmo
+    400090: CATRigRArmDigit21
+    400092: CATRigRArmDigit21Gizmo
+    400094: CATRigRArmDigit22
+    400096: CATRigRArmDigit22Gizmo
+    400098: CATRigRArmDigit23
+    400100: CATRigRArmDigit23Gizmo
+    400102: CATRigRArmDigit31
+    400104: CATRigRArmDigit31Gizmo
+    400106: CATRigRArmDigit32
+    400108: CATRigRArmDigit32Gizmo
+    400110: CATRigRArmDigit33
+    400112: CATRigRArmDigit33Gizmo
+    400114: CATRigRArmDigit41
+    400116: CATRigRArmDigit41Gizmo
+    400118: CATRigRArmDigit42
+    400120: CATRigRArmDigit42Gizmo
+    400122: CATRigRArmDigit43
+    400124: CATRigRArmDigit43Gizmo
+    400126: CATRigRArmDigit51
+    400128: CATRigRArmDigit51Gizmo
+    400130: CATRigRArmDigit52
+    400132: CATRigRArmDigit52Gizmo
+    400134: CATRigRArmDigit53
+    400136: CATRigRArmDigit53Gizmo
+    400138: CATRigRLeg1
+    400140: CATRigRLeg1Gizmo
+    400142: CATRigRLeg2
+    400144: CATRigRLeg2Gizmo
+    400146: CATRigRLegAnkle
+    400148: CATRigRLegPlatform
+    400150: Character001
+    400152: Eye Master Ctrl
+    400154: Head Bone
+    400156: Head BoneGizmo
+    400158: L Elbow Bone
+    400160: L Elbow BoneGizmo
+    400162: L Forearm Bone
+    400164: L Forearm BoneGizmo
+    400166: L Palm Bone
+    400168: L Palm BoneGizmo
+    400170: L Shoulder Bone
+    400172: L Shoulder BoneGizmo
+    400174: L_EYE
+    400176: LeftEye Ctrl
+    400178: Lower Chest  Bone
+    400180: Lower Chest  BoneGizmo
+    400182: Neck Bone
+    400184: Neck BoneGizmo
+    400186: Object013
+    400188: Object015
+    400190: Pelvis  Bone
+    400192: Pelvis  BoneGizmo
+    400194: R Elbow Bone
+    400196: R Elbow BoneGizmo
+    400198: R Forearm Bone
+    400200: R Forearm BoneGizmo
+    400202: R Palm Bone
+    400204: R Palm BoneGizmo
+    400206: R Shoulder Bone
+    400208: R Shoulder BoneGizmo
+    400210: R_EYE
+    400212: Ribs  Bone
+    400214: Ribs  BoneGizmo
+    400216: RightEye Ctrl
+    400218: Stomach Bone
+    400220: Stomach BoneGizmo
+    400222: Upper Chest  Bone
+    400224: Upper Chest  BoneGizmo
+    2100000: 'Material #24'
+    2100002: 'Material #13'
+    2100004: 'Material #8'
+    2100006: 'Material #7'
+    2100008: 01 - Default
+    2100010: 02 - Default
+    2300000: L_EYE
+    2300002: Object013
+    2300004: Object015
+    2300006: R_EYE
+    3300000: L_EYE
+    3300002: Object013
+    3300004: Object015
+    3300006: R_EYE
+    4300000: R_EYE
+    4300002: L_EYE
+    4300004: Object015
+    4300006: Object013
+    4300008: A_BODY
+    4300010: A_Clothes
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: A_BODY
+    13700002: A_Clothes
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
