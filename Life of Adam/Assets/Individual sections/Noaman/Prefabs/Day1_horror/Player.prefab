@@ -169,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391477524881462}
   m_LocalRotation: {x: 0, y: -0.47869182, z: 0, w: 0.8779831}
-  m_LocalPosition: {x: -12.996, y: -0.755, z: 7.279}
+  m_LocalPosition: {x: 13.17, y: -0.755, z: 9.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4002673041278424}
@@ -591,8 +591,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 1941845338889260}
   straffeVel: 4
-  runVel: 12
-  walkVel: 8
+  runVel: 8
+  walkVel: 5
   jumpVel: 4
   deathSmoothness: 0.1
   coruchSmoothness: 0.01
@@ -608,6 +608,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3de8ad386b405ad46b79643532a9bd18, type: 3}
   - {fileID: 8300000, guid: 3451e546159877748957101b1f92016b, type: 3}
   - {fileID: 8300000, guid: 52336392f33024d4aa68e6b534f8a87b, type: 3}
+  myAnim: {fileID: 0}
 --- !u!114 &114188954190196164
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -806,6 +807,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a8826cdce794b869dc546a749846b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dropDist: 0
 --- !u!114 &114755999948104074
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -11,6 +11,7 @@ TagManager:
   - Pick
   - Weak
   - Ground
+  - Green
   layers:
   - Default
   - TransparentFX

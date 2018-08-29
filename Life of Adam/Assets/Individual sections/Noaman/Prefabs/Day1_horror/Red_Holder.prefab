@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 33015297176977384}
   - component: {fileID: 65803810567808450}
   - component: {fileID: 23559513470370078}
-  - component: {fileID: 114499126842232460}
   m_Layer: 0
   m_Name: RED
   m_TagString: Untagged
@@ -58,7 +57,7 @@ GameObject:
   - component: {fileID: 65956287578614234}
   - component: {fileID: 114489047825658656}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Cube_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70,15 +69,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242926236475758}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 18.38, y: 6.36, z: 22}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 1.6901951, y: 4.9750013, z: -10.926971}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4998029516268450}
   - {fileID: 4670801422930398}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!4 &4670801422930398
 Transform:
   m_ObjectHideFlags: 1
@@ -120,7 +119,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d917dea81bd453647a90d4a3ee614ab3, type: 2}
+  - {fileID: 2100000, guid: 5cbf1fe9fe0a1434fab42458dcd83a9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -237,27 +236,4 @@ MonoBehaviour:
   player: {fileID: 0}
   isBlue: 0
   isRed: 1
---- !u!114 &114499126842232460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1191939081977204}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f04476cb13c9b648ab427ad2b1fc93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapeSlot: {fileID: 0}
-  sphereRadius: 3
-  layer:
-    serializedVersion: 2
-    m_Bits: 256
-  Dist: 3
-  otherObj: {fileID: 0}
-  myDistText: {fileID: 0}
-  thisName: RedObjective
-  objective: 0
-  player: {fileID: 0}
-  isBlue: 0
-  isRed: 0
+  isGreen: 0

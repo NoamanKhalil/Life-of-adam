@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class objectHandlerCs : MonoBehaviour
 {
-
+    [Header("dist before the object falls and resets")]
+    public float dropDist;
 	Vector3 postiion;
 	Quaternion rotation;
 
@@ -13,9 +14,18 @@ public class objectHandlerCs : MonoBehaviour
 	{
 		postiion = this.transform.position;
 		rotation = this.transform.rotation;
+        dropDist = 5.0f;
 		
 	}
+    void Update()
+    {
+        float dist = postiion.y - this.transform.position.y;
+        if ( dist >dropDist )
+        {
+            Reset();
+        }
 
+    }
 
     public void Reset() 
 	{

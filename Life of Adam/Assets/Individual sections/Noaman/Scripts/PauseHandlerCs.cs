@@ -43,6 +43,7 @@ public class PauseHandlerCs : MonoBehaviour
             StopAllCoroutines();
 			StartCoroutine(uiFadein(can));
 			Time.timeScale = 1;
+
 			return;
 
 
@@ -57,7 +58,7 @@ public class PauseHandlerCs : MonoBehaviour
             StopAllCoroutines();
 			StartCoroutine(uiFadeout(can));
 			Time.timeScale = 0;
-			return;
+            return;
 		}
 	}
 

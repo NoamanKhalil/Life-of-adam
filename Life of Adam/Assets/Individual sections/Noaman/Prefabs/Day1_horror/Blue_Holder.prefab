@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 65070394619833098}
   - component: {fileID: 114709570496501792}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube_Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 33200131153719524}
   - component: {fileID: 65823130911690550}
   - component: {fileID: 23793573158519336}
-  - component: {fileID: 114177983071077682}
   m_Layer: 0
   m_Name: BLUE
   m_TagString: Untagged
@@ -70,15 +69,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1821201867441048}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -21.1, y: 4, z: -1.6}
+  m_LocalRotation: {x: -0.025771363, y: -0.706637, z: -0.706637, w: 0.025771363}
+  m_LocalPosition: {x: 11.027648, y: 1.5750004, z: -12.582225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4387687826686024}
   - {fileID: 4780933360428648}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90.00001, y: 0, z: -175.82301}
 --- !u!4 &4387687826686024
 Transform:
   m_ObjectHideFlags: 1
@@ -155,7 +154,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 1321d5bd8d9861a42a1cebdcdd61df73, type: 2}
+  - {fileID: 2100000, guid: b68008143e33f44e998d0160373cf6b3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,30 +212,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114177983071077682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1756923211996708}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f04476cb13c9b648ab427ad2b1fc93f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shapeSlot: {fileID: 0}
-  sphereRadius: 3
-  layer:
-    serializedVersion: 2
-    m_Bits: 256
-  Dist: 3
-  otherObj: {fileID: 0}
-  myDistText: {fileID: 0}
-  thisName: BlueObjective
-  objective: 0
-  player: {fileID: 0}
-  isBlue: 0
-  isRed: 0
 --- !u!114 &114709570496501792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -261,3 +236,4 @@ MonoBehaviour:
   player: {fileID: 0}
   isBlue: 1
   isRed: 0
+  isGreen: 0

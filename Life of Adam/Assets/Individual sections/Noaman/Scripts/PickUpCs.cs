@@ -13,6 +13,8 @@ public class PickUpCs : MonoBehaviour
     private GameObject redPlacePos;
     [SerializeField]
     private GameObject bluePlacePos;
+    [SerializeField]
+    private GameObject greenPlacePos;
     [Header("Add the child object 'PickPoint'")]
     [SerializeField]
     private GameObject pickupPoint;
@@ -73,7 +75,7 @@ public class PickUpCs : MonoBehaviour
 			{
 				Debug.DrawRay(cam.transform.position, cam.transform.TransformDirection(Vector3.forward) * 10, Color.black);
 				//Debug.Log("Did Hit");
-				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue"||hit.collider.gameObject.tag == "Pick")
+				if (hit.collider.gameObject.tag == "Red" || hit.collider.gameObject.tag == "Blue"|| hit.collider.gameObject.tag == "Green" || hit.collider.gameObject.tag == "Pick")
 				{
                     //fp.onAnim(6);
 
@@ -137,6 +139,25 @@ public class PickUpCs : MonoBehaviour
 				isholding = false;
 				day.setRedTrue();
 				GetComponent<UiHandlerCs>().setRay(true);
+                fp.setHolding(false);
+            }
+            else if (pickedObj.tag == "Green" && Vector3.Distance(this.transform.position, greenPlacePos.transform.position) < Dist && greenPlacePos != null)
+            {
+                //fp.onAnim(7);
+                Debug.Log("Green code called ");
+                Rigidbody tempRb = GetComponentInChildren<Rigidbody>();
+                //fp.setSpeed(8.0f);
+                Destroy(pickupPoint.GetComponentInChildren<FixedJoint>());
+                tempRb.useGravity = true;
+                pickupPoint.transform.DetachChildren();
+                tempRb.constraints &= ~(RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ);
+                pickedObj.SetActive(false);
+                pickedObj = null;
+                greenPlacePos.GetComponent<PuzzleCs>().setSlotActive();
+                greenPlacePos.GetComponent<PuzzleCs>().setSlotActive();
+                isholding = false;
+                day.setGreenTrue();
+                GetComponent<UiHandlerCs>().setRay(true);
                 fp.setHolding(false);
             }
             else if (pickedObj != null &&isholding)

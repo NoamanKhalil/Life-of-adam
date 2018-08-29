@@ -1236,7 +1236,7 @@ MonoBehaviour:
   mainTimer: 13
   goodTimer: 4
   badTimer: 4
-  levelName: 
+  levelName: TAreaPost
 --- !u!114 &1523942930
 MonoBehaviour:
   m_ObjectHideFlags: 0

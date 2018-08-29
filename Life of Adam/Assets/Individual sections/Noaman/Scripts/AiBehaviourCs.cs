@@ -36,14 +36,12 @@ public class AiBehaviourCs : MonoBehaviour
 	private bool isPathA;
     private bool isPathB;
     private AiAnimator myAnimator;
-	void Awake()
-	{
-		 steer= this.gameObject.AddComponent<MySteeringBehaviour>();
-        agent.autoBraking = false;
-	}
     // Use this for initialization
     void Start ()
     {
+        day = GameObject.FindObjectOfType<LevelManagerCs>();
+        steer = this.gameObject.AddComponent<MySteeringBehaviour>();
+        agent.autoBraking = false;
         if (!string.IsNullOrEmpty(nameA))
         {
             pathToFollowA = GameObject.Find(nameA).GetComponentsInChildren<Transform>();
@@ -56,7 +54,7 @@ public class AiBehaviourCs : MonoBehaviour
 		agent.autoBraking = false;
 		isPathA = true;
 		isPathB = false;
-        myAnimator = GetComponent<AiAnimator>();
+        //myAnimator = GetComponent<AiAnimator>();
     }
 	
 	// Update is called once per frame
@@ -64,7 +62,7 @@ public class AiBehaviourCs : MonoBehaviour
     {
         if (nameA!=null||nameB!=null)
         {
-            Debug.Log("AI WORKING");
+            //Debug.Log("AI WORKING");
             aiUpdate();
         }
 
@@ -147,7 +145,7 @@ public class AiBehaviourCs : MonoBehaviour
 	void chase()
 	{
 		agent.SetDestination(playerObj.transform.position);
-        myAnimator.SetChase();
+        //myAnimator.SetChase();
 	}
 
 
@@ -156,7 +154,7 @@ public class AiBehaviourCs : MonoBehaviour
 
         if (arr.Length == 0)
             return;
-        myAnimator.SetPatrol();
+        //myAnimator.SetPatrol();
         // Set the agent to go to the currently selected destination.
         agent.destination = arr[posPoint].position;
         // Choose the next point in the array as the destination,

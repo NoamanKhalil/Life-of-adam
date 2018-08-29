@@ -11,6 +11,8 @@ public class Scene  : MonoBehaviour
     bool mytimeScale = true;
     public GameObject aboutPanel;
     public GameObject mainPanel;
+
+
     public void LoadScene(string str)
     {
         SceneManager.LoadScene(str);

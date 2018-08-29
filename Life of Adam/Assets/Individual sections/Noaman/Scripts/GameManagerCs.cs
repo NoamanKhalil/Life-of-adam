@@ -11,11 +11,11 @@ public class GameManagerCs : MonoBehaviour
     public float mainTimer;
     public float goodTimer;
     public float badTimer;
-	public string levelNameGood;
-    public string levelNameBad;
-
+    [Header("Give T Area name post-tutorial t area")]
+    public string levelName;
     bool SceneA;
     bool SceneB;
+
 	// Use this for initialization
 	void Start ()
     {
@@ -34,17 +34,14 @@ public class GameManagerCs : MonoBehaviour
             videoPlayer.Pause();
             buttons.SetActive(true);
         }
-
         if (SceneA)
         {
             goodTimer -= Time.deltaTime;
             mainTimer = 10;
             if (goodTimer <= 0)
             {
-
-                Debug.Log("Scene A loaded ");
-                //SceneManager.LoadScene("SceneA");
-				SceneManager.LoadScene(levelNameGood);
+            
+                SceneManager.LoadScene(levelName);
             }
         }
         if (SceneB)
@@ -53,10 +50,7 @@ public class GameManagerCs : MonoBehaviour
             mainTimer = 10;
             if (badTimer <= 0)
             {
-                // put Game scene here
-                Debug.Log("Scene B loaded ");
-                //SceneManager.LoadScene("TestScene");
-				SceneManager.LoadScene(levelNameBad);
+                SceneManager.LoadScene(levelName);
             }
         }
 

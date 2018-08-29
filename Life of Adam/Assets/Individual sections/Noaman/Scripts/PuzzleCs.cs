@@ -10,6 +10,7 @@ public class PuzzleCs : MonoBehaviour
     public LayerMask layer;
     [SerializeField]
     private float Dist;
+    [Header("Add the cube to of the corresponding name IE: the cube to point")]
     [SerializeField]
     private GameObject otherObj;
     [SerializeField]
@@ -23,6 +24,7 @@ public class PuzzleCs : MonoBehaviour
 
 	public bool isBlue;
 	public bool isRed;
+    public bool isGreen;
     // Use this for initialization
     void Start ()
     {
@@ -35,8 +37,8 @@ public class PuzzleCs : MonoBehaviour
     {
 		if (Vector3.Distance(this.transform.position, player.transform.position) <= Dist)
 		{
-			Debug.Log("set can drop is working ");
-			Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
+			//Debug.Log("set can drop is working ");
+			//Debug.Log(Vector3.Distance(this.transform.position, player.transform.position));
 			player.GetComponent<PickUpCs>().setCanDrop(true);
 		}
 		else if (Vector3.Distance(this.transform.position, player.transform.position) >= Dist)

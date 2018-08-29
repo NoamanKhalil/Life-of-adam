@@ -33,7 +33,7 @@ public class CameraControl : MonoBehaviour
 	void Update () 
 	{
 
-		if (canMove && Time.timeScale>= 1)
+		if (canMove && Time.timeScale== 1)
 		{
 			CameraMove();
 		}

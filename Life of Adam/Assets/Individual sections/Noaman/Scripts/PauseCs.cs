@@ -8,10 +8,13 @@ public class PauseCs : MonoBehaviour {
 	{
 		Time.timeScale = 0;
 		Cursor.visible = true;
-	}
+        Cursor.lockState = CursorLockMode.None;
+
+    }
 	public void OnPlay()
 	{
 		Time.timeScale = 1;
 		Cursor.visible = false;
-	}
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }

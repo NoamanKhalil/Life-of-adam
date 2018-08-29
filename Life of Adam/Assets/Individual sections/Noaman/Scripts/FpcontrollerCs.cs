@@ -128,7 +128,7 @@ public class FpcontrollerCs : MonoBehaviour
             onAnim(5);
         }*/
 
-        if (Time.timeScale <= 1)
+        if (Time.timeScale >= 1)
 		{
 			Run();
 			if (canMove)
@@ -192,7 +192,7 @@ public class FpcontrollerCs : MonoBehaviour
 		if (Physics.Raycast(pos, dirD, out hit, distance))
 		{
 			rb.constraints= RigidbodyConstraints.FreezePositionY|RigidbodyConstraints.FreezeRotation;
-			Debug.Log(Physics.Raycast(pos, dirD, out hit, distance));
+			//Debug.Log(Physics.Raycast(pos, dirD, out hit, distance));
 
 		}
 		else
