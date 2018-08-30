@@ -163,13 +163,15 @@ public class AiBehaviourCs : MonoBehaviour
 
 	}
 
-	void setA()
+	public void setA()
 	{
 		isPathA = true;
+        isPathB = false;
 	}
-	void setB()
+	public void setB()
 	{
 		isPathB = true;
+        isPathA = false;
 	}
 
 	void idle()
