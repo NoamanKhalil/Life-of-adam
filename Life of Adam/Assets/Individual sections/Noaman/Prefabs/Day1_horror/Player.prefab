@@ -169,7 +169,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1391477524881462}
   m_LocalRotation: {x: 0, y: -0.47869182, z: 0, w: 0.8779831}
-  m_LocalPosition: {x: 13.17, y: -0.755, z: 9.19}
+  m_LocalPosition: {x: 4.835555, y: 1, z: -21.299217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4002673041278424}
@@ -759,6 +759,7 @@ MonoBehaviour:
   fp: {fileID: 114122618876267192}
   redPlacePos: {fileID: 0}
   bluePlacePos: {fileID: 0}
+  greenPlacePos: {fileID: 0}
   pickupPoint: {fileID: 1246934293026546}
   cam: {fileID: 1941845338889260}
   pickedObj: {fileID: 0}
@@ -777,7 +778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fc3be7cdec4d1147bed4e56236d07b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pick: []
+  pick:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   push:
   - {fileID: 0}
   weak:
