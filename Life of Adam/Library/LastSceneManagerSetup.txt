@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: Assets/Individual sections/Leon/Scenes/TAreaPost.unity
+=======
+- path: Assets/Individual sections/Leon/Scenes/Day_2_Happy.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
