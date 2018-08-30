@@ -29,7 +29,7 @@ public class TimerShader : MonoBehaviour
 	private float powerUiAlpha;
     [Header("AudioSourceOnCamera")]
     public AudioSource aud;
-    [Header("0 start audio for ability , 1 deactivate ")]
+    [Header("0 start audio for ability,1 for during audio activity , 2 deactivate ")]
     public AudioClip[] clip;
 	// Use this for initialization
 	void Start()
@@ -100,7 +100,7 @@ public class TimerShader : MonoBehaviour
 
             if (!aud.isPlaying)
             {
-                aud.clip = clip[3];
+                aud.clip = clip[2];
                 aud.Play();
             }
             else
