@@ -44,7 +44,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 1
-  controlID: 26
+  controlID: 127
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 27
+  controlID: 128
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -113,8 +113,8 @@ MonoBehaviour:
     y: 0
     width: 216
     height: 599
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 42
+  controlID: 129
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 43
+  controlID: 130
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,20 +346,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Individual sections/Leon/GameObjects/Environments
+    - Assets/Individual sections/Leon/Materials/Test Materials
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Individual sections/Leon/GameObjects/Environments
+  - Assets/Individual sections/Leon/Materials/Test Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Unity Projects\Final\Life-of-adam\Life of Adam
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 78}
-    m_SelectedIDs: 1e830000
-    m_LastClickedID: 33566
-    m_ExpandedIDs: 000000008e63000002700000e07000004871000098710000d67100001c720000187400007c740000b27e00000883000048830000568300009c830000b4830000da830000128d0000ce8d0000449c00004e9c00008aa1000068a2000008ad00000aad00000cad00000ead000000ca9a3bffffff7f
+    m_SelectedIDs: ae310000
+    m_LastClickedID: 12718
+    m_ExpandedIDs: 00000000922f0000a03000003431000098310000e831000050320000c43400005c3500007c400000164500006c4500007a450000e0450000fe45000034460000d84f000044500000da500000d85f0000e65f000062650000ea6a00002a7c00002c7c00002e7c0000307c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -387,7 +387,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000008e63000002700000e07000004871000098710000d67100001c720000187400007c7400000883000048830000568300009c830000b4830000da830000128d0000ce8d0000449c00004e9c00008aa1000068a2000008ad00000aad00000cad00000ead0000
+    m_ExpandedIDs: 00000000922f0000a03000003431000098310000e831000050320000c43400005c3500007c400000164500006c4500007a450000e0450000fe45000034460000d84f000044500000da500000d85f0000e65f000062650000ea6a00002a7c00002c7c00002e7c0000307c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,20 +503,20 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2a7f0000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 70e0f4ffb2e0f4ff7ae3f4ff90f1f4ff263cf5fffc90f5ff6ad4faff72d4faffdcd5faffe2d5faffe8d5faffeed5fafff4d5fafffad5faff00d6faff06d6faff0cd6faff12d6faff18d6faff1ed6faff24d6faff2ad6faff40dafaff22dcfafff0dcfaff000000000c530100
+    m_ExpandedIDs: 5c2af7ff082cf7ffa865f7ff2aa4ffff30a4ffff36a4ffff3ca4ffff42a4ffff48a4ffff4ea4ffff54a4ffff5aa4ffff60a4ffff66a4ffff6ca4ffff72a4ffff78a4ffff7ea4ffff84a4ffff8aa4ffff90a4ffff96a4ffff9ca4ffffa2a4ffffa8a4ffffd8a9ffffdaa9fffff0a9fffff2a9ffff2caaffff78aaffff7aaaffff7caafffff8acffff1efbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Ceiling_w_Lights_BballHrr
-      m_OriginalName: Ceiling_w_Lights_BballHrr
+      m_Name: Directional Light West
+      m_OriginalName: Directional Light West
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -728910
+      m_UserData: -584538
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 5}
     m_SearchString: 
   m_ExpandedScenes:
-  - Day_2_Horror
+  - Day_2_Happy
   m_CurrenRootInstanceID: 0
   m_LockTracker:
     m_IsLocked: 0
@@ -555,14 +555,14 @@ MonoBehaviour:
     height: 578
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 2850.510193785832
+  lastFramingTime: 3269.8302501374815
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.566458, y: 0.64203906, z: -0.9438577}
+    m_Target: {x: -3.1141744, y: -0.080783874, z: -0.25459236}
     speed: 2
-    m_Value: {x: 1.566458, y: 0.64203906, z: -0.9438577}
+    m_Value: {x: -3.1141744, y: -0.080783874, z: -0.25459236}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -590,13 +590,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.054821156, y: -0.70310146, z: 0.054528818, w: 0.70687306}
+    m_Target: {x: 0.14329138, y: 0.12198669, z: -0.017800855, w: 0.9819725}
     speed: 2
-    m_Value: {x: 0.05482116, y: -0.7031015, z: 0.05452882, w: 0.7068731}
+    m_Value: {x: 0.14329138, y: 0.12198669, z: -0.017800855, w: 0.9819725}
   m_Size:
-    m_Target: 2.8539498
+    m_Target: 0.48164684
     speed: 2
-    m_Value: 2.8539498
+    m_Value: 0.48164684
   m_Ortho:
     m_Target: 0
     speed: 2

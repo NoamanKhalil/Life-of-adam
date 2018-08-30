@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Individual sections/Leon/Scenes/Day_2_Horror.unity
+- path: Assets/Individual sections/Leon/Scenes/Day_2_Happy.unity
   isLoaded: 1
   isActive: 1
