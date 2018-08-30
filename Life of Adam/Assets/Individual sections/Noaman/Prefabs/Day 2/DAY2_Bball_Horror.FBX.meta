@@ -1,0 +1,1728 @@
+fileFormatVersion: 2
+guid: 9f6904eecf94e4570a6e357e55118b46
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: AC1_Gym_BballHrr
+    100002: AC2_Gym_BballHrr
+    100004: AC3_Gym_BballHrr
+    100006: AC4_Gym_BballHrr
+    100008: AC5_BoysLockerRoom_BballHrr
+    100010: AC6_BoysLockerRoom_BballHrr
+    100012: AC7_GirlsLockerRoom_BballHrr
+    100014: AC8_GirlsLockerRoom_BballHrr
+    100016: Alarm1_Gym_BballHrr
+    100018: Basketball Lowpoly036
+    100020: Basketball Lowpoly037
+    100022: Basketball Lowpoly038
+    100024: Basketball Lowpoly039
+    100026: Basketball Lowpoly040
+    100028: Basketball Lowpoly041
+    100030: Basketball Lowpoly042
+    100032: Basketball Lowpoly043
+    100034: Basketball Lowpoly044
+    100036: Basketball Lowpoly045
+    100038: Basketball Lowpoly046
+    100040: Basketball Lowpoly047
+    100042: BballCage_Cover
+    100044: BballCage_Gym_BballHrr
+    100046: BballCageBase
+    100048: BballhoopStand1_Gym_BballHrr
+    100050: BballhoopStand2_Gym_BballHrr
+    100052: Bench1_Gym_BballHrr
+    100054: Bench2_Gym_BballHrr
+    100056: Bench3_Gym_BballHrr
+    100058: Bench4_Gym_BballHrr
+    100060: Bench5_GirlsLockerRoom_BballHrr
+    100062: Bench6_GirlsLockerRoom_BballHrr
+    100064: Bench7_GirlsLockerRoom_BballHrr
+    100066: Bench8_GirlsLockerRoom_BballHrr
+    100068: Board1_BoysLockerRoom_BballHrr
+    100070: Board1_BoysLockerRoom_BballHrr 1
+    100072: Board1_Papers
+    100074: Board2_GirlsLockerRoom_BballHrr
+    100076: Board3_GirlsLockerRoom_BballHrr
+    100078: Boards2&3_GirlsLockerRoom_BballHrr
+    100080: Bottle_WaterCooler1
+    100082: Bottle_WaterCooler2
+    100084: Bottle_WaterCooler3
+    100086: Ceiling_BballHrr
+    100088: Ceiling_w_Lights_BballHrr
+    100090: CeilingLight087
+    100092: CeilingLight088
+    100094: CeilingLight089
+    100096: CeilingLight090
+    100098: CeilingLight091
+    100100: CeilingLight092
+    100102: CeilingLight093
+    100104: CeilingLight094
+    100106: CeilingLight095
+    100108: CeilingLight096
+    100110: CeilingLight097
+    100112: CeilingLight098
+    100114: CeilingLight099
+    100116: CeilingLight100
+    100118: CeilingLights_Base135
+    100120: CeilingLights_Base136
+    100122: CeilingLights_Base137
+    100124: CeilingLights_Base138
+    100126: CeilingLights_Base139
+    100128: CeilingLights_Base140
+    100130: CeilingLights_Base141
+    100132: CeilingLights_Base142
+    100134: CeilingLights_Base143
+    100136: CeilingLights_Base144
+    100138: CeilingLights_Base145
+    100140: CeilingLights_Base146
+    100142: CeilingLights_Base147
+    100144: CeilingLights_Base148
+    100146: CeilingLights_Bulbs107
+    100148: CeilingLights_Bulbs108
+    100150: CeilingLights_Bulbs109
+    100152: CeilingLights_Bulbs110
+    100154: CeilingLights_Bulbs111
+    100156: CeilingLights_Bulbs112
+    100158: CeilingLights_Bulbs113
+    100160: CeilingLights_Bulbs114
+    100162: CeilingLights_Bulbs115
+    100164: CeilingLights_Bulbs116
+    100166: CeilingLights_Bulbs117
+    100168: CeilingLights_Bulbs118
+    100170: CeilingLights_Bulbs119
+    100172: CeilingLights_Bulbs120
+    100174: Clock1_Gym_BballHrr
+    100176: Clock2_BoysLockerRoom_BballHrr
+    100178: Clock3_GirlsLockerRoom_BballHrr
+    100180: Clock4_BoysLockerRoom_BballHrr
+    100182: Clock4_GirlsLockerRoom
+    100184: ColdNozel_WaterCooler1
+    100186: ColdNozel_WaterCooler1 1
+    100188: ColdNozel_WaterCooler2
+    100190: ColdNozel_WaterCooler2 1
+    100192: ColdNozel_WaterCooler3
+    100194: ColdNozel_WaterCooler3 1
+    100196: Cone1
+    100198: Cone2
+    100200: Cone3
+    100202: Cone4
+    100204: Cone5
+    100206: Cone6
+    100208: Cone7
+    100210: Cone8
+    100212: Cone9
+    100214: Cups_WaterCooler1_Gym_BballHrr
+    100216: Cups_WaterCooler2_BoysLockerRoom_BballHrr
+    100218: Cups_WaterCooler3_GirlsLockerRoom_BballHrr
+    100220: //RootNode
+    100222: Door1_Gym_BballHrr
+    100224: Door1_Gym_BballHrr 1
+    100226: Door2_BoysLockerRoom_BballHrr
+    100228: Door2_BoysLockerRoom_BballHrr 1
+    100230: Door3_GirlsLockerRoom_BballHrr
+    100232: Door3_GirlsLockerRoom_BballHrr 1
+    100234: Door4_Gym_BballHrr
+    100236: Door4_Gym_BballHrr 1
+    100238: DoorFrame1_Gym_BballHrr
+    100240: DoorFrame2_BoysLockerRoom_BballHrr
+    100242: DoorFrame3_GirlsLockerRoom_BballHrr
+    100244: DoorFrame4_Gym_BballHrr
+    100246: Filler1_BoysLockerRoom
+    100248: Filler1_GirlsLockerRoom
+    100250: Filler2_BoysLockerRoom
+    100252: Filler2_GirlsLockerRoom
+    100254: Filler3_BoysLockerRoom
+    100256: Filler3_GirlsLockerRoom
+    100258: Fillers_BoysLockerRoom
+    100260: Fillers_GirlsLockerRoom
+    100262: Floor_BballHrr
+    100264: HotNozel_WaterCooler1
+    100266: HotNozel_WaterCooler1 1
+    100268: HotNozel_WaterCooler2
+    100270: HotNozel_WaterCooler2 1
+    100272: HotNozel_WaterCooler3
+    100274: HotNozel_WaterCooler3 1
+    100276: LightSwitch1_Class021
+    100278: LightSwitch1_Gym_BballHrr
+    100280: LightSwitch2_Gym_BballHrr
+    100282: LightSwitch3_Gym_BballHrr
+    100284: LightSwitch4_BoysLockerRoom_BballHrr
+    100286: LightSwitch5_BoysLockerRoom_BballHrr
+    100288: Line258
+    100290: Locker1_BoysLockerRoom
+    100292: Locker1_GirlsLockerRoom
+    100294: Locker2_BoysLockerRoom
+    100296: Locker2_GirlsLockerRoom
+    100298: Locker3_BoysLockerRoom
+    100300: Locker3_GirlsLockerRoom
+    100302: Locker4_BoysLockerRoom
+    100304: Locker4_GirlsLockerRoom
+    100306: Locker5_BoysLockerRoom
+    100308: Locker5_GirlsLockerRoom
+    100310: Locker6_BoysLockerRoom
+    100312: Locker6_GirlsLockerRoom
+    100314: Locker7_BoysLockerRoom
+    100316: Locker7_GirlsLockerRoom
+    100318: Locker8_BoysLockerRoom
+    100320: Locker8_GirlsLockerRoom
+    100322: Locker9_BoysLockerRoom
+    100324: Locker9_GirlsLockerRoom
+    100326: LockerBase_Locker1_BoysLockerRoom
+    100328: LockerBase_Locker1_GirsLockerRoom_BballHrr
+    100330: LockerBase_Locker2_BoysLockerRoom
+    100332: LockerBase_Locker2_GirsLockerRoom_BballHrr
+    100334: LockerBase_Locker3_BoysLockerRoom
+    100336: LockerBase_Locker3_GirsLockerRoom_BballHrr
+    100338: LockerBase_Locker4_BoysLockerRoom
+    100340: LockerBase_Locker4_GirsLockerRoom_BballHrr
+    100342: LockerBase_Locker5_BoysLockerRoom
+    100344: LockerBase_Locker5_GirsLockerRoom_BballHrr
+    100346: LockerBase_Locker6_BoysLockerRoom
+    100348: LockerBase_Locker6_GirsLockerRoom_BballHrr
+    100350: LockerBase_Locker7_BoysLockerRoom
+    100352: LockerBase_Locker7_GirsLockerRoom_BballHrr
+    100354: LockerBase_Locker8_BoysLockerRoom
+    100356: LockerBase_Locker8_GirsLockerRoom_BballHrr
+    100358: LockerBase_Locker9_BoysLockerRoom
+    100360: LockerBase_Locker9_GirsLockerRoom_BballHrr
+    100362: LockerBench1_Locker6
+    100364: LockerBench1_Locker9
+    100366: LockerBench2_Locker6
+    100368: LockerBench2_Locker9
+    100370: LockerBench_Locker1
+    100372: LockerBench_Locker1 1
+    100374: LockerBench_Locker2
+    100376: LockerBench_Locker2 1
+    100378: LockerBench_Locker3
+    100380: LockerBench_Locker3 1
+    100382: LockerBench_Locker4
+    100384: LockerBench_Locker4 1
+    100386: LockerBench_Locker5
+    100388: LockerBench_Locker5 1
+    100390: LockerBench_Locker5 2
+    100392: LockerBench_Locker7
+    100394: LockerBench_Locker7 1
+    100396: LockerBench_Locker8
+    100398: LockerBench_Locker8 1
+    100400: LockerBench_Locker9
+    100402: LockerDoor1_Locker1
+    100404: LockerDoor1_Locker1 1
+    100406: LockerDoor1_Locker2
+    100408: LockerDoor1_Locker2 1
+    100410: LockerDoor1_Locker3
+    100412: LockerDoor1_Locker3 1
+    100414: LockerDoor1_Locker4
+    100416: LockerDoor1_Locker4 1
+    100418: LockerDoor1_Locker5
+    100420: LockerDoor1_Locker5 1
+    100422: LockerDoor1_Locker6
+    100424: LockerDoor1_Locker6 1
+    100426: LockerDoor1_Locker7
+    100428: LockerDoor1_Locker7 1
+    100430: LockerDoor1_Locker8
+    100432: LockerDoor1_Locker8 1
+    100434: LockerDoor1_Locker9
+    100436: LockerDoor1_Locker9 1
+    100438: LockerDoor2_Locker1
+    100440: LockerDoor2_Locker1 1
+    100442: LockerDoor2_Locker2
+    100444: LockerDoor2_Locker3
+    100446: LockerDoor2_Locker3 1
+    100448: LockerDoor2_Locker4
+    100450: LockerDoor2_Locker4 1
+    100452: LockerDoor2_Locker5
+    100454: LockerDoor2_Locker5 1
+    100456: LockerDoor2_Locker6
+    100458: LockerDoor2_Locker6 1
+    100460: LockerDoor2_Locker7
+    100462: LockerDoor2_Locker7 1
+    100464: LockerDoor2_Locker8
+    100466: LockerDoor2_Locker8 1
+    100468: LockerDoor2_Locker9
+    100470: LockerDoor2_Locker9 1
+    100472: LockerDoor3_Locker1
+    100474: LockerDoor3_Locker1 1
+    100476: LockerDoor3_Locker2
+    100478: LockerDoor3_Locker2 1
+    100480: LockerDoor3_Locker2 2
+    100482: LockerDoor3_Locker3
+    100484: LockerDoor3_Locker3 1
+    100486: LockerDoor3_Locker4
+    100488: LockerDoor3_Locker4 1
+    100490: LockerDoor3_Locker5
+    100492: LockerDoor3_Locker5 1
+    100494: LockerDoor3_Locker6
+    100496: LockerDoor3_Locker6 1
+    100498: LockerDoor3_Locker7
+    100500: LockerDoor3_Locker7 1
+    100502: LockerDoor3_Locker8
+    100504: LockerDoor3_Locker8 1
+    100506: LockerDoor3_Locker9
+    100508: LockerDoor3_Locker9 1
+    100510: LockerDoor4_Locker1
+    100512: LockerDoor4_Locker1 1
+    100514: LockerDoor4_Locker2
+    100516: LockerDoor4_Locker2 1
+    100518: LockerDoor4_Locker3
+    100520: LockerDoor4_Locker3 1
+    100522: LockerDoor4_Locker4
+    100524: LockerDoor4_Locker4 1
+    100526: LockerDoor4_Locker5
+    100528: LockerDoor4_Locker5 1
+    100530: LockerDoor4_Locker6
+    100532: LockerDoor4_Locker6 1
+    100534: LockerDoor4_Locker7
+    100536: LockerDoor4_Locker7 1
+    100538: LockerDoor4_Locker8
+    100540: LockerDoor4_Locker8 1
+    100542: LockerDoor4_Locker9
+    100544: LockerDoor4_Locker9 1
+    100546: LowPolyCup085
+    100548: LowPolyCup086
+    100550: LowPolyCup087
+    100552: LowPolyCup088
+    100554: LowPolyCup089
+    100556: LowPolyCup090
+    100558: LowPolyCup091
+    100560: LowPolyCup092
+    100562: LowPolyCup093
+    100564: LowPolyCup094
+    100566: LowPolyCup095
+    100568: LowPolyCup096
+    100570: LowPolyCup097
+    100572: LowPolyCup098
+    100574: LowPolyCup099
+    100576: LowPolyCup100
+    100578: LowPolyCup101
+    100580: LowPolyCup102
+    100582: LowPolyCup103
+    100584: LowPolyCup104
+    100586: LowPolyCup105
+    100588: LowPolyCup106
+    100590: LowPolyCup107
+    100592: LowPolyCup108
+    100594: Mat1_Gym_BballHrr
+    100596: Mat2_Gym_BballHrr
+    100598: Mat3_Gym_BballHrr
+    100600: Mat4_Gym_BballHrr
+    100602: Mats_Gym_BballHrr
+    100604: Papers_Board2&3
+    100606: Papers_BoysLockerRoom
+    100608: Pin
+    100610: Pin 1
+    100612: Pin 10
+    100614: Pin 2
+    100616: Pin 3
+    100618: Pin 4
+    100620: Pin 5
+    100622: Pin 6
+    100624: Pin 7
+    100626: Pin 8
+    100628: Pin 9
+    100630: Pins_Board2
+    100632: Pins_Board3
+    100634: Poster1_Gym_BballHrr
+    100636: Poster2_Gym_BballHrr
+    100638: Posters_GirlsLockerRoom
+    100640: Trash1_Gym_BballHrr
+    100642: Trash2_BoysLockerRoom_BballHrr
+    100644: Trash3_GirlsLockerRoom_BballHrr
+    100646: Trash4_GirlLockerRoom_BballHrr
+    100648: Wall10_BballHrr
+    100650: Wall11_BballHrr
+    100652: Wall12_BballHrr
+    100654: Wall13_BballHrr
+    100656: Wall14_BballHrr
+    100658: Wall15_BballHrr
+    100660: Wall16_BballHrr
+    100662: Wall17_BballHrr
+    100664: Wall18_BballHrr
+    100666: Wall1_BballHrr
+    100668: Wall2_BballHrr
+    100670: Wall3_BballHrr
+    100672: Wall4_BballHrr
+    100674: Wall5_BballHrr
+    100676: Wall6_BballHrr
+    100678: Wall7_BballHrr
+    100680: Wall8_BballHrr
+    100682: Wall9_BballHrr
+    100684: Walls_BballHrr
+    100686: WaterCooler1_Gym_BballHrr
+    100688: WaterCooler2_BoysLockerRoom_BballHrr
+    100690: WaterCooler3_GirlslockerRoom_BballHrr
+    100692: WaterCoolerBase
+    100694: WaterCoolerBase_WaterCooler1
+    100696: WaterCoolerBase_WaterCooler2
+    100698: WaterFountain1_BoysLockerRoom_BballHrr
+    100700: WaterFountain2_BoysLockerRoom_BballHrr
+    100702: WaterFountain3_GirlsLockerRoom_BballHrr
+    100704: WaterFountain4_GirlsLockerRoom_BballHrr
+    100706: WindowFrame1_Gym_BballHrr
+    100708: WindowFrame2_Gym_BballHrr
+    100710: WindowFrame3_Gym_BballHrr
+    100712: WindowFrame4_Gym_BballHrr
+    400000: AC1_Gym_BballHrr
+    400002: AC2_Gym_BballHrr
+    400004: AC3_Gym_BballHrr
+    400006: AC4_Gym_BballHrr
+    400008: AC5_BoysLockerRoom_BballHrr
+    400010: AC6_BoysLockerRoom_BballHrr
+    400012: AC7_GirlsLockerRoom_BballHrr
+    400014: AC8_GirlsLockerRoom_BballHrr
+    400016: Alarm1_Gym_BballHrr
+    400018: Basketball Lowpoly036
+    400020: Basketball Lowpoly037
+    400022: Basketball Lowpoly038
+    400024: Basketball Lowpoly039
+    400026: Basketball Lowpoly040
+    400028: Basketball Lowpoly041
+    400030: Basketball Lowpoly042
+    400032: Basketball Lowpoly043
+    400034: Basketball Lowpoly044
+    400036: Basketball Lowpoly045
+    400038: Basketball Lowpoly046
+    400040: Basketball Lowpoly047
+    400042: BballCage_Cover
+    400044: BballCage_Gym_BballHrr
+    400046: BballCageBase
+    400048: BballhoopStand1_Gym_BballHrr
+    400050: BballhoopStand2_Gym_BballHrr
+    400052: Bench1_Gym_BballHrr
+    400054: Bench2_Gym_BballHrr
+    400056: Bench3_Gym_BballHrr
+    400058: Bench4_Gym_BballHrr
+    400060: Bench5_GirlsLockerRoom_BballHrr
+    400062: Bench6_GirlsLockerRoom_BballHrr
+    400064: Bench7_GirlsLockerRoom_BballHrr
+    400066: Bench8_GirlsLockerRoom_BballHrr
+    400068: Board1_BoysLockerRoom_BballHrr
+    400070: Board1_BoysLockerRoom_BballHrr 1
+    400072: Board1_Papers
+    400074: Board2_GirlsLockerRoom_BballHrr
+    400076: Board3_GirlsLockerRoom_BballHrr
+    400078: Boards2&3_GirlsLockerRoom_BballHrr
+    400080: Bottle_WaterCooler1
+    400082: Bottle_WaterCooler2
+    400084: Bottle_WaterCooler3
+    400086: Ceiling_BballHrr
+    400088: Ceiling_w_Lights_BballHrr
+    400090: CeilingLight087
+    400092: CeilingLight088
+    400094: CeilingLight089
+    400096: CeilingLight090
+    400098: CeilingLight091
+    400100: CeilingLight092
+    400102: CeilingLight093
+    400104: CeilingLight094
+    400106: CeilingLight095
+    400108: CeilingLight096
+    400110: CeilingLight097
+    400112: CeilingLight098
+    400114: CeilingLight099
+    400116: CeilingLight100
+    400118: CeilingLights_Base135
+    400120: CeilingLights_Base136
+    400122: CeilingLights_Base137
+    400124: CeilingLights_Base138
+    400126: CeilingLights_Base139
+    400128: CeilingLights_Base140
+    400130: CeilingLights_Base141
+    400132: CeilingLights_Base142
+    400134: CeilingLights_Base143
+    400136: CeilingLights_Base144
+    400138: CeilingLights_Base145
+    400140: CeilingLights_Base146
+    400142: CeilingLights_Base147
+    400144: CeilingLights_Base148
+    400146: CeilingLights_Bulbs107
+    400148: CeilingLights_Bulbs108
+    400150: CeilingLights_Bulbs109
+    400152: CeilingLights_Bulbs110
+    400154: CeilingLights_Bulbs111
+    400156: CeilingLights_Bulbs112
+    400158: CeilingLights_Bulbs113
+    400160: CeilingLights_Bulbs114
+    400162: CeilingLights_Bulbs115
+    400164: CeilingLights_Bulbs116
+    400166: CeilingLights_Bulbs117
+    400168: CeilingLights_Bulbs118
+    400170: CeilingLights_Bulbs119
+    400172: CeilingLights_Bulbs120
+    400174: Clock1_Gym_BballHrr
+    400176: Clock2_BoysLockerRoom_BballHrr
+    400178: Clock3_GirlsLockerRoom_BballHrr
+    400180: Clock4_BoysLockerRoom_BballHrr
+    400182: Clock4_GirlsLockerRoom
+    400184: ColdNozel_WaterCooler1
+    400186: ColdNozel_WaterCooler1 1
+    400188: ColdNozel_WaterCooler2
+    400190: ColdNozel_WaterCooler2 1
+    400192: ColdNozel_WaterCooler3
+    400194: ColdNozel_WaterCooler3 1
+    400196: Cone1
+    400198: Cone2
+    400200: Cone3
+    400202: Cone4
+    400204: Cone5
+    400206: Cone6
+    400208: Cone7
+    400210: Cone8
+    400212: Cone9
+    400214: Cups_WaterCooler1_Gym_BballHrr
+    400216: Cups_WaterCooler2_BoysLockerRoom_BballHrr
+    400218: Cups_WaterCooler3_GirlsLockerRoom_BballHrr
+    400220: //RootNode
+    400222: Door1_Gym_BballHrr
+    400224: Door1_Gym_BballHrr 1
+    400226: Door2_BoysLockerRoom_BballHrr
+    400228: Door2_BoysLockerRoom_BballHrr 1
+    400230: Door3_GirlsLockerRoom_BballHrr
+    400232: Door3_GirlsLockerRoom_BballHrr 1
+    400234: Door4_Gym_BballHrr
+    400236: Door4_Gym_BballHrr 1
+    400238: DoorFrame1_Gym_BballHrr
+    400240: DoorFrame2_BoysLockerRoom_BballHrr
+    400242: DoorFrame3_GirlsLockerRoom_BballHrr
+    400244: DoorFrame4_Gym_BballHrr
+    400246: Filler1_BoysLockerRoom
+    400248: Filler1_GirlsLockerRoom
+    400250: Filler2_BoysLockerRoom
+    400252: Filler2_GirlsLockerRoom
+    400254: Filler3_BoysLockerRoom
+    400256: Filler3_GirlsLockerRoom
+    400258: Fillers_BoysLockerRoom
+    400260: Fillers_GirlsLockerRoom
+    400262: Floor_BballHrr
+    400264: HotNozel_WaterCooler1
+    400266: HotNozel_WaterCooler1 1
+    400268: HotNozel_WaterCooler2
+    400270: HotNozel_WaterCooler2 1
+    400272: HotNozel_WaterCooler3
+    400274: HotNozel_WaterCooler3 1
+    400276: LightSwitch1_Class021
+    400278: LightSwitch1_Gym_BballHrr
+    400280: LightSwitch2_Gym_BballHrr
+    400282: LightSwitch3_Gym_BballHrr
+    400284: LightSwitch4_BoysLockerRoom_BballHrr
+    400286: LightSwitch5_BoysLockerRoom_BballHrr
+    400288: Line258
+    400290: Locker1_BoysLockerRoom
+    400292: Locker1_GirlsLockerRoom
+    400294: Locker2_BoysLockerRoom
+    400296: Locker2_GirlsLockerRoom
+    400298: Locker3_BoysLockerRoom
+    400300: Locker3_GirlsLockerRoom
+    400302: Locker4_BoysLockerRoom
+    400304: Locker4_GirlsLockerRoom
+    400306: Locker5_BoysLockerRoom
+    400308: Locker5_GirlsLockerRoom
+    400310: Locker6_BoysLockerRoom
+    400312: Locker6_GirlsLockerRoom
+    400314: Locker7_BoysLockerRoom
+    400316: Locker7_GirlsLockerRoom
+    400318: Locker8_BoysLockerRoom
+    400320: Locker8_GirlsLockerRoom
+    400322: Locker9_BoysLockerRoom
+    400324: Locker9_GirlsLockerRoom
+    400326: LockerBase_Locker1_BoysLockerRoom
+    400328: LockerBase_Locker1_GirsLockerRoom_BballHrr
+    400330: LockerBase_Locker2_BoysLockerRoom
+    400332: LockerBase_Locker2_GirsLockerRoom_BballHrr
+    400334: LockerBase_Locker3_BoysLockerRoom
+    400336: LockerBase_Locker3_GirsLockerRoom_BballHrr
+    400338: LockerBase_Locker4_BoysLockerRoom
+    400340: LockerBase_Locker4_GirsLockerRoom_BballHrr
+    400342: LockerBase_Locker5_BoysLockerRoom
+    400344: LockerBase_Locker5_GirsLockerRoom_BballHrr
+    400346: LockerBase_Locker6_BoysLockerRoom
+    400348: LockerBase_Locker6_GirsLockerRoom_BballHrr
+    400350: LockerBase_Locker7_BoysLockerRoom
+    400352: LockerBase_Locker7_GirsLockerRoom_BballHrr
+    400354: LockerBase_Locker8_BoysLockerRoom
+    400356: LockerBase_Locker8_GirsLockerRoom_BballHrr
+    400358: LockerBase_Locker9_BoysLockerRoom
+    400360: LockerBase_Locker9_GirsLockerRoom_BballHrr
+    400362: LockerBench1_Locker6
+    400364: LockerBench1_Locker9
+    400366: LockerBench2_Locker6
+    400368: LockerBench2_Locker9
+    400370: LockerBench_Locker1
+    400372: LockerBench_Locker1 1
+    400374: LockerBench_Locker2
+    400376: LockerBench_Locker2 1
+    400378: LockerBench_Locker3
+    400380: LockerBench_Locker3 1
+    400382: LockerBench_Locker4
+    400384: LockerBench_Locker4 1
+    400386: LockerBench_Locker5
+    400388: LockerBench_Locker5 1
+    400390: LockerBench_Locker5 2
+    400392: LockerBench_Locker7
+    400394: LockerBench_Locker7 1
+    400396: LockerBench_Locker8
+    400398: LockerBench_Locker8 1
+    400400: LockerBench_Locker9
+    400402: LockerDoor1_Locker1
+    400404: LockerDoor1_Locker1 1
+    400406: LockerDoor1_Locker2
+    400408: LockerDoor1_Locker2 1
+    400410: LockerDoor1_Locker3
+    400412: LockerDoor1_Locker3 1
+    400414: LockerDoor1_Locker4
+    400416: LockerDoor1_Locker4 1
+    400418: LockerDoor1_Locker5
+    400420: LockerDoor1_Locker5 1
+    400422: LockerDoor1_Locker6
+    400424: LockerDoor1_Locker6 1
+    400426: LockerDoor1_Locker7
+    400428: LockerDoor1_Locker7 1
+    400430: LockerDoor1_Locker8
+    400432: LockerDoor1_Locker8 1
+    400434: LockerDoor1_Locker9
+    400436: LockerDoor1_Locker9 1
+    400438: LockerDoor2_Locker1
+    400440: LockerDoor2_Locker1 1
+    400442: LockerDoor2_Locker2
+    400444: LockerDoor2_Locker3
+    400446: LockerDoor2_Locker3 1
+    400448: LockerDoor2_Locker4
+    400450: LockerDoor2_Locker4 1
+    400452: LockerDoor2_Locker5
+    400454: LockerDoor2_Locker5 1
+    400456: LockerDoor2_Locker6
+    400458: LockerDoor2_Locker6 1
+    400460: LockerDoor2_Locker7
+    400462: LockerDoor2_Locker7 1
+    400464: LockerDoor2_Locker8
+    400466: LockerDoor2_Locker8 1
+    400468: LockerDoor2_Locker9
+    400470: LockerDoor2_Locker9 1
+    400472: LockerDoor3_Locker1
+    400474: LockerDoor3_Locker1 1
+    400476: LockerDoor3_Locker2
+    400478: LockerDoor3_Locker2 1
+    400480: LockerDoor3_Locker2 2
+    400482: LockerDoor3_Locker3
+    400484: LockerDoor3_Locker3 1
+    400486: LockerDoor3_Locker4
+    400488: LockerDoor3_Locker4 1
+    400490: LockerDoor3_Locker5
+    400492: LockerDoor3_Locker5 1
+    400494: LockerDoor3_Locker6
+    400496: LockerDoor3_Locker6 1
+    400498: LockerDoor3_Locker7
+    400500: LockerDoor3_Locker7 1
+    400502: LockerDoor3_Locker8
+    400504: LockerDoor3_Locker8 1
+    400506: LockerDoor3_Locker9
+    400508: LockerDoor3_Locker9 1
+    400510: LockerDoor4_Locker1
+    400512: LockerDoor4_Locker1 1
+    400514: LockerDoor4_Locker2
+    400516: LockerDoor4_Locker2 1
+    400518: LockerDoor4_Locker3
+    400520: LockerDoor4_Locker3 1
+    400522: LockerDoor4_Locker4
+    400524: LockerDoor4_Locker4 1
+    400526: LockerDoor4_Locker5
+    400528: LockerDoor4_Locker5 1
+    400530: LockerDoor4_Locker6
+    400532: LockerDoor4_Locker6 1
+    400534: LockerDoor4_Locker7
+    400536: LockerDoor4_Locker7 1
+    400538: LockerDoor4_Locker8
+    400540: LockerDoor4_Locker8 1
+    400542: LockerDoor4_Locker9
+    400544: LockerDoor4_Locker9 1
+    400546: LowPolyCup085
+    400548: LowPolyCup086
+    400550: LowPolyCup087
+    400552: LowPolyCup088
+    400554: LowPolyCup089
+    400556: LowPolyCup090
+    400558: LowPolyCup091
+    400560: LowPolyCup092
+    400562: LowPolyCup093
+    400564: LowPolyCup094
+    400566: LowPolyCup095
+    400568: LowPolyCup096
+    400570: LowPolyCup097
+    400572: LowPolyCup098
+    400574: LowPolyCup099
+    400576: LowPolyCup100
+    400578: LowPolyCup101
+    400580: LowPolyCup102
+    400582: LowPolyCup103
+    400584: LowPolyCup104
+    400586: LowPolyCup105
+    400588: LowPolyCup106
+    400590: LowPolyCup107
+    400592: LowPolyCup108
+    400594: Mat1_Gym_BballHrr
+    400596: Mat2_Gym_BballHrr
+    400598: Mat3_Gym_BballHrr
+    400600: Mat4_Gym_BballHrr
+    400602: Mats_Gym_BballHrr
+    400604: Papers_Board2&3
+    400606: Papers_BoysLockerRoom
+    400608: Pin
+    400610: Pin 1
+    400612: Pin 10
+    400614: Pin 2
+    400616: Pin 3
+    400618: Pin 4
+    400620: Pin 5
+    400622: Pin 6
+    400624: Pin 7
+    400626: Pin 8
+    400628: Pin 9
+    400630: Pins_Board2
+    400632: Pins_Board3
+    400634: Poster1_Gym_BballHrr
+    400636: Poster2_Gym_BballHrr
+    400638: Posters_GirlsLockerRoom
+    400640: Trash1_Gym_BballHrr
+    400642: Trash2_BoysLockerRoom_BballHrr
+    400644: Trash3_GirlsLockerRoom_BballHrr
+    400646: Trash4_GirlLockerRoom_BballHrr
+    400648: Wall10_BballHrr
+    400650: Wall11_BballHrr
+    400652: Wall12_BballHrr
+    400654: Wall13_BballHrr
+    400656: Wall14_BballHrr
+    400658: Wall15_BballHrr
+    400660: Wall16_BballHrr
+    400662: Wall17_BballHrr
+    400664: Wall18_BballHrr
+    400666: Wall1_BballHrr
+    400668: Wall2_BballHrr
+    400670: Wall3_BballHrr
+    400672: Wall4_BballHrr
+    400674: Wall5_BballHrr
+    400676: Wall6_BballHrr
+    400678: Wall7_BballHrr
+    400680: Wall8_BballHrr
+    400682: Wall9_BballHrr
+    400684: Walls_BballHrr
+    400686: WaterCooler1_Gym_BballHrr
+    400688: WaterCooler2_BoysLockerRoom_BballHrr
+    400690: WaterCooler3_GirlslockerRoom_BballHrr
+    400692: WaterCoolerBase
+    400694: WaterCoolerBase_WaterCooler1
+    400696: WaterCoolerBase_WaterCooler2
+    400698: WaterFountain1_BoysLockerRoom_BballHrr
+    400700: WaterFountain2_BoysLockerRoom_BballHrr
+    400702: WaterFountain3_GirlsLockerRoom_BballHrr
+    400704: WaterFountain4_GirlsLockerRoom_BballHrr
+    400706: WindowFrame1_Gym_BballHrr
+    400708: WindowFrame2_Gym_BballHrr
+    400710: WindowFrame3_Gym_BballHrr
+    400712: WindowFrame4_Gym_BballHrr
+    2100000: 'Material #24'
+    2100002: 'Material #18'
+    2100004: 'Material #23'
+    2100006: 'Material #16'
+    2100008: 'Material #3'
+    2100010: 'Material #20'
+    2100012: 'Material #5'
+    2100014: 'Material #11'
+    2100016: 'Material #13'
+    2100018: 'Material #4'
+    2100020: 'Material #17'
+    2100022: 01 - Default
+    2100024: 'Material #22'
+    2100026: 'Material #21'
+    2100028: 'Material #9'
+    2100030: 'Material #12'
+    2100032: 'Material #19'
+    2300000: AC1_Gym_BballHrr
+    2300002: AC2_Gym_BballHrr
+    2300004: AC3_Gym_BballHrr
+    2300006: AC4_Gym_BballHrr
+    2300008: AC5_BoysLockerRoom_BballHrr
+    2300010: AC6_BoysLockerRoom_BballHrr
+    2300012: AC7_GirlsLockerRoom_BballHrr
+    2300014: AC8_GirlsLockerRoom_BballHrr
+    2300016: Alarm1_Gym_BballHrr
+    2300018: Basketball Lowpoly036
+    2300020: Basketball Lowpoly037
+    2300022: Basketball Lowpoly038
+    2300024: Basketball Lowpoly039
+    2300026: Basketball Lowpoly040
+    2300028: Basketball Lowpoly041
+    2300030: Basketball Lowpoly042
+    2300032: Basketball Lowpoly043
+    2300034: Basketball Lowpoly044
+    2300036: Basketball Lowpoly045
+    2300038: Basketball Lowpoly046
+    2300040: Basketball Lowpoly047
+    2300042: BballCage_Cover
+    2300044: BballCageBase
+    2300046: BballhoopStand1_Gym_BballHrr
+    2300048: BballhoopStand2_Gym_BballHrr
+    2300050: Bench1_Gym_BballHrr
+    2300052: Bench2_Gym_BballHrr
+    2300054: Bench3_Gym_BballHrr
+    2300056: Bench4_Gym_BballHrr
+    2300058: Bench5_GirlsLockerRoom_BballHrr
+    2300060: Bench6_GirlsLockerRoom_BballHrr
+    2300062: Bench7_GirlsLockerRoom_BballHrr
+    2300064: Bench8_GirlsLockerRoom_BballHrr
+    2300066: Board1_BoysLockerRoom_BballHrr 1
+    2300068: Board1_Papers
+    2300070: Board2_GirlsLockerRoom_BballHrr
+    2300072: Board3_GirlsLockerRoom_BballHrr
+    2300074: Bottle_WaterCooler1
+    2300076: Bottle_WaterCooler2
+    2300078: Bottle_WaterCooler3
+    2300080: Ceiling_BballHrr
+    2300082: CeilingLights_Base135
+    2300084: CeilingLights_Base136
+    2300086: CeilingLights_Base137
+    2300088: CeilingLights_Base138
+    2300090: CeilingLights_Base139
+    2300092: CeilingLights_Base140
+    2300094: CeilingLights_Base141
+    2300096: CeilingLights_Base142
+    2300098: CeilingLights_Base143
+    2300100: CeilingLights_Base144
+    2300102: CeilingLights_Base145
+    2300104: CeilingLights_Base146
+    2300106: CeilingLights_Base147
+    2300108: CeilingLights_Base148
+    2300110: CeilingLights_Bulbs107
+    2300112: CeilingLights_Bulbs108
+    2300114: CeilingLights_Bulbs109
+    2300116: CeilingLights_Bulbs110
+    2300118: CeilingLights_Bulbs111
+    2300120: CeilingLights_Bulbs112
+    2300122: CeilingLights_Bulbs113
+    2300124: CeilingLights_Bulbs114
+    2300126: CeilingLights_Bulbs115
+    2300128: CeilingLights_Bulbs116
+    2300130: CeilingLights_Bulbs117
+    2300132: CeilingLights_Bulbs118
+    2300134: CeilingLights_Bulbs119
+    2300136: CeilingLights_Bulbs120
+    2300138: Clock1_Gym_BballHrr
+    2300140: Clock2_BoysLockerRoom_BballHrr
+    2300142: Clock3_GirlsLockerRoom_BballHrr
+    2300144: Clock4_BoysLockerRoom_BballHrr
+    2300146: Clock4_GirlsLockerRoom
+    2300148: ColdNozel_WaterCooler1
+    2300150: ColdNozel_WaterCooler1 1
+    2300152: ColdNozel_WaterCooler2
+    2300154: ColdNozel_WaterCooler2 1
+    2300156: ColdNozel_WaterCooler3
+    2300158: ColdNozel_WaterCooler3 1
+    2300160: Cone1
+    2300162: Cone2
+    2300164: Cone3
+    2300166: Cone4
+    2300168: Cone5
+    2300170: Cone6
+    2300172: Cone7
+    2300174: Cone8
+    2300176: Cone9
+    2300178: Door1_Gym_BballHrr 1
+    2300180: Door2_BoysLockerRoom_BballHrr 1
+    2300182: Door3_GirlsLockerRoom_BballHrr 1
+    2300184: Door4_Gym_BballHrr 1
+    2300186: DoorFrame1_Gym_BballHrr
+    2300188: DoorFrame2_BoysLockerRoom_BballHrr
+    2300190: DoorFrame3_GirlsLockerRoom_BballHrr
+    2300192: DoorFrame4_Gym_BballHrr
+    2300194: Filler1_BoysLockerRoom
+    2300196: Filler1_GirlsLockerRoom
+    2300198: Filler2_BoysLockerRoom
+    2300200: Filler2_GirlsLockerRoom
+    2300202: Filler3_BoysLockerRoom
+    2300204: Filler3_GirlsLockerRoom
+    2300206: Floor_BballHrr
+    2300208: HotNozel_WaterCooler1
+    2300210: HotNozel_WaterCooler1 1
+    2300212: HotNozel_WaterCooler2
+    2300214: HotNozel_WaterCooler2 1
+    2300216: HotNozel_WaterCooler3
+    2300218: HotNozel_WaterCooler3 1
+    2300220: LightSwitch1_Class021
+    2300222: LightSwitch1_Gym_BballHrr
+    2300224: LightSwitch2_Gym_BballHrr
+    2300226: LightSwitch3_Gym_BballHrr
+    2300228: LightSwitch4_BoysLockerRoom_BballHrr
+    2300230: LightSwitch5_BoysLockerRoom_BballHrr
+    2300232: LockerBase_Locker1_BoysLockerRoom
+    2300234: LockerBase_Locker1_GirsLockerRoom_BballHrr
+    2300236: LockerBase_Locker2_BoysLockerRoom
+    2300238: LockerBase_Locker2_GirsLockerRoom_BballHrr
+    2300240: LockerBase_Locker3_BoysLockerRoom
+    2300242: LockerBase_Locker3_GirsLockerRoom_BballHrr
+    2300244: LockerBase_Locker4_BoysLockerRoom
+    2300246: LockerBase_Locker4_GirsLockerRoom_BballHrr
+    2300248: LockerBase_Locker5_BoysLockerRoom
+    2300250: LockerBase_Locker5_GirsLockerRoom_BballHrr
+    2300252: LockerBase_Locker6_BoysLockerRoom
+    2300254: LockerBase_Locker6_GirsLockerRoom_BballHrr
+    2300256: LockerBase_Locker7_BoysLockerRoom
+    2300258: LockerBase_Locker7_GirsLockerRoom_BballHrr
+    2300260: LockerBase_Locker8_BoysLockerRoom
+    2300262: LockerBase_Locker8_GirsLockerRoom_BballHrr
+    2300264: LockerBase_Locker9_BoysLockerRoom
+    2300266: LockerBase_Locker9_GirsLockerRoom_BballHrr
+    2300268: LockerBench1_Locker6
+    2300270: LockerBench1_Locker9
+    2300272: LockerBench2_Locker6
+    2300274: LockerBench2_Locker9
+    2300276: LockerBench_Locker1
+    2300278: LockerBench_Locker1 1
+    2300280: LockerBench_Locker2
+    2300282: LockerBench_Locker2 1
+    2300284: LockerBench_Locker3
+    2300286: LockerBench_Locker3 1
+    2300288: LockerBench_Locker4
+    2300290: LockerBench_Locker4 1
+    2300292: LockerBench_Locker5
+    2300294: LockerBench_Locker5 1
+    2300296: LockerBench_Locker5 2
+    2300298: LockerBench_Locker7
+    2300300: LockerBench_Locker7 1
+    2300302: LockerBench_Locker8
+    2300304: LockerBench_Locker8 1
+    2300306: LockerBench_Locker9
+    2300308: LockerDoor1_Locker1
+    2300310: LockerDoor1_Locker1 1
+    2300312: LockerDoor1_Locker2
+    2300314: LockerDoor1_Locker2 1
+    2300316: LockerDoor1_Locker3
+    2300318: LockerDoor1_Locker3 1
+    2300320: LockerDoor1_Locker4
+    2300322: LockerDoor1_Locker4 1
+    2300324: LockerDoor1_Locker5
+    2300326: LockerDoor1_Locker5 1
+    2300328: LockerDoor1_Locker6
+    2300330: LockerDoor1_Locker6 1
+    2300332: LockerDoor1_Locker7
+    2300334: LockerDoor1_Locker7 1
+    2300336: LockerDoor1_Locker8
+    2300338: LockerDoor1_Locker8 1
+    2300340: LockerDoor1_Locker9
+    2300342: LockerDoor1_Locker9 1
+    2300344: LockerDoor2_Locker1
+    2300346: LockerDoor2_Locker1 1
+    2300348: LockerDoor2_Locker2
+    2300350: LockerDoor2_Locker3
+    2300352: LockerDoor2_Locker3 1
+    2300354: LockerDoor2_Locker4
+    2300356: LockerDoor2_Locker4 1
+    2300358: LockerDoor2_Locker5
+    2300360: LockerDoor2_Locker5 1
+    2300362: LockerDoor2_Locker6
+    2300364: LockerDoor2_Locker6 1
+    2300366: LockerDoor2_Locker7
+    2300368: LockerDoor2_Locker7 1
+    2300370: LockerDoor2_Locker8
+    2300372: LockerDoor2_Locker8 1
+    2300374: LockerDoor2_Locker9
+    2300376: LockerDoor2_Locker9 1
+    2300378: LockerDoor3_Locker1
+    2300380: LockerDoor3_Locker1 1
+    2300382: LockerDoor3_Locker2
+    2300384: LockerDoor3_Locker2 1
+    2300386: LockerDoor3_Locker2 2
+    2300388: LockerDoor3_Locker3
+    2300390: LockerDoor3_Locker3 1
+    2300392: LockerDoor3_Locker4
+    2300394: LockerDoor3_Locker4 1
+    2300396: LockerDoor3_Locker5
+    2300398: LockerDoor3_Locker5 1
+    2300400: LockerDoor3_Locker6
+    2300402: LockerDoor3_Locker6 1
+    2300404: LockerDoor3_Locker7
+    2300406: LockerDoor3_Locker7 1
+    2300408: LockerDoor3_Locker8
+    2300410: LockerDoor3_Locker8 1
+    2300412: LockerDoor3_Locker9
+    2300414: LockerDoor3_Locker9 1
+    2300416: LockerDoor4_Locker1
+    2300418: LockerDoor4_Locker1 1
+    2300420: LockerDoor4_Locker2
+    2300422: LockerDoor4_Locker2 1
+    2300424: LockerDoor4_Locker3
+    2300426: LockerDoor4_Locker3 1
+    2300428: LockerDoor4_Locker4
+    2300430: LockerDoor4_Locker4 1
+    2300432: LockerDoor4_Locker5
+    2300434: LockerDoor4_Locker5 1
+    2300436: LockerDoor4_Locker6
+    2300438: LockerDoor4_Locker6 1
+    2300440: LockerDoor4_Locker7
+    2300442: LockerDoor4_Locker7 1
+    2300444: LockerDoor4_Locker8
+    2300446: LockerDoor4_Locker8 1
+    2300448: LockerDoor4_Locker9
+    2300450: LockerDoor4_Locker9 1
+    2300452: LowPolyCup085
+    2300454: LowPolyCup086
+    2300456: LowPolyCup087
+    2300458: LowPolyCup088
+    2300460: LowPolyCup089
+    2300462: LowPolyCup090
+    2300464: LowPolyCup091
+    2300466: LowPolyCup092
+    2300468: LowPolyCup093
+    2300470: LowPolyCup094
+    2300472: LowPolyCup095
+    2300474: LowPolyCup096
+    2300476: LowPolyCup097
+    2300478: LowPolyCup098
+    2300480: LowPolyCup099
+    2300482: LowPolyCup100
+    2300484: LowPolyCup101
+    2300486: LowPolyCup102
+    2300488: LowPolyCup103
+    2300490: LowPolyCup104
+    2300492: LowPolyCup105
+    2300494: LowPolyCup106
+    2300496: LowPolyCup107
+    2300498: LowPolyCup108
+    2300500: Mat1_Gym_BballHrr
+    2300502: Mat2_Gym_BballHrr
+    2300504: Mat3_Gym_BballHrr
+    2300506: Mat4_Gym_BballHrr
+    2300508: Papers_Board2&3
+    2300510: Papers_BoysLockerRoom
+    2300512: Pin
+    2300514: Pin 1
+    2300516: Pin 10
+    2300518: Pin 2
+    2300520: Pin 3
+    2300522: Pin 4
+    2300524: Pin 5
+    2300526: Pin 6
+    2300528: Pin 7
+    2300530: Pin 8
+    2300532: Pin 9
+    2300534: Poster1_Gym_BballHrr
+    2300536: Poster2_Gym_BballHrr
+    2300538: Posters_GirlsLockerRoom
+    2300540: Trash1_Gym_BballHrr
+    2300542: Trash2_BoysLockerRoom_BballHrr
+    2300544: Trash3_GirlsLockerRoom_BballHrr
+    2300546: Trash4_GirlLockerRoom_BballHrr
+    2300548: Wall10_BballHrr
+    2300550: Wall11_BballHrr
+    2300552: Wall12_BballHrr
+    2300554: Wall13_BballHrr
+    2300556: Wall14_BballHrr
+    2300558: Wall15_BballHrr
+    2300560: Wall16_BballHrr
+    2300562: Wall17_BballHrr
+    2300564: Wall18_BballHrr
+    2300566: Wall1_BballHrr
+    2300568: Wall2_BballHrr
+    2300570: Wall3_BballHrr
+    2300572: Wall4_BballHrr
+    2300574: Wall5_BballHrr
+    2300576: Wall6_BballHrr
+    2300578: Wall7_BballHrr
+    2300580: Wall8_BballHrr
+    2300582: Wall9_BballHrr
+    2300584: WaterCoolerBase
+    2300586: WaterCoolerBase_WaterCooler1
+    2300588: WaterCoolerBase_WaterCooler2
+    2300590: WaterFountain1_BoysLockerRoom_BballHrr
+    2300592: WaterFountain2_BoysLockerRoom_BballHrr
+    2300594: WaterFountain3_GirlsLockerRoom_BballHrr
+    2300596: WaterFountain4_GirlsLockerRoom_BballHrr
+    2300598: WindowFrame1_Gym_BballHrr
+    2300600: WindowFrame2_Gym_BballHrr
+    2300602: WindowFrame3_Gym_BballHrr
+    2300604: WindowFrame4_Gym_BballHrr
+    3300000: AC1_Gym_BballHrr
+    3300002: AC2_Gym_BballHrr
+    3300004: AC3_Gym_BballHrr
+    3300006: AC4_Gym_BballHrr
+    3300008: AC5_BoysLockerRoom_BballHrr
+    3300010: AC6_BoysLockerRoom_BballHrr
+    3300012: AC7_GirlsLockerRoom_BballHrr
+    3300014: AC8_GirlsLockerRoom_BballHrr
+    3300016: Alarm1_Gym_BballHrr
+    3300018: Basketball Lowpoly036
+    3300020: Basketball Lowpoly037
+    3300022: Basketball Lowpoly038
+    3300024: Basketball Lowpoly039
+    3300026: Basketball Lowpoly040
+    3300028: Basketball Lowpoly041
+    3300030: Basketball Lowpoly042
+    3300032: Basketball Lowpoly043
+    3300034: Basketball Lowpoly044
+    3300036: Basketball Lowpoly045
+    3300038: Basketball Lowpoly046
+    3300040: Basketball Lowpoly047
+    3300042: BballCage_Cover
+    3300044: BballCageBase
+    3300046: BballhoopStand1_Gym_BballHrr
+    3300048: BballhoopStand2_Gym_BballHrr
+    3300050: Bench1_Gym_BballHrr
+    3300052: Bench2_Gym_BballHrr
+    3300054: Bench3_Gym_BballHrr
+    3300056: Bench4_Gym_BballHrr
+    3300058: Bench5_GirlsLockerRoom_BballHrr
+    3300060: Bench6_GirlsLockerRoom_BballHrr
+    3300062: Bench7_GirlsLockerRoom_BballHrr
+    3300064: Bench8_GirlsLockerRoom_BballHrr
+    3300066: Board1_BoysLockerRoom_BballHrr 1
+    3300068: Board1_Papers
+    3300070: Board2_GirlsLockerRoom_BballHrr
+    3300072: Board3_GirlsLockerRoom_BballHrr
+    3300074: Bottle_WaterCooler1
+    3300076: Bottle_WaterCooler2
+    3300078: Bottle_WaterCooler3
+    3300080: Ceiling_BballHrr
+    3300082: CeilingLights_Base135
+    3300084: CeilingLights_Base136
+    3300086: CeilingLights_Base137
+    3300088: CeilingLights_Base138
+    3300090: CeilingLights_Base139
+    3300092: CeilingLights_Base140
+    3300094: CeilingLights_Base141
+    3300096: CeilingLights_Base142
+    3300098: CeilingLights_Base143
+    3300100: CeilingLights_Base144
+    3300102: CeilingLights_Base145
+    3300104: CeilingLights_Base146
+    3300106: CeilingLights_Base147
+    3300108: CeilingLights_Base148
+    3300110: CeilingLights_Bulbs107
+    3300112: CeilingLights_Bulbs108
+    3300114: CeilingLights_Bulbs109
+    3300116: CeilingLights_Bulbs110
+    3300118: CeilingLights_Bulbs111
+    3300120: CeilingLights_Bulbs112
+    3300122: CeilingLights_Bulbs113
+    3300124: CeilingLights_Bulbs114
+    3300126: CeilingLights_Bulbs115
+    3300128: CeilingLights_Bulbs116
+    3300130: CeilingLights_Bulbs117
+    3300132: CeilingLights_Bulbs118
+    3300134: CeilingLights_Bulbs119
+    3300136: CeilingLights_Bulbs120
+    3300138: Clock1_Gym_BballHrr
+    3300140: Clock2_BoysLockerRoom_BballHrr
+    3300142: Clock3_GirlsLockerRoom_BballHrr
+    3300144: Clock4_BoysLockerRoom_BballHrr
+    3300146: Clock4_GirlsLockerRoom
+    3300148: ColdNozel_WaterCooler1
+    3300150: ColdNozel_WaterCooler1 1
+    3300152: ColdNozel_WaterCooler2
+    3300154: ColdNozel_WaterCooler2 1
+    3300156: ColdNozel_WaterCooler3
+    3300158: ColdNozel_WaterCooler3 1
+    3300160: Cone1
+    3300162: Cone2
+    3300164: Cone3
+    3300166: Cone4
+    3300168: Cone5
+    3300170: Cone6
+    3300172: Cone7
+    3300174: Cone8
+    3300176: Cone9
+    3300178: Door1_Gym_BballHrr 1
+    3300180: Door2_BoysLockerRoom_BballHrr 1
+    3300182: Door3_GirlsLockerRoom_BballHrr 1
+    3300184: Door4_Gym_BballHrr 1
+    3300186: DoorFrame1_Gym_BballHrr
+    3300188: DoorFrame2_BoysLockerRoom_BballHrr
+    3300190: DoorFrame3_GirlsLockerRoom_BballHrr
+    3300192: DoorFrame4_Gym_BballHrr
+    3300194: Filler1_BoysLockerRoom
+    3300196: Filler1_GirlsLockerRoom
+    3300198: Filler2_BoysLockerRoom
+    3300200: Filler2_GirlsLockerRoom
+    3300202: Filler3_BoysLockerRoom
+    3300204: Filler3_GirlsLockerRoom
+    3300206: Floor_BballHrr
+    3300208: HotNozel_WaterCooler1
+    3300210: HotNozel_WaterCooler1 1
+    3300212: HotNozel_WaterCooler2
+    3300214: HotNozel_WaterCooler2 1
+    3300216: HotNozel_WaterCooler3
+    3300218: HotNozel_WaterCooler3 1
+    3300220: LightSwitch1_Class021
+    3300222: LightSwitch1_Gym_BballHrr
+    3300224: LightSwitch2_Gym_BballHrr
+    3300226: LightSwitch3_Gym_BballHrr
+    3300228: LightSwitch4_BoysLockerRoom_BballHrr
+    3300230: LightSwitch5_BoysLockerRoom_BballHrr
+    3300232: LockerBase_Locker1_BoysLockerRoom
+    3300234: LockerBase_Locker1_GirsLockerRoom_BballHrr
+    3300236: LockerBase_Locker2_BoysLockerRoom
+    3300238: LockerBase_Locker2_GirsLockerRoom_BballHrr
+    3300240: LockerBase_Locker3_BoysLockerRoom
+    3300242: LockerBase_Locker3_GirsLockerRoom_BballHrr
+    3300244: LockerBase_Locker4_BoysLockerRoom
+    3300246: LockerBase_Locker4_GirsLockerRoom_BballHrr
+    3300248: LockerBase_Locker5_BoysLockerRoom
+    3300250: LockerBase_Locker5_GirsLockerRoom_BballHrr
+    3300252: LockerBase_Locker6_BoysLockerRoom
+    3300254: LockerBase_Locker6_GirsLockerRoom_BballHrr
+    3300256: LockerBase_Locker7_BoysLockerRoom
+    3300258: LockerBase_Locker7_GirsLockerRoom_BballHrr
+    3300260: LockerBase_Locker8_BoysLockerRoom
+    3300262: LockerBase_Locker8_GirsLockerRoom_BballHrr
+    3300264: LockerBase_Locker9_BoysLockerRoom
+    3300266: LockerBase_Locker9_GirsLockerRoom_BballHrr
+    3300268: LockerBench1_Locker6
+    3300270: LockerBench1_Locker9
+    3300272: LockerBench2_Locker6
+    3300274: LockerBench2_Locker9
+    3300276: LockerBench_Locker1
+    3300278: LockerBench_Locker1 1
+    3300280: LockerBench_Locker2
+    3300282: LockerBench_Locker2 1
+    3300284: LockerBench_Locker3
+    3300286: LockerBench_Locker3 1
+    3300288: LockerBench_Locker4
+    3300290: LockerBench_Locker4 1
+    3300292: LockerBench_Locker5
+    3300294: LockerBench_Locker5 1
+    3300296: LockerBench_Locker5 2
+    3300298: LockerBench_Locker7
+    3300300: LockerBench_Locker7 1
+    3300302: LockerBench_Locker8
+    3300304: LockerBench_Locker8 1
+    3300306: LockerBench_Locker9
+    3300308: LockerDoor1_Locker1
+    3300310: LockerDoor1_Locker1 1
+    3300312: LockerDoor1_Locker2
+    3300314: LockerDoor1_Locker2 1
+    3300316: LockerDoor1_Locker3
+    3300318: LockerDoor1_Locker3 1
+    3300320: LockerDoor1_Locker4
+    3300322: LockerDoor1_Locker4 1
+    3300324: LockerDoor1_Locker5
+    3300326: LockerDoor1_Locker5 1
+    3300328: LockerDoor1_Locker6
+    3300330: LockerDoor1_Locker6 1
+    3300332: LockerDoor1_Locker7
+    3300334: LockerDoor1_Locker7 1
+    3300336: LockerDoor1_Locker8
+    3300338: LockerDoor1_Locker8 1
+    3300340: LockerDoor1_Locker9
+    3300342: LockerDoor1_Locker9 1
+    3300344: LockerDoor2_Locker1
+    3300346: LockerDoor2_Locker1 1
+    3300348: LockerDoor2_Locker2
+    3300350: LockerDoor2_Locker3
+    3300352: LockerDoor2_Locker3 1
+    3300354: LockerDoor2_Locker4
+    3300356: LockerDoor2_Locker4 1
+    3300358: LockerDoor2_Locker5
+    3300360: LockerDoor2_Locker5 1
+    3300362: LockerDoor2_Locker6
+    3300364: LockerDoor2_Locker6 1
+    3300366: LockerDoor2_Locker7
+    3300368: LockerDoor2_Locker7 1
+    3300370: LockerDoor2_Locker8
+    3300372: LockerDoor2_Locker8 1
+    3300374: LockerDoor2_Locker9
+    3300376: LockerDoor2_Locker9 1
+    3300378: LockerDoor3_Locker1
+    3300380: LockerDoor3_Locker1 1
+    3300382: LockerDoor3_Locker2
+    3300384: LockerDoor3_Locker2 1
+    3300386: LockerDoor3_Locker2 2
+    3300388: LockerDoor3_Locker3
+    3300390: LockerDoor3_Locker3 1
+    3300392: LockerDoor3_Locker4
+    3300394: LockerDoor3_Locker4 1
+    3300396: LockerDoor3_Locker5
+    3300398: LockerDoor3_Locker5 1
+    3300400: LockerDoor3_Locker6
+    3300402: LockerDoor3_Locker6 1
+    3300404: LockerDoor3_Locker7
+    3300406: LockerDoor3_Locker7 1
+    3300408: LockerDoor3_Locker8
+    3300410: LockerDoor3_Locker8 1
+    3300412: LockerDoor3_Locker9
+    3300414: LockerDoor3_Locker9 1
+    3300416: LockerDoor4_Locker1
+    3300418: LockerDoor4_Locker1 1
+    3300420: LockerDoor4_Locker2
+    3300422: LockerDoor4_Locker2 1
+    3300424: LockerDoor4_Locker3
+    3300426: LockerDoor4_Locker3 1
+    3300428: LockerDoor4_Locker4
+    3300430: LockerDoor4_Locker4 1
+    3300432: LockerDoor4_Locker5
+    3300434: LockerDoor4_Locker5 1
+    3300436: LockerDoor4_Locker6
+    3300438: LockerDoor4_Locker6 1
+    3300440: LockerDoor4_Locker7
+    3300442: LockerDoor4_Locker7 1
+    3300444: LockerDoor4_Locker8
+    3300446: LockerDoor4_Locker8 1
+    3300448: LockerDoor4_Locker9
+    3300450: LockerDoor4_Locker9 1
+    3300452: LowPolyCup085
+    3300454: LowPolyCup086
+    3300456: LowPolyCup087
+    3300458: LowPolyCup088
+    3300460: LowPolyCup089
+    3300462: LowPolyCup090
+    3300464: LowPolyCup091
+    3300466: LowPolyCup092
+    3300468: LowPolyCup093
+    3300470: LowPolyCup094
+    3300472: LowPolyCup095
+    3300474: LowPolyCup096
+    3300476: LowPolyCup097
+    3300478: LowPolyCup098
+    3300480: LowPolyCup099
+    3300482: LowPolyCup100
+    3300484: LowPolyCup101
+    3300486: LowPolyCup102
+    3300488: LowPolyCup103
+    3300490: LowPolyCup104
+    3300492: LowPolyCup105
+    3300494: LowPolyCup106
+    3300496: LowPolyCup107
+    3300498: LowPolyCup108
+    3300500: Mat1_Gym_BballHrr
+    3300502: Mat2_Gym_BballHrr
+    3300504: Mat3_Gym_BballHrr
+    3300506: Mat4_Gym_BballHrr
+    3300508: Papers_Board2&3
+    3300510: Papers_BoysLockerRoom
+    3300512: Pin
+    3300514: Pin 1
+    3300516: Pin 10
+    3300518: Pin 2
+    3300520: Pin 3
+    3300522: Pin 4
+    3300524: Pin 5
+    3300526: Pin 6
+    3300528: Pin 7
+    3300530: Pin 8
+    3300532: Pin 9
+    3300534: Poster1_Gym_BballHrr
+    3300536: Poster2_Gym_BballHrr
+    3300538: Posters_GirlsLockerRoom
+    3300540: Trash1_Gym_BballHrr
+    3300542: Trash2_BoysLockerRoom_BballHrr
+    3300544: Trash3_GirlsLockerRoom_BballHrr
+    3300546: Trash4_GirlLockerRoom_BballHrr
+    3300548: Wall10_BballHrr
+    3300550: Wall11_BballHrr
+    3300552: Wall12_BballHrr
+    3300554: Wall13_BballHrr
+    3300556: Wall14_BballHrr
+    3300558: Wall15_BballHrr
+    3300560: Wall16_BballHrr
+    3300562: Wall17_BballHrr
+    3300564: Wall18_BballHrr
+    3300566: Wall1_BballHrr
+    3300568: Wall2_BballHrr
+    3300570: Wall3_BballHrr
+    3300572: Wall4_BballHrr
+    3300574: Wall5_BballHrr
+    3300576: Wall6_BballHrr
+    3300578: Wall7_BballHrr
+    3300580: Wall8_BballHrr
+    3300582: Wall9_BballHrr
+    3300584: WaterCoolerBase
+    3300586: WaterCoolerBase_WaterCooler1
+    3300588: WaterCoolerBase_WaterCooler2
+    3300590: WaterFountain1_BoysLockerRoom_BballHrr
+    3300592: WaterFountain2_BoysLockerRoom_BballHrr
+    3300594: WaterFountain3_GirlsLockerRoom_BballHrr
+    3300596: WaterFountain4_GirlsLockerRoom_BballHrr
+    3300598: WindowFrame1_Gym_BballHrr
+    3300600: WindowFrame2_Gym_BballHrr
+    3300602: WindowFrame3_Gym_BballHrr
+    3300604: WindowFrame4_Gym_BballHrr
+    4300000: AC1_Gym_BballHrr
+    4300002: AC2_Gym_BballHrr
+    4300004: AC3_Gym_BballHrr
+    4300006: AC4_Gym_BballHrr
+    4300008: Clock4_BoysLockerRoom_BballHrr
+    4300010: LockerDoor1_Locker1
+    4300012: LockerBench_Locker1
+    4300014: LockerBase_Locker1_BoysLockerRoom
+    4300016: LockerDoor2_Locker1
+    4300018: LockerDoor3_Locker1
+    4300020: LockerDoor4_Locker1
+    4300022: LightSwitch3_Gym_BballHrr
+    4300024: LightSwitch1_Gym_BballHrr
+    4300026: LightSwitch2_Gym_BballHrr
+    4300028: LightSwitch5_BoysLockerRoom_BballHrr
+    4300030: LightSwitch4_BoysLockerRoom_BballHrr
+    4300032: LightSwitch1_Class021
+    4300034: Cone2
+    4300036: Cone1
+    4300038: Cone3
+    4300040: Cone5
+    4300042: Cone4
+    4300044: Cone6
+    4300046: Cone8
+    4300048: Cone7
+    4300050: Cone9
+    4300052: Papers_BoysLockerRoom
+    4300054: Trash1_Gym_BballHrr
+    4300056: Trash2_BoysLockerRoom_BballHrr
+    4300058: Trash4_GirlLockerRoom_BballHrr
+    4300060: Trash3_GirlsLockerRoom_BballHrr
+    4300062: WaterFountain3_GirlsLockerRoom_BballHrr
+    4300064: WaterFountain4_GirlsLockerRoom_BballHrr
+    4300066: WaterFountain2_BoysLockerRoom_BballHrr
+    4300068: WaterFountain1_BoysLockerRoom_BballHrr
+    4300070: BballhoopStand2_Gym_BballHrr
+    4300072: Bench4_Gym_BballHrr
+    4300074: WindowFrame4_Gym_BballHrr
+    4300076: WindowFrame3_Gym_BballHrr
+    4300078: WindowFrame2_Gym_BballHrr
+    4300080: WindowFrame1_Gym_BballHrr
+    4300082: Bench3_Gym_BballHrr
+    4300084: Bench2_Gym_BballHrr
+    4300086: Bench1_Gym_BballHrr
+    4300088: BballhoopStand1_Gym_BballHrr
+    4300090: Alarm1_Gym_BballHrr
+    4300092: Clock1_Gym_BballHrr
+    4300094: Bench8_GirlsLockerRoom_BballHrr
+    4300096: Bench7_GirlsLockerRoom_BballHrr
+    4300098: Clock3_GirlsLockerRoom_BballHrr
+    4300100: WaterCoolerBase_WaterCooler1
+    4300102: HotNozel_WaterCooler1
+    4300104: ColdNozel_WaterCooler1
+    4300106: Bottle_WaterCooler1
+    4300108: HotNozel_WaterCooler1
+    4300110: ColdNozel_WaterCooler1
+    4300112: LowPolyCup090
+    4300114: LowPolyCup089
+    4300116: LowPolyCup088
+    4300118: LowPolyCup087
+    4300120: LowPolyCup086
+    4300122: LowPolyCup085
+    4300124: LowPolyCup091
+    4300126: LowPolyCup092
+    4300128: Poster1_Gym_BballHrr
+    4300130: Poster2_Gym_BballHrr
+    4300132: WaterCoolerBase
+    4300134: HotNozel_WaterCooler3
+    4300136: ColdNozel_WaterCooler3
+    4300138: Bottle_WaterCooler3
+    4300140: HotNozel_WaterCooler3
+    4300142: ColdNozel_WaterCooler3
+    4300144: LowPolyCup098
+    4300146: LowPolyCup097
+    4300148: LowPolyCup096
+    4300150: LowPolyCup095
+    4300152: LowPolyCup094
+    4300154: LowPolyCup093
+    4300156: LowPolyCup100
+    4300158: LowPolyCup099
+    4300160: WaterCoolerBase_WaterCooler2
+    4300162: HotNozel_WaterCooler2
+    4300164: ColdNozel_WaterCooler2
+    4300166: Bottle_WaterCooler2
+    4300168: HotNozel_WaterCooler2
+    4300170: ColdNozel_WaterCooler2
+    4300172: LowPolyCup106
+    4300174: LowPolyCup105
+    4300176: LowPolyCup104
+    4300178: LowPolyCup102
+    4300180: LowPolyCup101
+    4300182: LowPolyCup103
+    4300184: LowPolyCup107
+    4300186: LowPolyCup108
+    4300188: Clock2_BoysLockerRoom_BballHrr
+    4300190: LockerDoor1_Locker2
+    4300192: LockerBench_Locker2
+    4300194: LockerBase_Locker2_BoysLockerRoom
+    4300196: LockerDoor3_Locker2
+    4300198: LockerDoor3_Locker2
+    4300200: LockerDoor4_Locker2
+    4300202: LockerDoor1_Locker3
+    4300204: LockerBench_Locker3
+    4300206: LockerBase_Locker3_BoysLockerRoom
+    4300208: LockerDoor2_Locker3
+    4300210: LockerDoor3_Locker3
+    4300212: LockerDoor4_Locker3
+    4300214: LockerDoor1_Locker8
+    4300216: LockerBench_Locker8
+    4300218: LockerBase_Locker8_BoysLockerRoom
+    4300220: LockerDoor2_Locker8
+    4300222: LockerDoor3_Locker8
+    4300224: LockerDoor4_Locker8
+    4300226: LockerDoor1_Locker9
+    4300228: LockerBench_Locker9
+    4300230: LockerBase_Locker9_BoysLockerRoom
+    4300232: LockerDoor2_Locker9
+    4300234: LockerDoor3_Locker9
+    4300236: LockerDoor4_Locker9
+    4300238: LockerDoor1_Locker7
+    4300240: LockerBench_Locker7
+    4300242: LockerBase_Locker7_BoysLockerRoom
+    4300244: LockerDoor2_Locker7
+    4300246: LockerDoor3_Locker7
+    4300248: LockerDoor4_Locker7
+    4300250: LockerDoor1_Locker5
+    4300252: LockerBench_Locker5
+    4300254: LockerBase_Locker5_BoysLockerRoom
+    4300256: LockerDoor2_Locker5
+    4300258: LockerDoor3_Locker5
+    4300260: LockerDoor4_Locker5
+    4300262: LockerDoor1_Locker4
+    4300264: LockerBench_Locker4
+    4300266: LockerBase_Locker4_BoysLockerRoom
+    4300268: LockerDoor2_Locker4
+    4300270: LockerDoor3_Locker4
+    4300272: LockerDoor4_Locker4
+    4300274: Bench5_GirlsLockerRoom_BballHrr
+    4300276: Bench6_GirlsLockerRoom_BballHrr
+    4300278: Clock4_GirlsLockerRoom
+    4300280: LockerDoor1_Locker1
+    4300282: LockerBench_Locker1
+    4300284: LockerBase_Locker1_GirsLockerRoom_BballHrr
+    4300286: LockerDoor2_Locker1
+    4300288: LockerDoor3_Locker1
+    4300290: LockerDoor4_Locker1
+    4300292: LockerDoor1_Locker2
+    4300294: LockerBench_Locker2
+    4300296: LockerBase_Locker2_GirsLockerRoom_BballHrr
+    4300298: LockerDoor2_Locker2
+    4300300: LockerDoor3_Locker2
+    4300302: LockerDoor4_Locker2
+    4300304: LockerDoor1_Locker3
+    4300306: LockerBench_Locker3
+    4300308: LockerBase_Locker3_GirsLockerRoom_BballHrr
+    4300310: LockerDoor2_Locker3
+    4300312: LockerDoor3_Locker3
+    4300314: LockerDoor4_Locker3
+    4300316: LockerDoor1_Locker7
+    4300318: LockerBench_Locker7
+    4300320: LockerBase_Locker7_GirsLockerRoom_BballHrr
+    4300322: LockerDoor2_Locker7
+    4300324: LockerDoor3_Locker7
+    4300326: LockerDoor4_Locker7
+    4300328: LockerDoor1_Locker8
+    4300330: LockerBench_Locker8
+    4300332: LockerBase_Locker8_GirsLockerRoom_BballHrr
+    4300334: LockerDoor2_Locker8
+    4300336: LockerDoor3_Locker8
+    4300338: LockerDoor4_Locker8
+    4300340: LockerDoor1_Locker4
+    4300342: LockerBench_Locker4
+    4300344: LockerBase_Locker4_GirsLockerRoom_BballHrr
+    4300346: LockerDoor2_Locker4
+    4300348: LockerDoor3_Locker4
+    4300350: LockerDoor4_Locker4
+    4300352: LockerDoor1_Locker6
+    4300354: LockerBench_Locker5
+    4300356: LockerBase_Locker6_GirsLockerRoom_BballHrr
+    4300358: LockerDoor2_Locker6
+    4300360: LockerDoor3_Locker6
+    4300362: LockerDoor4_Locker6
+    4300364: LockerDoor1_Locker5
+    4300366: LockerBench_Locker5
+    4300368: LockerBase_Locker5_GirsLockerRoom_BballHrr
+    4300370: LockerDoor2_Locker5
+    4300372: LockerDoor3_Locker5
+    4300374: LockerDoor4_Locker5
+    4300376: Posters_GirlsLockerRoom
+    4300378: Door4_Gym_BballHrr
+    4300380: DoorFrame4_Gym_BballHrr
+    4300382: Door3_GirlsLockerRoom_BballHrr
+    4300384: DoorFrame3_GirlsLockerRoom_BballHrr
+    4300386: Door2_BoysLockerRoom_BballHrr
+    4300388: DoorFrame2_BoysLockerRoom_BballHrr
+    4300390: Door1_Gym_BballHrr
+    4300392: DoorFrame1_Gym_BballHrr
+    4300394: AC8_GirlsLockerRoom_BballHrr
+    4300396: AC7_GirlsLockerRoom_BballHrr
+    4300398: AC6_BoysLockerRoom_BballHrr
+    4300400: AC5_BoysLockerRoom_BballHrr
+    4300402: Board1_Papers
+    4300404: Board1_BoysLockerRoom_BballHrr
+    4300406: Mat4_Gym_BballHrr
+    4300408: Mat3_Gym_BballHrr
+    4300410: Mat2_Gym_BballHrr
+    4300412: Mat1_Gym_BballHrr
+    4300414: Papers_Board2&3
+    4300416: Pin
+    4300418: Pin
+    4300420: Pin
+    4300422: Pin
+    4300424: Pin
+    4300426: Board3_GirlsLockerRoom_BballHrr
+    4300428: Pin
+    4300430: Pin
+    4300432: Pin
+    4300434: Pin
+    4300436: Pin
+    4300438: Pin
+    4300440: Board2_GirlsLockerRoom_BballHrr
+    4300442: Basketball Lowpoly036
+    4300444: Basketball Lowpoly037
+    4300446: Basketball Lowpoly038
+    4300448: Basketball Lowpoly039
+    4300450: Basketball Lowpoly040
+    4300452: Basketball Lowpoly041
+    4300454: Basketball Lowpoly042
+    4300456: Basketball Lowpoly043
+    4300458: Basketball Lowpoly044
+    4300460: Basketball Lowpoly045
+    4300462: Basketball Lowpoly046
+    4300464: Basketball Lowpoly047
+    4300466: BballCageBase
+    4300468: BballCage_Cover
+    4300470: Filler1_BoysLockerRoom
+    4300472: Filler2_BoysLockerRoom
+    4300474: Filler3_BoysLockerRoom
+    4300476: Filler1_GirlsLockerRoom
+    4300478: Filler2_GirlsLockerRoom
+    4300480: Filler3_GirlsLockerRoom
+    4300482: LockerBase_Locker6_BoysLockerRoom
+    4300484: LockerDoor4_Locker6
+    4300486: LockerDoor3_Locker6
+    4300488: LockerBench1_Locker6
+    4300490: LockerBench2_Locker6
+    4300492: LockerDoor2_Locker6
+    4300494: LockerDoor1_Locker6
+    4300496: LockerBase_Locker9_GirsLockerRoom_BballHrr
+    4300498: LockerDoor3_Locker9
+    4300500: LockerDoor4_Locker9
+    4300502: LockerBench2_Locker9
+    4300504: LockerDoor1_Locker9
+    4300506: LockerDoor2_Locker9
+    4300508: LockerBench1_Locker9
+    4300510: Floor_BballHrr
+    4300512: CeilingLights_Base135
+    4300514: CeilingLights_Bulbs107
+    4300516: CeilingLights_Base136
+    4300518: CeilingLights_Bulbs108
+    4300520: CeilingLights_Base137
+    4300522: CeilingLights_Bulbs109
+    4300524: CeilingLights_Base138
+    4300526: CeilingLights_Bulbs110
+    4300528: CeilingLights_Base139
+    4300530: CeilingLights_Bulbs111
+    4300532: CeilingLights_Base140
+    4300534: CeilingLights_Bulbs112
+    4300536: CeilingLights_Base141
+    4300538: CeilingLights_Bulbs113
+    4300540: CeilingLights_Base142
+    4300542: CeilingLights_Bulbs114
+    4300544: CeilingLights_Base143
+    4300546: CeilingLights_Bulbs115
+    4300548: CeilingLights_Base144
+    4300550: CeilingLights_Bulbs116
+    4300552: CeilingLights_Base145
+    4300554: CeilingLights_Bulbs117
+    4300556: CeilingLights_Base146
+    4300558: CeilingLights_Bulbs118
+    4300560: CeilingLights_Base147
+    4300562: CeilingLights_Bulbs119
+    4300564: CeilingLights_Base148
+    4300566: CeilingLights_Bulbs120
+    4300568: Ceiling_BballHrr
+    4300570: Wall15_BballHrr
+    4300572: Wall1_BballHrr
+    4300574: Wall2_BballHrr
+    4300576: Wall3_BballHrr
+    4300578: Wall5_BballHrr
+    4300580: Wall7_BballHrr
+    4300582: Wall4_BballHrr
+    4300584: Wall6_BballHrr
+    4300586: Wall9_BballHrr
+    4300588: Wall18_BballHrr
+    4300590: Wall17_BballHrr
+    4300592: Wall14_BballHrr
+    4300594: Wall11_BballHrr
+    4300596: Wall8_BballHrr
+    4300598: Wall10_BballHrr
+    4300600: Wall13_BballHrr
+    4300602: Wall12_BballHrr
+    4300604: Wall16_BballHrr
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
